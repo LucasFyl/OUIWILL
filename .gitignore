@@ -1,0 +1,13 @@
+.sass-cache
+node_modules
+bower_components
+assets/css
+assets/js/vendors*
+assets/js/*.min.js
+assets/avatars
+assets/fonts/Fontawesome*
+assets/fonts/fontawesome*
+site/accounts
+thumbs
+dist
+

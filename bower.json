@@ -1,0 +1,21 @@
+{
+  "name": "kirby-foundation",
+  "version": "1.0.0",
+  "authors": [
+    "Jan Hofmann <jan.hofmann@dexite.de>"
+  ],
+  "description": "kickstart a blog with kirby and the foundation framework using bower and grunt",
+  "license": "CC BY-NC-SA 3.0 DE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.5.0",
+    "fontawesome": "~4.2.0"
+  }
+}
