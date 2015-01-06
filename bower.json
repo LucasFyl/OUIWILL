@@ -1,10 +1,10 @@
 {
-  "name": "kirby-foundation",
+  "name": "kirby-grunt-foundation",
   "version": "1.0.0",
   "authors": [
     "Jan Hofmann <jan.hofmann@dexite.de>"
   ],
-  "description": "kickstart a blog with kirby and the foundation framework using bower and grunt",
+  "description": "This ist the kirby-starterkit with a fully functional grunt-script, Fontawesome as Iconfont and foundation as CSS-Framework.",
   "license": "CC BY-NC-SA 3.0 DE",
   "private": true,
   "ignore": [
