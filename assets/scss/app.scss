@@ -3,11 +3,11 @@
 @import "variables";
 
 // ===== FOUNDATION =====
-// overwrite foundation settings
-@import "myfoundation";
-
 // normalize
 @import "normalize";
+
+// overwrite foundation settings
+@import "myfoundation";
 
 
 // Behold, here are all the Foundation components.
