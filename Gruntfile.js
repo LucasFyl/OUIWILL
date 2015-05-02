@@ -162,7 +162,7 @@ module.exports = function(grunt) {
     processhtml: {
       site: {
         files: {
-         'dist/site/snippets/page-footer.php': ['site/snippets/page-footer.php']
+         'dist/site/snippets/footer.php': ['site/snippets/footer.php']
         },
       },
     },
