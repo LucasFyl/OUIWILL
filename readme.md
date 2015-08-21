@@ -1,15 +1,9 @@
-# Kirby **♥** Foundation, Fontawesome & Grunt
-
-This ist the [kirby-starterkit](https://github.com/getkirby/starterkit) with a fully functional [grunt-script](http://gruntjs.com), [Fontawesome](http://fortawesome.github.io/Font-Awesome/) as Iconfont and [foundation](http://foundation.zurb.com) as CSS-Framework.
 
 ## How to use:
 
 ```
-git clone --recursive git@github.com:ausminternet/kirby-grunt-foundation.git
-cd kirby-grunt-foundation
-npm install
-bower install
-grunt build
+tbd
+
 ```
 
 ## Grunt tasks:

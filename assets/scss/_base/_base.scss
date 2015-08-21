@@ -1,0 +1,49 @@
+/**
+ * Base styles
+ */
+html {
+    font-family: $base-font;
+    font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background-color: $background-color;
+  color: $color;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+@include selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.no-bullet,
+%no-bullet {
+    list-style: none;
+}
+
+ul {
+    &.no-bullet {
+        @extend %no-bullet;
+    }
+}
+
+/* Misc ---------------------- */
+.hide,
+%hide {
+    display: none;
+}
+
+// When we want the last column to fill in the remainder of the row
+.fill-remainder,
+%fill-remainder {
+    float: none;
+    overflow: hidden;
+}
