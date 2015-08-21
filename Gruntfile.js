@@ -3,6 +3,12 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    //=== Init project
+    project: {
+        app: '<%= _.slugify(appname) %>',
+        assets: 'assets/',
+        scss: ['<%= project.assets %>scss/app.scss']
+    },
 
     //=== include all bowerlibs
     bower_concat: {
@@ -50,16 +56,25 @@ module.exports = function(grunt) {
     //=== compile scss
 
     sass: {
-      options: {
-          sourcemap: true,
-          outputStyle: 'compressed',
-          includePaths: ['bower_components/foundation/scss'],
+        dev: {
+            options: {
+                expand: true,
+                sourcemap: true,
+                outputStyle: 'compressed',
+            },
+            files: {
+                '<%= project.assets %>css/app.css': '<%= project.scss %>'
+            }
         },
-      app: {
-        files: {
-          'assets/css/app.css' : 'assets/scss/app.scss'
+        build: {
+            options: {
+                style: 'nested',
+                precision: 5
+            },
+            files: {
+                '<%= project.assets %>css/app.css': '<%= project.scss %>'
+            }
         }
-      }
     },
 
     //=== add browser prefixes
@@ -96,7 +111,8 @@ module.exports = function(grunt) {
     // grunt-watch will monitor the projects files
     watch: {
       scss: {
-        files: 'assets/scss/*.scss',
+        files: '<%= project.assets %>scss/{,**/}*.scss',
+        expand: true,
         tasks: 'build-sass',
       },
       js: {
@@ -184,7 +200,7 @@ module.exports = function(grunt) {
 
   // build app css
   grunt.registerTask('build-sass', [
-    'sass:app',
+    'sass:dev',
     'autoprefixer:app',
     'cssmin:app',
   ]);
