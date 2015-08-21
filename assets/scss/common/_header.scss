@@ -1,15 +1,31 @@
 $header-bg: #000000;
 $header-color: #ffffff;
 
-header {
+header.black {
 	height: 7.8rem;
 	background-color: $header-bg;
 	
+	.wrapper {
+		@include outer-container;
+	}
+
+	a {text-decoration: none;}
+
+	a.logo {
+		// display: inline-block;
+		@include span-columns(2);
+		color: $header-color;
+		font-size: 1.2rem;
+	}
+	
 	nav {
+		@include span-columns(5);
+		float: right;
 		ul {
 			padding: 0;
 			margin: 0;
 			li {
+				display: inline-block;
 				a {
 					color: $header-color !important;
 					font-size: 1.2rem;
@@ -18,3 +34,6 @@ header {
 		}
 	}
 }
+	// @include hidpi(1.5) {
+	// 		width: 2200px;
+	// 	}

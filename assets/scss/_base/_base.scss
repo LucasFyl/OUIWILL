@@ -12,6 +12,10 @@ body {
   color: $color;
 }
 
+main {
+  @include outer-container;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

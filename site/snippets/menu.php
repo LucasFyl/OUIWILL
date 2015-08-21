@@ -1,4 +1,4 @@
-<nav role="navigation">
+<nav>
 
   <ul class="cf no-bullet">
     <?php foreach($pages->visible() as $p): ?>

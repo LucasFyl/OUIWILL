@@ -5,7 +5,10 @@
  */
 $gutter: 0.3em;
 $border-box-sizing: true;
-$grid-columns: 12;
-$max-width: none;
-$visual-grid: false;
-$visual-grid-color: darken(#EFF7FB, 10%);
+$grid-columns: 12 !default;
+$max-width: em(2200);
+// $max-width: none;
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
