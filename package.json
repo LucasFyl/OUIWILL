@@ -1,9 +1,9 @@
 {
-  "name": "kirby-grunt-foundation",
+  "name": "OUIWILL",
   "version": "1.0.0",
-  "description": "This ist the kirby-starterkit with a fully functional grunt-script, Fontawesome as Iconfont and foundation as CSS-Framework.",
-  "author": "Jan Hofmann <jan.hofmann@dexite.de>",
-  "license": "CC BY-NC-SA 3.0 DE",
+  "description": "Insert description here",
+  "author": "Lucas Fayolle <lfayolle1@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
