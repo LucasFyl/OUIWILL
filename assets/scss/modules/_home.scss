@@ -148,10 +148,71 @@
 		&.news {
 			@include outer-container;
 
+			h3 {
+				margin-bottom: 14rem;
+			}
+
+			> div {
+				border-top: 2px solid #e5e5e5;
+
+				.single-news {
+					@include row;
+
+					border-bottom: 2px solid #e5e5e5;
+					height: 12.5rem;
+					line-height: 12.5rem;
+					position: relative;
+					padding: 0 5rem;
+					cursor: pointer;
+
+					.date {
+						@include span-columns(3);
+						font-size: 1.866rem;
+						color: $link-color;
+					}
+					.title {
+						@include span-columns(9);
+						color: black;
+						font-size: 2.133rem;
+						text-align: right;
+						@include transition(all 0.3s ease-in);
+
+					}
+					.chevron-right {
+						width: 0.9rem; height: 2rem;
+						background: url('../images/asset-chevron-right.png') no-repeat center center;
+						position: absolute; right: 5rem; top: 5.2rem;
+						display: inline-block;
+						vertical-align: middle;
+						opacity: 0;
+						@include transition(all 0.3s ease-in);
+
+					}
+					&:hover {
+						.title {
+							color: $link-color;
+							padding-right: 2rem;
+							@include transition(all 0.2s ease-out);
+						}
+						.chevron-right {
+							opacity: 1;
+							@include transition(all 0.2s ease-out);
+						}
+					}
+				}
+			}
 		}
 		&.carreers {
 			@include outer-container;
-
+			
+			p {
+				font-size: 2.8rem;
+				text-align: center; 
+			}
+			a.light-btn {
+				margin-bottom: 29rem;
+				margin-top: 6.5rem;
+			}
 		}
 	}
 

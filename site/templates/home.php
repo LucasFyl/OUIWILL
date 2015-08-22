@@ -100,8 +100,24 @@
 			<h3>news.</h3>
 
 			<div>
-				<div class="date">December 12, 2014</div>
-				<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will</div>
+				<div class="single-news">
+					<a href="#">
+						<div class="date">December 12, 2014</div>
+						<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
+					</a>
+				</div>
+				<div class="single-news">
+					<div class="date">December 12, 2014</div>
+					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
+				</div>
+				<div class="single-news">
+					<div class="date">December 12, 2014</div>
+					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
+				</div>
+				<div class="single-news">
+					<div class="date">December 12, 2014</div>
+					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
+				</div>
 			</div>
 		</section>
 
@@ -113,4 +129,5 @@
 		</section>
 	</main>
 
+<?php snippet('footer-home') ?>
 <?php snippet('footer') ?>
