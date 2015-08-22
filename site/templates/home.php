@@ -51,48 +51,21 @@
 			<h3>work.</h3>
 
 			<div class="row">
+				<?php foreach(page('work')->children()->visible()->limit(4) as $project): ?>
 				<div class="single-work">
-					<a href="<?php echo('link to work') ?>"></a>
-					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
+					<a href="<?php echo $project->url() ?>"></a>
+					<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
+					<img src="<?php echo $image->url() ?>" alt="#">
+        			<?php endif ?>
+
 					<div class="hover">
 						<div class="vert-cent">
-							<p>Web Design / Branding</p>
-							<h5>Only Watch</h5>
+							<p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
+							<h5><?php echo $project->title()->html() ?></h5>
 						</div>
 					</div>
 				</div>
-				<div class="single-work">
-					<a href="<?php echo('link to work') ?>"></a>
-					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
-					<div class="hover">
-						<div class="vert-cent">
-							<p>Web Design / Branding</p>
-							<h5>Only Watch</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="single-work">
-					<a href="<?php echo('link to work') ?>"></a>
-					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
-					<div class="hover">
-						<div class="vert-cent">
-							<p>Web Design / Branding</p>
-							<h5>Only Watch</h5>
-						</div>
-					</div>
-				</div>
-				<div class="single-work">
-					<a href="<?php echo('link to work') ?>"></a>
-					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
-					<div class="hover">
-						<div class="vert-cent">
-							<p>Web Design / Branding</p>
-							<h5>Only Watch</h5>
-						</div>
-					</div>
-				</div>
+      			<?php endforeach ?>
 			</div>
 		</section>
 
