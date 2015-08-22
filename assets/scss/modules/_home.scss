@@ -1,5 +1,5 @@
 .landing.home {
-	background: url("../images/background-landing-home.jpg") no-repeat center center;
+	background: url("../images/background-landing-home@2x.jpg") no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 
@@ -61,8 +61,14 @@
 			padding: 20rem 0;
 			@include row;
 			div {
-				@include span-columns(6);
+				@include span-columns(7);
+				padding-right: 3rem;
 				@include omega;
+
+				@include media(max-width 1440px, 12) {
+					@include span-columns(10);
+					@include shift(1);
+				}
 
 				h2 {
 					font-family: $font-med;
@@ -73,13 +79,27 @@
 					font-family: $base-font;
 					margin-top: 0;
 					font-size: 2.8rem;
+					line-height: 5.3rem;
+					word-wrap: nowrap;	
 				}
 			}
 		}
 		&.showreel {
+			position: relative;
 			img {
 				margin: 0 auto;
 				max-width: 100%;
+			}
+
+			h2 {
+				position: absolute;
+				width: 100%; text-align: center;
+				color: #fff;
+				font-family: $font-med;
+				text-transform: uppercase;
+				font-size: 5.33rem;
+				letter-spacing: 2.4rem;
+				margin-top: 29.5rem;
 			}
 
 		}
