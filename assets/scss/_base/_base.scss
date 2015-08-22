@@ -58,3 +58,18 @@ ul {
   top: 50%;
   @include transform(translateY(-50%));
 }
+
+.light-btn,
+%light-btn {
+  display: inline-block;
+  line-height: 6rem;
+  font-size: 2.166rem;
+  padding: 0 3rem;
+  border: 2px solid $golden;
+  color: $golden;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  left: 50%; 
+  @include transform(translateX(-50%));
+}

@@ -1,10 +1,4 @@
-  <footer class="cf">
 
-    <div class="copyright">
-      <?php echo $site->copyright()->kirbytext() ?>
-    </div>
-
-  </footer>
 
 <?= js('assets/js/vendors.min.js') ?>
 <?= js('assets/js/app.min.js') ?>
