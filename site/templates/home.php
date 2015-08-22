@@ -1,27 +1,29 @@
 <?php snippet('head') ?>
 
-	<section class="landing">
+	<section class="landing home">
 		<header>
 			<a href="<?php $site->url() ?>" class="logo">oui will</a>
 			<p>precisely what you imagined your brand could be, only more so. ™</p>
 		</header>
 		
 		<div class="vertical-center">
-			<h1>Oui Will</h1>third biggest world watch events <br/>raising money to fight muscular dystrophy partnered <br/>with oui will for their new branding and website  
+			<h1 class="hide-text">Oui Will</h1>
+			<p><span>Oui Will</span> third biggest world watch events <br/>raising money to fight muscular dystrophy partnered <br/>with oui will for their new branding and website</p>
+			<a href="#" class="arrow-down"></a>
 		</div>
-		<a href="#" class="arrow-down"><i class="fa fa-arrow-down"></i></a>
 	</section>
 
 
 	<main class="main" id="home">
-		<section>
+		<section class="intro">
 			<div>
 				<h2>oui will is a full-service, integrated creative agency.</h2>
 				<p>we combine the european esthetic and the american yes we can. we create experiences in a digital world, helping people in their decisions for a brand, products and services.</p>
 			</div>
 		</section>
 
-		<section>
+		<section class="showreel">
+			<img src="<?php echo url('/assets/images/placeholder-showreel.jpg'); ?>" alt="#">
 			<!-- showreel -->
 		</section>
 
@@ -29,19 +31,19 @@
 			<h3>clients.</h3>
 
 			<div class="row">
-				<div class="two"><img src="#" alt="Audi"></div>
-				<div class="two"><img src="#" alt="Beaming"></div>
-				<div class="two"><img src="#" alt="Nixon"></div>
-				<div class="two"><img src="#" alt="Ralph Lauren"></div>
-				<div class="two"><img src="#" alt="DuChâteau"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-audi.png'); ?>" alt="Audi"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-beaming.png'); ?>" alt="Beaming"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-nixon.png'); ?>" alt="Nixon"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-ralphlauren.png'); ?>" alt="Ralph Lauren"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-duchateau.png'); ?>" alt="DuChâteau"></div>
 			</div>
 			<hr>
 			<div class="row">
-				<div class="two"><img src="#" alt="fendly"></div>
-				<div class="two"><img src="#" alt="360 Zebra"></div>
-				<div class="two"><img src="#" alt="Lincoln"></div>
-				<div class="two"><img src="#" alt="diptyque Paris"></div>
-				<div class="two"><img src="#" alt="Only Watch"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-fendly.png'); ?>" alt="fendly"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-360zebra.png'); ?>" alt="360 Zebra"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-lincoln.png'); ?>" alt="Lincoln"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-diptyque.png'); ?>" alt="diptyque Paris"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-onlywatch.png'); ?>" alt="Only Watch"></div>
 			</div>
 		</section>
 
@@ -49,34 +51,46 @@
 			<h3>work.</h3>
 
 			<div class="row">
-				<div class="six">
-					<img src="#" alt="#">
+				<div class="single-work">
+					<a href="<?php echo('link to work') ?>"></a>
+					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
 					<div class="hover">
-						<p>Web Design / Branding</p>
-						<h5>Only Watch</h5>
+						<div class="vert-cent">
+							<p>Web Design / Branding</p>
+							<h5>Only Watch</h5>
+						</div>
 					</div>
 				</div>
-				<div class="six">
-					<img src="#" alt="#">
+				<div class="single-work">
+					<a href="<?php echo('link to work') ?>"></a>
+					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
 					<div class="hover">
-						<p>Web Design / Branding</p>
-						<h5>Only Watch</h5>
+						<div class="vert-cent">
+							<p>Web Design / Branding</p>
+							<h5>Only Watch</h5>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="six">
-					<img src="#" alt="#">
+				<div class="single-work">
+					<a href="<?php echo('link to work') ?>"></a>
+					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
 					<div class="hover">
-						<p>Web Design / Branding</p>
-						<h5>Only Watch</h5>
+						<div class="vert-cent">
+							<p>Web Design / Branding</p>
+							<h5>Only Watch</h5>
+						</div>
 					</div>
 				</div>
-				<div class="six">
-					<img src="#" alt="#">
+				<div class="single-work">
+					<a href="<?php echo('link to work') ?>"></a>
+					<img src="<?php echo url('/assets/images/placeholder-work.jpg'); ?>" alt="#">
 					<div class="hover">
-						<p>Web Design / Branding</p>
-						<h5>Only Watch</h5>
+						<div class="vert-cent">
+							<p>Web Design / Branding</p>
+							<h5>Only Watch</h5>
+						</div>
 					</div>
 				</div>
 			</div>

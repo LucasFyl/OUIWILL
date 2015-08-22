@@ -12,9 +12,9 @@ body {
   color: $color;
 }
 
-main {
-  @include outer-container;
-}
+// main {
+//   @include outer-container;
+// }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -50,4 +50,11 @@ ul {
 %fill-remainder {
     float: none;
     overflow: hidden;
+}
+
+.vertical-center,
+%vertical-center {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
 }
