@@ -1,7 +1,7 @@
-$header-bg: #000000;
-$header-color: #ffffff;
 
 header.black {
+	$header-bg: #000000;
+	$header-color: #ffffff;
 	height: 7.8rem;
 	background-color: $header-bg;
 	
@@ -12,10 +12,11 @@ header.black {
 	a {text-decoration: none;}
 
 	a.logo {
-		// display: inline-block;
-		@include span-columns(2);
+		display: inline-block;
+		vertical-align: top;
 		color: $header-color;
 		font-size: 1.2rem;
+		float: left;
 	}
 	
 	nav {
@@ -32,5 +33,20 @@ header.black {
 				}
 			}
 		}
+	}
+}
+
+header {
+	.trigger {
+		font-size: 1.8rem;
+		height: 1.8rem;
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		cursor: pointer;
+		color: white;
+	}
+	.menu {
+		display: none;
 	}
 }

@@ -1,4 +1,4 @@
-<footer class="home">
+<footer class="big">
 	<div class="brand">
 		<h1>oui will</h1>
 		<h2 class="baseline">precisely what you imagined your brand could be only more so. ™</h2>
@@ -15,7 +15,15 @@
 		<hr>
 		<div>
 			<div>© Oui Will - All right reserved</div>
-			<?php snippet('menu') ?>
+			<nav>
+				<ul class="cf no-bullet">
+					<?php foreach($pages->visible() as $p): ?>
+					<li>
+						<a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+					</li>
+					<?php endforeach ?>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </footer>

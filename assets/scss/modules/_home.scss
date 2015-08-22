@@ -7,13 +7,6 @@
 		@include outer-container;
 		padding-top: 9.5rem;
 
-		a {
-			display: block;
-			font-size: 2.2rem;
-			font-weight: bold;
-			text-decoration: none;
-			color: white;
-		}
 		p {
 			font-size: 1.75rem;
 			margin-top: 0;
@@ -34,9 +27,11 @@
 		}
 		p {
 			@include span-columns(10);
-
-			font-size: 4.5rem;
-			color: #c9c9c9;
+			
+			font-family: $font-book;
+			font-size: 4.3rem;
+			line-height: 6rem;
+			color: white;
 			margin-top: 0;
 			margin-bottom: 6rem;
 			span {
@@ -136,8 +131,27 @@
 					width: calc(100% / 5);
 					display: block;
 					float: left;
+					position: relative;
+
 					img {
 						width: 100%;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						width: 100%; height: 100%;
+						z-index: -1;
+						background: url('../images/asset-home-clients-hover.png') no-repeat center center;
+						background-size:98%;
+						top: 0; left: 0;	
+						opacity: 0;
+						@include transition(opacity 0.25s ease-in);
+					}
+					&:hover {
+						&:before {
+							opacity: 1;
+							@include transition(opacity 0.25s ease-out);
+						}
 					}
 				}
 			}
@@ -225,13 +239,13 @@
 
 					.date {
 						font-family: $font-book;
-						@include span-columns(3);
+						@include span-columns(2);
 						font-size: 1.866rem;
 						color: $link-color;
 					}
 					.title {
 						font-family: $font-Stmed;
-						@include span-columns(9);
+						@include span-columns(10);
 						color: black;
 						font-size: 2.133rem;
 						text-align: right;
@@ -245,18 +259,18 @@
 						display: inline-block;
 						vertical-align: middle;
 						opacity: 0;
-						@include transition(all 0.3s ease-in);
+						@include transition(all 0.5s ease-in);
 						@include transform(scale(0.85));
 					}
 					&:hover {
 						.title {
 							color: $link-color;
 							padding-right: 2rem;
-							@include transition(all 0.2s ease-out);
+							@include transition(all 0.4s ease-out);
 						}
 						.chevron-right {
 							opacity: 1;
-							@include transition(all 0.2s ease-out);
+							@include transition(all 0.4s ease-out);
 						}
 					}
 				}
@@ -272,82 +286,6 @@
 			a.light-btn {
 				margin-bottom: 29rem;
 				margin-top: 6.5rem;
-			}
-		}
-	}
-}
-footer.home {
-	background: black;
-	width: 100%;
-	height: 100%;
-
-	.brand {
-		@include span-columns(6);
-		@include shift(3);
-		h1 {
-			color: white;
-			text-align: center;
-			margin-top: 12.5rem;
-			margin-bottom: 3rem;
-		}
-		.baseline {
-			color: #999999;
-			font-size: 1.733rem;
-			text-align: center;
-		}
-		.social {
-			display: inline-block;
-			position: relative;
-			left: 50%; 
-			@include transform(translateX(-50%));
-			margin: 5.5rem 0 5.5rem;
-			ul {
-				list-style: none;
-				padding: 0;
-				li {
-					display: inline-block;
-					width: 3rem;
-					margin-right: 2.5rem;
-					a {
-						text-decoration: none;
-						font-size: 1.8rem;
-						color: #d2d2d2;
-					}
-				}
-			}
-		}
-	}
-	.outer-container {
-		@include outer-container;
-		hr {
-			border: 1px solid #363636;
-		}
-		> div {
-			margin-bottom: 6.5rem;
-			> div {
-				@include span-columns(3);
-				font-size: 1.6rem;
-			}
-			nav {
-				@include span-columns(9);
-				ul {
-					list-style-type: none;
-					padding: 0; margin: 0;
-					float: right;
-					display: inline-block;
-					vertical-align: middle;
-					li {
-						display: inline-block;
-						margin-left: 2.5rem;
-						&:first-child {
-							margin-left: 0;
-						}
-						a {
-							font-size: 1.6rem;
-							text-decoration: none;
-						}
-					}
-				}
 			}
 		}
 	}
