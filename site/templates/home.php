@@ -3,7 +3,7 @@
 	<section class="landing home">
 		<header>
 			<a href="<?php $site->url() ?>" class="logo">oui will</a>
-			<p>precisely what you imagined your brand could be, only more so. ™</p>
+			<p class="baseline">precisely what you imagined your brand could be, only more so. ™</p>
 		</header>
 		
 		<div class="vertical-center">

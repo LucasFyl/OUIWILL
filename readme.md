@@ -5,9 +5,9 @@ We combine the european esthetic and the american yes we can. we create experien
 
 ## What's inside
 
-* Kirby - file-based CMS (http://getkirby.com/)
-* Bourbon & Neat - scss mixin and semantic grid framework (http://bourbon.io/ & http://neat.bourbon.io/)
-* Grunt & Bower for pckg management and dev environement
+* Kirby - a file-based CMS (http://getkirby.com/)
+* Bourbon & Neat - for scss mixin and semantic grid framework (http://bourbon.io/ & http://neat.bourbon.io/)
+* Grunt & Bower - for pckg management and dev environement
 +
 * Need to use MAMP to set up the local environement
 
