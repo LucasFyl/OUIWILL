@@ -65,11 +65,12 @@
 				@include omega;
 
 				h2 {
+					font-family: $font-med;
 					font-size: 2.8rem;
 					// margin: 0;
 				}
 				p {
-
+					font-family: $base-font;
 					margin-top: 0;
 					font-size: 2.8rem;
 				}
@@ -114,7 +115,7 @@
 				img {
 					width: 100%;
 				}
-				
+
 				.hover {
 					position: absolute;
 					width: 100%;
