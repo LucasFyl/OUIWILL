@@ -1,33 +1,33 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
   <main class="main" role="main">
 
-    <h1><?php echo $page->title()->html() ?></h1>
-
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
     <div class="text">
+      <h1><?php echo $page->title()->html() ?></h1>
       <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
     </div>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
+    <hr>
+
+    <h2>Latest projects</h2>
+
+    <ul class="">
+      <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
+      <li>
+        <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
+        <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
+        <!--<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
+        <a href="<?php echo $project->url() ?>">
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+        </a>
+        <?php endif ?>-->
+      </li>
+      <?php endforeach ?>
+    </ul>
+
 
   </main>
 
+<?php snippet('footer-home') ?>
 <?php snippet('footer') ?>

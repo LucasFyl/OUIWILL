@@ -24,8 +24,9 @@ body {
  * Customize the background color to match your design.
  */
 @include selection {
-    background: #b3d4fc;
+    background: #000;
     text-shadow: none;
+    color: white;
 }
 
 .no-bullet,

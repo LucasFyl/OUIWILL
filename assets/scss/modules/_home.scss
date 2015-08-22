@@ -107,8 +107,14 @@
 				position: relative;
 				display: block;
 				width: 50%;
+				max-height: 40rem;
 				float: left;
 				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+				
 				.hover {
 					position: absolute;
 					width: 100%;
