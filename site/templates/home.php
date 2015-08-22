@@ -6,10 +6,11 @@
 			<p class="baseline">precisely what you imagined your brand could be, only more so. ™</p>
 		</header>
 		
-		<div class="vertical-center">
-			<h1 class="hide-text">Oui Will</h1>
-			<p><span>Oui Will</span> third biggest world watch events <br/>raising money to fight muscular dystrophy partnered <br/>with oui will for their new branding and website</p>
-			<a href="#" class="arrow-down"></a>
+		<div class="vertical-center project-infos">
+			<h2>Only Watch</h2>
+			<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+			<span class="clearfix"></span>
+			<a href="#" class="light-btn">see case study</a>
 		</div>
 	</section>
 
@@ -23,7 +24,7 @@
 		</section>
 
 		<section class="showreel">
-			<h2>showreel</h2>
+			<h2>showreel 2015</h2>
 			<a href="#" class="play-btn"></a>
 			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" alt="#">
 			<!-- showreel -->
@@ -100,7 +101,7 @@
 			<h3>carreers.</h3>
 
 			<p>Ready to deliver excellence? That’s excellent!</p>
-			<a href="#" class='light-btn'>drop us a line</a>
+			<a href="#" class='light-btn golden centered'>drop us a line</a>
 		</section>
 	</main>
 
