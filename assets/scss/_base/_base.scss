@@ -62,15 +62,32 @@ ul {
 
 .light-btn,
 %light-btn {
+  position: relative;
+  z-index: 9;
+
   display: inline-block;
   line-height: 6rem;
-  font-size: 2.166rem;
-  padding: 0 3rem;
-  border: 2px solid $golden;
-  color: $golden;
+  font-size: 1.8rem;
+  letter-spacing: .15rem;
+  padding: 0 4rem;
+  border-radius: 3rem;
+  font-family: $font-med;
+  text-transform: uppercase;
+  
+  border: 2px solid white;
   text-align: center;
   text-decoration: none;
-  position: relative;
-  left: 50%; 
-  @include transform(translateX(-50%));
+  &.golden {
+    border-color: $golden;
+    color: $golden;
+  }
+  &.centered {
+    left: 50%; 
+    @include transform(translateX(-50%));
+  }
+}
+
+.clearfix,
+%clearfix {
+  @include clearfix;
 }

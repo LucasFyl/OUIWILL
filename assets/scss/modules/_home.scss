@@ -1,5 +1,5 @@
 .landing.home {
-	background: url("../images/background-landing-home@2x.jpg") no-repeat center center;
+	background: url("../images/background-landing-onlywatch@2x.jpg") no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 
@@ -21,27 +21,32 @@
 		}
 	}
 
-	.vertical-center{
+	.project-infos {
 		@include outer-container;
+		@extend .vertical-center;
 		// margin-top: 20.5rem;
-		h1 {
-			@include hide-text;
+		h2 {
+			color: #d3d3d3;
 			margin: 0;
+			font-size: 2.8rem;
+			text-transform: uppercase;
+			margin-bottom: 3rem;
 		}
 		p {
+			@include span-columns(10);
+
 			font-size: 4.5rem;
 			color: #c9c9c9;
+			margin-top: 0;
+			margin-bottom: 6rem;
 			span {
 				color: white;
 			}
 		}
-		a.arrow-down {
-			width: 1.9rem;
-			height: 1rem;
-			display: block;
-			background: url("../images/asset-chevron-down.png") no-repeat center center;
-			margin-left: 3.3rem;
-			margin-top: 22rem;
+		a.light-btn {
+
+			line-height: 5rem;
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -50,6 +55,7 @@
 	section {
 
 		h3 {
+			font-family: $font-med;
 			text-align: center;
 			text-transform: uppercase;
 			font-size: 2.1rem;
@@ -93,13 +99,33 @@
 
 			h2 {
 				position: absolute;
+				z-index: 9;
 				width: 100%; text-align: center;
 				color: #fff;
 				font-family: $font-med;
 				text-transform: uppercase;
 				font-size: 5.33rem;
 				letter-spacing: 2.4rem;
-				margin-top: 29.5rem;
+				margin-top: 15%;
+			}
+
+			a.play-btn {
+				background: url('../images/asset-chevron-right-play.png') no-repeat;
+				background-position: 51% 49% ;
+				@include size(9rem);
+				@include box-sizing(border-box);
+				display: block;
+				border-radius: 100%;
+				border: 3px solid rgba(255, 255, 255, 0.3);
+				position: absolute;
+				z-index: 9;
+				left: 50%; margin-left: -4.5rem;
+				top:50%; margin-top: 7rem;
+				@include transition(all 0.25s ease);
+				&:hover {
+					@include transition(all 0.25s ease);
+					@include transform(scale(1.1));
+				}
 			}
 
 		}
@@ -128,7 +154,8 @@
 				position: relative;
 				display: block;
 				width: 50%;
-				max-height: 40rem;
+				// max-height: 50vh;
+				height: 100%;
 				float: left;
 				overflow: hidden;
 
@@ -150,12 +177,16 @@
 						@extend .vertical-center;
 						text-align: center;
 						p {
+							font-family: $font-Stmed;
+							letter-spacing: .1rem;
 							margin: 0;
 							font-size: 1.85rem;
 							color: #fff;
 							margin-bottom: 1.8rem;
 						}
 						h5 {
+							font-family: $font-Stmed;
+							letter-spacing: .1rem;
 							margin: 0;
 							font-size: 1.85rem;
 							color: $golden;
@@ -193,11 +224,13 @@
 					cursor: pointer;
 
 					.date {
+						font-family: $font-book;
 						@include span-columns(3);
 						font-size: 1.866rem;
 						color: $link-color;
 					}
 					.title {
+						font-family: $font-Stmed;
 						@include span-columns(9);
 						color: black;
 						font-size: 2.133rem;
@@ -213,7 +246,7 @@
 						vertical-align: middle;
 						opacity: 0;
 						@include transition(all 0.3s ease-in);
-
+						@include transform(scale(0.85));
 					}
 					&:hover {
 						.title {
