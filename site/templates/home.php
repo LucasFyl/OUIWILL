@@ -23,7 +23,9 @@
 		</section>
 
 		<section class="showreel">
-			<img src="<?php echo url('/assets/images/placeholder-showreel.jpg'); ?>" alt="#">
+			<h2>showreel</h2>
+			<a href="#" class="play-btn"></a>
+			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" alt="#">
 			<!-- showreel -->
 		</section>
 
