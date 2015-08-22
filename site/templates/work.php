@@ -1,31 +1,32 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main class="main" id="work">
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
+    <div class="filterpart">
+      <p>Filter by: <a href="#" class="active">all project</a><a href="#">digital</a><a href="#">video</a><a href="#">photography</a></p>
+      <p><a href="#">try random <span></span></a></p>
     </div>
 
-    <hr>
+    <section class="showcase">
+      <?php foreach(page('work')->children()->visible()->limit(11) as $project): ?>
+      <div class="single-work">
+        <a href="<?php echo $project->url() ?>"></a>
+        <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
+        <img src="<?php echo $image->url() ?>" alt="#">
+        <?php endif ?>
 
-    <h2>Latest projects</h2>
-
-    <ul class="">
-      <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
-      <li>
-        <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
-        <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
-        <!--<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-        <a href="<?php echo $project->url() ?>">
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
-        </a>
-        <?php endif ?>-->
-      </li>
+        <div class="hover">
+          <div class="vert-cent">
+            <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
+            <h5><?php echo $project->title()->html() ?></h5>
+          </div>
+        </div>
+      </div>
       <?php endforeach ?>
-    </ul>
-
+    </section>
+    
+    <?php snippet('carreers'); ?>
 
   </main>
 

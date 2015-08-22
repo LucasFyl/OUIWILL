@@ -1,0 +1,20 @@
+section.carreers {
+	@include outer-container;
+	
+	h3 {
+		font-family: $font-med;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2.1rem;
+		margin-top: 27rem;
+	}
+
+	p {
+		font-size: 2.8rem;
+		text-align: center; 
+	}
+	a.light-btn {
+		margin-bottom: 29rem;
+		margin-top: 6.5rem;
+	}
+}

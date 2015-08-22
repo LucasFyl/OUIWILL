@@ -27,10 +27,13 @@
    Put them inside "common" folder ***********************/
 @import "common/header";
 @import "common/footer";
+@import "common/project";
+@import "common/carreers";
 
 /* Module styles (individual page styles)
    Put them inside "modules" folder ***********************/
 @import "modules/home";
+@import "modules/work";
 
 
 /* Plugin styles
