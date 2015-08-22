@@ -63,6 +63,7 @@ ul {
 .light-btn,
 %light-btn {
   position: relative;
+  overflow: hidden;
   z-index: 9;
 
   display: inline-block;
@@ -80,10 +81,52 @@ ul {
   &.golden {
     border-color: $golden;
     color: $golden;
+    &:hover {
+      color: white;
+    }
+    &:after {
+      background: $golden;
+    }
+  }
+  &.grey {
+      border-color: #bfbfbf;
+      color: #bfbfbf;
+      &:hover {
+        color: black;
+      }
+      &:after {
+        background: #bfbfbf;
+      }
   }
   &.centered {
     left: 50%; 
     @include transform(translateX(-50%));
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    @include transition(all 0.3s ease-in);
+    
+    // width: 101%;
+    // height: 0;
+    // top: 50%;
+    // left: 50%;
+    // @include transform(translateX(-50%) translateY(-50%));
+
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+      // height: 100%;
+
+      width: 100%;
+    }
   }
 }
 

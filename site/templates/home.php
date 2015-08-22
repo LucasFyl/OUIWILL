@@ -2,15 +2,15 @@
 
 	<section class="landing home">
 		<header>
-			<a href="<?php $site->url() ?>" class="logo">oui will</a>
-			<p class="baseline">precisely what you imagined your brand could be, only more so. ™</p>
+			<a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
+		    <?php snippet('menu') ?>
 		</header>
 		
 		<div class="vertical-center project-infos">
 			<h2>Only Watch</h2>
 			<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
 			<span class="clearfix"></span>
-			<a href="#" class="light-btn">see case study</a>
+			<a href="#" class="light-btn grey">see case study</a>
 		</div>
 	</section>
 
@@ -105,5 +105,5 @@
 		</section>
 	</main>
 
-<?php snippet('footer-home') ?>
+<?php snippet('footer-big') ?>
 <?php snippet('footer') ?>

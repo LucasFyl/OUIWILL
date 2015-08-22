@@ -29,5 +29,5 @@
 
   </main>
 
-<?php snippet('footer-home') ?>
+<?php snippet('footer-big') ?>
 <?php snippet('footer') ?>
