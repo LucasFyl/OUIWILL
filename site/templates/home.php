@@ -59,7 +59,7 @@
 					<a href="<?php echo $project->url() ?>"></a>
 					<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
 					<img src="<?php echo $image->url() ?>" alt="#">
-        			<?php endif ?>
+					<?php endif ?>
 
 					<div class="hover">
 						<div class="vert-cent">
@@ -97,12 +97,7 @@
 			</div>
 		</section>
 
-		<section class="carreers">
-			<h3>carreers.</h3>
-
-			<p>Ready to deliver excellence? That’s excellent!</p>
-			<a href="#" class='light-btn golden centered'>drop us a line</a>
-		</section>
+		<?php snippet('carreers'); ?>
 	</main>
 
 <?php snippet('footer-big') ?>
