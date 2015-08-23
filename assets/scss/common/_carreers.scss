@@ -1,5 +1,7 @@
 section.carreers {
 	@include outer-container;
+	overflow: auto;
+	width: 100%;
 	
 	h3 {
 		font-family: $font-med;

@@ -9,7 +9,8 @@
     </div>
 
     <section class="showcase">
-      <?php foreach(page('work')->children()->visible()->limit(11) as $project): ?>
+    <!-- Add limit 11 when time -->
+      <?php foreach(page('work')->children()->visible()->limit(3) as $project): ?>
       <div class="single-work">
         <a href="<?php echo $project->url() ?>"></a>
         <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
@@ -24,6 +25,9 @@
         </div>
       </div>
       <?php endforeach ?>
+      <div class="single-work last">
+        <p>we can show you more work, <br/>Just stop by!</p>
+      </div>
     </section>
     
     <?php snippet('carreers'); ?>
