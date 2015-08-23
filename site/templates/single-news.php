@@ -65,6 +65,25 @@
       </figure>
       <?php endforeach ?>
     </div>
+    <div class="clearfix"></div>
+
+    <div class="related">
+      <h3>All news.</h3>
+      <div>
+        <?php foreach(page('news')->children()->visible()->limit(4) as $news): ?>
+        <div class="single-news">
+          <a href="<?php echo $news->url() ?>">
+            <div class="date">
+              <time datetime="<?php echo $news->date('c') ?>">
+              <?php echo $news->date('d/m/Y') ?>
+            </time>
+            </div>
+            <div class="title"><?php echo $news->title()->html() ?><span class="chevron-right"></span></div>
+          </a>
+        </div>
+        <?php endforeach ?>
+      </div>
+    </div>
 
     <nav class="nextprev cf" role="navigation">
       <?php if($prev = $page->prevVisible()): ?>
