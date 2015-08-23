@@ -1,5 +1,5 @@
 <?php snippet('head') ?>
-<?php snippet('header') ?>
+<?php snippet('header-black') ?>
 
   <main class="main" id="work">
 
