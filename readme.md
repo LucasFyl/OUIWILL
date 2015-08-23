@@ -17,15 +17,14 @@ We create experiences in a digital world, helping people in their decisions for 
 
 * Open terminal
 
-```
-cd /Applications/MAMP/htdocs
-git clone --recursive https://github.com/LucasFyl/OUIWILL.git
-cd OUIWILL
-npm install grunt-sass -save -save-dev
-npm install
-bower install
-grunt build
-```
+* ``` cd /Applications/MAMP/htdocs ```
+* ``` git clone --recursive https://github.com/LucasFyl/OUIWILL.git ```
+* ``` cd OUIWILL ```
+* ``` npm install grunt-sass -save -save-dev ```
+* ``` npm install ```
+* ``` bower install ```
+* ``` grunt build ```
+
 * Run MAMP.
 
 * The site is now accesible localy.
