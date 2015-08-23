@@ -72,24 +72,18 @@
 			<h3>news.</h3>
 
 			<div>
-				<div class="single-news">
-					<a href="#">
-						<div class="date">December 12, 2014</div>
-						<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
-					</a>
-				</div>
-				<div class="single-news">
-					<div class="date">December 12, 2014</div>
-					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
-				</div>
-				<div class="single-news">
-					<div class="date">December 12, 2014</div>
-					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
-				</div>
-				<div class="single-news">
-					<div class="date">December 12, 2014</div>
-					<div class="title">"A Model to Follow" : New Forrester Research Report on Oui Will<span class="chevron-right"></span></div>
-				</div>
+				<?php foreach(page('news')->children()->visible()->limit(4) as $news): ?>
+		    	<div class="single-news">
+		    		<a href="<?php echo $news->url() ?>">
+		    			<div class="date">
+		    				<time datetime="<?php echo $news->date('c') ?>">
+							  <?php echo $news->date('d/m/Y') ?>
+							</time>
+		    			</div>
+		    			<div class="title"><?php echo $news->title()->html() ?><span class="chevron-right"></span></div>
+		    		</a>
+		    	</div>
+		    	<?php endforeach ?>
 			</div>
 		</section>
 
