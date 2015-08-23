@@ -42,7 +42,7 @@
 		.chevron-right {
 			opacity: 1;
 			@include transition(all 0.25s ease-out);
-			@include transition-delay(0.3s);
+			@include transition-delay(0.15s);
 		}
 	}
 }
