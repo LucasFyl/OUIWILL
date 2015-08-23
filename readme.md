@@ -1,9 +1,9 @@
 # Oui Will 
 
-oui will is a full-service, integrated creative agency.
+Oui Will is a full-service, integrated creative agency.
 
 We combine the european esthetic and the american yes we can. 
-we create experiences in a digital world, helping people in their decisions for a brand, products and services.
+We create experiences in a digital world, helping people in their decisions for a brand, products and services.
 
 ## What's inside
 
@@ -15,7 +15,7 @@ we create experiences in a digital world, helping people in their decisions for 
 
 ## How to use:
 
-Open terminal
+* Open terminal
 
 ```
 cd /Applications/MAMP/htdocs
@@ -25,9 +25,10 @@ npm install grunt-sass -save -save-dev
 npm install
 bower install
 grunt build
-
 ```
-The site is now accesible localy.
+* Run MAMP.
+
+* The site is now accesible localy.
 
 Might need to update .htaccess if using MAMP instead of MAMP Pro. 
 
