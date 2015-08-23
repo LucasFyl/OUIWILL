@@ -1,7 +1,12 @@
 <?php snippet('head') ?>
 
 	<section class="landing home">
-		
+		<header>
+	    	<div>
+	    	 	<a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
+	    	 	<?php snippet('menu') ?>
+	    	</div>
+	    </header>
 		<div class="vertical-center project-infos">
 			<h2>Only Watch</h2>
 			<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
