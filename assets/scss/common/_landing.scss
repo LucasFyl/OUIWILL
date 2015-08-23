@@ -1,0 +1,48 @@
+.landing:not(.home) {
+	position: relative;
+	header {
+		position: absolute;
+		width: 100%;
+		z-index: 9;
+		top: 5.7rem;
+		
+		> div{
+			@include outer-container;
+			padding-left: 7.5rem;
+			padding-right: 7.5rem;
+			padding-bottom: 3.7rem;
+			border-bottom: 2px solid rgba(255,255,255, 0.2);
+		}
+	}
+	.h1, .h2 {
+		font-family: $font-med;
+		text-transform: uppercase;
+
+		position: absolute;
+		z-index: 9;
+		left: 58rem;
+	}
+	.h2 {
+		font-size: 5.3rem;
+		letter-spacing: 0.2rem;
+		color: white;
+		top: 43.7rem;
+	}
+	.h1 {
+		font-size: 2.667rem;
+		letter-spacing: 0.1rem;
+		color: white;
+		opacity: 0.6;
+		top: 51rem;
+	}
+	img {
+		max-width: 100%;
+	}
+	&.news {
+		.h2 {
+			line-height: 6.667rem;
+			top: 35.3rem;
+			max-width: 55%;
+		}
+	}
+}

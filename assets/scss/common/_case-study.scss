@@ -1,0 +1,62 @@
+.main.case-study {
+	@include outer-container;
+	padding-top: 13rem;
+
+	aside {
+		@include span-columns(3);
+
+		ul {
+			list-style-type: none;
+			margin-bottom: 4rem;
+			li {
+				font-family: $font-book;
+				font-size: 1.6rem;
+				line-height: 2.667rem;
+				color: #d0d0d0;
+				&:first-child {
+					font-family: $font-med;
+					color: #999999;
+					text-transform: uppercase;
+					font-size: 1.5rem;
+				}
+			}
+			&:last-child {
+				li a {
+					color: $golden;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.content {
+		@include span-columns(8);
+		float: right;
+		h3 {
+			font-family: $font-med;
+			font-size: 2.133rem;
+			color: $golden;
+			text-transform: uppercase;
+			margin-bottom: 6rem;
+		}
+		p {
+			font-family: $font-book;
+			font-size: 1.867rem;
+			line-height: 4rem;
+			color: #adadad;
+			margin-bottom: 5rem;
+			&:last-of-type {
+				margin-bottom: 13rem;
+			}
+		}
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	nav {
+		@include span-columns(12);
+	}
+}

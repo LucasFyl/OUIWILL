@@ -75,122 +75,30 @@
 
 
 //==============   Work Detail
-.landing.work {
-	position: relative;
-	header {
-		position: absolute;
-		width: 100%;
-		z-index: 9;
-		top: 5.7rem;
-		
-		> div{
-			@include outer-container;
-			padding-left: 7.5rem;
-			padding-right: 7.5rem;
-			padding-bottom: 3.7rem;
-			border-bottom: 2px solid rgba(255,255,255, 0.2);
-		}
-	}
-	h1, h2 {
-		font-family: $font-med;
-		text-transform: uppercase;
-
-		position: absolute;
-		z-index: 9;
-		left: 58rem;
-	}
-	h2 {
-		font-size: 5.3rem;
-		letter-spacing: 0.2rem;
-		color: white;
-		top: 43.7rem;
-	}
-	h1 {
-		font-size: 2.667rem;
-		letter-spacing: 0.1rem;
-		color: white;
-		opacity: 0.6;
-		top: 51rem;
-	}
-	img {
-		max-width: 100%;
-	}
-}
 .main#work-detail {
-	@include outer-container;
-	padding-top: 13rem;
+	figure {
+		position: relative;
+		margin: 0 0 30rem;
 
-	aside {
-		@include span-columns(3);
-
-		ul {
-			list-style-type: none;
-			margin-bottom: 4rem;
-			li {
-				font-family: $font-book;
-				font-size: 1.6rem;
-				line-height: 2.667rem;
-				color: #d0d0d0;
-				&:first-child {
-					font-family: $font-med;
-					color: #999999;
-					text-transform: uppercase;
-					font-size: 1.5rem;
-				}
-			}
-			&:last-child {
-				li a {
-					color: $golden;
-					text-decoration: none;
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
+		img {
+			width: 100%;
+			max-width: 100%;
+			-webkit-box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
+			-moz-box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
+			box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
+		}
+		&:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: 99.97%;
+			left: 0;
+			right: 0;
+			background: url(../images/asset-workdetail-shadow.png) top center no-repeat;
+			width: 100%;
+			height: 30rem;
+			background-size: 100%;
 		}
 	}
-	.project-content {
-		@include span-columns(8);
-		float: right;
-		h3 {
-			font-family: $font-med;
-			font-size: 2.133rem;
-			color: $golden;
-			text-transform: uppercase;
-		}
-		p {
-			font-size: 1.867rem;
-			line-height: 4rem;
-			&:last-of-type {
-				margin-bottom: 13rem;
-			}
-		}
-		figure {
-			position: relative;
-			margin: 0 0 30rem;
 
-			img {
-				width: 100%;
-				max-width: 100%;
-				-webkit-box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
-				-moz-box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
-				box-shadow: -5px 8px 40px -10px rgba(0,0,0,0.15);
-			}
-			&:after {
-				content: " ";
-				display: block;
-				position: absolute;
-				top: 99.97%;
-				left: 0;
-				right: 0;
-				background: url(../images/asset-workdetail-shadow.png) top center no-repeat;
-				width: 100%;
-				height: 30rem;
-				background-size: 100%;
-			}
-		}
-	}
-	nav {
-		@include span-columns(12);
-	}
 }
