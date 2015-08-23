@@ -18,9 +18,11 @@
     "fontawesome": "~4.2.0",
     "bourbon": "~4.2.4",
     "neat": "~1.7.2",
-    "gsap": "~1.17.0"
+    "gsap": "~1.17.0",
+    "jquery": "~2.1.4"
   },
   "dependencies": {
-    "gsap": "~1.17.0"
+    "gsap": "~1.17.0",
+    "jquery": "~2.1.4"
   }
 }
