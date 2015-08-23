@@ -30,11 +30,14 @@
 @import "common/project";
 @import "common/carreers";
 @import "common/news";
+@import "common/landing";
+@import "common/case-study";
 
 /* Module styles (individual page styles)
    Put them inside "modules" folder ***********************/
 @import "modules/home";
 @import "modules/work";
+@import "modules/news";
 
 
 /* Plugin styles

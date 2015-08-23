@@ -10,12 +10,12 @@
     <?php if($file = $page->file('2-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
-    <h2><?php echo $page->tag1()->html() ?> & <?php echo $page->tag2()->html() ?></h2>
-    <h1><?php echo $page->title()->html() ?></h1>
+    <h2 class="h1"><?php echo $page->tag1()->html() ?> & <?php echo $page->tag2()->html() ?></h2>
+    <h1 class="h2"><?php echo $page->title()->html() ?></h1>
 
   </div>
   
-  <main class="main" id="work-detail">
+  <main class="main case-study" id="work-detail">
 
     <aside class="meta">
       <ul>
@@ -32,7 +32,7 @@
       </ul>
     </aside>
 
-    <div class="project-content">
+    <div class="content">
       <h3><?php echo $page->subtitle()->html() ?></h3>
       <?php echo $page->text()->kirbytext() ?>
 
