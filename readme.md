@@ -16,16 +16,16 @@ We combine the european esthetic and the american yes we can. we create experien
 Open terminal
 
 ```
-* cd /Applications/MAMP/htdocs
-* git clone --recursive https://github.com/LucasFyl/OUIWILL.git
-* npm install ```(ignore grunt-sass error)```
-* bower install
-* npm install grunt-sass -save -save-dev
-* bower build
+cd /Applications/MAMP/htdocs
+git clone --recursive https://github.com/LucasFyl/OUIWILL.git
+npm install ```(ignore grunt-sass error)```
+bower install
+npm install grunt-sass -save -save-dev
+bower build
 
 ```
 The site is now accesible localy.
-Don't forget to update .htaccess is using MAMP instead of MAMP Pro. 
+Don't forget to update .htaccess if using MAMP instead of MAMP Pro. 
 Pull master to update.
 
 
