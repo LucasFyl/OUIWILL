@@ -16,6 +16,8 @@ module.exports = function(grunt) {
         dest: 'assets/js/vendors.js',
         mainFiles: {
           'retinajs': 'retina.js',
+          'bourbon': 'index.js',
+          'neat': 'neat.js'
         },
       },
       css: {
@@ -23,7 +25,7 @@ module.exports = function(grunt) {
         mainFiles: {
           'highlightjs': 'styles/github.css',
         },
-        exclude: ['foundation', 'retinajs']
+        exclude: ['foundation', 'retinajs', 'bourbon', 'neat']
       }
     },
 
@@ -72,6 +74,9 @@ module.exports = function(grunt) {
                 precision: 5
             },
             files: {
+                expand: true,
+                sourcemap: true,
+                outputStyle: 'compressed',
                 '<%= project.assets %>css/app.css': '<%= project.scss %>'
             }
         }
@@ -193,7 +198,7 @@ module.exports = function(grunt) {
     'bower_concat:js',
     'uglify:bower',
     'bower_concat:css',
-    'autoprefixer:bower',
+    // 'autoprefixer:bower',
     'cssmin:bower',
     'copy:fontawesome',
   ]);
