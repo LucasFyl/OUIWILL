@@ -1,12 +1,7 @@
 <?php snippet('head') ?>
   
   <div class="landing work">  
-    <header>
-      <div>
-        <a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
-        <?php snippet('menu') ?>
-      </div>
-    </header>
+    <?php snippet('header') ?>
     <?php if($file = $page->file('2-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
