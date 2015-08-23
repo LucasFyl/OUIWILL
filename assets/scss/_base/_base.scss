@@ -129,7 +129,7 @@ ul {
     height: 100%;
     @include transform(rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0));
     @include transform-origin(0% 100%);
-    @include transition(transform 0.3s, opacity 0.3s, background-color 0.3s);
+    @include transition(transform 0.4s, opacity 0.3s, background-color 0.3s);
   }
   &:hover {
     &:after {

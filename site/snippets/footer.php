@@ -1,7 +1,10 @@
 
 
-<?php js('assets/js/vendors.js') ?>
-<?php js('assets/js/app.js') ?>
+<?= js('assets/js/jquery.min.js') ?>
+<?= js('assets/js/TweenMax.min.js') ?>
+<?= js('assets/js/jquery.hoverIntent.min.js') ?>
+<?= js('assets/js/modal.js') ?>
+<?= js('assets/js/app.js') ?>
 
 <!-- build:remove -->
 <script src="http://localhost:35729/livereload.js"></script>
