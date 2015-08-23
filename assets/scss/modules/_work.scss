@@ -56,7 +56,31 @@
 
 	section.showcase {
 		overflow: auto;
-		margin-bottom: 27.5rem;
 		@include span-columns(12);
+
+		.last {
+			p {
+				@extend .vertical-center;
+				text-align: center;
+				font-family: $base-font;
+				font-size: 3.2rem;
+				line-height: 3.9rem;
+				margin-top: 31.3rem;
+			}
+		}
 	}
+}
+
+//======= Work Detail
+
+.landing.work {
+	header {
+		@include outer-container;
+	}
+	img {
+		
+	}
+}
+.main#work-detail {
+	@include outer-container;
 }

@@ -1,19 +1,40 @@
-<?php snippet('header') ?>
-
+<?php snippet('head') ?>
   
-  <main class="main" role="main">
-
+  <div class="landing work">  
+    <header>
+      <a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
+      <?php snippet('menu') ?>
+    </header>
+    <?php if($file = $page->file('2-landing.jpg')): ?>
+    <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
+    <?php endif ?>
+    <h2><?php echo $page->tag1()->html() ?> & <?php echo $page->tag2()->html() ?></h2>
     <h1><?php echo $page->title()->html() ?></h1>
 
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
+  </div>
+  
+  <main class="main" id="work-detail">
 
-    <div class="text">
+    <aside class="meta">
+      <ul>
+        <li>Client:</li>  
+        <li><?php echo $page->client() ?></li>
+      </ul>
+      <ul>
+        <li>Services:</li>  
+        <li><?php echo $page->services() ?></li>
+      </ul>
+      <ul>
+        <li>Website:</li>  
+        <li><a href="<?php echo $page->website() ?>" target='blank'><?php echo $page->website() ?></a></li>
+      </ul>
+    </aside>
+
+    <div class="project-content">
+      <h3><?php echo $page->subtitle()->html() ?></h3>
       <?php echo $page->text()->kirbytext() ?>
 
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+      <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
       </figure>
@@ -31,4 +52,5 @@
 
   </main>
 
+<?php snippet('footer-big') ?>
 <?php snippet('footer') ?>
