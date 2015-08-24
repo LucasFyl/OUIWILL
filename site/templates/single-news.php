@@ -2,9 +2,11 @@
   
   <div class="landing news">  
     <?php snippet('header') ?>
+
     <?php if($file = $page->file('1-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
+
     <h1 class="h2"><?php echo $page->title()->html() ?></h1>
   </div>
   
@@ -59,7 +61,7 @@
 
 
 
-      <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
+      <?php foreach($page->images()->sortBy('sort', 'asc')->slice(5) as $image): ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
       </figure>
