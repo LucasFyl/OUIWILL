@@ -148,3 +148,26 @@ ul {
 %clearfix {
   @include clearfix;
 }
+
+.squarePadded {
+  overflow: hidden;
+  position: relative;
+
+  width: calc(50% - 1.25rem);
+  padding-bottom: 46%;
+  float: left;
+
+  margin-right: 2.5rem;
+  margin-bottom: 2.5rem;
+  @include omega(2n);
+
+  box-sizing: border-box;
+
+  > * {
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}

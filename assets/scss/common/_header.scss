@@ -21,6 +21,7 @@ header.black {
 		float: left;
 		img {
 			width: 8.5rem;
+			max-width: 8.5rem;
 		}
 	}
 	
@@ -42,6 +43,13 @@ header.black {
 }
 
 header {
+	a.logo {
+		
+		img {
+			width: 8.5rem;
+			max-width: 8.5rem;
+		}
+	}
 	.trigger {
 		font-size: 1.8rem;
 		height: 1.8rem;
