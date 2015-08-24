@@ -1,5 +1,19 @@
 
 //==============   Single News
+.main#news {
+	@include outer-container;
+	margin-top: 14rem;
+	h3 {
+		font-family: $font-med;
+		font-size: 2.167rem;
+		text-align: center;
+		margin-bottom: 10rem;
+		text-transform: uppercase;
+	}
+	.list {
+		border-top: 2px solid #e5e5e5;
+	}	
+}
 .main#single-news {
 	.related {
 		margin-bottom: 14rem;

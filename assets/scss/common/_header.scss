@@ -15,9 +15,13 @@ header.black {
 	a.logo {
 		display: inline-block;
 		vertical-align: top;
+		width: auto;
 		color: $header-color;
 		font-size: 1.2rem;
 		float: left;
+		img {
+			width: 8.5rem;
+		}
 	}
 	
 	nav {

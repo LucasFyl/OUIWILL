@@ -108,7 +108,7 @@
 				background: url('../images/asset-chevron-right-play.png') no-repeat;
 				background-position: 51% 49% ;
 				@include size(9rem);
-				@include box-sizing(border-box);
+				box-sizing: border-box;
 				display: block;
 				border-radius: 100%;
 				border: 3px solid rgba(255, 255, 255, 0.3);
