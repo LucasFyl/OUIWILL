@@ -1,0 +1,70 @@
+.main#contact {
+	@include outer-container;
+
+	section {
+		width: 100%;
+		overflow: auto;
+
+		&:first-child {
+			margin-top: 14rem;
+		}
+		&:last-child {
+			margin-bottom: 27rem;
+		}
+		.half {
+			@extend .squarePadded;
+			width: 50%;
+			margin-right: 0;
+			margin-bottom: 0;
+
+			div {
+				h2, h3 {
+					font-family: $font-med;
+					font-size: 2.133rem;
+					color: black;
+					text-transform: uppercase;
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				h3 {
+					color: #989898;
+					margin-bottom: 6.8rem;
+				}
+				p {
+					font-family: $font-book;
+					color: #6c6c6c;
+					font-size:1.866rem;
+					line-height: 3.33rem;
+				}
+				a.light-btn {
+					@extend .small;
+				}
+			}
+		}
+		&.jobs, &.office {
+			.half:last-child {
+				> div {
+					padding-left: 23rem;
+					padding-top: 18rem;
+				}
+			}
+		}
+		&.follow {
+			.half:first-child {
+				> div {
+					padding-left: 12.5rem;
+					padding-top: 15.33rem;
+					p {
+						margin-bottom: 6.5rem;
+					}
+					a.light-btn {
+						width: 13.5rem;
+						text-align: center;
+						padding: 0; 
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
