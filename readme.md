@@ -11,14 +11,14 @@ We create experiences in a digital world, helping people in their decisions for 
 * Bourbon & Neat - for scss mixin and semantic grid framework (http://bourbon.io/ & http://neat.bourbon.io/)
 * NPM, Grunt & Bower - for package management and development environement
 	- go to ``` http://nodejs.org ``` download and install Node Package Manager
-	- ``` sudo npm install -g bower ``` will install Bower globally on your system
-	- ``` sudo npm install -g grunt-cli ``` will install Grunt Command Line Interface globally on your system
-* MAMP to set up the local environement
+	- In OSX Terminal run ``` sudo npm install -g bower ``` will install Bower globally on your system
+	- In OSX Terminal run ``` sudo npm install -g grunt-cli ``` will install Grunt Command Line Interface globally on your system
+* MAMP to set up the local environement (https://www.mamp.info/en/)
 
 ## How to use
 
+* If not already, download and install MAMP
 * If not already, install NPM, Grunt and Bower
-
 * Open terminal
 
 	- ``` cd /Applications/MAMP/htdocs ```
@@ -28,9 +28,7 @@ We create experiences in a digital world, helping people in their decisions for 
 	- ``` npm install ```
 	- ``` bower install ```
 	- ``` grunt build ```
-
 * Run MAMP.
-
 * The site is now accesible localy.
 
 Might need to update .htaccess if using MAMP instead of MAMP Pro. 
