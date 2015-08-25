@@ -46,33 +46,14 @@
 				a.light-btn {
 					@extend .small;
 				}
-
 			}
 		}
-		// &.jobs, &.office {
-		// 	.half:last-child {
-		// 		> div {
-		// 			// padding-left: 23rem;
-		// 			// padding-top: 18rem;
-		// 		}
-		// 	}
-		// }
-		&.follow {
-			.half:first-child {
-				// > div {
-				// 	padding-left: 12.5rem;
-				// 	padding-top: 15.33rem;
-				// 	p {
-				// 		margin-bottom: 6.5rem;
-				// 	}
-					a.light-btn {
-						width: 13.5rem;
-						text-align: center;
-						padding: 0; 
-						margin-bottom: 1rem;
-					}
-				// }
-			}
+
+		&.follow .light-btn {
+			width: 13.5rem;
+			text-align: center;
+			padding: 0; 
+			margin-bottom: 1rem;
 		}
 	}
 }
