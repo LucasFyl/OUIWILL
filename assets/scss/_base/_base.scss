@@ -78,6 +78,15 @@ ul {
   border: 2px solid white;
   text-align: center;
   text-decoration: none;
+
+  // Size 
+  &.small {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    line-height: 4rem;
+  }
+
+  // Color styles
   &.golden {
     border-color: $golden;
     color: $golden;
@@ -98,10 +107,14 @@ ul {
         background: #bfbfbf;
       }
   }
+
+  // Style
   &.centered {
     left: 50%; 
     @include transform(translateX(-50%));
   }
+
+  // Hover effect
   &:after {
     content: '';
     position: absolute;
