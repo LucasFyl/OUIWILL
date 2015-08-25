@@ -18,6 +18,13 @@
 			margin-bottom: 0;
 
 			div {
+				> div.vertical-center {
+					div {
+						display: inline-block;
+						position: relative; left: 50%;
+						@include transform(translateX(-50%));
+					}
+				}
 				h2, h3 {
 					font-family: $font-med;
 					font-size: 2.133rem;
@@ -39,31 +46,32 @@
 				a.light-btn {
 					@extend .small;
 				}
+
 			}
 		}
-		&.jobs, &.office {
-			.half:last-child {
-				> div {
-					padding-left: 23rem;
-					padding-top: 18rem;
-				}
-			}
-		}
+		// &.jobs, &.office {
+		// 	.half:last-child {
+		// 		> div {
+		// 			// padding-left: 23rem;
+		// 			// padding-top: 18rem;
+		// 		}
+		// 	}
+		// }
 		&.follow {
 			.half:first-child {
-				> div {
-					padding-left: 12.5rem;
-					padding-top: 15.33rem;
-					p {
-						margin-bottom: 6.5rem;
-					}
+				// > div {
+				// 	padding-left: 12.5rem;
+				// 	padding-top: 15.33rem;
+				// 	p {
+				// 		margin-bottom: 6.5rem;
+				// 	}
 					a.light-btn {
 						width: 13.5rem;
 						text-align: center;
 						padding: 0; 
 						margin-bottom: 1rem;
 					}
-				}
+				// }
 			}
 		}
 	}
