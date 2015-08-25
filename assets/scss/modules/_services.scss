@@ -17,7 +17,7 @@
 			div {
 
 				> div.vertical-center {
-					padding-left: 2.5rem;
+					padding-left: 6.5rem;
 					padding-right: 2.5rem;
 					div {
 						display: inline-block;
@@ -43,51 +43,15 @@
 			}
 		}
 
-		&.brand {
-			.quarter:nth-child(3) {
-				> div {
-					// padding-top: 15.5rem;
-					// padding-left: 6.5rem;
-					// padding-right: 3rem;
-					p:not(.smaller) {
-						margin-bottom: 5.5rem;
-					}
-				}
-			}
+		&.brand p:not(.smaller) {
+			margin-bottom: 5.5rem;
 		}
-		&.digital {
-			.quarter:nth-child(4) {
-				> div {
-					// padding-top: 15.5rem;
-					// padding-left: 5.5rem;
-					p:not(.smaller) {
-						margin-bottom: 10rem;
-					}
-				}
-			}
+		&.digital p:not(.smaller),
+		&.photo p:not(.smaller) {
+			margin-bottom: 10rem;
 		}
-		&.photo {
-			.quarter:nth-child(3) {
-				> div {
-					// padding-top: 12.7rem;
-					// padding-left: 6.3rem;
-					// padding-right: 3rem;
-					p:not(.smaller) {
-						margin-bottom: 10rem;
-					}
-				}
-			}
-		}
-		&.sectors {
-			.quarter:nth-child(4) {
-				> div {
-					// padding-top: 16.5rem;
-					// padding-left: 5.5rem;
-					p:not(.smaller) {
-						margin-bottom: 6rem;
-					}
-				}
-			}
+		&.sectors p:not(.smaller) {
+			margin-bottom: 6rem;
 		}
 	}
 }
