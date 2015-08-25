@@ -9,11 +9,15 @@ We create experiences in a digital world, helping people in their decisions for 
 
 * Kirby - a file-based CMS (http://getkirby.com/)
 * Bourbon & Neat - for scss mixin and semantic grid framework (http://bourbon.io/ & http://neat.bourbon.io/)
-* Grunt & Bower - for pckg management and dev environement
-+
+* NPM, Grunt & Bower - for package management and development environement
+	- go to ``` http://nodejs.org ``` download and install Node Package Manager
+	- ``` sudo npm install -g bower ``` will install Bower globally on your system
+	- ``` sudo npm install -g grunt-cli ``` will install Grunt Command Line Interface globally on your system
 * MAMP to set up the local environement
 
-## How to use:
+## How to use
+
+* If not already, install NPM, Grunt and Bower
 
 * Open terminal
 
