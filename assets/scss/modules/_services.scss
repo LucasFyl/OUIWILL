@@ -2,12 +2,14 @@
 	@include outer-container;
 
 	section {
-		margin-bottom: 2.5rem; 
 		width: 100%;
 		overflow: auto;
-		
+
 		&:first-child {
 			margin-top: 14rem;
+		}
+		&:last-child {
+			margin-bottom: 27rem;
 		}
 		.quarter {
 			@extend .squarePadded;
@@ -36,9 +38,73 @@
 				> div {
 					padding-top: 15.5rem;
 					padding-left: 6.5rem;
+					padding-right: 3rem;
+					p:not(.smaller) {
+						margin-bottom: 5.5rem;
+					}
+				}
+			}
+		}
+		&.digital {
+			.quarter:nth-child(4) {
+				> div {
+					padding-top: 15.5rem;
+					padding-left: 5.5rem;
+					p:not(.smaller) {
+						margin-bottom: 10rem;
+					}
+				}
+			}
+		}
+		&.photo {
+			.quarter:nth-child(3) {
+				> div {
+					padding-top: 12.7rem;
+					padding-left: 6.3rem;
+					padding-right: 3rem;
+					p:not(.smaller) {
+						margin-bottom: 10rem;
+					}
+				}
+			}
+		}
+		&.sectors {
+			.quarter:nth-child(4) {
+				> div {
+					padding-top: 16.5rem;
+					padding-left: 5.5rem;
+					p:not(.smaller) {
+						margin-bottom: 6rem;
+					}
 				}
 			}
 		}
 	}
-		
+}
+.blockquote {
+	position: relative;
+	img {
+		width: 100%;
+		max-width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	div {
+		position: absolute;
+		left: 50%;
+		top: 35%;
+		p {text-align: right;}
+		.quote {
+			font-family: $base-font;
+			color: white;
+			font-size: 4rem;
+			line-height: 5.334rem;
+		}
+		.author {
+			font-family: $font-book;
+			color: $golden;
+			font-size: 1.867rem; 
+		}
+	}
 }
