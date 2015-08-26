@@ -17,7 +17,14 @@
 	.project-infos {
 		@include outer-container;
 		@extend .vertical-center;
-		// margin-top: 20.5rem;
+		
+		ul {
+			li {
+				padding: 3rem 0;
+				box-sizing: border-box;
+			}
+		}
+
 		h2 {
 			color: #d3d3d3;
 			margin: 0;
