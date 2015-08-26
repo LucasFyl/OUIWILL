@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Work detail
+title: Work - Web
 pages: false
 files:
   sortable: true
