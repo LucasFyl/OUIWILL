@@ -2,7 +2,10 @@
 
 title: Work
 pages:
-  template: work-detail
+  template: 
+  	- work-web
+  	- work-photo
+  	- work-video
 files: false
 fields:
   title:
