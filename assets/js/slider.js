@@ -9,20 +9,18 @@
         var slideHeight = $('#slider ul li').height();
         var sliderUlWidth = slideCount * slideWidth;
         
-        $('#slider').css({ width: slideWidth, height: slideHeight });
-        
-        $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-        
+        TweenMax.set('#slider', { width: slideWidth, height: slideHeight })
+        TweenMax.set('#slider ul', { width: sliderUlWidth, marginLeft: - slideWidth })
         $('#slider ul li:last-child').prependTo('#slider ul');
 
-        function moveLeft() {
+        moveLeft = function() {
             TweenMax.to('#slider ul', 1.2, {left:+slideWidth,ease:Expo.easeInOut,onComplete:function(){
                 $('#slider ul li:last-child').prependTo('#slider ul');
                 $('#slider ul').css('left', '');
             }});
         };
 
-        function moveRight() {
+        moveRight = function() {
             TweenMax.to('#slider ul', 1.2, {left:-slideWidth,ease:Expo.easeInOut,onComplete:function(){
                 $('#slider ul li:first-child').appendTo('#slider ul');
                 $('#slider ul').css('left', '');
