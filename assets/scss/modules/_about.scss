@@ -56,10 +56,11 @@
 				}
 				p.quote {
 					font-family: 'Vollkorn', serif;
-					font-size: 3.062rem;
+					font-size: 3rem;
+					line-height: 3.5rem;
 					color: $golden;
 					text-align: center;
-					margin-top: 1.7rem;
+					margin: 3.6rem 0;
 				}
 			}
 		}
@@ -99,6 +100,22 @@
 
 		.half {
 			@extend .squarePadded;
+		}
+	}
+	section.slider {
+		margin-bottom: 3rem;
+		.outer-wrap {
+			width: 100%;
+			max-width: 100vw;
+			overflow: hidden;
+		}
+		#slider {
+			ul {
+				height: 54.4rem;
+				li {
+					@include size(auto 100%);
+				}
+			}
 		}
 	}
 }

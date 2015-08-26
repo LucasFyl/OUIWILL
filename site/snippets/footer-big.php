@@ -27,3 +27,6 @@
 		</div>
 	</div>
 </footer>
+
+<?= js('assets/js/jquery.min.js') ?>
+<?= js('assets/js/TweenMax.min.js') ?>
