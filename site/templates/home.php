@@ -72,7 +72,6 @@
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-ralphlauren.png'); ?>" alt="Ralph Lauren"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-duchateau.png'); ?>" alt="DuChâteau"></div>
 			</div>
-			<hr>
 			<div class="row">
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-fendly.png'); ?>" alt="fendly"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-360zebra.png'); ?>" alt="360 Zebra"></div>
@@ -130,6 +129,7 @@
 <?= js('assets/js/jquery.bxslider.min.js') ?>
 <script>
 	$(document).ready(function(){
+		TweenMax
 	  $('.bxslider').bxSlider({
 	  	mode: 'vertical',
 	  	auto: true,
