@@ -31,7 +31,13 @@ We create experiences in a digital world, helping people in their decisions for 
 * Run MAMP.
 * The site is now accesible localy.
 
-Might need to update .htaccess if using MAMP instead of MAMP Pro. 
+# If you are using MAMP instead of MAMP Pro 
+You need to update the .htaccess file. It's an invisible file located at the root of the project.
+* Open the .htaccess file with a text editor
+* Look for the 'RewriteBase' entry (should be line 17)
+* Uncomment that line (by removing '# ')
+* Voilà, you're good to go
+
 
 Pull master to update.
 
