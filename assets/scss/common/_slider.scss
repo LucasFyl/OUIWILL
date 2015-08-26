@@ -146,8 +146,8 @@ a.control_next {
   text-indent: -9999px;
   display: block;
   width: 1rem;
-  height: 1rem;
-  margin: 1rem 0;
+  height: 1.1rem;
+  margin: 1.1rem 0;
   border-radius: 100%;
   border: 2px solid white;
   opacity: .3
@@ -156,4 +156,7 @@ a.control_next {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   opacity: 1;
+}
+.bx-controls-direction {
+  display: none;
 }
