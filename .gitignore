@@ -1,4 +1,5 @@
 .sass-cache
+.htaccess
 node_modules
 bower_components
 assets/css
