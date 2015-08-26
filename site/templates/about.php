@@ -42,10 +42,9 @@
 		</section>		
 		
 		<section class="founder">
-			<?php if($founder = $page->file('founder.jpg')): ?>
+			<?php if($founder = $page->file('1-founder.jpg')): ?>
 		    <img src="<?php echo $founder->url() ?>" alt="Guillaume Hamon and Chelsea Flaming" />
 		    <?php endif ?>
-			<img src="<?php echo url('/assets/images/asset-about-family.jpg') ?>" alt="Guillaume Hamon and Chelsea Flaming" />
 			<div class="row">
 				<div>
 					<h2>Guillaume Hamon</h2>
@@ -62,10 +61,10 @@
 
 		<section class="paris-sandiego">
 			<div class="row">
-				<?php if($paris = $page->file('paris.jpg')): ?>
+				<?php if($paris = $page->file('2-paris.jpg')): ?>
 			    <div class="half"><img src="<?php echo $paris->url() ?>" alt="Paris" /></div>
 			    <?php endif ?>
-			    <?php if($sandiego = $page->file('sandiego.jpg')): ?>
+			    <?php if($sandiego = $page->file('3-sandiego.jpg')): ?>
 			    <div class="half"><img src="<?php echo $sandiego->url() ?>" alt="San Diego" /></div>
 			    <?php endif ?>
 			</div>
@@ -94,7 +93,7 @@
 					<a href="#" class="control_next"></a>
 					<a href="#" class="control_prev"></a>
 					<ul>
-						<?php foreach($page->images()->sortBy('sort', 'asc') as $slide): ?>
+						<?php foreach($page->images()->sortBy('sort', 'asc')->slice(3) as $slide): ?>
 						<li>
 							<img src="<?php echo $slide->url() ?>" alt="<?php echo $slide->title()->html() ?>">
 						</li>
