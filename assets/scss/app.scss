@@ -9,6 +9,7 @@
 @import "./bower_components/bourbon/app/assets/stylesheets/_bourbon";
 @import "_base/_grid-settings";
 @import "./bower_components/neat/app/assets/stylesheets/_neat";
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
 
 /* Own mixins ***********************/
 @import "_addons/_rem"; // Rem sizing mixin
@@ -40,6 +41,7 @@
 @import "modules/work";
 @import "modules/news";
 @import "modules/services";
+@import "modules/about";
 @import "modules/contact";
 
 

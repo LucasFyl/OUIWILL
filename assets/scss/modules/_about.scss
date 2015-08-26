@@ -1,0 +1,104 @@
+.landing.about {
+	background: url("../images/background-landing-about@2x.jpg") no-repeat center center;
+	background-size: cover;
+	height: 66.5rem;
+	position: relative;
+
+	.modal-fade-screen {
+	    padding: 0;
+	    padding-top: 5vh;
+	}
+	.modal-inner {
+	    width: 100%;
+	    max-height: 100%;
+	    overflow: hidden;
+	    padding: 0;
+	}
+
+	.play-btn {
+  		background: url('../images/icon-play-btn.png') no-repeat center center;
+  		border-width: 4px;
+  		top: 50%;
+  		margin-top: -4rem;
+	    margin-left: -6rem;
+  		@include size(12rem);
+	}
+}
+
+.main#about {
+	section.text-block {
+		margin-top: 13.8rem;
+		margin-bottom: 27.5rem;
+		h3 {
+			text-align: center;
+			margin-bottom: 13.8rem;
+		}
+		.row {
+			@include outer-container;
+			> div {
+				@include span-columns(4);
+				margin: 0; padding: 0;
+				&:first-child {
+					padding-right: 3rem;
+				}
+				&:nth-child(2) {
+					padding: 0 3rem;
+				}
+				&:last-child {
+					padding-left: 3rem;
+				}
+				p {
+					color: $color;
+					font-family: $font-book;
+					font-size: 1.867rem;
+					line-height: 4.4rem;
+					text-align: justify;
+				}
+				p.quote {
+					font-family: 'Vollkorn', serif;
+					font-size: 3.062rem;
+					color: $golden;
+					text-align: center;
+					margin-top: 1.7rem;
+				}
+			}
+		}
+	}
+	section.founder {
+		.row {
+			@include outer-container;
+			margin-top: 15.5rem;
+			margin-bottom: 27.5rem;
+			div {
+				@include span-columns(6);
+				padding: 0 2rem 0 3rem;
+				&:last-child {
+					padding-right: 5rem;
+					text-align: right;
+					padding: 0 3rem 0 2rem;
+				}
+				h2, h3 {
+					font-family: $font-med;
+					font-size: 2.4rem;
+					text-transform: uppercase;
+				}
+				h3 {
+					color: $golden;
+					margin-bottom: 7rem;
+				}
+				p {
+					font-size: 2.8rem;
+					font-family: $base-font;
+					color: #adadad;
+				}
+			}
+		}
+	}
+	section.paris-sandiego {
+		> .row {@include outer-container;}
+
+		.half {
+			@extend .squarePadded;
+		}
+	}
+}
