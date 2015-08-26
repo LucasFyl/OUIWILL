@@ -14,7 +14,7 @@
 			<input class="modal-state" id="modal-1" type="checkbox" />
 			<div class="modal-fade-screen">
 				<div class="modal-inner">
-					<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="<?php echo $page->vimeoLink(); ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -42,6 +42,9 @@
 		</section>		
 		
 		<section class="founder">
+			<?php if($founder = $page->file('founder.jpg')): ?>
+		    <img src="<?php echo $founder->url() ?>" alt="Guillaume Hamon and Chelsea Flaming" />
+		    <?php endif ?>
 			<img src="<?php echo url('/assets/images/asset-about-family.jpg') ?>" alt="Guillaume Hamon and Chelsea Flaming" />
 			<div class="row">
 				<div>
@@ -59,8 +62,12 @@
 
 		<section class="paris-sandiego">
 			<div class="row">
-				<div class="half"><img src="<?php echo url('/assets/images/asset-about-paris.jpg'); ?>" alt="Paris" /></div>
-				<div class="half"><img src="<?php echo url('/assets/images/asset-about-sandiego.jpg'); ?>" alt="San Diego" /></div>
+				<?php if($paris = $page->file('paris.jpg')): ?>
+			    <div class="half"><img src="<?php echo $paris->url() ?>" alt="Paris" /></div>
+			    <?php endif ?>
+			    <?php if($sandiego = $page->file('sandiego.jpg')): ?>
+			    <div class="half"><img src="<?php echo $sandiego->url() ?>" alt="San Diego" /></div>
+			    <?php endif ?>
 			</div>
 
 			<section class="text-block">
