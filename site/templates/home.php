@@ -2,11 +2,35 @@
 
 	<section class="landing home">
 		<?php snippet('header') ?>
+
 		<div class="vertical-center project-infos">
-			<h2>Only Watch</h2>
-			<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
-			<span class="clearfix"></span>
-			<a href="#" class="light-btn grey">see case study</a>
+			<ul class="bxslider">
+			  <li>
+			  	<h2>Only Watch</h2>
+				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<span class="clearfix"></span>
+				<a href="#" class="light-btn grey">see case study</a>
+			  </li>
+			  <li>
+			  	<h2>Only Watch</h2>
+				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<span class="clearfix"></span>
+				<a href="#" class="light-btn grey">see case study</a>
+			  </li>
+			  <li>
+			  	<h2>Only Watch</h2>
+				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<span class="clearfix"></span>
+				<a href="#" class="light-btn grey">see case study</a>
+			  </li>
+			  <li>
+			  	<h2>Only Watch</h2>
+				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<span class="clearfix"></span>
+				<a href="#" class="light-btn grey">see case study</a>
+			  </li>
+			</ul>
+				
 		</div>
 	</section>
 
@@ -103,4 +127,21 @@
 	</main>
 
 <?php snippet('footer-big') ?>
+<?= js('assets/js/jquery.bxslider.min.js') ?>
+<script>
+	$(document).ready(function(){
+	  $('.bxslider').bxSlider({
+	  	mode: 'vertical',
+	  	auto: true,
+	  	onSliderLoad: function(){
+			// do funky JS stuff here
+			// alert('Slider has finished loading. Click OK to continue!');
+		},
+		onSlideAfter: function(){
+			// do mind-blowing JS stuff here
+			// alert('A slide has finished transitioning. Bravo. Click OK to continue!');
+		}
+	  });
+	})
+</script>
 <?php snippet('footer') ?>
