@@ -1,12 +1,23 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
-  <main class="main" role="main">
+	<section class="landing about">
+		<header>
+	    	<div>
+	    	 	<a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
+	    	 	<?php snippet('menu') ?>
+	    	</div>
+	    </header>
+		<div class="vertical-center project-infos">
+			<a href="#" class="play-btn"></a>
+		</div>
+	</section>
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
 
-  </main>
+	<main class="main" id="about">
+		
 
+		<?php snippet('carreers'); ?>
+	</main>
+
+<?php snippet('footer-big') ?>
 <?php snippet('footer') ?>
