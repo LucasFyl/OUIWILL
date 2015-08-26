@@ -1,7 +1,5 @@
 
 
-<?= js('assets/js/jquery.min.js') ?>
-<?= js('assets/js/TweenMax.min.js') ?>
 <?= js('assets/js/jquery.hoverIntent.min.js') ?>
 <?= js('assets/js/modal.js') ?>
 <?= js('assets/js/app.js') ?>

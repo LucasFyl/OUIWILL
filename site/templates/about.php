@@ -47,12 +47,12 @@
 				<div>
 					<h2>Guillaume Hamon</h2>
 					<h3>Founder / Creative Director</h3>
-					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is a our religion.</p>
+					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is our religion.</p>
 				</div>
 				<div>
 					<h2>Chelsea Flaming</h2>
 					<h3>Founder / Creative Director</h3>
-					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is a our religion.</p>
+					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is our religion.</p>
 				</div>
 			</div> 
 		</section>
@@ -82,10 +82,23 @@
 		</section>
 
 		<section class="slider">
-			
+			<div class="outer-wrap">
+				<div id="slider">
+					<a href="#" class="control_next"></a>
+					<a href="#" class="control_prev"></a>
+					<ul>
+						<?php foreach($page->images()->sortBy('sort', 'asc') as $slide): ?>
+						<li>
+							<img src="<?php echo $slide->url() ?>" alt="<?php echo $slide->title()->html() ?>">
+						</li>
+						<?php endforeach ?>
+					</ul>  
+				</div>
+			</div>
 		</section>
 		<?php snippet('carreers'); ?>
 	</main>
 
 <?php snippet('footer-big') ?>
+<?= js('assets/js/slider.js') ?>
 <?php snippet('footer') ?>
