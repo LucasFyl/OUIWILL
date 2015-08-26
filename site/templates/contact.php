@@ -61,7 +61,7 @@
 						<div>
 							<h2>Work For Us</h2>
 							<h3>Currently on the look for:</h3>
-							<p>Motion Designer / Front Developer / <br/> DP / Intern</p>
+							<p>Motion Designer / Front-End Developer / <br/> DP / Intern</p>
 				    		<a href="mailto:jobs@ouiwill.com" class="light-btn golden">jobs@ouiwill.com</a>
 						</div>
 					</div>
