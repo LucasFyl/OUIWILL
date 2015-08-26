@@ -1,12 +1,7 @@
 <?php snippet('head') ?>
 
 	<section class="landing about">
-		<header>
-	    	<div>
-	    	 	<a href="<?php $site->url() ?>" class="logo"><img src="<?php echo url('/assets/images/logo.png') ?>" alt="oui will"></a>
-	    	 	<?php snippet('menu') ?>
-	    	</div>
-	    </header>
+		<?php snippet('header') ?>
 		<div class="modal">
 			<label for="modal-1">
 				<div class="modal-trigger play-btn"></div>
