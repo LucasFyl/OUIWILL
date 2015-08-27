@@ -19,6 +19,23 @@ function resize() {
 function initVideoPage() {
 	console.log('video page');
 	TweenMax.set('.video-modal', {display:'none'});
+
+	$('body').on('click', '.play-btn', function(){
+		var video = $(this).attr('data-video');
+		var target = $('body').find('.'+video);
+		openVideo(video, target);
+	});
+	
+	openVideo = function(video, target) {
+		
+		TweenMax.set('body', {overflow:'hidden'});
+		TweenMax.to('.modal-fade-screen', 0.25, {visibility:'visible',opacity:1,ease:Power2.easeOut});
+		TweenMax.set(target, {display:'block'});
+		$('body').on('click', '.modal-fade-screen', function(){
+			TweenMax.to('.modal-fade-screen', 0.25, {opacity:0,visibility:'hidden',ease:Power2.easeOut});
+			TweenMax.set('body', {overflow:'auto'});
+		});
+	};
 }
 function initHomeSlider() {
 	var sliderContent = '.vertical-center li > h2, .vertical-center li > p, .vertical-center li > a',
