@@ -19,8 +19,8 @@
 
         <div class="hover">
           <div class="vert-cent">
-            <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
             <h5><?php echo $project->title()->html() ?></h5>
+            <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
           </div>
         </div>
       </div>
@@ -29,6 +29,7 @@
         <p>we can show you more work, <br/>Just stop by!</p>
       </div>
     </section>
+    <div class="clearfix"></div>
     
     <?php snippet('carreers'); ?>
 
