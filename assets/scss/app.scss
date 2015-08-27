@@ -27,9 +27,10 @@
 
 /* Reusable Component styles (header/footer/dropdowns etc)
    Put them inside "common" folder ***********************/
+@import "common/loader";
 @import "common/header";
 @import "common/footer";
-@import "common/project";
+@import "common/single-work";
 @import "common/carreers";
 @import "common/news";
 @import "common/landing";
