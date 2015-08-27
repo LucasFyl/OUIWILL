@@ -9,6 +9,8 @@
 
 	img {
 		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
 	}
 
 	.hover {
@@ -19,7 +21,7 @@
 		top: 0; bottom: 0;
 		background: rgba(0,0,0,0.8);
 		z-index: 8;
-		// opacity: 0;
+		opacity: 0;
 
 		> div {
 			@extend .vertical-center;

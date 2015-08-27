@@ -60,4 +60,21 @@
 	nav {
 		@include span-columns(12);
 	}
+
+}
+.main.photography {
+	.content {
+		p:last-of-type {
+			margin-bottom: 5rem !important;
+		}
+		figure {
+			margin-bottom: 5rem !important;
+			&:after {
+				content: none !important;
+			}
+			&:last-of-type {
+				margin-bottom: 20rem !important;
+			}
+		}
+	}
 }
