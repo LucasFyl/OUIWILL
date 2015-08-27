@@ -22,4 +22,52 @@ Services: Video & photography
 
 ----
 
-Website: http://www.gohaus.de
+Website: http://www.gohaus.com
+
+----
+
+Vimeo1: https://vimeo.com/134888488
+
+----
+
+Vimeocaption1: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+
+----
+
+Vimeo2: https://vimeo.com/134888189
+
+----
+
+Vimeocaption2: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+
+----
+
+Vimeo3: 
+
+----
+
+Vimeocaption3: 
+
+----
+
+Vimeo4: 
+
+----
+
+Vimeocaption4: 
+
+----
+
+Vimeo5: 
+
+----
+
+Vimeocaption5: 
+
+----
+
+Vimeo6: 
+
+----
+
+Vimeocaption6: 
