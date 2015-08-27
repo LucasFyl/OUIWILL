@@ -7,11 +7,46 @@
     <?php endif ?>
     <h2 class="h1"><?php echo $page->title()->html() ?></h2>
     <h1 class="h2"><?php echo $page->h1()->html() ?></h1>
-
   </div>
-  
-  <main class="main case-study photography video" id="work-detail">
 
+  <div class="modal">
+    <div class="modal-fade-screen">
+      <div class="modal-inner">
+        <?php if (!$page->vimeo1()->isEmpty()): ?>
+        <div class="video-modal <?php echo video1 ?>" >
+          <iframe src="<?php echo $page->vimeo1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+        <?php if (!$page->vimeo2()->isEmpty()): ?>
+        <div class="video-modal <?php echo video2 ?>" >
+          <iframe src="<?php echo $page->vimeo2() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+        <?php if (!$page->vimeo3()->isEmpty()): ?>
+        <div class="video-modal <?php echo video3 ?>" >
+          <iframe src="<?php echo $page->vimeo3() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+        <?php if (!$page->vimeo4()->isEmpty()): ?>
+        <div class="video-modal <?php echo video4 ?>" >
+          <iframe src="<?php echo $page->vimeo4() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+        <?php if (!$page->vimeo5()->isEmpty()): ?>
+        <div class="video-modal <?php echo video5 ?>" >
+          <iframe src="<?php echo $page->vimeo5() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+        <?php if (!$page->vimeo6()->isEmpty()): ?>
+        <div class="video-modal <?php echo video6 ?>" >
+          <iframe src="<?php echo $page->vimeo6() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+      </div>
+    </div>
+  </div>
+
+  <main class="main case-study photography video" id="work-detail">
     <aside class="meta">
       <ul>
         <li>Client:</li>  
@@ -39,20 +74,6 @@
       </figure>
         <?php $i++ ?>
       <?php endforeach ?>
-
-      
-      <div class="modal">
-        <div class="modal-fade-screen">
-          <div class="modal-inner">
-            <iframe src="<?php echo $page->vimeo1() ?>" class="<?php echo video1 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe src="<?php echo $page->vimeo2() ?>" class="<?php echo video2 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe src="<?php echo $page->vimeo3() ?>" class="<?php echo video3 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe src="<?php echo $page->vimeo4() ?>" class="<?php echo video4 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe src="<?php echo $page->vimeo5() ?>" class="<?php echo video5 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe src="<?php echo $page->vimeo6() ?>" class="<?php echo video6 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
     </div>
 
     <nav class="nextprev cf" role="navigation">
