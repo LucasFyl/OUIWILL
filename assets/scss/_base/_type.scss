@@ -1,10 +1,12 @@
 /**
  * Base styles ~ Type
  */
-$base-font: 'FuturaStdLight', helvetica, sans-serif;
+$base-font: 'AkkuratRegular', helvetica, sans-serif;
+$bold-font: 'AkkuratBold', helvetica, sans-serif;
+$italic-font: 'AkkuratItalic', helvetica, sans-serif;
 $font-book: 'FuturaStdBook', helvetica, sans-serif;
 // $font-Stmed: 'FuturaStdMedium', helvetica, sans-serif;
-$font-med: 'FuturaStdMedium', helvetica, sans-serif;
+$title-font: 'FuturaStdMedium', helvetica, sans-serif;
 $alt-font: 'RalewayRegular', arial, sans-serif;
 
 a {
@@ -18,7 +20,7 @@ h4, .h4, %h4,
 h5, .h5, %h5,
 h6, .h6, %h6 {
     margin: 14px 0;
-    font-family: $font-med;
+    font-family: $title-font;
     font-weight: normal;
     font-style: normal;
     color: $heading-colour;
@@ -95,7 +97,6 @@ small {
     font-family: $alt-font;
 }
 h3 {
-    font-family: $font-med;
     font-size: 2.167rem;
     text-transform: uppercase;
 }

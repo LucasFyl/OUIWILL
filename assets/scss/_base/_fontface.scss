@@ -44,3 +44,31 @@
          url('../fonts/RalewayRegular.ttf') format('truetype'),
          url('../fonts/RalewayRegular.svg#RalewayRegular') format('svg');
 }
+
+@font-face {
+    font-family: 'AkkuratRegular';
+    src: url('../fonts/AkkuratRegular.eot');
+    src: url('../fonts/AkkuratRegular.eot') format('embedded-opentype'),
+         url('../fonts/AkkuratRegular.woff2') format('woff2'),
+         url('../fonts/AkkuratRegular.woff') format('woff'),
+         url('../fonts/AkkuratRegular.ttf') format('truetype'),
+         url('../fonts/AkkuratRegular.svg#AkkuratRegular') format('svg');
+}
+@font-face {
+    font-family: 'AkkuratBold';
+    src: url('../fonts/AkkuratBold.eot');
+    src: url('../fonts/AkkuratBold.eot') format('embedded-opentype'),
+         url('../fonts/AkkuratBold.woff2') format('woff2'),
+         url('../fonts/AkkuratBold.woff') format('woff'),
+         url('../fonts/AkkuratBold.ttf') format('truetype'),
+         url('../fonts/AkkuratBold.svg#AkkuratBold') format('svg');
+}
+@font-face {
+    font-family: 'AkkuratItalic';
+    src: url('../fonts/AkkuratItalic.eot');
+    src: url('../fonts/AkkuratItalic.eot') format('embedded-opentype'),
+         url('../fonts/AkkuratItalic.woff2') format('woff2'),
+         url('../fonts/AkkuratItalic.woff') format('woff'),
+         url('../fonts/AkkuratItalic.ttf') format('truetype'),
+         url('../fonts/AkkuratItalic.svg#AkkuratItalic') format('svg');
+}
