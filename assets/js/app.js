@@ -3,7 +3,7 @@
  	window.onresize = resize;
  });
 
-function hideLoader() {
+function hideLoader(){
 	console.log('hide loader function');
 	TweenMax.to('#loader', 1, {opacity:0,display:'none',ease:Power1.easeInOut,delay:0.1});
 	// setTimeout(function(){
@@ -16,7 +16,33 @@ function hideLoader() {
 function resize() {
 	console.log('page has been resized');
 }
-function initVideoPage() {
+function initNavigation(){
+	var menu = new TimelineMax({paused:true});
+	TweenMax.set('#menu', {display:'none',opacity:0});
+	TweenMax.set('#menu .brand > *', {opacity:0,y:20});
+	TweenMax.set('#menu .menu', {opacity:0,x:'100%'});
+	TweenMax.set('#menu .menu li', {opacity:0,y:20});
+
+	menu.to('#menu', 0.45, {display:'block',opacity:1,ease:Power2.easeInOut})
+		.to('#menu .menu', 0.45, {opacity:1,x:'0%',ease:Power2.easeOut})
+		.staggerTo('#menu .brand > *', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1)
+		.staggerTo('#menu .menu li', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.4");
+
+	$(document).on('click', '#trigger', function(){
+		console.log(menu.duration());
+		TweenMax.set('body', {overflow:'hidden'});
+		menu.play();
+	});
+	$(document).keyup(function(e){
+		if(e.which == 27) {
+		  	menu.reverse();
+		  	setTimeout(function(){
+				TweenMax.set('body', {overflow:'auto'});
+		  	}, 2100);
+		}
+	});
+}
+function initVideoPage(){
 	console.log('video page');
 	TweenMax.set('.video-modal', {display:'none'});
 
@@ -37,7 +63,7 @@ function initVideoPage() {
 		});
 	};
 }
-function initHomeSlider() {
+function initHomeSlider(){
 	var sliderContent = '.vertical-center li > h2, .vertical-center li > p, .vertical-center li > a',
 	firstSlideCtnt = '.bxslider ul li:first-child > h2, .bxslider ul li:first-child > p, .bxslider ul li:first-child > a';
 	TweenMax.set(sliderContent, {css:{opacity:0,y:20}});
@@ -92,6 +118,7 @@ function initHomePage() {
 function initPage(){
 
 	hideLoader();
+	initNavigation();
 
 	// Page specific load events
 	if ( $('.main#home').length ) { initHomePage(); }
