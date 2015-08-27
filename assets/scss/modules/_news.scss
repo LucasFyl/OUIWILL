@@ -2,9 +2,9 @@
 //==============   Single News
 .main#news {
 	@include outer-container;
-	margin-top: 14rem;
+	margin-top: 10rem;
 	h3 {
-		font-size: 2.167rem;
+		font-size: 1.6rem;
 		text-align: center;
 		margin-bottom: 10rem;
 	}
@@ -14,11 +14,12 @@
 }
 .main#single-news {
 	.related {
-		margin-bottom: 14rem;
+		margin-bottom: 20rem;
 		
 		h3 {
     		text-align: center;
-			margin-bottom: 14rem;
+    		font-size: 1.6rem;
+			margin-bottom: 10rem;
 		}
 		> div {
 			border-top: 2px solid #e5e5e5;
