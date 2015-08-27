@@ -36,8 +36,6 @@
 		}
 		p {
 			@include span-columns(10);
-			
-			font-family: $font-book;
 			font-size: 3rem;
 			line-height: 4rem;
 			color: white;
