@@ -29,7 +29,6 @@ function initNavigation(){
 		.staggerTo('#menu .menu li', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.4");
 
 	$(document).on('click', '#trigger', function(){
-		console.log(menu.duration());
 		TweenMax.set('body', {overflow:'hidden'});
 		menu.play();
 	});

@@ -7,25 +7,25 @@
 			<ul class="bxslider">
 			  <li>
 			  	<h2>Only Watch</h2>
-				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
 				<a href="#" class="light-btn grey">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 2</h2>
-				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
 				<a href="#" class="light-btn grey">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 3</h2>
-				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
 				<a href="#" class="light-btn grey">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 4</h2>
-				<p>THE WORLD FINEST WATCHMAKERS UNITED FOR RESEARCH ON DUCHENNE MUSCULAR DYSTROPHY.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
 				<a href="#" class="light-btn grey">see case study</a>
 			  </li>
