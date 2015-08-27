@@ -1,0 +1,51 @@
+.navigation {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	background: white;
+	top: 0; left: 0; right: 0; bottom: 0;
+
+	.brand {
+		@include span-columns(7);
+		@extend .vertical-center;
+		color: #999999;
+		.social a {color: #999999;}
+	}
+	.menu {
+		@include span-columns(5);
+		height: 100%;
+		overflow: auto;
+		background-color: black;
+		nav {
+			@extend .vertical-center;
+			margin-top: -1rem;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			width: 100%;	
+			height: 100%;
+			li {
+				text-align: center;
+				a {
+					// font-family: $title-font;
+					color: white;
+					text-transform: lowercase; 
+					text-decoration: none;
+					font-size: 1.7rem;
+					line-height: 6rem;
+
+					display: block;
+					@include size(100%);	
+					@include transition(all .25s ease);	
+					&:hover {
+						text-decoration: line-through;
+						@include transition(all .25s ease);	
+					}
+				}
+					
+			}
+		}
+	}
+}
