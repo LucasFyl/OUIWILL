@@ -24,21 +24,21 @@
 		> div {
 			@extend .vertical-center;
 			text-align: center;
-			p {
-				font-family: $font-Stmed;
-				letter-spacing: .1rem;
-				margin: 0;
-				font-size: 1.85rem;
-				color: #fff;
-				margin-bottom: 1.8rem;
-			}
 			h5 {
 				font-family: $font-Stmed;
 				letter-spacing: .1rem;
 				margin: 0;
-				font-size: 1.85rem;
-				color: $golden;
+				font-size: 1.4rem;
+				color: $contrast;
 				text-transform:uppercase;
+				margin-bottom: 1.4rem;
+			}
+			p {
+				font-family: $font-Stmed;
+				letter-spacing: .1rem;
+				margin: 0;
+				font-size: 1.4rem;
+				color: #fff;
 			}
 		}
 	}	

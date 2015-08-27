@@ -94,8 +94,8 @@
 
 					<div class="hover">
 						<div class="vert-cent">
-							<p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
 							<h5><?php echo $project->title()->html() ?></h5>
+							<p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
 						</div>
 					</div>
 				</div>
