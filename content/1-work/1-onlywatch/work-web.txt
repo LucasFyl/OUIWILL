@@ -10,8 +10,24 @@ Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo l
 
 ----
 
-Year: 2015
+Tag2: Branding
 
 ----
 
-Tag2: Branding
+Categories: digital
+
+----
+
+Subtitle: Only watch case study
+
+----
+
+Client: only watch
+
+----
+
+Services: 
+
+----
+
+Website: http://www.onlywatch.com

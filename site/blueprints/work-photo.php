@@ -9,12 +9,20 @@ fields:
     label: General Information
     type: headline
   title:
-    label: Project Title (homepage work page and landing subtitle)
+    label: Project Title
     type:  text
+    help:  (homepage, work page, and landing subtitle)
   h1:
     label: Landing title
     type:  text
     default: Photography
+  categories:
+    label: Categories
+    type: checkboxes
+    options:
+      digital: Digital
+      video: Video
+      photography: Photography
   sidebarcontent:
     label: Sidebar Content
     type: headline

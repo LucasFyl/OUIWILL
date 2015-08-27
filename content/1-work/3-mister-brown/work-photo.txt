@@ -23,3 +23,7 @@ Services: Photography
 ----
 
 Website: http://ww.misterbrown.com
+
+----
+
+Categories: photography
