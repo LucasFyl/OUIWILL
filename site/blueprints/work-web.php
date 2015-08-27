@@ -14,6 +14,13 @@ fields:
   tag2:
     label: Tag 2
     type:  text
+  categories:
+    label: Categories
+    type: checkboxes
+    options:
+      digital: Digital
+      video: Video
+      photography: Photography
   subtitle:
     label: Subtitle
     type:  text
