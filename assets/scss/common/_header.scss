@@ -48,7 +48,7 @@ header {
 			max-width: 5.7rem;
 		}
 	}
-	.trigger {
+	#trigger {
 		font-size: 1.5rem;
 		height: 1.5rem;
 		display: inline-block;
@@ -56,8 +56,5 @@ header {
 		float: right;
 		cursor: pointer;
 		color: white;
-	}
-	.menu {
-		display: none;
 	}
 }
