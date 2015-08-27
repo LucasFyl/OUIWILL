@@ -2,15 +2,15 @@
   
   <div class="landing work">  
     <?php snippet('header') ?>
-    <?php if($file = $page->file('2-landing.jpg')): ?>
+    <?php if($file = $page->file('02-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
-    <h2 class="h1"><?php echo $page->h1()->html() ?></h2>
-    <h1 class="h2"><?php echo $page->title()->html() ?></h1>
+    <h2 class="h1"><?php echo $page->title()->html() ?></h2>
+    <h1 class="h2"><?php echo $page->h1()->html() ?></h1>
 
   </div>
   
-  <main class="main case-study" id="work-detail">
+  <main class="main case-study photography video" id="work-detail">
 
     <aside class="meta">
       <ul>
@@ -34,6 +34,17 @@
       <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        <div class="modal">
+          <label for="modal-1">
+            <div class="modal-trigger play-btn"></div>
+          </label>
+          <input class="modal-state" id="modal-1" type="checkbox" />
+          <div class="modal-fade-screen">
+            <div class="modal-inner">
+              <iframe src="<?php echo $page->vimeoLink1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </figure>
       <?php endforeach ?>
     </div>
