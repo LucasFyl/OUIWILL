@@ -32,21 +32,27 @@
       <?php echo $page->text()->kirbytext() ?>
 
       <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
+        <?php $i = 1; ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-        <div class="modal">
-          <label for="modal-1">
-            <div class="modal-trigger play-btn"></div>
-          </label>
-          <input class="modal-state" id="modal-1" type="checkbox" />
-          <div class="modal-fade-screen">
-            <div class="modal-inner">
-              <iframe src="<?php echo $page->vimeoLink1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
+        <div class="modal-trigger play-btn" data-video="video<?php echo $i ?>"></div>
+      </figure>
+        <?php $i++ ?>
+      <?php endforeach ?>
+
+      
+      <div class="modal">
+        <div class="modal-fade-screen">
+          <div class="modal-inner">
+            <iframe src="<?php echo $page->vimeo1() ?>" class="<?php echo video1 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->vimeo2() ?>" class="<?php echo video2 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->vimeo3() ?>" class="<?php echo video3 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->vimeo4() ?>" class="<?php echo video4 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->vimeo5() ?>" class="<?php echo video5 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->vimeo6() ?>" class="<?php echo video6 ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
-      </figure>
-      <?php endforeach ?>
+      </div>
     </div>
 
     <nav class="nextprev cf" role="navigation">
