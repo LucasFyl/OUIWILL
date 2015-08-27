@@ -14,7 +14,6 @@
 		color: $link-color;
 	}
 	.title {
-		font-family: $title-font;
 		@include span-columns(10);
 		color: black;
 		font-size: 1.6rem;
