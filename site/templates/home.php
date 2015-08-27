@@ -127,27 +127,4 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/jquery.bxslider.min.js') ?>
-<script>
-	$(document).ready(function(){
-		var sliderContent = '.vertical-center li > h2, .vertical-center li > p, .vertical-center li > a',
-			firstSlideCtnt = '.bxslider ul li:first-child > h2, .bxslider ul li:first-child > p, .bxslider ul li:first-child > a';
-		TweenMax.set(sliderContent, {css:{opacity:0,y:20}});
-
-
-		$('.bxslider').bxSlider({
-			mode: 'fade',
-			auto: true,
-			pause: 4000,
-			onSliderLoad: function(){
-				TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
-			},
-			onSlideBefore: function() {
-				TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
-			},
-			onSlideAfter: function(){
-				TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.1);
-			}
-			});
-	})
-</script>
 <?php snippet('footer') ?>

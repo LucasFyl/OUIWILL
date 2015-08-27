@@ -6,3 +6,4 @@
 		<?php snippet('menu') ?>
   	</div>
   </header>
+  <div id="loader"></div>
