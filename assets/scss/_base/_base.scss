@@ -185,12 +185,13 @@ ul {
 }
 .play-btn {
   background: url('../images/asset-chevron-right-play.png') no-repeat;
-  background-position: 51% 49% ;
-  @include size(9rem);
+  background-position: 53% 49% ;
+  @include size(6.6rem);
   box-sizing: border-box;
   display: block;
   border-radius: 100%;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  // border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
   position: absolute;
   z-index: 9;
   left: 50%; margin-left: -4.5rem;

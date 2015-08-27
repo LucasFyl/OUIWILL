@@ -2,23 +2,23 @@
 	@include row;
 
 	border-bottom: 2px solid #e5e5e5;
-	height: 12.5rem;
-	line-height: 12.5rem;
+	height: 9.5rem;
+	line-height: 9.5rem;
 	position: relative;
-	padding: 0 5rem;
+	padding: 0 4rem;
 	cursor: pointer;
 
 	.date {
 		font-family: $font-book;
 		@include span-columns(2);
-		font-size: 1.866rem;
+		font-size: 1.4rem;
 		color: $link-color;
 	}
 	.title {
 		font-family: $font-Stmed;
 		@include span-columns(10);
 		color: black;
-		font-size: 2.133rem;
+		font-size: 1.6rem;
 		text-align: right;
 		@include transition(all 0.3s ease-in);
 		@include transition-delay(0.3s);
@@ -26,7 +26,7 @@
 	.chevron-right {
 		width: 0.9rem; height: 2rem;
 		background: url('../images/asset-chevron-right.png') no-repeat center center;
-		position: absolute; right: 5rem; top: 5.5rem;
+		position: absolute; right: 4rem; top: 3.8rem;
 		display: inline-block;
 		vertical-align: middle;
 		opacity: 0;
