@@ -6,10 +6,10 @@
 		overflow: auto;
 
 		&:first-child {
-			margin-top: 14rem;
+			margin-top: 10rem;
 		}
 		&:last-child {
-			margin-bottom: 27rem;
+			margin-bottom: 20rem;
 		}
 		.quarter {
 			@extend .squarePadded;
@@ -17,7 +17,7 @@
 			div {
 
 				> div.vertical-center {
-					padding-left: 6.5rem;
+					padding-left: 5rem;
 					padding-right: 2.5rem;
 					div {
 						display: inline-block;
@@ -26,16 +26,16 @@
 					}
 				}
 				h3 {
-					font-size: 2.1rem;
+					font-size: 1.6rem;
 				}
 				p {
-					font-size: 2.8rem;
+					font-size: 2.1rem;
 					font-family: $base-font;
 					color: $color;
 					line-height: 4rem;
 
 					&.smaller {
-						font-size: 1.467rem;
+						font-size: 1.1rem;
 						color: #6c6c6c;
 						font-family: $font-book;
 					}
@@ -43,15 +43,13 @@
 			}
 		}
 
-		&.brand p:not(.smaller) {
-			margin-bottom: 5.5rem;
+		&.brand p:not(.smaller),
+		&.sectors p:not(.smaller) {
+			margin-bottom: 4rem;
 		}
 		&.digital p:not(.smaller),
 		&.photo p:not(.smaller) {
-			margin-bottom: 10rem;
-		}
-		&.sectors p:not(.smaller) {
-			margin-bottom: 6rem;
+			margin-bottom: 8rem;
 		}
 	}
 }
@@ -72,13 +70,13 @@
 		.quote {
 			font-family: $base-font;
 			color: white;
-			font-size: 4rem;
-			line-height: 5.334rem;
+			font-size: 3rem;
+			line-height: 4rem;
 		}
 		.author {
 			font-family: $font-book;
 			color: $golden;
-			font-size: 1.867rem; 
+			font-size: 1.4rem; 
 		}
 	}
 }
