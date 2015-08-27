@@ -9,12 +9,11 @@
 			list-style-type: none;
 			margin-bottom: 5.5rem;
 			li {
-				font-family: $font-book;
 				font-size: 1.2rem;
 				line-height: 2.4rem;
 				color: #d0d0d0;
 				&:first-child {
-					font-family: $font-med;
+					font-family: $title-font;
 					color: #999999;
 					text-transform: uppercase;
 					font-size: 1.1rem;
@@ -35,14 +34,12 @@
 		@include span-columns(8);
 		float: right;
 		h3 {
-			font-family: $font-med;
 			font-size: 1.6rem;
 			color: $golden;
 			text-transform: uppercase;
 			margin-bottom: 5rem;
 		}
 		p {
-			font-family: $font-book;
 			font-size: 1.4rem;
 			line-height: 3rem;
 			color: #adadad;

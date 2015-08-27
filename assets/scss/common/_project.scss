@@ -25,7 +25,6 @@
 			@extend .vertical-center;
 			text-align: center;
 			h5 {
-				font-family: $font-med;
 				letter-spacing: .1rem;
 				margin: 0;
 				font-size: 1.4rem;
@@ -34,7 +33,7 @@
 				margin-bottom: 1.4rem;
 			}
 			p {
-				font-family: $font-med;
+				font-family: $title-font;
 				letter-spacing: .1rem;
 				margin: 0;
 				font-size: 1.4rem;
