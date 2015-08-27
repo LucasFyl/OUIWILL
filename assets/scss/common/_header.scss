@@ -22,22 +22,6 @@ header.black {
 			max-width: 5.7rem;
 		}
 	}
-	
-	nav {
-		@include span-columns(5);
-		float: right;
-		ul {
-			padding: 0;
-			margin: 0;
-			li {
-				display: inline-block;
-				a {
-					color: $header-color !important;
-					font-size: 1.2rem;
-				}
-			}
-		}
-	}
 }
 
 header {
