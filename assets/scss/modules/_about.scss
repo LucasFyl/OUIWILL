@@ -1,7 +1,7 @@
 .landing.about {
 	background: url("../images/background-landing-about@2x.jpg") no-repeat center center;
 	background-size: cover;
-	height: 66.5rem;
+	height: 50rem;
 	position: relative;
 
 	.modal-fade-screen {
@@ -17,21 +17,22 @@
 
 	.play-btn {
   		background: url('../images/icon-play-btn.png') no-repeat center center;
-  		border-width: 4px;
+  		border-width: 5px;
   		top: 50%;
-  		margin-top: -4rem;
+  		margin-top: 0rem;
 	    margin-left: -6rem;
-  		@include size(12rem);
+  		@include size(8rem);
 	}
 }
 
 .main#about {
 	section.text-block {
-		margin-top: 13.8rem;
-		margin-bottom: 27.5rem;
+		margin-top: 10rem;
+		margin-bottom: 20rem;
 		h3 {
+			font-size: 1.6rem;
 			text-align: center;
-			margin-bottom: 13.8rem;
+			margin-bottom: 10rem;
 		}
 		.row {
 			@include outer-container;
@@ -39,28 +40,28 @@
 				@include span-columns(4);
 				margin: 0; padding: 0;
 				&:first-child {
-					padding-right: 3rem;
+					padding-right: 2.5rem;
 				}
 				&:nth-child(2) {
-					padding: 0 3rem;
+					padding: 0 2.5rem;
 				}
 				&:last-child {
-					padding-left: 3rem;
+					padding-left: 2.5rem;
 				}
 				p {
 					color: $color;
 					font-family: $font-book;
-					font-size: 1.867rem;
-					line-height: 4.4rem;
+					font-size: 1.4rem;
+					line-height: 3.3rem;
 					text-align: justify;
 				}
 				p.quote {
 					font-family: 'Vollkorn', serif;
-					font-size: 3rem;
-					line-height: 3.5rem;
+					font-size: 2.3rem;
+					line-height: 2.6rem;
 					color: $golden;
 					text-align: center;
-					margin: 3.6rem 0;
+					margin: 7.7rem 0;
 				}
 			}
 		}
@@ -68,8 +69,8 @@
 	section.founder {
 		.row {
 			@include outer-container;
-			margin-top: 15.5rem;
-			margin-bottom: 27.5rem;
+			margin-top: 11.7rem;
+			margin-bottom: 17.5rem;
 			div {
 				@include span-columns(6);
 				padding: 0 2rem 0 3rem;
@@ -80,15 +81,15 @@
 				}
 				h2, h3 {
 					font-family: $font-med;
-					font-size: 2.4rem;
+					font-size: 1.8rem;
 					text-transform: uppercase;
 				}
 				h3 {
 					color: $golden;
-					margin-bottom: 7rem;
+					margin-bottom: 5.5rem;
 				}
 				p {
-					font-size: 2.8rem;
+					font-size: 2.1rem;
 					font-family: $base-font;
 					color: #adadad;
 				}
@@ -103,7 +104,7 @@
 		}
 	}
 	section.slider {
-		margin-bottom: 3rem;
+		margin-bottom: 2.7rem;
 		.outer-wrap {
 			width: 100%;
 			max-width: 100vw;
@@ -111,7 +112,7 @@
 		}
 		#slider {
 			ul {
-				height: 54.4rem;
+				height: 40rem;
 				li {
 					@include size(auto 100%);
 				}
