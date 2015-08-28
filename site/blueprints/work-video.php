@@ -53,9 +53,16 @@ fields:
     label: Vimeo videos
     type: info
     text: >
-      In order to add a Vimeo video, you must paste the embed code. It should start with https://player.vimeo.com/*****
+      In order to add a Vimeo video, you must paste the embed code. It should start with:
 
-      You must switch off the autoplay or the video will play as soon as the page is loaded.
+       https://player.vimeo.com/*****
+
+      Remember to switch off the autoplay or the video will play as soon as the page is loaded.
+
+
+      Add images to create video placeholders with aplay button. 
+
+      You can name them as you want as long as they start by ''1'' or ''2''.
   vimeo1:
     label: Vimeo url 1
     type:  url
