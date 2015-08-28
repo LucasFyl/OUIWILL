@@ -4,6 +4,7 @@ title: News
 pages:
   template: single-news
 files: false
+deletable: false
 fields:
   title:
     label: Title
