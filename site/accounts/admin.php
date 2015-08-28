@@ -8,8 +8,8 @@ language: en
 role: admin
 token: 30685c7ac5e810bdac94fef022f0ea34d3bb544e
 history:
+  - null
+  - work/union
+  - work/StPetersburg
   - work/go-haus
   - work/mister-brown
-  - work/openeyeglobal
-  - work/onlywatch
-  - work

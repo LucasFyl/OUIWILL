@@ -7,6 +7,7 @@ pages:
   	- work-photo
   	- work-video
 files: false
+deletable: false
 fields:
   title:
     label: Title
