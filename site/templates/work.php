@@ -20,7 +20,13 @@
         <div class="hover">
           <div class="vert-cent">
             <h5><?php echo $project->title()->html() ?></h5>
+            <!-- if category = digital  -->
+            <?php if (!$project->tag1()->isEmpty()): ?>
             <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
+            <?php endif ?>
+            <?php if (!$project->h1()->isEmpty()): ?>
+            <p><?php echo $project->h1()->html() ?></p>
+            <?php endif ?>
           </div>
         </div>
       </div>
