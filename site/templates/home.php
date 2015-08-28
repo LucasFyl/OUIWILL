@@ -47,19 +47,7 @@
 			<h2>showreel 2015</h2>
 			
 			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" alt="#">
-			<!-- showreel -->
-			<div class="modal">
-				<label for="modal-1">
-					<div class="modal-trigger play-btn"></div>
-				</label>
-				<input class="modal-state" id="modal-1" type="checkbox" />
-				<div class="modal-fade-screen">
-					<div class="modal-inner">
-						<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
+			<div class="modal-trigger play-btn"></div>
 		</section>
 
 		<section class="clients">
@@ -124,6 +112,14 @@
 
 		<?php snippet('carreers'); ?>
 	</main>
+
+	<div class="modal">
+		<div class="modal-fade-screen">
+			<div class="modal-inner">
+				<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/jquery.bxslider.min.js') ?>
