@@ -23,6 +23,8 @@ fields:
       digital: Digital
       video: Video
       photography: Photography
+    default: photography
+    help: For the work page filter
   sidebarcontent:
     label: Sidebar Content
     type: headline

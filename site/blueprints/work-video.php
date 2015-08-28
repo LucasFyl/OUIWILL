@@ -23,6 +23,8 @@ fields:
       digital: Digital
       video: Video
       photography: Photography
+    default: video
+    help: For the work page filter
   sidebarcontent:
     label: Sidebar Content
     type: headline
@@ -47,6 +49,13 @@ fields:
   info3:
     label: Assets
     type: headline
+  aboutvideo:
+    label: Vimeo videos
+    type: info
+    text: >
+      In order to add a Vimeo video, you must paste the embed code. It should start with https://player.vimeo.com/*****
+
+      You must switch off the autoplay or the video will play as soon as the page is loaded.
   vimeo1:
     label: Vimeo url 1
     type:  url

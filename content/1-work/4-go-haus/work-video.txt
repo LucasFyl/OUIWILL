@@ -26,7 +26,7 @@ Website: http://www.gohaus.com
 
 ----
 
-Vimeo1: https://vimeo.com/137208092
+Vimeo1: https://player.vimeo.com/video/106642566?autoplay=0
 
 ----
 
@@ -34,7 +34,7 @@ Vimeocaption1: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh v
 
 ----
 
-Vimeo2: http://vimeo.com/video/134888189
+Vimeo2: https://player.vimeo.com/video/106642566?autoplay=0
 
 ----
 
