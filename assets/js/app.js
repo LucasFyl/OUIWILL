@@ -119,7 +119,6 @@ function initWorkHover() {
 }
 function initHomePage() {
 	initHomeSlider();
-	initWorkHover();
 }
 
 // Page load event 
@@ -131,6 +130,7 @@ function initPage(){
 	// Page specific load events
 	if ( $('.main#home').length ) { initHomePage(); }
 	if ( $('.main.video').length ) { initVideoPage(); }
+	if ( $('.single-work').length ) { initWorkHover(); }
 	if ( $('.modal').length ) { 
 		initModal();
 		$('body').on('click', '.play-btn', function(){
