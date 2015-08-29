@@ -98,26 +98,33 @@ function initHomeSlider(){
 		mode: 'fade',
 		controls: false,
 		auto: true,
-		pause: 5000,
+		pause: 7000,
 		onSliderResize: function(){
 			appendBars();
 		},
 		onSliderLoad: function(currentIndex){
 			var thisBar = '.i_' + currentIndex;
+			var thisDot = $('.bx-pager-link.active');
+			console.log(thisDot);
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 			appendBars();
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
+			TweenMax.set(thisDot, {className:'+=fill'});
 		},
 		onSlideBefore: function(currentIndex, oldIndex, newIndex) {
 			var thisBar = '.i_' + newIndex;
+			var thisDot = $('.i_' + newIndex).prev('.bx-pager-link');
+			TweenMax.set(thisDot, {className:'+=fill'});
+
 			TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
 		},
-		onSlideAfter: function(){
+		onSlideAfter: function(currentIndex, oldIndex, newIndex){
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 			if ( $('span.i_3').hasClass('active') ) {
 				TweenMax.set('span.bar', {className:"+=still"});
 				TweenMax.set('span.bar', {className:"-=active",delay:0.1});
+				TweenMax.set('.bx-pager-link', {className:"-=fill",delay:0.2});
 				TweenMax.set('span.bar', {className:"-=still",delay:0.2});
 			}
 		}

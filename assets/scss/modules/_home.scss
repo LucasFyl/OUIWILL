@@ -47,6 +47,13 @@
     		.bx-pager-item {
 				@include span-columns(3);
 				position: relative;
+				.bx-pager-link{
+					@include transition(all 0.25s ease);
+					&.fill {
+						opacity: 1 !important;
+						background-color: white !important;
+					}
+				}
 				&:last-child {
 					position: relative;
 					.bar {
@@ -77,12 +84,12 @@
 						height: .1rem;
 						position: absolute;
 						background-color: white;
-						@include transition(all 3.75s linear);
+						@include transition(all 5.75s linear);
 					}
 					&.active {
 						&:after {
 							width: 100%;
-							@include transition(all 3.75s linear);
+							@include transition(all 5.75s linear);
 						}
 					}
 					&.still {
