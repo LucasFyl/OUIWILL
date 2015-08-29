@@ -98,19 +98,22 @@ function initHomeSlider(){
 		mode: 'fade',
 		controls: false,
 		auto: true,
-		pause: 7000,
+		pause: 5000,
 		onSliderResize: function(){
 			appendBars();
 		},
 		onSliderLoad: function(currentIndex){
+			var thisBar = '.i_' + currentIndex;
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 			appendBars();
+			TweenMax.set(thisBar, {className:'+=active',delay:1});
 		},
-		onSlideBefore: function(oldIndex, newIndex) {
+		onSlideBefore: function(currentIndex, oldIndex, newIndex) {
+			var thisBar = '.i_' + newIndex;
 			TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
-			console.log(oldIndex, newIndex);
+			TweenMax.set(thisBar, {className:'+=active',delay:1});
 		},
-		onSlideAfter: function(oldIndex, newIndex){
+		onSlideAfter: function(){
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 		}
 	})
