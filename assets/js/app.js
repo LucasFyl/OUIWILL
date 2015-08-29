@@ -68,6 +68,9 @@ function initNavigation(){
 		  	closeMenu();
 		}
 	});
+	$(document).on('click', '.brand-wrap', function(){
+		closeMenu();
+	});
 }
 function initVideoPage(){
 	console.log('video page');
