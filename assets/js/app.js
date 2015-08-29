@@ -97,34 +97,67 @@ function initHomeSlider(){
 		});
 	};
 
+	initImg = function(){
+		$('.bg img').each(function(index){
+			$(this).addClass('i_'+ index);
+		});
+		TweenMax.to('img.i_0', 0.25, {opacity:1,ease:Power2.easeOut});
+	};
+
 	$('.bxslider').bxSlider({
 		mode: 'fade',
 		controls: false,
-		auto: false,
+		auto: true,
 		pause: 7000,
 		onSliderResize: function(){
 			appendBars();
 		},
 		onSliderLoad: function(currentIndex){
-			var thisBar = '.i_' + currentIndex;
+			var thisBar = 'span.i_' + currentIndex;
+			
+			// dot class mgmt
 			var thisDot = $('.bx-pager-link.active');
-			console.log(thisDot);
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
+			
+			// create timing bars and class 
 			appendBars();
+			
+			// add index class to bg and display first
+			initImg();
+			
+			// expand the bar after everything is set
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
+			
+			// prevent dot behavior
 			TweenMax.set(thisDot, {className:'+=fill'});
 		},
 		onSlideBefore: function(currentIndex, oldIndex, newIndex) {
-			var thisBar = '.i_' + newIndex;
-			var thisDot = $('.i_' + newIndex).prev('.bx-pager-link');
-			var prevDot = $('.i_' + oldIndex).prev('.bx-pager-link');
+
+			// Prevent initial dot behavior
+			var thisDot = $('span.i_' + newIndex).prev('.bx-pager-link');
+			var prevDot = $('span.i_' + oldIndex).prev('.bx-pager-link');
 			TweenMax.set([thisDot, prevDot], {className:'+=fill'});
 
+			// fade Out this img
+			var thisBg = '.bg img.i_'+oldIndex;
+			TweenMax.to(thisBg, 0.15, {opacity:0,ease:Power2.easeOut});
+
+			// animate slide content (leaving animation)
 			TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
+			
+			// maintain bar active state
+			var thisBar = 'span.i_' + newIndex;
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
 		},
 		onSlideAfter: function(currentIndex, oldIndex, newIndex){
+			// fade In current slide img
+			var thisBg = $('.bg img.i_'+newIndex);
+			TweenMax.to(thisBg, 0.35, {opacity:1,ease:Power2.easeOut});
+			
+			// animate slide content (landing animation)
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
+
+			// reset components for next round
 			if ( $('span.i_3').hasClass('active') ) {
 				TweenMax.set('span.bar', {className:"+=still"});
 				TweenMax.set('span.bar', {className:"-=active",delay:0.1});
