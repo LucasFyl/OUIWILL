@@ -3,15 +3,27 @@
 	height: 39.5rem;
 	overflow: hidden;
 	
-	.half {
-		width: 50%;
+	.blockprevnext {
 		height: 100%;
 		position: relative;
 		overflow: hidden;
 		float: left;
-
+		
 		a {
 			text-decoration: none;
+		}
+		&.half {
+			width: 50%;
+		}
+		&.full {
+			width: 100%;
+			&.next {
+				.txt-wrap {
+					left: null;
+					right: 10rem;
+					text-align: right;
+				}
+			}
 		}
 		&.prev {
 			.txt-wrap {
