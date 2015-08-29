@@ -104,6 +104,13 @@ function initHomeSlider(){
 		TweenMax.to('img.i_0', 0.25, {opacity:1,ease:Power2.easeOut});
 	};
 
+	resetComponents = function(){
+		TweenMax.set('span.bar', {className:"+=still"});
+		TweenMax.set('span.bar', {className:"-=active",delay:0.1});
+		TweenMax.set('.bx-pager-link', {className:"-=fill",delay:0.2});
+		TweenMax.set('span.bar', {className:"-=still",delay:0.2});
+	};
+
 	$('.bxslider').bxSlider({
 		mode: 'fade',
 		controls: false,
@@ -111,6 +118,7 @@ function initHomeSlider(){
 		pause: 7000,
 		onSliderResize: function(){
 			appendBars();
+			resetComponents();
 		},
 		onSliderLoad: function(currentIndex){
 			var thisBar = 'span.i_' + currentIndex;
@@ -159,10 +167,7 @@ function initHomeSlider(){
 
 			// reset components for next round
 			if ( $('span.i_3').hasClass('active') ) {
-				TweenMax.set('span.bar', {className:"+=still"});
-				TweenMax.set('span.bar', {className:"-=active",delay:0.1});
-				TweenMax.set('.bx-pager-link', {className:"-=fill",delay:0.2});
-				TweenMax.set('span.bar', {className:"-=still",delay:0.2});
+				resetComponents();
 			}
 		}
 	})
