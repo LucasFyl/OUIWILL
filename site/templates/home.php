@@ -2,32 +2,33 @@
 
 	<section class="landing home">
 		<?php snippet('header') ?>
+		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
 
-		<div class="vertical-center project-infos">
+		<div class="project-infos">
 			<ul class="bxslider">
 			  <li>
 			  	<h2>Only Watch</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
-				<a href="#" class="light-btn grey">see case study</a>
+				<a href="#" class="light-btn white">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 2</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
-				<a href="#" class="light-btn grey">see case study</a>
+				<a href="#" class="light-btn white">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 3</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
-				<a href="#" class="light-btn grey">see case study</a>
+				<a href="#" class="light-btn white">see case study</a>
 			  </li>
 			  <li>
 			  	<h2>Projet 4</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
 				<span class="clearfix"></span>
-				<a href="#" class="light-btn grey">see case study</a>
+				<a href="#" class="light-btn white">see case study</a>
 			  </li>
 			</ul>
 				

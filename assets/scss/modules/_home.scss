@@ -1,7 +1,9 @@
 .landing.home {
-	background: url("../images/background-landing-onlywatch@2x.jpg") no-repeat center center;
+	// background: url("../images/background-landing-onlywatch@2x.jpg") no-repeat center center;
+	background-color: $color;
 	background-size: cover;
 	height: 100vh;
+	position: relative;
 
 	header {
 		@include outer-container;
@@ -13,26 +15,63 @@
 			color: white;
 		}
 	}
-
+	.baseline {
+		@include outer-container;
+		p {
+			font-family: $alt-font;
+			font-size: 1.3rem;
+			color: rgba(255,255,255,0.6);
+		}
+	}
 	.project-infos {
 		@include outer-container;
 		// @extend .vertical-center;
-		
+
+		position: absolute;
+		bottom: 160px;
+		width: 100%;
+		margin-left: 11.4%;
+
 		ul {
 			padding-left: 0;
 			li {
 				padding: 3rem 0;
 				box-sizing: border-box;
 			}
+			
 		}
-
+		.bx-pager {
+		    bottom: initial;
+    		margin-top: 5.5rem;
+    		height: 1rem;
+    		.bx-pager-item {
+				@include span-columns(3);
+				&:last-child {
+					position: relative;
+					&:after {
+						content: " ";
+						display: block;
+						width: 1rem;
+						height: 1rem;
+						border-radius: 100%;
+						border: 1px solid #fff;
+						opacity: .3;
+						position: absolute;
+						right: 0; top: 0;
+					}
+				}
+			}	
+		}
+			
+	
 		h2 {
-			color: #d3d3d3;
+			color: rgba(255,255,255,0.6);
 			margin: 0;
 			font-size: 2.1rem;
 			line-height: 2.1rem;
 			text-transform: uppercase;
 			margin-bottom: 3.5rem;
+			letter-spacing: 0.2rem;
 		}
 		p {
 			@include span-columns(10);
