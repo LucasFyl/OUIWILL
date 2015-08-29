@@ -14,34 +14,8 @@
 					<span class="clearfix"></span>
 					<a href="<?php echo $slide->cslink() ?>" class="light-btn white">see case study</a>
 				</li>
-				
 				<?php endforeach ?>
-				<!-- <li>
-					<h2>Only Watch</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-					<span class="clearfix"></span>
-					<a href="#" class="light-btn white">see case study</a>
-				</li>
-				<li>
-					<h2>Projet 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-					<span class="clearfix"></span>
-					<a href="#" class="light-btn white">see case study</a>
-				</li>
-				<li>
-					<h2>Projet 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-					<span class="clearfix"></span>
-					<a href="#" class="light-btn white">see case study</a>
-				</li>
-				<li>
-					<h2>Projet 4</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-					<span class="clearfix"></span>
-					<a href="#" class="light-btn white">see case study</a>
-				</li> -->
 			</ul>
-				
 		</div>
 		<div class="bg">
 			<?php foreach(page('slider')->children() as $slide): ?>
@@ -91,7 +65,7 @@
 			<h3>work.</h3>
 
 			<div class="row">
-				<?php foreach(page('work')->children()->visible()->limit(4) as $project): ?>
+				<?php foreach(page('work')->find('beaming', 'only-watch', 'open-eye-global', 'tulip') as $project): ?>
 				<div class="single-work">
 					<a href="<?php echo $project->url() ?>"></a>
 					<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
@@ -101,7 +75,13 @@
 					<div class="hover">
 						<div class="vert-cent">
 							<h5><?php echo $project->title()->html() ?></h5>
-							<p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
+							
+				            <?php if (!$project->tag1()->isEmpty()): ?>
+				            <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
+				            <?php endif ?>
+				            <?php if (!$project->h1()->isEmpty()): ?>
+				            <p><?php echo $project->h1()->html() ?></p>
+				            <?php endif ?>
 						</div>
 					</div>
 				</div>
