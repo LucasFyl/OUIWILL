@@ -6,12 +6,18 @@
 	background: white;
 	top: 0; left: 0; right: 0; bottom: 0;
 
-	.brand {
+	.brand-wrap {
 		@include span-columns(7);
-		@extend .vertical-center;
-		color: #999999;
-		.social a {color: #999999;}
+		height: 100%;
+		cursor: url('../images/icon-cursor-black.png'), default;
+
+		.brand {
+			@extend .vertical-center;
+			color: #999999;
+			.social a {color: #999999;}
+		}
 	}
+		
 	.menu {
 		@include span-columns(5);
 		height: 100%;
