@@ -87,22 +87,30 @@ function initHomeSlider(){
 	var sliderContent = '.project-infos li > h2, .project-infos li > p, .project-infos li > a';
 	TweenMax.set(sliderContent, {css:{opacity:0,y:20}});
 	
-	// $('.bx-pager-item').each(function(){
-	// 	$(this).append('<span class="bar"></span>');
-	// });
+	appendBars = function(){
+		$('.bx-pager-item').append('<span class="bar"></span>');
+		$('span.bar').each(function(index){
+			$(this).addClass('i_'+ index);
+		});
+	};
 
 	$('.bxslider').bxSlider({
 		mode: 'fade',
-		auto: false,
+		controls: false,
+		auto: true,
 		pause: 7000,
-		onSliderLoad: function(){
+		onSliderResize: function(){
+			appendBars();
+		},
+		onSliderLoad: function(currentIndex){
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
-			$('.bx-pager-item').append('<span class="bar"></span>');
+			appendBars();
 		},
-		onSlideBefore: function() {
+		onSlideBefore: function(oldIndex, newIndex) {
 			TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
+			console.log(oldIndex, newIndex);
 		},
-		onSlideAfter: function(){
+		onSlideAfter: function(oldIndex, newIndex){
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 		}
 	})

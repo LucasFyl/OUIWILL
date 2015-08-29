@@ -46,18 +46,37 @@
     		height: 1rem;
     		.bx-pager-item {
 				@include span-columns(3);
+				position: relative;
 				&:last-child {
 					position: relative;
+					.bar {
+						width: calc(100% - 2rem);
+					}
 					&:after {
 						content: " ";
 						display: block;
 						width: 1rem;
 						height: 1rem;
 						border-radius: 100%;
-						border: 1px solid #fff;
+						border: .1rem solid #fff;
 						opacity: .3;
 						position: absolute;
 						right: 0; top: 0;
+					}
+				}
+				.bar {
+					width: calc(100% - 0.5rem);
+					height: .1rem;
+					background-color: rgba(255,255,255,0.4);
+					display: block;
+					position: absolute;
+					top: .4rem; left: 1rem;
+					&:after {
+						content: "";
+						width: 0%;
+						height: .1rem;
+						position: absolute;
+						background-color: white;
 					}
 				}
 			}	
