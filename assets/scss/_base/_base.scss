@@ -108,6 +108,17 @@ ul {
         background: #bfbfbf;
       }
   }
+  &.white {
+      border-color: #ffffff;
+      border-width: 1px;
+      color: #ffffff;
+      &:hover {
+        color: black;
+      }
+      &:after {
+        background: #ffffff;
+      }
+  }
 
   // Style
   &.centered {
