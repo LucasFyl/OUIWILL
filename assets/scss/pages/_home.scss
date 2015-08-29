@@ -37,6 +37,12 @@
 		    top: 0;
 		    left: 0;
 		    opacity: 0;
+		    @media (min-width: 1344px) {
+				width: 100%;
+		    }
+		    @media (max-width: 1344px) {
+		    	height: 100%;
+		    }
 		}
 	}
 	.project-infos {
