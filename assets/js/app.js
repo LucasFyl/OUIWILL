@@ -115,6 +115,11 @@ function initHomeSlider(){
 		},
 		onSlideAfter: function(){
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
+			if ( $('span.i_3').hasClass('active') ) {
+				TweenMax.set('span.bar', {className:"+=still"});
+				TweenMax.set('span.bar', {className:"-=active",delay:0.1});
+				TweenMax.set('span.bar', {className:"-=still",delay:0.2});
+			}
 		}
 	})
 }
