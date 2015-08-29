@@ -8,8 +8,8 @@ language: en
 role: admin
 token: 30685c7ac5e810bdac94fef022f0ea34d3bb544e
 history:
+  - slider/slide4
+  - slider/slide3
+  - slider/slide2
+  - slider/slide1
   - null
-  - work/union
-  - work/StPetersburg
-  - work/go-haus
-  - work/mister-brown

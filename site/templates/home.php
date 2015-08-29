@@ -6,32 +6,49 @@
 
 		<div class="project-infos">
 			<ul class="bxslider">
-			  <li>
-			  	<h2>Only Watch</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-				<span class="clearfix"></span>
-				<a href="#" class="light-btn white">see case study</a>
-			  </li>
-			  <li>
-			  	<h2>Projet 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-				<span class="clearfix"></span>
-				<a href="#" class="light-btn white">see case study</a>
-			  </li>
-			  <li>
-			  	<h2>Projet 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-				<span class="clearfix"></span>
-				<a href="#" class="light-btn white">see case study</a>
-			  </li>
-			  <li>
-			  	<h2>Projet 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-				<span class="clearfix"></span>
-				<a href="#" class="light-btn white">see case study</a>
-			  </li>
+				<?php foreach(page('slider')->children() as $slide): ?>
+				<li>
+
+					<h2><?php echo $slide->title() ?></h2>
+					<p><?php echo $slide->quote() ?></p>
+					<span class="clearfix"></span>
+					<a href="<?php echo $slide->cslink() ?>" class="light-btn white">see case study</a>
+				</li>
+				
+				<?php endforeach ?>
+				<!-- <li>
+					<h2>Only Watch</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+					<span class="clearfix"></span>
+					<a href="#" class="light-btn white">see case study</a>
+				</li>
+				<li>
+					<h2>Projet 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+					<span class="clearfix"></span>
+					<a href="#" class="light-btn white">see case study</a>
+				</li>
+				<li>
+					<h2>Projet 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+					<span class="clearfix"></span>
+					<a href="#" class="light-btn white">see case study</a>
+				</li>
+				<li>
+					<h2>Projet 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br/> sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+					<span class="clearfix"></span>
+					<a href="#" class="light-btn white">see case study</a>
+				</li> -->
 			</ul>
 				
+		</div>
+		<div class="bg">
+			<?php foreach(page('slider')->children() as $slide): ?>
+			<?php if($image = $slide->images()->sortBy('sort', 'asc')->first()): ?>
+			<img src="<?php echo $image->url() ?>" alt="<?php echo $slide->title() ?>">
+			<?php endif ?>
+			<?php endforeach ?>
 		</div>
 	</section>
 

@@ -100,7 +100,7 @@ function initHomeSlider(){
 	$('.bxslider').bxSlider({
 		mode: 'fade',
 		controls: false,
-		auto: true,
+		auto: false,
 		pause: 7000,
 		onSliderResize: function(){
 			appendBars();
