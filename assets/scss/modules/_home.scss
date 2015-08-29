@@ -85,6 +85,11 @@
 							@include transition(all 3.75s linear);
 						}
 					}
+					&.still {
+						&:after {
+							@include transition(all 0s linear !important);
+						}
+					}
 				}
 			}	
 		}
