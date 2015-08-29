@@ -1,0 +1,72 @@
+.nextprev {
+	width: 100%;
+	height: 39.5rem;
+	overflow: hidden;
+	
+	.half {
+		width: 50%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		float: left;
+
+		a {
+			text-decoration: none;
+		}
+		&.prev {
+			.txt-wrap {
+				text-align: right;
+				right: 10rem;
+			}
+		}
+		&.next {
+			.txt-wrap {
+				left: 10rem;
+			}
+		}
+		.txt-wrap {
+			position: absolute;
+			bottom: 6.5rem;
+			z-index: 9;
+
+			p, h4 {
+				color: white;
+				text-transform: uppercase;
+				position: relative;
+				z-index: 99;
+			}
+			p {
+				font-size: 1.1rem;
+			}
+			h4 {
+				font-size: 3.1rem;
+			}
+		}
+
+		div:nth-child(2) {
+			@include size(100%);
+			position: absolute;
+			z-index: 5;
+
+			> a {
+				@include size(100%);
+				display: block;
+				position: absolute;
+				z-index: 5;
+			}
+			.overlay {
+				position: absolute;
+				background: rgba(0,0,0,0.5);
+				z-index: 4;
+			}
+			img {	
+				@include size(auto);
+				position: absolute;
+				top: 0;left: 0;right: 0;bottom: 0;
+				margin: auto;
+				z-index: 3;
+			}
+			
+		}
+	}
+}

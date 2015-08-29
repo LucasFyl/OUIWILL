@@ -27,25 +27,26 @@
 
 /* Reusable Component styles (header/footer/dropdowns etc)
    Put them inside "common" folder ***********************/
-@import "common/loader";
-@import "common/header";
-@import "common/navigation";
-@import "common/footer";
-@import "common/single-work";
-@import "common/carreers";
-@import "common/news";
-@import "common/landing";
-@import "common/case-study";
-@import "common/slider";
+@import "modules/loader";
+@import "modules/header";
+@import "modules/navigation";
+@import "modules/footer";
+@import "modules/single-work";
+@import "modules/carreers";
+@import "modules/single-news";
+@import "modules/landing";
+@import "modules/case-study";
+@import "modules/slider";
+@import "modules/prev-next";
 
 /* Module styles (individual page styles)
    Put them inside "modules" folder ***********************/
-@import "modules/home";
-@import "modules/work";
-@import "modules/news";
-@import "modules/services";
-@import "modules/about";
-@import "modules/contact";
+@import "pages/home";
+@import "pages/work";
+@import "pages/news";
+@import "pages/services";
+@import "pages/about";
+@import "pages/contact";
 
 
 /* Plugin styles

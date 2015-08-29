@@ -121,10 +121,8 @@ function initHomeSlider(){
 			resetComponents();
 		},
 		onSliderLoad: function(currentIndex){
-			var thisBar = 'span.i_' + currentIndex;
 			
-			// dot class mgmt
-			var thisDot = $('.bx-pager-link.active');
+			// Animate slide content (landing animation)
 			TweenMax.staggerTo(sliderContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
 			
 			// create timing bars and class 
@@ -134,9 +132,11 @@ function initHomeSlider(){
 			initImg();
 			
 			// expand the bar after everything is set
+			var thisBar = 'span.i_' + currentIndex;
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
 			
 			// prevent dot behavior
+			var thisDot = $('.bx-pager-link.active');
 			TweenMax.set(thisDot, {className:'+=fill'});
 		},
 		onSlideBefore: function(currentIndex, oldIndex, newIndex) {
@@ -158,6 +158,7 @@ function initHomeSlider(){
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
 		},
 		onSlideAfter: function(currentIndex, oldIndex, newIndex){
+
 			// fade In current slide img
 			var thisBg = $('.bg img.i_'+newIndex);
 			TweenMax.to(thisBg, 0.35, {opacity:1,ease:Power2.easeOut});
