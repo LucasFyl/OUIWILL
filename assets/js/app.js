@@ -114,7 +114,8 @@ function initHomeSlider(){
 		onSlideBefore: function(currentIndex, oldIndex, newIndex) {
 			var thisBar = '.i_' + newIndex;
 			var thisDot = $('.i_' + newIndex).prev('.bx-pager-link');
-			TweenMax.set(thisDot, {className:'+=fill'});
+			var prevDot = $('.i_' + oldIndex).prev('.bx-pager-link');
+			TweenMax.set([thisDot, prevDot], {className:'+=fill'});
 
 			TweenMax.to(sliderContent, 0.25, {css:{opacity:0,y:20},ease:Power2.easeIn});
 			TweenMax.set(thisBar, {className:'+=active',delay:1});
