@@ -6,7 +6,7 @@
 			<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
 		</div>
 
-		<div class="mySlider">
+		<div id="mySlider">
 			<div class="slider-content project-infos">
 				<ul>
 					<?php foreach(page('slider')->children() as $slide): ?>
