@@ -19,13 +19,11 @@
 				$(this).addClass('i_'+ index);
 			});
 
-			console.log('init');
-
 			// set components positions 
-			this.setPositions(content, kids, images, nav, val);
+			this.reset(content, kids, images, nav, val);
 
 		},
-		setPositions: function(content, kids, images, nav, val){
+		reset: function(content, kids, images, nav, val){
 			// (re)set slide content style for animation
 			TweenMax.set(kids, {opacity:0,y:20});
 			TweenMax.set(images, {zIndex:2,opacity:0});
@@ -74,7 +72,7 @@
 				} else {
 					// reset everything and start again
 					val = 0;
-					HomeSlider.setPositions(content, kids, images, nav, val);
+					HomeSlider.reset(content, kids, images, nav, val);
 				}
 			}, 5000 );
 		},
