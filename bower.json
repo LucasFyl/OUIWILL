@@ -5,7 +5,7 @@
     "Lucas Fayolle <lfayolle1@gmail.com>"
   ],
   "description": "insert description",
-  "license": "CC BY-NC-SA 3.0 DE",
+  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,14 +15,16 @@
     "tests"
   ],
   "devDependencies": {
-    "fontawesome": "~4.2.0",
     "bourbon": "~4.2.4",
-    "neat": "~1.7.2",
+    "fontawesome": "~4.2.0",
     "gsap": "~1.17.0",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "neat": "~1.7.2",
+    "scrollmagic": "~2.0.5"
   },
   "dependencies": {
     "gsap": "~1.17.0",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "scrollmagic": "~2.0.5"
   }
 }
