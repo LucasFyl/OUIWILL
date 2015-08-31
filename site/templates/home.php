@@ -120,5 +120,6 @@
 	</div>
 
 <?php snippet('footer-big') ?>
-<?= js('assets/js/jquery.bxslider.min.js') ?>
+<?= js('assets/js/vendor/jquery.bxslider.min.js') ?>
+<?= js('assets/js/components/homeSlider.js') ?>
 <?php snippet('footer') ?>
