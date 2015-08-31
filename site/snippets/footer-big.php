@@ -28,5 +28,6 @@
 	</div>
 </footer>
 
-<?= js('assets/js/jquery.min.js') ?>
-<?= js('assets/js/TweenMax.min.js') ?>
+<?= js('assets/js/vendor/jquery.min.js') ?>
+<?= js('assets/js/vendor/TweenMax.min.js') ?>
+<?= js('assets/js/vendor/scrollMagic.js') ?>
