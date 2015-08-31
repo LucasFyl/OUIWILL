@@ -36,9 +36,6 @@ function initModal() {
 		}
 	});
 }
-function initNavigation(){
-
-}
 function initVideoPage(){
 	console.log('video page');
 
@@ -52,9 +49,6 @@ function initVideoPage(){
 		TweenMax.set('.video-modal', {display:'none'});
 		TweenMax.set(target, {display:'block',delay:0.1});
 	};
-}
-function initHomeSlider(){
-	
 }
 function initWorkHover() {
 	var workEl = $('.single-work');
@@ -84,14 +78,13 @@ function initWorkHover() {
 	$('.single-work').hoverIntent(hoverIn, hoverOut);
 }
 function initHomePage() {
-	initHomeSlider();
+	// initHomeSlider();
 }
 
 // Page load event 
 function initPage(){
 
 	hideLoader();
-	initNavigation();
 
 	// Page specific load events
 	if ( $('.main#home').length ) { initHomePage(); }
