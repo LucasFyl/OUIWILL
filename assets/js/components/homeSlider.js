@@ -34,7 +34,9 @@
 			var firstContent = $('li.i_0').children('h2, p, a');
 			var firstImage = $('img.i_0');
 			TweenMax.to(firstImage, 0.25, {zIndex:3,opacity:1,ease:Power2.easeOut});
-			TweenMax.staggerTo(firstContent, 0.5, {opacity:1,y:0,ease:Expo.easeOut,delay:0.5}, 0.15);
+			TweenMax.staggerTo(firstContent, 0.5, {opacity:1,y:0,ease:Expo.easeOut,delay:0.5,onComplete:function(){
+				TweenMax.to(firstContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:3.5});
+			}}, 0.15);
 
 			// trigger navigation
 			this.navigation(val);
@@ -65,9 +67,9 @@
 				if (val === 0) {val=val+1;}
 				
 				if( val <= 3 ) {
+					// slide to target, update nav, and increment slide val
 					HomeSlider.slideTo(val);
 					HomeSlider.navigation(val);
-					// slide to target, update nav and increment slide val
 					val=val+1;
 				} else {
 					// reset everything and start again
@@ -80,7 +82,9 @@
 			var targetContent = $('#mySlider .slider-content li.i_' + val).children('h2, p, a');
 			var targetImage = $('#mySlider .slider-bg img.i_' + val);
 
-			TweenMax.staggerTo(targetContent, 0.5, {css:{opacity:1,y:0},ease:Power2.easeOut}, 0.25);
+			TweenMax.staggerTo(targetContent, 0.5, {opacity:1,y:0,ease:Power2.easeOut,onComplete:function(){
+				TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4});
+			}}, 0.25);
 			TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
 		},
 		bindEvent: function(){
