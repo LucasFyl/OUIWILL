@@ -44,3 +44,12 @@
          url('../fonts/AkkuratItalic.ttf') format('truetype'),
          url('../fonts/AkkuratItalic.svg#AkkuratItalic') format('svg');
 }
+@font-face {
+    font-family: 'AkkuratLight';
+    src: url('../fonts/AkkuratLight.eot');
+    src: url('../fonts/AkkuratLight.eot') format('embedded-opentype'),
+         url('../fonts/AkkuratLight.woff2') format('woff2'),
+         url('../fonts/AkkuratLight.woff') format('woff'),
+         url('../fonts/AkkuratLight.ttf') format('truetype'),
+         url('../fonts/AkkuratLight.svg#AkkuratLight') format('svg');
+}
