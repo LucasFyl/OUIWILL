@@ -122,6 +122,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: 'assets/js/app.js',
+        expand: true,
         tasks: 'uglify:app',
       },
       livereload: {
