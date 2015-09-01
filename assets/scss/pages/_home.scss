@@ -67,20 +67,23 @@
 				margin: 0 auto;
 				max-width: 100%;
 			}
-			
-			h2 {
-				position: absolute;
-				z-index: 9;
-				width: 100%; text-align: center;
-				color: #fff;
-				text-transform: uppercase;
-				font-size: 4rem;
-				letter-spacing: 2rem;
-				margin-top: 17%;
-			}	
-			.play-btn {
-				@include transition(none);
+			> div {
+				@extend .vertical-center;
+				h2 {
+					position: absolute;
+					z-index: 9;
+					width: 100%; text-align: center;
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 4rem;
+					letter-spacing: 2rem;
+					// margin-top: 17%;
+				}	
+				.play-btn {
+					@include transition(none);
+				}
 			}
+				
 		}
 		&.clients {
 			@include outer-container;

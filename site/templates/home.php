@@ -47,10 +47,11 @@
 		</section>
 
 		<section class="showreel">
-			<h2>showreel 2015</h2>
-			
 			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" alt="#">
-			<div class="modal-trigger play-btn"></div>
+			<div>
+				<h2>showreel 2015</h2>
+				<div class="modal-trigger play-btn"></div>
+			</div>
 		</section>
 
 		<section class="clients">
