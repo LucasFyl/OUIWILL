@@ -4,8 +4,10 @@
   <main class="main" id="work">
 
     <div class="filterpart">
-      <p>Filter by: <a href="#" class="active">all project</a><a href="#">digital</a><a href="#">video</a><a href="#">photography</a></p>
-      <p><a href="#">try random <span></span></a></p>
+      <div>
+        <p>Filter by: <a href="#" class="active">all project</a><a href="#">digital</a><a href="#">video</a><a href="#">photography</a></p>
+      </div>
+      <div><a href="#">try random <span></span></a></div>
     </div>
 
     <section class="showcase">

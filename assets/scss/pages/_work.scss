@@ -2,14 +2,24 @@
 //==============   Work 
 .main#work {
 	@include outer-container;
+	width: 100%;
+	overflow: auto;
 
 	.filterpart {
 		height: 12.3rem;
-		line-height: 12.3rem;
-		p {
-			font-family: $font-book;
+		
+		> div {
+			font-family: $base-font;
 			font-size: 1.6rem;
 			color: #000;
+			cursor: default;
+
+			p, a {
+				cursor: pointer;
+				line-height: 12.3rem;
+				margin: 0;
+			}
+			
 			a {
 				display: inline-block;
 				padding: 0 1.8rem;
@@ -28,6 +38,9 @@
 			}
 			&:last-child {
 				@include span-columns(2);
+				height: 100%;
+				position: relative;
+
 				a{
 					color: $golden;
 					padding-right: 5rem;
@@ -40,11 +53,11 @@
 						}
 					}
 				} 
-				position: relative;
 
 				span {
 					background: url('../images/asset-work-filter.png') no-repeat center center;
-					@include size(32px 26px);
+					background-size: cover;
+					@include size(2.3rem 1.9rem);
 					display: inline-block;
 					position: absolute;
 					right: 0; top: 42%;
