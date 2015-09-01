@@ -83,13 +83,16 @@
 					font-family: $title-font;
 					font-size: 1.8rem;
 					text-transform: uppercase;
+					margin: 0;
+					line-height: 1.4;
 				}
 				h3 {
 					color: $golden;
+					font-family: $base-font;
 					margin-bottom: 5.5rem;
 				}
 				p {
-					font-size: 2.1rem;
+					font-size: 1.8rem;
 					font-family: $light-font;
 					color: #adadad;
 				}
