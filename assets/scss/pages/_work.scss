@@ -73,6 +73,11 @@
 		overflow: auto;
 		@include span-columns(12);
 
+		.disabled {
+			opacity: 0;
+			display: none;
+		}
+
 		.last {
 			@extend .fill-remainder;
 			padding-top: 21.5%;
