@@ -92,4 +92,5 @@
 <?php snippet('news-next') ?>
 
 <?php snippet('footer-big') ?>
+<?= js('assets/js/scrollControl-News.js') ?>
 <?php snippet('footer') ?>
