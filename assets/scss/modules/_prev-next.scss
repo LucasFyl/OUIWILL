@@ -2,6 +2,8 @@
 	width: 100%;
 	height: 39.5rem;
 	overflow: hidden;
+	position: relative;
+	z-index: 5;
 	
 	.blockprevnext {
 		height: 100%;
@@ -40,6 +42,7 @@
 			position: absolute;
 			bottom: 6.5rem;
 			z-index: 9;
+			a {color:white !important; z-index: 9 !important; position: relative !important;}
 
 			p, h4 {
 				color: white;

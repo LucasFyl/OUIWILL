@@ -42,4 +42,6 @@
 <?php snippet('work-next') ?>
 
 <?php snippet('footer-big') ?>
+
+<?= js('assets/js/scrollControl-WorkDetail.js') ?>
 <?php snippet('footer') ?>

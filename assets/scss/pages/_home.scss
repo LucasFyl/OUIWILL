@@ -68,17 +68,6 @@
 				max-width: 100%;
 			}
 			
-			.modal-fade-screen {
-			    padding: 0;
-			    padding-top: 5vh;
-			}
-			.modal-inner {
-			    width: 100%;
-			    max-height: 100%;
-			    overflow: hidden;
-			    padding: 0;
-			}
-
 			h2 {
 				position: absolute;
 				z-index: 9;
@@ -89,6 +78,9 @@
 				letter-spacing: 2rem;
 				margin-top: 17%;
 			}	
+			.play-btn {
+				@include transition(none);
+			}
 		}
 		&.clients {
 			@include outer-container;
