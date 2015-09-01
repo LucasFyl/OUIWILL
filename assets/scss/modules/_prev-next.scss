@@ -85,3 +85,21 @@
 		}
 	}
 }
+.news-nav {
+	
+	.prev, .next {
+		h4 {
+			font-size: 2.1rem !important;
+		}
+	}
+	.prev {
+		h4 {
+			padding-left: 3rem !important;
+		}
+	}
+	.next {
+		h4 {
+			padding-right: 3rem !important;
+		}
+	}
+}

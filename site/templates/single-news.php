@@ -3,7 +3,7 @@
   <div class="landing news">  
     <?php snippet('header') ?>
 
-    <?php if($file = $page->file('1-landing.jpg')): ?>
+    <?php if($file = $page->file('02-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
 
@@ -87,16 +87,9 @@
       </div>
     </div>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
-
   </main>
+
+<?php snippet('news-next') ?>
 
 <?php snippet('footer-big') ?>
 <?php snippet('footer') ?>
