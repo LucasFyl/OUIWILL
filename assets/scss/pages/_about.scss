@@ -16,10 +16,9 @@
 	}
 
 	.play-btn {
-  		border-width: 5px;
   		top: 50%;
   		margin-top: 0rem;
-	    margin-left: -6rem;
+	    margin-left: -4rem;
   		@include size(8rem);
 	}
 }
