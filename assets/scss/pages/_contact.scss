@@ -35,6 +35,7 @@
 					margin-bottom: 0;
 				}
 				h3 {
+					font-family: $base-font;
 					color: #989898;
 					margin-bottom: 5rem;
 				}
@@ -47,6 +48,7 @@
 				}
 				a.light-btn {
 					@extend .small;
+					margin-right: 1rem;
 				}
 			}
 		}
