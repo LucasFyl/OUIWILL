@@ -17,7 +17,7 @@
   <div class="menu">
     <nav>
       <ul class="cf no-bullet">
-        <li><a href="<?php echo $site->url() ?>">Home</a></li>
+        <!-- <li><a href="<?php echo $site->url() ?>">Home</a></li> -->
         <?php foreach($pages->visible() as $p): ?>
         <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
         <?php endforeach ?>

@@ -6,6 +6,8 @@ footer.big {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 60%;
+	position: relative;
+	z-index: 99;
 
 	.brand {
 		@include span-columns(6);

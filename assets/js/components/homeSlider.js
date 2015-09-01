@@ -69,11 +69,14 @@
 					HomeSlider.slideTo(val);
 					HomeSlider.navigation(val);
 					val=val+1;
+					return;
 				} else {
 					// reset everything and start again
 					val = 0;
 					HomeSlider.reset(content, kids, images, nav, val);
+					return;
 				}
+				return;
 			}, 5000 );
 		},
 		slideTo: function(val){
@@ -86,6 +89,12 @@
 			TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
 		},
 		bindEvent: function(){
+			$('body').on('click', '.nav-link', function(e){
+				e.preventDefault();
+				var _this = $(this);
+				var target = _this.parent().attr('class');
+				console.log(target);
+			})
 
 		}
 	}
