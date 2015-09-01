@@ -23,7 +23,7 @@ var workScene = new ScrollMagic.Scene({triggerElement: "#home .single-work", tri
     .addTo(controller)
     .setTween(workTween);
     
-var newsScene = new ScrollMagic.Scene({triggerElement: "#home .news", triggerHook: 'onEnter', offset: 150})
+var newsScene = new ScrollMagic.Scene({triggerElement: "#home .news", triggerHook: 'onEnter', offset: 100})
     .addTo(controller)
     .setTween(newsTween);
     
