@@ -10,6 +10,8 @@
 			TweenMax.staggerTo(notneeded, 1, {y:200,opacity:0,ease:Power4.easeInOut,onComplete:WorkFilter.updateGrid(needed, notneeded)}, 0.1);
 		},
 		reset: function(clickTarget){
+			$('.filter').removeClass('active');
+			$(this).addClass('active');
 			var _this = $(this).attr('data-filter');
 			$('.single-work').removeClass('disabled');
 			if ( _this != 'all' ) { WorkFilter.filter(_this); } else {
