@@ -11,6 +11,6 @@ fields:
   text:
     label: Text
     type:  textarea
-  vimeoLink:
+  aboutVideo:
     label: Vimeo link for the video
     type:  url
