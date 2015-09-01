@@ -1,18 +1,26 @@
 var controller = new ScrollMagic.Controller();
-var firstTween = new TweenMax.fromTo('#services section.brand', 0.5, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var secondTween = new TweenMax.fromTo('#services section.digital', 0.5, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var thirdTween = new TweenMax.fromTo('#services section.photo', 0.5, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var fourthTween = new TweenMax.fromTo('#services section.sectors', 0.5, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var brandTween = new TweenMax.fromTo('#services section.brand', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var digitalTween = new TweenMax.fromTo('#services section.digital', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var photoTween = new TweenMax.fromTo('#services section.photo', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var sectorsTween = new TweenMax.fromTo('#services section.sectors', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var tlquote = new TimelineMax({paused:true});
 
-var firstScene = new ScrollMagic.Scene({triggerElement: "#services section.brand"})
+tlquote.set('.blockquote p', {opacity:0,y:20})
+	.fromTo('.blockquote', 1, {yPercent:100,zIndex:-1}, {yPercent:0,zIndex:9,ease:Power4.easeInOut})
+	.staggerTo('.blockquote p', 1, {opacity:1,y:0,ease:Power3.easeOut}, 0.25)
+		
+var brandScene = new ScrollMagic.Scene({triggerElement: "#services section.brand", offset: 150})
     .addTo(controller)
-    .setTween(firstTween);
-var secondScene = new ScrollMagic.Scene({triggerElement: "#services section.digital"})
+    .setTween(brandTween);
+var digitalScene = new ScrollMagic.Scene({triggerElement: "#services section.digital", offset: 150})
     .addTo(controller)
-    .setTween(secondTween);
-var thirdScene = new ScrollMagic.Scene({triggerElement: "#services section.photo"})
+    .setTween(digitalTween);
+var photoScene = new ScrollMagic.Scene({triggerElement: "#services section.photo", offset: 150})
     .addTo(controller)
-    .setTween(thirdTween);
-var fourthScene = new ScrollMagic.Scene({triggerElement: "#services section.sectors"})
+    .setTween(photoTween);
+var sectorsScene = new ScrollMagic.Scene({triggerElement: "#services section.sectors", offset: 150})
     .addTo(controller)
-    .setTween(fourthTween);
+    .setTween(sectorsTween);
+var quoteScene = new ScrollMagic.Scene({triggerElement: "footer.big", triggerHook: 'onEnter'})
+    .addTo(controller)
+    .setTween(tlquote.play());
