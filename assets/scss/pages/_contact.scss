@@ -49,6 +49,8 @@
 				a.light-btn {
 					@extend .small;
 					margin-right: 1rem;
+					border-size: 1px;
+					font-family: $light-font ;
 				}
 			}
 		}
