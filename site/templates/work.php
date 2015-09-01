@@ -57,4 +57,5 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/components/workFilter.js') ?>
+<?= js('assets/js/scrollControl-Work.js') ?>
 <?php snippet('footer') ?>
