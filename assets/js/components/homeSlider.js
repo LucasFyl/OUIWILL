@@ -64,13 +64,18 @@
 				// if 0 then target is 1
 				if (val === 0) {val=val+1;}
 				
+				// if not last slide switch to next, else switch to first an reset val
 				if( val <= 3 ) {
+					// stop all buffered events and execute only last animation
+					HomeSlider.stopBuffering(content, kids, images, nav);
 					// slide to target, update nav, and increment slide val
 					HomeSlider.slideTo(val);
 					HomeSlider.navigation(val);
 					val=val+1;
 					return;
 				} else {
+					// stop all buffered events and execute only last animation
+					HomeSlider.stopBuffering(content, kids, images, nav);
 					// reset everything and start again
 					val = 0;
 					HomeSlider.reset(content, kids, images, nav, val);
@@ -87,6 +92,19 @@
 				TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4});
 			}}, 0.25);
 			TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
+		},
+		stopBuffering: function(content, kids, images, nav){
+			// stop all buffered events and execute only last animation
+			// fix the inactive-tab bug as seen on : 
+			// http://stackoverflow.com/questions/6183463/when-using-setinterval-if-i-switch-tabs-in-chrome-and-go-back-the-slider-goes
+			$('#mySlider').stop(true,true);
+			$('#mySlider .slider-content').stop(true,true);
+			$('#mySlider .slider-nav').stop(true,true);
+			$('#mySlider .slider-bg').stop(true,true);
+			content.stop(true,true);
+			kids.stop(true,true);
+			images.stop(true,true);
+			nav.stop(true,true);
 		},
 		bindEvent: function(){
 			$('body').on('click', '.nav-link', function(e){
