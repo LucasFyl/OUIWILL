@@ -2,17 +2,8 @@
 
 	<section class="landing about">
 		<?php snippet('header') ?>
-		<div class="modal">
-			<label for="modal-1">
-				<div class="modal-trigger play-btn"></div>
-			</label>
-			<input class="modal-state" id="modal-1" type="checkbox" />
-			<div class="modal-fade-screen">
-				<div class="modal-inner">
-					<iframe src="<?php echo $page->vimeoLink(); ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
+		<div class="modal-trigger play-btn"></div>
+
 	</section>
 
 
@@ -100,6 +91,15 @@
 		<?php snippet('carreers'); ?>
 	</main>
 
+	<div class="modal">
+		<div class="modal-fade-screen">
+			<div class="modal-inner">
+				<iframe src="<?php echo $page->aboutVideo() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
 <?php snippet('footer-big') ?>
 <?= js('assets/js/slider.js') ?>
+<?= js('assets/js/scrollControl-About.js') ?>
 <?php snippet('footer') ?>
