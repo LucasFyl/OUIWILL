@@ -69,8 +69,12 @@
 			}
 			> div {
 				@extend .vertical-center;
+				position: absolute;
+				width: 100%;
+				overflow: visible;
+
 				h2 {
-					position: absolute;
+					// position: absolute;
 					z-index: 9;
 					width: 100%; text-align: center;
 					color: #fff;
@@ -81,6 +85,7 @@
 				}	
 				.play-btn {
 					@include transition(none);
+					position: relative;
 				}
 			}
 				
