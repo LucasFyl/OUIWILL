@@ -1,8 +1,8 @@
 var controller = new ScrollMagic.Controller();
-var brandTween = new TweenMax.fromTo('#services section.brand', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var digitalTween = new TweenMax.fromTo('#services section.digital', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var photoTween = new TweenMax.fromTo('#services section.photo', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
-var sectorsTween = new TweenMax.fromTo('#services section.sectors', 1, {opacity:0.4}, {opacity:1,ease:Power4.easeOut});
+var brandTween = new TweenMax.fromTo('#services section.brand', 1, {opacity:0.2}, {opacity:1,ease:Power4.easeOut});
+var digitalTween = new TweenMax.fromTo('#services section.digital', 1, {opacity:0.2}, {opacity:1,ease:Power4.easeOut});
+var photoTween = new TweenMax.fromTo('#services section.photo', 1, {opacity:0.2}, {opacity:1,ease:Power4.easeOut});
+var sectorsTween = new TweenMax.fromTo('#services section.sectors', 1, {opacity:0.2}, {opacity:1,ease:Power4.easeOut});
 var tlquote = new TimelineMax({paused:true});
 
 tlquote.set('.blockquote p', {opacity:0,y:20})
