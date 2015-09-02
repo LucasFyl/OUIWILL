@@ -17,7 +17,7 @@
 			div {
 
 				> div.vertical-center {
-					padding-left: 5rem;
+					padding-left: 3rem;
 					padding-right: 2.5rem;
 					div {
 						display: inline-block;
@@ -37,21 +37,24 @@
 					&.smaller {
 						font-size: 1.1rem;
 						color: #6c6c6c;
-						line-height: 2.8rem;
+						line-height: 2.1rem;
 						font-family: $base-font;
+					}
+					&:not(.smaller) {
+						margin-bottom: 5rem;
 					}
 				}
 			}
 		}
-
-		&.brand p:not(.smaller),
-		&.sectors p:not(.smaller) {
-			margin-bottom: 4rem;
-		}
-		&.digital p:not(.smaller),
-		&.photo p:not(.smaller) {
-			margin-bottom: 8rem;
-		}
+		
+		// &.brand p:not(.smaller),
+		// &.sectors p:not(.smaller) {
+		// 	margin-bottom: 4rem;
+		// }
+		// &.digital p:not(.smaller),
+		// &.photo p:not(.smaller) {
+		// 	margin-bottom: 5rem;
+		// }
 	}
 }
 .blockquote {
