@@ -12,7 +12,7 @@
   
   <main class="main case-study" id="work-detail">
 
-    <aside class="meta">
+    <aside class="meta" id="sidebar">
       <ul>
         <li>Client:</li>  
         <li><?php echo $page->client() ?></li>
