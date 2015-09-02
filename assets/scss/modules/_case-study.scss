@@ -4,7 +4,8 @@
 
 	aside {
 		@include span-columns(3);
-
+		@include transition(all 0.5 ease-out);
+		
 		ul {
 			list-style-type: none;
 			margin-bottom: 5.5rem;
@@ -28,6 +29,11 @@
 					}
 				}
 			}
+		}
+		&.fixed {
+			position: fixed;
+			top: 5rem;
+			@include transition(all 0.5 ease-out);
 		}
 	}
 	.content {
