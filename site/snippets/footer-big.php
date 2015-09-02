@@ -14,7 +14,7 @@
 	<div class="outer-container">
 		<hr>
 		<div>
-			<div>© Oui Will - All right reserved</div>
+			<div>© oui will - all right reserved</div>
 			<nav>
 				<ul class="cf no-bullet">
 					<?php foreach($pages->visible() as $p): ?>
