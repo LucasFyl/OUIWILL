@@ -3,10 +3,13 @@
 	padding-top: 10rem;
 
 	aside {
+		@include media($medium) {
+			@include span-columns(12);
+		}
 		@include media($mobile) {
 			@include span-columns(12);
 		}
-		@include media($desktop) {
+		@include media($large) {
 			@include span-columns(3);
 		}
 			
@@ -25,6 +28,15 @@
 				&:last-child{
 					@include span-columns(12);
 				}
+				li {
+					text-align:center; 
+				}
+			}
+			@include media($medium){
+				@include span-columns(4);
+				@include omega(3);
+				padding-right: 0;
+
 				li {
 					text-align:center; 
 				}
@@ -62,6 +74,9 @@
 		float: right;
 
 		@include media($mobile){
+			@include span-columns(12);
+		}
+		@include media($medium){
 			@include span-columns(12);
 		}
 

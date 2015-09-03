@@ -16,5 +16,6 @@ $visual-grid-opacity: 0.1;
  * Base styles ~ Media Query options
  */
 $mobile: new-breakpoint(max-width 480px);
-$desktop: new-breakpoint(min-width 1200px);
-$tablet: new-breakpoint(min-width 767px);
+$desktop: new-breakpoint(min-width 480px);
+$medium: new-breakpoint(min-width 480px max-width 1200px);
+$large: new-breakpoint(min-width 1200px);
