@@ -2,6 +2,7 @@
 
 <?= js('assets/js/vendor/jquery.hoverIntent.min.js') ?>
 <?= js('assets/js/components/navigation.js') ?>
+<?= js('assets/js/components/modal.js') ?>
 <?= js('assets/js/app.js') ?>
 
 <!-- build:remove -->
