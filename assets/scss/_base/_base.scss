@@ -222,3 +222,15 @@ ul {
     @include transform(scale(1.1));
   }
 }
+.hide-mobile,
+%hide-mobile {
+  @include media($mobile) {
+    display: none;
+  }
+}
+.hide-desktop,
+%hide-desktop {
+  @include media($desktop) {
+    display: none;
+  }
+}
