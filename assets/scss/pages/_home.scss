@@ -152,6 +152,11 @@
 					border-top: 2px solid #e5e5e5;
 				}
 			}
+			@include media($medium) {
+				> div {
+					border-top: none;
+				}
+			}
 		}
 		&.carreers {
 			h3 {
