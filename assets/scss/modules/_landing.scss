@@ -12,6 +12,12 @@
 			padding-right: 5.5rem;
 			padding-bottom: 2.8rem;
 			border-bottom: 2px solid rgba(255,255,255, 0.2);
+			@include media($mobile) {
+				padding-left: 0;
+				padding-right: 0;
+				border-bottom-width:1px;
+
+			}
 		}
 	}
 	.h1, .h2 {

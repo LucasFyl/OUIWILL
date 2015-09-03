@@ -3,12 +3,33 @@
 	padding-top: 10rem;
 
 	aside {
-		@include span-columns(3);
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($desktop) {
+			@include span-columns(3);
+		}
+			
 		@include transition(all 0.5 ease-out);
 		
 		ul {
 			list-style-type: none;
 			margin-bottom: 5.5rem;
+			padding-left: 0;
+			padding-right: 5rem;
+			
+			@include media($mobile) {
+				@include span-columns(6);
+				@include omega(2);
+				padding-right: 0;
+				&:last-child{
+					@include span-columns(12);
+				}
+				li {
+					text-align:center; 
+				}
+			}
+
 			li {
 				font-size: 1.2rem;
 				line-height: 2.4rem;
@@ -39,6 +60,11 @@
 	.content {
 		@include span-columns(8);
 		float: right;
+
+		@include media($mobile){
+			@include span-columns(12);
+		}
+
 		h3 {
 			font-size: 1.6rem;
 			color: $golden;
