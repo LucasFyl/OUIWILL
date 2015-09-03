@@ -24,6 +24,9 @@
 			font-family: $alt-font;
 			font-size: 1.3rem;
 			color: rgba(255,255,255,0.6);
+			@include media($mobile) {
+				padding-right: 2rem;
+			}
 		}
 	}
 }
@@ -96,7 +99,7 @@
 					letter-spacing: 2rem;
 					@include media($mobile) {
 						font-size: 3rem;
-						letter-spacing: 1.3rem;
+						letter-spacing: 1.1rem;
 					}
 				}	
 				.play-btn {

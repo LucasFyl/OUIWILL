@@ -26,7 +26,7 @@
 		background: rgba(0,0,0,0.8);
 		z-index: 8;
 		@include media($mobile) {
-			background: rgba(0,0,0,0.4);
+			background: rgba(0,0,0,0.5);
 			display: block !important;
 			transform: none !important;
 			opacity: 1 !important;
@@ -42,6 +42,10 @@
 				color: $golden;
 				text-transform:uppercase;
 				margin-bottom: 1.4rem;
+				@include media($mobile){
+					font-size: 2.6rem;
+					letter-spacing: .5rem;
+				}
 			}
 			p {
 				font-family: $base-font;
