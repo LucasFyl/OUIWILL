@@ -16,7 +16,6 @@
 				padding-left: 0;
 				padding-right: 0;
 				border-bottom-width:1px;
-
 			}
 		}
 	}
@@ -27,6 +26,16 @@
 		position: absolute;
 		z-index: 8;
 		left: 52rem;
+		@include media($isMobile) {
+			width: 100%;
+			left: 0;
+			text-align: center;
+			top: 35% !important;
+		}
+		@include media($mobile) {
+			opacity: 0;
+			visibility: hidden;
+		}
 	}
 	.h2 {
 		font-size: 4rem;
@@ -40,6 +49,9 @@
 		color: white;
 		opacity: 0.6;
 		top: 38.4rem;
+		@include media($isMobile){
+			top:43% !important;
+		}
 	}
 	img {
 		max-width: 100%;

@@ -76,8 +76,6 @@
 						HomeSlider.slideTo(val);
 						HomeSlider.navigation(val);
 						val=val+1;
-					console.log("foo:",foo);
-					console.log("val:",val);
 						return;
 					} else {
 						// stop all buffered events and execute only last animation
@@ -85,8 +83,6 @@
 
 						// reset everything and start again
 						val = 0;
-					console.log("foo:",foo);
-					console.log("val:",val);
 						HomeSlider.reset(content, kids, images, nav, val);
 						return;
 					}
@@ -128,7 +124,7 @@
 			var firstContent = $('li.i_0').children('h2, p, a');
 			var firstImage = $('img.i_0');
 			TweenMax.to(firstImage, 0.25, {zIndex:3,opacity:1,ease:Power2.easeOut});
-			TweenMax.staggerTo(firstContent, 0.5, {opacity:1,y:0,ease:Expo.easeOut,delay:0.5,onComplete:function(){
+			TweenMax.staggerTo(firstContent, 0.5, {opacity:1+' !important',y:0+' !important',ease:Expo.easeOut,delay:0.5,onComplete:function(){
 				TweenMax.to(firstContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:3.5});
 			}}, 0.15);
 			// reset navigation components

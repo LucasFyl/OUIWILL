@@ -43,6 +43,10 @@
 					&:not(.smaller) {
 						margin-bottom: 5rem;
 					}
+					@include media($medium){
+						font-size: 1.6rem;
+						line-height: 1.5;
+					}
 				}
 			}
 		}
@@ -76,6 +80,9 @@
 			color: white;
 			font-size: 3rem;
 			line-height: 4rem;
+			@include media($medium) {
+    			font-size: 2.2rem;
+			}
 		}
 		.author {
 			// font-family: $light-font;

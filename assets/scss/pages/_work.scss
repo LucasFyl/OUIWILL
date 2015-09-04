@@ -4,9 +4,14 @@
 	@include outer-container;
 	width: 100%;
 	overflow: auto;
+	@include media($mobile){
+		margin-left: 0;margin-right: 0;
+		max-width: 100%;
+	}
 
 	.filterpart {
 		height: 12.3rem;
+		padding-top: 3.5rem;
 		
 		> div {
 			font-family: $base-font;
@@ -16,7 +21,7 @@
 
 			p, a {
 				cursor: pointer;
-				line-height: 12.3rem;
+				// line-height: 12.3rem;
 				margin: 0;
 			}
 			
@@ -32,20 +37,54 @@
 				&:hover {
 					color: $golden;
 				}
+				@include media($mobile) {
+					padding: 0 1rem;
+				}
 			}
 			&:first-child {
-				@include span-columns(10);
+				@include media($mobile){
+					@include span-columns(12);
+					p {
+						text-align: center;
+					}
+				}
+
+				@include span-columns(8);
+
+				p {
+					line-height: 3;
+				}
 			}
 			&:last-child {
-				@include span-columns(2);
+				@include media($mobile){
+					@include span-columns(12);
+				}
+
+				// @include span-columns(2);
+				
 				height: 100%;
 				position: relative;
+    			padding-top: 1.2rem;
 
 				a{
 					color: $golden;
 					padding-right: 5rem;
 					text-align: right;
 					float: right;
+
+					@include media($mobile){
+						width: 50%;
+						float:none;
+						text-align: center;
+						padding-right: 3rem;
+						display: block;
+						margin:0 auto;
+						@extend .light-btn;
+						@extend .golden;
+						@extend .small;
+					}
+
+
 					&:hover {
 						span {
 							@include transition(all 0.5s ease);
@@ -60,11 +99,12 @@
 					@include size(2.3rem 1.9rem);
 					display: inline-block;
 					position: absolute;
-					right: 0; top: 42%;
-
+					// right: 0; top: 42%;
+					right: 2%; top: 21%;
 				}
 				
 			}
+			
 		}
 
 	}

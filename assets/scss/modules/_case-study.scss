@@ -1,6 +1,9 @@
 .main.case-study {
 	@include outer-container;
 	padding-top: 10rem;
+	@include media($mobile) {
+		padding-top: 5rem;
+	}
 
 	aside {
 		@include media($medium) {
