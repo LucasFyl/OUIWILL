@@ -61,7 +61,7 @@
 		slide: function(content, kids, images, nav, val, foo){
 			console.log('foo:',foo);
 			var slideInt = setInterval(function(){
-				if ( foo <= 4) { 
+				if ( foo <= 16) { 
 					// killer variable
 					foo = foo+1;
 					
