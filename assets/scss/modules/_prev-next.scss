@@ -1,13 +1,20 @@
 .nextprev {
 	width: 100%;
-	height: 39.5rem;
 	overflow: hidden;
 	position: relative;
 	z-index: 5;
+height: 100%;
+	// @include media($medium){
+	// 	height: 100vh;
+	// }
 
-	@include media($mobile){
-		height: 100vh;
-	}
+	// @include media($desktop){
+	// 	max-height: 39.5rem;
+	// }
+
+	// @include media($mobile){
+	// 	height: 100vh;
+	// }
 	
 	.blockprevnext {
 		height: 100%;
@@ -20,13 +27,43 @@
 		}
 		&.half {
 			width: 50%;
+			// @include media($mobile){
+			// 	width: 100%;
+			// 	height: 50vh;
+			// }
+			// @include media($medium){
+			// 	height: 35vh;
+			// }
+			@include media($desktop){
+				height: 39.5rem;
+			}
+
 			@include media($mobile){
+				height: 100vh;
 				width: 100%;
 				height: 50vh;
 			}
+			.txt-wrap {
+				@include media($mobile){
+					width: 72% !important;
+					bottom: 4rem !important;
+					h4{
+						font-size: 2rem !important;
+					}
+				}
+			}
+			
 		}
 		&.full {
 			width: 100%;
+			@include media($medium){
+    			height: 33rem;
+			}
+			@include media($mobile){
+    			height: 14rem;
+			}
+			 font-size: 3.4rem;
+
 			&.next {
 				.txt-wrap {
 					left: null;
@@ -39,11 +76,17 @@
 			.txt-wrap {
 				text-align: right;
 				right: 10rem;
+				@include media($mobile){
+					left: 5rem;
+				}
 			}
 		}
 		&.next {
 			.txt-wrap {
 				left: 10rem;
+				@include media($mobile){
+					right: 5rem;
+				}
 			}
 		}
 		.txt-wrap {
@@ -64,6 +107,16 @@
 			h4 {
 				font-size: 3.1rem;
 			}
+
+			@include media($mobile){
+				bottom:1rem !important;
+			    width: 60%;
+			    h4{
+					font-size: 1.2rem !important;
+					line-height: 1.5 !important;
+				}
+			}
+			
 		}
 
 		div:nth-child(2) {

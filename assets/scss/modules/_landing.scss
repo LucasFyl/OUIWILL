@@ -27,10 +27,21 @@
 		z-index: 8;
 		left: 52rem;
 		@include media($isMobile) {
-			width: 100%;
+			width: 100% !important;
+			max-width: 100% !important;
+			padding-right: 5rem;
+			padding-left: 5rem;
 			left: 0;
 			text-align: center;
 			top: 35% !important;
+		}
+
+		@include media($medium) {
+			top:30% !important;left:0;
+			width: 100% !important;
+			max-width: 100% !important;
+			padding-right: 5rem;padding-left: 5rem;
+			text-align: center;
 		}
 		@include media($mobile) {
 			opacity: 0;
@@ -42,6 +53,9 @@
 		letter-spacing: 0.2rem;
 		color: white;
 		top: 32.8rem;
+		@include media($medium){
+			font-size: 3.4rem !important; 
+		}
 	}
 	.h1 {
 		font-size: 2rem;

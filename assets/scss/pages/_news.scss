@@ -10,9 +10,19 @@
 	}
 	.list {
 		border-top: 2px solid #e5e5e5;
+		
+		@include media($mobile){
+			border: none;
+		}
+		@include media($medium){
+			border: none;
+		}
 	}	
 }
 .main#single-news {
+	aside {
+		display: none !important;
+	}
 	.related {
 		margin-bottom: 20rem;
 		
@@ -23,6 +33,12 @@
 		}
 		> div {
 			border-top: 2px solid #e5e5e5;
+			@include media($medium){
+				border: none;
+			}
+			@include media($mobile){
+				border: none;
+			}
 		}	
 	}
 }
