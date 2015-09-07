@@ -1,5 +1,7 @@
 .main#services {
-	@include outer-container;
+	@include media($desktop){
+		@include outer-container;
+	}
 
 	section {
 		width: 100%;
@@ -49,16 +51,13 @@
 					}
 				}
 			}
+			@include media($mobile){
+				&:first-child,
+				&:nth-child(2) {
+					display: none;
+				}
+			}
 		}
-		
-		// &.brand p:not(.smaller),
-		// &.sectors p:not(.smaller) {
-		// 	margin-bottom: 4rem;
-		// }
-		// &.digital p:not(.smaller),
-		// &.photo p:not(.smaller) {
-		// 	margin-bottom: 5rem;
-		// }
 	}
 }
 .blockquote {
@@ -68,12 +67,23 @@
 		max-width: 100%;
 		display: inline-block;
 		vertical-align: bottom;
+		@include media($mobile){
+			height: 75vh;
+    		max-width: none;
+		}
 	}
 
 	div {
 		position: absolute;
 		left: 50%;
 		top: 35%;
+		
+		@include media($mobile){
+			left: 10%;
+		    top: 35%;
+		    right: 5%;
+		}
+
 		p {text-align: right;}
 		.quote {
 			font-family: $base-font;
