@@ -28,7 +28,7 @@ tlquote.set('.blockquote p', {opacity:0,y:20})
             .addTo(controller)
             .setTween(tlquote.play());
     } else {
-        var quoteScene = new ScrollMagic.Scene({triggerElement: "#services section.sectors", triggerHook: 'onLeave'})
+        var quoteScene = new ScrollMagic.Scene({triggerElement: "#services section.sectors", triggerHook: 'onLeave', offset:100})
             .addTo(controller)
             .setTween(tlquote.play());
     }

@@ -18,6 +18,10 @@
 			
 		.quarter {
 			@extend .squarePadded;
+			@include media($mobile){
+			    padding-bottom: 0 !important;
+			    height: 50vh !important;
+			}
 			
 			div {
 
