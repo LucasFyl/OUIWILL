@@ -32,11 +32,4 @@ tlquote.set('.blockquote p', {opacity:0,y:20})
             .addTo(controller)
             .setTween(tlquote.play());
     }
-        
-
-
-		
-
-        
-
 });
