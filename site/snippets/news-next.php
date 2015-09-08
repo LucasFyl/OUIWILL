@@ -4,7 +4,7 @@
   		<div class="txt-wrap">
 			<a href="<?php echo $page->prev()->url() ?>"><span class="arrow prev"></span></a>
 			<p><a href="<?php echo $page->prev()->url() ?>">Previous news</a></p>
-			<h4><a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
+			<h4><a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title()->excerpt(42) ?></a></h4>
   		</div>
   		<div>
 			<a href="<?php echo $page->prev()->url() ?>"></a>
@@ -16,7 +16,7 @@
   		<div class="txt-wrap">
 			<a href="<?php echo $page->next()->url() ?>"><span class="arrow next"></span></a>
 			<p><a href="<?php echo $page->next()->url() ?>">Next news</a></p>
-			<h4><a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
+			<h4><a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title()->excerpt(42) ?></a></h4>
   		</div>
   		<div>
 			<a href="<?php echo $page->next()->url() ?>"></a>
@@ -29,7 +29,7 @@
 		<div class="txt-wrap">
 			<a href="<?php echo $page->next()->url() ?>"><span class="arrow next"></span></a>
 			<p><a href="<?php echo $page->next()->url() ?>">Next news</a></p>
-			<h4><a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
+			<h4><a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title()->excerpt(35) ?></a></h4>
   		</div>
   		<div>
 			<a href="<?php echo $page->next()->url() ?>"></a>
@@ -42,7 +42,7 @@
 		<div class="txt-wrap">
 			<a href="<?php echo $page->prev()->url() ?>"><span class="arrow prev"></span></a>
 			<p><a href="<?php echo $page->prev()->url() ?>">Previous news</a></p>
-			<h4><a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
+			<h4><a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title()->excerpt(35) ?></a></h4>
   		</div>
   		<div>
 			<a href="<?php echo $page->prev()->url() ?>"></a>
