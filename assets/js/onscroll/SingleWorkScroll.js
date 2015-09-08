@@ -21,7 +21,7 @@
 			}
 		},
 		desktopOnly: function(controller){
-			var sideBar = new ScrollMagic.Scene({triggerElement: "#sidebar", triggerHook: 'onLeave'})
+			var sideBar = new ScrollMagic.Scene({triggerElement: ".content", triggerHook: 'onLeave', offset:-40})
 			    .addTo(controller)
 			    .setClassToggle("#sidebar", "fixed");
 		}
