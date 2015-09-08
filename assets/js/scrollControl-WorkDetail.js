@@ -15,7 +15,6 @@ $(document).ready(function(){
 
 
 	if ( isMobile === false) {
-		console.log('tarace');
 		var sideBar = new ScrollMagic.Scene({triggerElement: "#sidebar", triggerHook: 'onLeave', offset:-60, duration:0})
 		    .addTo(controller)
 		    .setClassToggle("#sidebar", "fixed");
