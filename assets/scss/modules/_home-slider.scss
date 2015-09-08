@@ -86,6 +86,9 @@
 		    @media (max-width: 1344px) {
 		    	height: 100%;
 		    }
+		    @include media($mobile){
+		    	left: -60%;
+		    }
 
 		    &.top {
 		    	z-index: 3;

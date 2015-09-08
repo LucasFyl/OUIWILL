@@ -33,7 +33,7 @@ $(document).ready(function(){
         .addTo(controller)
         .setTween(newsTween);
         
-    var carreersScene = new ScrollMagic.Scene({triggerElement: "#home .carreers p"})
+    var carreersScene = new ScrollMagic.Scene({triggerElement: "#home .carreers"})
         .addTo(controller)
         .setTween(carreersTween);
 });

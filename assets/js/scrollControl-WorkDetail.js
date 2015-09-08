@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 
 	if ( isMobile === false) {
-		var sideBar = new ScrollMagic.Scene({triggerElement: "#sidebar", triggerHook: 'onLeave', offset:-60, duration:0})
+		var sideBar = new ScrollMagic.Scene({triggerElement: "#sidebar", triggerHook: 'onLeave'})
 		    .addTo(controller)
 		    .setClassToggle("#sidebar", "fixed");
 	}
