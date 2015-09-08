@@ -131,5 +131,5 @@
 	</div>
 
 <?php snippet('footer-big') ?>
-<?= js('assets/js/scrollControl-Services.js') ?>
+<?= js('assets/js/onscroll/ServicesScroll.js') ?>
 <?php snippet('footer') ?>

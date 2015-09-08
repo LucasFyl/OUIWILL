@@ -30,12 +30,14 @@
 				padding: 0 1.8rem;
 				font-size: 1.4rem;
 				text-decoration: none;
+				@include transition(color 0.25s ease);
 				&.active {
 					color: $golden;
 					text-decoration: underline;
 				}
 				&:hover {
 					color: $golden;
+					@include transition(color 0.25s ease);
 				}
 				@include media($mobile) {
 					padding: 0 1rem;
@@ -59,12 +61,17 @@
 				@include media($mobile){
 					@include span-columns(12);
 				}
+				@include media($desktop){
+					display: inline-block;
+					float: right;
+				}
 
 				// @include span-columns(2);
 				
 				height: 100%;
 				position: relative;
     			padding-top: 1.2rem;
+
 
 				a{
 					color: $golden;

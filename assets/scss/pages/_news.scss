@@ -20,8 +20,10 @@
 	}	
 }
 .main#single-news {
-	aside {
-		display: none !important;
+	@include media($mobile){
+		aside {
+			display: none !important;
+		}
 	}
 	.related {
 		margin-bottom: 20rem;

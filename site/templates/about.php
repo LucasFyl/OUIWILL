@@ -101,5 +101,5 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/slider.js') ?>
-<?= js('assets/js/scrollControl-About.js') ?>
+<?= js('assets/js/onscroll/AboutScroll.js') ?>
 <?php snippet('footer') ?>
