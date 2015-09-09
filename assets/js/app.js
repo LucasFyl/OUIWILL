@@ -76,7 +76,7 @@ function scrollNav() {
 
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	    	var st = $(this).scrollTop();
-	    	if (st > 600) {
+	    	if (st > 300) {
 	    		if (st < lastScrollTop){
 					animateHeaderIn();
 				} else {
