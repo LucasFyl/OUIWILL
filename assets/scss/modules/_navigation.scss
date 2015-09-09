@@ -42,12 +42,34 @@
 					font-size: 1.7rem;
 					line-height: 6rem;
 
-					display: block;
-					@include size(100%);	
-					@include transition(all .25s ease);	
+					display: inline-block;
+					position: relative;
+					height: 100%;
+					padding: 0 30%;
+					@include transition(all .35s ease-out);	
+					
+					span {
+						display:block;
+						position: relative;
+					}
+					span:after {
+						content: '';
+						position: absolute;	
+					    top: 53%;
+					    width: 0;
+					    height: .2rem;
+					    background: white;
+						display: block;
+					    margin: 0 auto;
+					}
+
 					&:hover {
-						text-decoration: line-through;
-						@include transition(all .25s ease);	
+						// text-decoration: line-through;
+						span:after {
+							width: 100%;
+							@include transition(all .35s ease-out);	
+						}
+
 					}
 				}
 					
