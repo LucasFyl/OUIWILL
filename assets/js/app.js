@@ -56,8 +56,28 @@ function initWorkHover() {
 	setHover();
 	$('.single-work').hoverIntent(hoverIn, hoverOut);
 }
-function initHomePage() {
-	// initHomeSlider();
+function scrollNav() {
+	var animateHeaderIn = function(){
+		TweenMax.to('header.black.hidden', 0.5, {top:0,ease:Power2.easeOut});
+	};
+	var animateHeaderOut = function(){
+		TweenMax.to('header.black.hidden', 0.5, {top:'-7.8rem',ease:Power2.easeIn});
+	};
+	var lastScrollTop = 0;
+
+	$(window).scroll(function(event){
+	    clearTimeout($.data(this, 'scrollTimer'));
+	    
+	    $.data(this, 'scrollTimer', setTimeout(function() {
+	    	var st = $(this).scrollTop();
+			if (st < lastScrollTop){
+				animateHeaderIn();
+			} else {
+				animateHeaderOut();
+			}
+			lastScrollTop = st;
+	    }, 100));
+	});
 }
 function detectMobile(){
 	
@@ -80,9 +100,9 @@ function initPage(){
 
 	detectMobile();
 	hideLoader();
+	scrollNav();
 
 	// Page specific load events
-	if ( $('.main#home').length ) { initHomePage(); }
 	if ( $('.main.video').length ) { initVideoPage(); }
 	if ( $('.single-work').length ) { initWorkHover(); }
 }

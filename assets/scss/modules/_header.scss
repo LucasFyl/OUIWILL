@@ -1,4 +1,3 @@
-
 header.black {
 	$header-bg: #000000;
 	$header-color: #ffffff;
@@ -41,4 +40,12 @@ header {
 		cursor: pointer;
 		color: white;
 	}
+}
+
+header.black.hidden {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    top: -7.8rem;
 }
