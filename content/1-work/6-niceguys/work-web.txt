@@ -1,4 +1,4 @@
-Title: St Petersburg Vodka
+Title: Nice Guys Brand
 
 ----
 
@@ -14,11 +14,11 @@ Tag2: ecommerce
 
 ----
 
-Subtitle: Context of St Petersburg Vodka
+Subtitle: Context of Nice Guy
 
 ----
 
-Client: St Petersburg Vodka
+Client: Nice Guy Brand
 
 ----
 
@@ -26,7 +26,7 @@ Services: Conception & Strategy,Creative Direction,Art Direction,Copywritting,We
 
 ----
 
-Website: http://www.stpetersburgvodka.com/
+Website: http://www.niceguybrand.com
 
 ----
 

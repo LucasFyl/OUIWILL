@@ -8,8 +8,8 @@ language: en
 role: admin
 token: b015e8760170932db7ee04ed75e0a2917472cd61
 history:
+  - work/st-petersburg
   - slider/slide4
   - slider/slide3
   - slider/slide2
   - slider/slide1
-  - null
