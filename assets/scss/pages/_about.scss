@@ -20,6 +20,7 @@
   		margin-top: 0rem;
 	    margin-left: -4rem;
   		@include size(8rem);
+  		z-index: 8;
 	}
 }
 
@@ -140,4 +141,8 @@
 			display:none;
 		}
 	}
+	// .carreers a {
+	// 	opacity: 1 !important;
+	// 	transform: none !important;
+	// }
 }

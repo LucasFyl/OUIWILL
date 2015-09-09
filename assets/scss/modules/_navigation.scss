@@ -15,6 +15,7 @@
 			@extend .vertical-center;
 			color: #999999;
 			.social a {color: #999999;}
+			h2 {line-height: 1.5;}
 		}
 	}
 		
@@ -35,7 +36,6 @@
 			li {
 				text-align: center;
 				a {
-					// font-family: $title-font;
 					color: white;
 					text-transform: lowercase; 
 					text-decoration: none;

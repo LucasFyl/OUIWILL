@@ -6,10 +6,10 @@
 	}
 
 	aside {
-		@include media($medium) {
-			@include span-columns(12);
-		}
 		@include media($mobile) {
+			display:none;
+		}
+		@include media($medium) {
 			@include span-columns(12);
 		}
 		@include media($large) {
