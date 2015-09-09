@@ -24,6 +24,11 @@
 		</section>
 
 		<section class="follow">
+			<div class="half hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-contact-b.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
 			<div class="half">
 				<div>
 					<div class="vertical-center">
@@ -42,7 +47,7 @@
 					</div>
 				</div>		
 			</div>
-			<div class="half">
+			<div class="half hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-contact-b.jpg') ?>" alt="" draggable="false" />
 				</div>

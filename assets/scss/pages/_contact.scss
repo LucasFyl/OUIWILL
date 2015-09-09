@@ -7,7 +7,7 @@
 		width: 100%;
 		overflow: auto;
 		@include media($mobile){
-			margin-bottom: 10rem;
+			// margin-bottom: 10rem;
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -32,9 +32,7 @@
 				padding-bottom: 0;
 				img {
 					height: 100%;
-					// width: auto;
 					width: 100%;
-					// transform: translateX(-20%);
 					max-width: none;
 				}
 			}
@@ -43,10 +41,14 @@
 
 			div {
 				> div.vertical-center {
-					div {
+					> div {
 						display: inline-block;
 						position: relative; left: 50%;
 						@include transform(translateX(-50%));
+						@include media($mobile) {
+							left: 10%;
+							transform: none;
+						}
 					}
 				}
 				h2, h3 {
