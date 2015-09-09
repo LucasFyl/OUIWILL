@@ -4,12 +4,12 @@
 	<main class="main" id="services">
 
 		<section class="brand">
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-brand-a.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-brand-b.jpg') ?>" alt="" draggable="false" />
 				</div>
@@ -30,20 +30,30 @@
 					<img src="<?php echo url('/assets/images/asset-service-brand-c.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-brand-a.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-brand-b.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
 		</section>
 
 		<section class="digital">
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-digital-a.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-digital-b.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-digital-c.jpg') ?>" alt="" draggable="false" />
 				</div>
@@ -60,15 +70,30 @@
 						
 				</div>
 			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-digital-a.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-digital-b.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-digital-c.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
 		</section>
 
 		<section class="photo">
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-photo-a.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-photo-b.jpg') ?>" alt="" draggable="false" />
 				</div>
@@ -89,20 +114,30 @@
 					<img src="<?php echo url('/assets/images/asset-service-photo-c.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-photo-a.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-photo-b.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
 		</section>
 
 		<section class="sectors">
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-sector-a.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-sector-b.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="quarter hide-mobile">
 				<div>
 					<img src="<?php echo url('/assets/images/asset-service-sector-c.jpg') ?>" alt="" draggable="false" />
 				</div>
@@ -116,6 +151,21 @@
 			    			<p class='smaller'>Fashion / Arts / Automotive / Technology / Education / Health Care / Media & Technology / Profesional Services / Non-profit / Public Sctors / Restaurants / Hospitality / Sports. </p>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-sector-a.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-sector-b.jpg') ?>" alt="" draggable="false" />
+				</div>
+			</div>
+			<div class="quarter hide-desktop">
+				<div>
+					<img src="<?php echo url('/assets/images/asset-service-sector-c.jpg') ?>" alt="" draggable="false" />
 				</div>
 			</div>
 		</section>
