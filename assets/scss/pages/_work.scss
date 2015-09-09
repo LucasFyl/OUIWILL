@@ -15,7 +15,7 @@
 		
 		> div {
 			font-family: $base-font;
-			font-size: 1.6rem;
+			font-size: 1.4rem;
 			color: #000;
 			cursor: default;
 
@@ -58,37 +58,19 @@
 				}
 			}
 			&:last-child {
-				@include media($mobile){
-					@include span-columns(12);
-				}
-				@include media($desktop){
-					display: inline-block;
-					float: right;
-				}
-
-				// @include span-columns(2);
-				
-				height: 100%;
+				display: inline-block;
+				float: right;
 				position: relative;
-    			padding-top: 1.2rem;
-
 
 				a{
 					color: $golden;
 					padding-right: 5rem;
+					line-height: 3;
 					text-align: right;
 					float: right;
 
 					@include media($mobile){
-						width: 50%;
-						float:none;
-						text-align: center;
-						padding-right: 3rem;
-						display: block;
-						margin:0 auto;
-						@extend .light-btn;
-						@extend .golden;
-						@extend .small;
+						display:none;
 					}
 
 
@@ -107,7 +89,7 @@
 					display: inline-block;
 					position: absolute;
 					// right: 0; top: 42%;
-					right: 2%; top: 21%;
+					right: 2%; top: 30%;
 				}
 				
 			}
