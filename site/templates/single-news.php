@@ -12,7 +12,7 @@
   
   <main class="main case-study" id="single-news">
 
-    <aside class="meta">
+    <aside class="meta" id="sidebar">
       <ul>
         <li><?php echo $page->sidetitle1()->html() ?></li>  
         <li><?php echo $page->sidecontent1()->html() ?></li>  

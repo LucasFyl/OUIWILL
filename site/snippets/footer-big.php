@@ -1,3 +1,6 @@
+<footer class="mobile hide-desktop">
+	<p>© 2015 - OUIWILL</p>
+</footer>
 <footer class="big">
 	<div class="brand">
 		<h1><img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></h1>

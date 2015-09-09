@@ -23,7 +23,9 @@
 			}
 		},
 		desktopOnly: function(controller){
-
+			// var sideBar = new ScrollMagic.Scene({triggerElement: ".content", triggerHook: 'onLeave', offset:-40})
+			//     .addTo(controller)
+			//     .setClassToggle("#sidebar", "fixed");
 		}
 	}
 	NewsScroll.init();
