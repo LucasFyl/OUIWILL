@@ -85,7 +85,7 @@
 			}
 			> div {
 				@extend .vertical-center;
-				@include transform(translateY(-30%));
+				@include transform(translateY(-50%));
 				position: absolute;
 				width: 100%;
 				overflow: visible;
@@ -106,6 +106,7 @@
 				.play-btn {
 					@include transition(none);
 					position: relative;
+					margin-top: -7rem; opacity: 0;
 					@include media($mobile) {
 						margin-top: 0;
 						top: 0;
