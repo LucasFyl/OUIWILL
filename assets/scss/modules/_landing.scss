@@ -1,6 +1,6 @@
 .landing:not(.home) {
 	position: relative;
-	header {
+	header:not(.black) {
 		position: absolute;
 		width: 100%;
 		z-index: 9;

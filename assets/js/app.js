@@ -57,24 +57,34 @@ function initWorkHover() {
 	$('.single-work').hoverIntent(hoverIn, hoverOut);
 }
 function scrollNav() {
+	var lastScrollTop = 0;
 	var animateHeaderIn = function(){
-		TweenMax.to('header.black.hidden', 0.5, {top:0,ease:Power2.easeOut});
+		TweenMax.to('header.black.hidden', 0.5, {top:0,ease:Power2.easeOut,delay:0.25});
+		if ( $('#sidebar.fixed').length ) {
+		    TweenMax.to('#sidebar.fixed', 0.25, {top:'10rem',ease:Power2.easeOut});
+		}
 	};
 	var animateHeaderOut = function(){
 		TweenMax.to('header.black.hidden', 0.5, {top:'-7.8rem',ease:Power2.easeIn});
+		if ( $('#sidebar.fixed').length ) {
+		    TweenMax.to('#sidebar.fixed', 0.25, {top:'5rem',ease:Power2.easeIn});
+		}
 	};
-	var lastScrollTop = 0;
 
 	$(window).scroll(function(event){
 	    clearTimeout($.data(this, 'scrollTimer'));
-	    
+
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	    	var st = $(this).scrollTop();
-			if (st < lastScrollTop){
-				animateHeaderIn();
-			} else {
+	    	if (st > 600) {
+	    		if (st < lastScrollTop){
+					animateHeaderIn();
+				} else {
+					animateHeaderOut();
+				}
+	    	} else {
 				animateHeaderOut();
-			}
+	    	}
 			lastScrollTop = st;
 	    }, 100));
 	});
