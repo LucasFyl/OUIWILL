@@ -3,8 +3,11 @@
 	height: 100%;
 	position: fixed;
 	z-index: 999999;
-	background: white;
 	top: 0; left: 0; right: 0; bottom: 0;
+
+	// @include media($desktop){
+		background: white;
+	// }
 
 	.brand-wrap {
 		@include span-columns(7);
@@ -50,7 +53,8 @@
 						width: 100%;
 						a {
 							background: url(../images/icon-cursor-white.png) no-repeat center center;
-							@include size(32px);
+							@include size(40px);
+							background-size: 13%;
 						}
 					}	
 				}

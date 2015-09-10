@@ -40,6 +40,9 @@
 			$(document).on('click', '.brand-wrap', function(){
 				Navigation.closeMenu(menutimeline);
 			});
+			$(document).on('click', '.closeMenu', function(){
+				Navigation.closeMenu(menutimeline);
+			});
 		}
 	}
 
