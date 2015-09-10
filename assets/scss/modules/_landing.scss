@@ -79,14 +79,17 @@
 		max-width: 100%;
 	}
 	&.news {
-		.h2 {
+		.h1 {
 			line-height: 5rem;
 			top: 26.5rem;
 			max-width: 55%;
 		}
-		.h1 {
-		    top: 30% !important;
-    		line-height: 1.5;
+		@include media($mobile){
+			.h1 {
+			    top: 30% !important;
+	    		line-height: 1.5;
+			}
 		}
+			
 	}
 }
