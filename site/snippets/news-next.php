@@ -34,7 +34,8 @@
   		<div>
 			<a href="<?php echo $page->next()->url() ?>"></a>
 			<div class="overlay"></div>
-  			<img src="<?php echo $page->next()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>">
+  			<img src="<?php echo $page->next()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>" class="hide-mobile" />
+  			<img src="<?php echo $page->next()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>" class="hide-desktop" />
   		</div>
 	</div>
 	<?php elseif( $next = !$page->nextVisible() ): ?>
@@ -47,7 +48,8 @@
   		<div>
 			<a href="<?php echo $page->prev()->url() ?>"></a>
 			<div class="overlay"></div>
-  			<img src="<?php echo $page->prev()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>">
+  			<img src="<?php echo $page->prev()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>" class="hide-mobile" />
+  			<img src="<?php echo $page->prev()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>" class="hide-desktop" />
   		</div>
 	</div>
 	<?php endif ?>

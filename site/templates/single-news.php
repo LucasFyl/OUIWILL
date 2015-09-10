@@ -3,11 +3,22 @@
   <div class="landing news">  
     <?php snippet('header') ?>
 
-    <?php if($file = $page->file('02-landing.jpg')): ?>
-    <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
-    <?php endif ?>
+  
 
-    <h1 class="h2"><?php echo $page->title()->html() ?></h1>
+    <div class="hide-mobile">
+      <?php if($file = $page->file('02-landing.jpg')): ?>
+      <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
+      <?php endif ?>
+      <h1 class="h1"><?php echo $page->title()->html() ?></h1>
+    </div>
+
+    <div class="hide-desktop">
+      <h1 class="h1"><?php echo $page->title()->html() ?></h1>
+      <!-- <div class="overlay"></div> -->
+      <?php if($file = $page->file('01-thumb.jpg')): ?>
+      <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
+      <?php endif ?>
+    </div>
   </div>
   
   <main class="main case-study" id="single-news">
