@@ -59,15 +59,15 @@ function initWorkHover() {
 function scrollNav() {
 	var lastScrollTop = 0;
 	var animateHeaderIn = function(){
-		TweenMax.to('header.black.hidden', 0.5, {top:0,ease:Power2.easeOut,delay:0.25});
+		TweenMax.to('header.black.hidden', 0.5, {top:0,ease:Expo.easeOut});
 		if ( $('#sidebar.fixed').length ) {
-		    TweenMax.to('#sidebar.fixed', 0.25, {top:'10rem',ease:Power2.easeOut});
+		    TweenMax.to('#sidebar.fixed', 0.15, {top:'10rem',ease:Expo.easeOut});
 		}
 	};
 	var animateHeaderOut = function(){
-		TweenMax.to('header.black.hidden', 0.5, {top:'-7.8rem',ease:Power2.easeIn});
+		TweenMax.to('header.black.hidden', 0.5, {top:'-7.8rem',ease:Expo.easeOut});
 		if ( $('#sidebar.fixed').length ) {
-		    TweenMax.to('#sidebar.fixed', 0.25, {top:'5rem',ease:Power2.easeIn});
+		    TweenMax.to('#sidebar.fixed', 0.15, {top:'5rem',ease:Expo.easeOut});
 		}
 	};
 

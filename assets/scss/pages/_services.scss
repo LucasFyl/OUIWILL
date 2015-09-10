@@ -21,6 +21,7 @@
 			@include media($mobile){
 			    padding-bottom: 0 !important;
 			    height: 50vh !important;
+			    margin-bottom: 0 !important; 
 			}
 			
 			div {
@@ -69,6 +70,7 @@
 }
 .blockquote {
 	position: relative;
+	margin-top: 20rem;
 
 	@include media($mobile){
 		height: 75vh;

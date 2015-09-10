@@ -51,7 +51,7 @@
     </section>
     <div class="clearfix"></div>
     
-    <?php snippet('carreers'); ?>
+    <?php snippet('careers'); ?>
 
   </main>
 

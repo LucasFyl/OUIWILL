@@ -15,7 +15,7 @@
       <?php endforeach ?>
     </section>
     
-    <?php snippet('carreers'); ?>
+    <?php snippet('careers'); ?>
 
   </main>
 

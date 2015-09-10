@@ -121,7 +121,7 @@
 			</div>
 		</section>
 
-		<?php snippet('carreers'); ?>
+		<?php snippet('careers'); ?>
 	</main>
 
 	<div class="modal">
