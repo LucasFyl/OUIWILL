@@ -15,6 +15,9 @@
 		@include media($large) {
 			@include span-columns(3);
 		}
+		@include media($desktop) {
+			margin-right: 0;
+		}
 			
 		@include transition(all 0.5s ease-out);
 		
