@@ -48,7 +48,7 @@
 			visibility: hidden;
 		}
 	}
-	.h2 {
+	.h1 {
 		font-size: 4rem;
 		letter-spacing: 0.2rem;
 		color: white;
@@ -57,12 +57,14 @@
 			font-size: 3.4rem !important; 
 		}
 	}
-	.h1 {
+	.h2 {
+		font-family: $base-font;
+		text-transform: lowercase;
 		font-size: 2rem;
 		letter-spacing: 0.1rem;
 		color: white;
 		opacity: 0.6;
-		top: 38.4rem;
+		top: 36.5rem;
 		@include media($isMobile){
 			top:43% !important;
 		}

@@ -5,8 +5,8 @@
     <?php if($file = $page->file('02-landing.jpg')): ?>
     <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
     <?php endif ?>
-    <h2 class="h1"><?php echo $page->tag1()->html() ?> & <?php echo $page->tag2()->html() ?></h2>
-    <h1 class="h2"><?php echo $page->title()->html() ?></h1>
+    <h1 class="h1"><?php echo $page->title()->html() ?></h1>
+    <h2 class="h2"><?php echo $page->tag1()->html() ?> / <?php echo $page->tag2()->html() ?></h2>
 
   </div>
   

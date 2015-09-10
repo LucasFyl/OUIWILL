@@ -73,9 +73,11 @@
 		}
 	}
 	.content {
-		@include span-columns(8);
-		float: right;
-
+		@include media($desktop){
+			@include span-columns(9);
+			float: right;
+			padding-left: 8rem;
+		}
 		@include media($mobile){
 			@include span-columns(12);
 		}
