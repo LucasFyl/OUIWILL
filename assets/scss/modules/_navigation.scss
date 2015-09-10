@@ -17,10 +17,18 @@
 			.social a {color: #999999;}
 			h2 {line-height: 1.5;}
 		}
+		@include media($mobile){
+			display:none;
+		}
 	}
 		
 	.menu {
-		@include span-columns(5);
+		@include media($desktop){
+			@include span-columns(5);
+		}
+		@include media($mobile){
+			width: 100%;
+		}
 		height: 100%;
 		overflow: auto;
 		background-color: black;
@@ -35,6 +43,17 @@
 			height: 100%;
 			li {
 				text-align: center;
+				@include media($mobile){
+					&:first-child {
+						position: absolute;
+						top: -10rem;
+						width: 100%;
+						a {
+							background: url(../images/icon-cursor-white.png) no-repeat center center;
+							@include size(32px);
+						}
+					}	
+				}
 				a {
 					color: white;
 					text-transform: lowercase; 

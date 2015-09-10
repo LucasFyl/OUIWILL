@@ -20,5 +20,10 @@ section.carreers {
 		height: 3.5rem;
 		margin-bottom: 23rem;
 		margin-top: 4rem;
+		@include media($mobile){
+			font-size: 1.5rem;
+			height: 4.2rem;
+			line-height: 4.2rem;
+		}
 	}
 }

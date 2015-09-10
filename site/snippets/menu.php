@@ -18,6 +18,7 @@
     <nav>
       <ul class="cf no-bullet">
         <!-- <li><a href="<?php echo $site->url() ?>">Home</a></li> -->
+        <li class="hide-desktop"><a href="#"></a></li>
         <?php foreach($pages->visible() as $p): ?>
         <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><span><?php echo $p->title()->html() ?></span></a></li>
         <?php endforeach ?>

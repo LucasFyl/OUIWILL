@@ -2,61 +2,69 @@
   position: relative;
   overflow: visible;
   margin: 0 auto;
-}
+  @include media($mobile){
+    max-width: 100%;
+  }
+  ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style-type: none;
+    li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 300px;
+      text-align: center;
 
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style-type: none;
-}
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        height: 100%;
+      }
+    }
+  }
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    @include size(6rem);
+    @include transition(all 0.25s ease);
+  }
 
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 300px;
-  text-align: center;
+  a.control_prev:hover, a.control_next:hover {
+    -webkit-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
+    @include transition(all 0.25s ease);
+  }
 
-  img {
-    display: inline-block;
-    vertical-align: bottom;
-    height: 100%;
+  a.control_prev {
+    background: url('../images/icon-slider-left.png') no-repeat center center;
+    background-size: 15%;
+    background-color: white;
+    cursor: pointer;
+    left: -3rem;
+    @include media($mobile){
+      left: 0;
+    }
+  }
+
+  a.control_next {
+    background: url('../images/icon-slider-right.png') no-repeat center center;
+    background-size: 15%;
+    background-color: white;
+    cursor: pointer;
+    right: -3rem;
+    @include media($mobile){
+      right: 0;
+    }
   }
 }
 
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  @include size(6rem);
-  @include transition(all 0.25s ease);
-}
-
-a.control_prev:hover, a.control_next:hover {
-  -webkit-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
-  box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.15);
-  @include transition(all 0.25s ease);
-}
-
-a.control_prev {
-  background: url('../images/icon-slider-left.png') no-repeat center center;
-  background-size: 15%;
-  background-color: white;
-  cursor: pointer;
-  left: -3rem;
-}
-
-a.control_next {
-  background: url('../images/icon-slider-right.png') no-repeat center center;
-  background-size: 15%;
-  background-color: white;
-  cursor: pointer;
-  right: -3rem;
-}
+  
