@@ -56,6 +56,49 @@ function initWorkHover() {
 	setHover();
 	$('.single-work').hoverIntent(hoverIn, hoverOut);
 }
+function initNextPrevHover(){
+		
+		var el = $('.blockprevnext > div');
+			elNext = (el+'.next'),
+			elPrev = (el+'.prev'),
+			trigger = el.find('.hoverTrigger');
+		
+		animIn = function($this){
+			var foo = $(this),
+				arrow = ('.txt-wrap h4 .arrow');
+			
+			if ( foo.hasClass('next') ) {
+				console.log('nextIn');
+				var thisArrow = $(arrow+'.nextArrow');
+				console.log(thisArrow);
+				TweenMax.to(thisArrow, 0.25, {right:"-=2rem",opacity:1,ease:Power2.easeInOut});
+			} else if ( foo.hasClass('prev') ) {
+				console.log('prevIn');
+				var thisArrow = $(arrow+'.prevArrow');
+				console.log(thisArrow);
+				TweenMax.to(thisArrow, 0.25, {left:"-=2rem",opacity:1,ease:Power2.easeInOut});
+			}
+		};
+		animOut = function($this){
+			var foo = $(this),
+				arrow = ('.txt-wrap h4 .arrow');
+			
+			if ( foo.hasClass('next') ) {
+				console.log('nextOut');
+				var thisArrow = $(arrow+'.nextArrow');
+				console.log(thisArrow);
+				TweenMax.to(thisArrow, 0.25, {right:"+=2rem",opacity:0,ease:Power2.easeInOut});
+			} else if ( foo.hasClass('prev') ) {
+				console.log('prevOut');
+				var thisArrow = $(arrow+'.prevArrow');
+				console.log(thisArrow);
+				TweenMax.to(thisArrow, 0.25, {left:"+=2rem",opacity:0,ease:Power2.easeInOut});
+			}
+		};
+
+		trigger.hoverIntent(animIn, animOut);
+	// }
+}
 function scrollNav() {
 	var lastScrollTop = 0;
 	var animateHeaderIn = function(){
@@ -115,4 +158,5 @@ function initPage(){
 	// Page specific load events
 	if ( $('.main.video').length ) { initVideoPage(); }
 	if ( $('.single-work').length ) { initWorkHover(); }
+	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 }

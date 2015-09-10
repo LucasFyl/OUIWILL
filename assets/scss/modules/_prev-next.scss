@@ -6,145 +6,139 @@
 	height: 100%;
 
 	.blockprevnext {
-		height: 100%;
-		position: relative;
 		overflow: hidden;
-		float: left;
-		
-		a {
-			text-decoration: none;
+
+		@include media($large){
+			height: 39.5rem;
 		}
-		&.half {
-			width: 50%;
+		@include media($medium){
+			height: 33rem;
+		}
 
-			@include media($large){
-				height: 39.5rem;
-			}
-			@include media($medium){
-				height: 33rem;
+		@include media($mobile){
+			width: 100%;
+			height: 50vh;
+		}
+		a {text-decoration: none !important;}
+			
+		> div {
+			position: relative;
+			> div:not(.txt-wrap) > a {
+				width: 100%; height: 100%;
+				position: absolute; z-index: 99;
 			}
 
-			@include media($mobile){
-				height: 100vh;
-				width: 100%;
-				height: 50vh;
-			}
-			.txt-wrap {
-				@include media($mobile){
-					width: 72% !important;
-					bottom: 4rem !important;
-					h4{
-						font-size: 2rem !important;
+			&.half {
+				width: 50%;
+				height: 100%;
+				float: left;
+		
+				.txt-wrap {
+					@include media($mobile){
+						width: 72% !important;
+						bottom: 4rem !important;
+						h4{
+							font-size: 2rem !important;
+						}
+					}
+				}
+				&.prev {
+					.txt-wrap {
+						text-align: right;
+						right: 10rem;
+						@include media($mobile){
+							left: 5rem;
+						}
+					}
+				}
+				&.next {
+					.txt-wrap {
+						left: 10rem;
+						@include media($mobile){
+							left: 5rem;
+						}
 					}
 				}
 			}
-			
-		}
-		&.full {
-			width: 100%;
-
-			@include media($large){
-				height: 39.5rem;
-			}
-			@include media($medium){
-    			height: 33rem;
-			}
-			@include media($mobile){
-    			height: 36rem;
-			}
-			font-size: 3.4rem;
-
-			&.next {
-				.txt-wrap {
-					left: initial;
-					right: 5rem;
-					text-align: right;
-				}
-			}
-			
-		}
-		&.prev {
-			.txt-wrap {
-				text-align: right;
-				right: 10rem;
-				@include media($mobile){
-					left: 5rem;
-				}
-			}
-		}
-		&.next {
-			.txt-wrap {
-				left: 10rem;
-				@include media($mobile){
-					left: 5rem;
-				}
-			}
-		}
-		.txt-wrap {
-			position: absolute;
-			bottom: 6.5rem;
-			z-index: 9;
-			a {color:white !important; z-index: 9 !important; position: relative !important;}
-
-			p, h4 {
-				color: white;
-				text-transform: uppercase;
+			&.full {
+				width: 100%;
 				position: relative;
-				z-index: 99;
+				font-size: 3.4rem;
+
+
+				// &.next {
+				// 	.txt-wrap {
+				// 		left: initial;
+				// 		right: 5rem;
+				// 		text-align: right;
+				// 	}
+				// }
+
+				@include media($desktop){
+					.txt-wrap {
+						top: 26rem;
+						left: 8rem;
+					}
+				}
 			}
-			p {
-				font-size: 1.1rem;
+			.txt-wrap {
+				position: absolute;
+				bottom: 6.5rem;
+				z-index: 9;
+				a {color:white !important; z-index: 9 !important; position: relative !important;}
+
+				p, h4 {
+					color: white;
+					text-transform: uppercase;
+					position: relative;
+					z-index: 99;
+				}
+
+				p {
+					font-size: 1.1rem;
+					@include media($mobile){
+						margin-bottom: 1rem;
+					}
+				}
+				h4 {
+					font-size: 3.1rem;
+					position: relative;
+					@include media($mobile){
+						margin-top: 0;
+					}
+
+					.arrow {
+						height: 2.8rem;
+						width: 4rem;
+						position: absolute;
+						top: 50%; margin-top: -1.5rem;
+						background: url('../images/asset-chevron-right-play.png') no-repeat;
+		  				background-size: 37%;
+		  				opacity: 0;
+						&.prevArrow {
+							@include transform(rotate(180deg));
+							left: -5rem;
+						}
+						&.nextArrow {
+							right: -5rem;
+						}
+					}
+				}
+
 				@include media($mobile){
-					margin-bottom: 1rem;
+					bottom:1rem !important;
+				    width: 60%;
+				    h4{
+						font-size: 1.8rem !important;
+						line-height: 1.5 !important;
+					}
 				}
+				
 			}
-			h4 {
-				font-size: 3.1rem;
-				@include media($mobile){
-					margin-top: 0;
-				}
-			}
-
-			@include media($mobile){
-				bottom:1rem !important;
-			    width: 60%;
-			    h4{
-					font-size: 1.8rem !important;
-					line-height: 1.5 !important;
-				}
-			}
-			
 		}
-
-		div:nth-child(2) {
-			@include size(100%);
-			position: absolute;
-			z-index: 5;
-
-			> a {
-				@include size(100%);
-				display: block;
-				position: absolute;
-				z-index: 5;
-			}
-			.overlay {
-				position: absolute;
-				background: rgba(0,0,0,0.5);
-				z-index: 4;
-			}
-			img {	
-				@include size(auto);
-				position: absolute;
-				top: 0;left: 0;right: 0;bottom: 0;
-				margin: auto;
-				z-index: 3;
-			}
-			
-		}
-	}
-}
+	} // /.blockprevnext
+} // /.nextprev
 .news-nav {
-	
 	.prev, .next {
 		h4 {
 			font-size: 2.1rem !important;
