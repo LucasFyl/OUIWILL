@@ -75,7 +75,7 @@
 			.txt-wrap {
 				left: 10rem;
 				@include media($mobile){
-					right: 5rem;
+					left: 5rem;
 				}
 			}
 		}
