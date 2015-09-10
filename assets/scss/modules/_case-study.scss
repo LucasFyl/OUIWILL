@@ -107,7 +107,12 @@
 		}
 		figure {
 			position: relative;
-			margin: 0 0 30rem;
+			@include media($desktop){
+				margin: 0 0 30rem;
+			}
+			@include media($mobile){
+				margin: 0 0 15rem;
+			}
 
 			img {
 				width: 100%;

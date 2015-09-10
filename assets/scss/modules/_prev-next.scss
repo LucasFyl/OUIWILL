@@ -50,17 +50,18 @@
     			height: 33rem;
 			}
 			@include media($mobile){
-    			height: 14rem;
+    			height: 36rem;
 			}
-			 font-size: 3.4rem;
+			font-size: 3.4rem;
 
 			&.next {
 				.txt-wrap {
-					left: null;
-					right: 10rem;
+					left: initial;
+					right: 5rem;
 					text-align: right;
 				}
 			}
+			
 		}
 		&.prev {
 			.txt-wrap {
@@ -93,16 +94,22 @@
 			}
 			p {
 				font-size: 1.1rem;
+				@include media($mobile){
+					margin-bottom: 1rem;
+				}
 			}
 			h4 {
 				font-size: 3.1rem;
+				@include media($mobile){
+					margin-top: 0;
+				}
 			}
 
 			@include media($mobile){
 				bottom:1rem !important;
 			    width: 60%;
 			    h4{
-					font-size: 1.2rem !important;
+					font-size: 1.8rem !important;
 					line-height: 1.5 !important;
 				}
 			}
@@ -131,9 +138,6 @@
 				top: 0;left: 0;right: 0;bottom: 0;
 				margin: auto;
 				z-index: 3;
-			// 	@include media(max)
-   //  min-height: 100%;
-   //  max-width: none;
 			}
 			
 		}
