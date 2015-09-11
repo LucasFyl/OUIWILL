@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	
+	// hide last sentence if nbr of .single-work is not even 
+	var workLength = $('.single-work').length;
+	if ( workLength % 2 !== 0 ) {
+		$('.single-work:last').remove();
+	}
+	
 	(function(){
 		var WorkScroll = {
 			init:function(){
@@ -12,6 +19,7 @@ $(document).ready(function(){
 				var workTween4 = new TweenMax.staggerFromTo('.single-work:nth-child(9), .single-work:nth-child(10)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 				var workTween5 = new TweenMax.staggerFromTo('.single-work:nth-child(11), .single-work:nth-child(12)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 				var workTween6 = new TweenMax.staggerFromTo('.single-work:nth-child(13), .single-work:nth-child(14)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
+				var workTween7 = new TweenMax.staggerFromTo('.single-work:nth-child(14), .single-work:nth-child(15)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 
 				TweenMax.set('#filters .filter, .showcase .single-work', {opacity:0,y:20});
 				TweenMax.staggerTo(foo, 1, {opacity:1,y:0,ease:Power3.easeOut,delay:0}, 0.1);
@@ -23,18 +31,21 @@ $(document).ready(function(){
 				var workScrollScene2 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(4)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween2);
-				var workScrollScene2 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(6)", triggerHook: 'onLeave'})
+				var workScrollScene3 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(6)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween3);
-				var workScrollScene2 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(8)", triggerHook: 'onLeave'})
+				var workScrollScene4 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(8)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween4);
-				var workScrollScene2 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(10)", triggerHook: 'onLeave'})
+				var workScrollScene5 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(10)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween5);
-				var workScrollScene2 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(12)", triggerHook: 'onLeave'})
+				var workScrollScene6 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(12)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween6);
+				var workScrollScene7 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(14)", triggerHook: 'onLeave'})
+				    .addTo(controller)
+				    .setTween(workTween7);
 
 				if (isMobile === false ){
 					this.desktopOnly(controller);
