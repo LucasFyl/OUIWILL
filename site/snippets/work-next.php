@@ -5,7 +5,7 @@
 	  	<div class="half prev">
 	  		<div class="txt-wrap">
 				<p><a href="<?php echo $page->prev()->url() ?>">Previous project</a></p>
-				<h4><a href="<?php echo $page->prev()->url() ?>"><span class="arrow prevArrow"></span> <?php echo $page->prev()->title() ?></a></h4>
+				<h4><span class="arrow prevArrow"></span> <a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
 	  		</div>
 	  		<div>
 				<a href="<?php echo $page->prev()->url() ?>" class="hoverTrigger prev"></a>
@@ -16,7 +16,7 @@
 	  	<div class="half next">
 	  		<div class="txt-wrap">
 				<p><a href="<?php echo $page->next()->url() ?>">Next project</a></p>
-				<h4><a href="<?php echo $page->next()->url() ?>"><span class="arrow nextArrow"></span> <?php echo $page->next()->title() ?></a></h4>
+				<h4><span class="arrow nextArrow"></span> <a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
 	  		</div>
 	  		<div>
 				<a href="<?php echo $page->next()->url() ?>" class="hoverTrigger next"></a>
@@ -29,7 +29,7 @@
 		<div class="full next">
 			<div class="txt-wrap">
 				<p><a href="<?php echo $page->next()->url() ?>">Next project</a></p>
-				<h4><a href="<?php echo $page->next()->url() ?>"><span class="arrow nextArrow"></span> <?php echo $page->next()->title() ?></a></h4>
+				<h4><span class="arrow nextArrow"></span> <a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
 	  		</div>
 	  		<div>
 				<a href="<?php echo $page->next()->url() ?>" class="hoverTrigger next"></a>
@@ -43,7 +43,7 @@
 		<div class="full prev">
 			<div class="txt-wrap">
 				<p><a href="<?php echo $page->prev()->url() ?>">Previous project</a></p>
-				<h4><a href="<?php echo $page->prev()->url() ?>"><span class="arrow prevArrow"></span> <?php echo $page->prev()->title() ?></a></h4>
+				<h4><span class="arrow prevArrow"></span> <a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
 	  		</div>
 	  		<div>
 				<a href="<?php echo $page->prev()->url() ?>" class="hoverTrigger prev"></a>
