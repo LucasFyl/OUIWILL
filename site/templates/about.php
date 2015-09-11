@@ -100,6 +100,6 @@
 	</div>
 
 <?php snippet('footer-big') ?>
-<?= js('assets/js/components/simpleSlider.js') ?>
+<?= js('assets/js/components/SimpleSlider.js') ?>
 <?= js('assets/js/onscroll/AboutScroll.js') ?>
 <?php snippet('footer') ?>

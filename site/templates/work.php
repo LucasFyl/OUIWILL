@@ -56,6 +56,6 @@
   </main>
 
 <?php snippet('footer-big') ?>
-<?= js('assets/js/components/workFilter.js') ?>
+<?= js('assets/js/components/WorkFilter.js') ?>
 <?= js('assets/js/onscroll/WorkScroll.js') ?>
 <?php snippet('footer') ?>

@@ -1,5 +1,6 @@
 <div id="trigger"><i class="fa fa-bars"></i></div>
 <div class="navigation" id="menu">
+  <div class="closer closeMenu"><span class="cross"></span></div>
   <div class="brand-wrap">
     <div class="brand">
       <h1><img src="<?php echo url('assets/images/logo-black.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></h1>

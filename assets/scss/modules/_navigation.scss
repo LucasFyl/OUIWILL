@@ -9,6 +9,35 @@
 		background: white;
 	// }
 
+	.closer {
+		@include size(6rem);
+		display:block;
+		cursor: pointer;
+		z-index: 999999;
+		position: absolute;top:0;
+		background-color: white;
+		left: calc(58.1024061301% + 0.5542252878%);
+		// @include transform(translateX(-50%));
+		// @include transition(all 0.15s ease-in);
+		span.cross {
+			@include size(100%);
+			@include transform(scale(.7));
+			@include transition(all 0.25s ease-in);
+			display:block;
+			background: url('../images/icon-cursor-black.png') no-repeat center center;
+		}
+		&:hover {
+			// background-color: black;
+			// @include transition(all 0.15s ease-out);
+			.cross {
+				// background: url('../images/icon-cursor-white.png') no-repeat center center;
+				@include transform(scale(.8));
+				// @include transform(rotate(180deg));
+				@include transition(all 0.25s ease-out);
+			}
+		}
+	}
+
 	.brand-wrap {
 		@include span-columns(7);
 		height: 100%;

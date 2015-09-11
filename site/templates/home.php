@@ -134,5 +134,5 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/onscroll/HomeScroll.js') ?>
-<?= js('assets/js/components/homeSlider.js') ?>
+<?= js('assets/js/components/HomeSlider.js') ?>
 <?php snippet('footer') ?>
