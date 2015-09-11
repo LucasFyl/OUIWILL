@@ -75,17 +75,12 @@
 
 		img{
 			position: absolute;
-			max-width: none;
+			max-width: 100%;
 			z-index: 2;
 		    top: 0;
 		    left: 0;
 		    opacity: 1;
-		    @media (min-width: 1344px) {
-				width: 100%;
-		    }
-		    @media (max-width: 1344px) {
-		    	height: 100%;
-		    }
+		    
 		    @include media($mobile){
 		    	left: -60%;
 		    }
