@@ -12,11 +12,10 @@
 			var menutimeline = new TimelineMax({paused:true});
 			menutimeline.to('#menu', 0.45, {display:'block',opacity:1,ease:Power2.easeIn})
 						.to('#menu .menu', 0.45, {opacity:1,x:'0%',ease:Power2.easeOut})
-						.to('#menu .closer', 0.25, {x:'-50%',ease:Power2.easeOut})
-						.to('#menu .closer span', 1, {opacity:1,ease:Power2.easeInOut})
+						.to('#menu .closer', 0.25, {x:'-50%',ease:Power2.easeOut}, "-=0.1")
+						.to('#menu .closer span', 0.5, {opacity:1,ease:Power2.easeInOut}, "-=0.25")
 						.staggerTo('#menu .brand > *', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.5")
-						.staggerTo('#menu .menu li', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.4")
-						;
+						.staggerTo('#menu .menu li', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.4");
 
 			this.bindEvents(menutimeline);
 			return menutimeline;

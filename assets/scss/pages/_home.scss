@@ -58,7 +58,7 @@
 				
 				h2 {
 					font-size: 2.1rem;
-					font-family: $light-font;
+					font-family: $base-font;
 					margin: 0;
 				}
 				p {
@@ -111,6 +111,12 @@
 						margin-top: 0;
 						top: 0;
 					}
+					&.transition {
+						@include transition(all 0.25s ease-in);
+						&:hover {
+							@include transition(all 0.25s ease-out);
+						}
+					}
 				}
 			}
 				
@@ -151,7 +157,7 @@
 			}
 			@include media($desktop) {
 				> div {
-					border-top: 2px solid #e5e5e5;
+					border-top: 1px solid #e5e5e5;
 				}
 			}
 			@include media($medium) {

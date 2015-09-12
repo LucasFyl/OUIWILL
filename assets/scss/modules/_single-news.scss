@@ -1,7 +1,7 @@
 .single-news {
 	@include row;
 	@include media($desktop){
-		border-bottom: 2px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
 		height: 9.5rem;
 		line-height: 9.5rem;
 		padding: 0 4rem;
@@ -83,7 +83,7 @@
 		width: 0.9rem; height: 2rem;
 		background: url('../images/asset-chevron-right-grey.png') no-repeat center center;
     	background-size: contain;
-		position: absolute; right: 4rem; top: 4rem;
+		position: absolute; right: 4rem; top: 4.05rem;
 		display: inline-block;
 		vertical-align: middle;
 		opacity: 0;

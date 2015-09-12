@@ -11,7 +11,7 @@
 			padding-left: 5.5rem;
 			padding-right: 5.5rem;
 			padding-bottom: 2.8rem;
-			border-bottom: 2px solid rgba(255,255,255, 0.2);
+			border-bottom: 1px solid rgba(255,255,255, 0.2);
 			@include media($mobile) {
 				padding-left: 0;
 				padding-right: 0;
@@ -91,5 +91,36 @@
 			}
 		}
 			
+	}
+	&.allnews {
+		h1 {
+			top: initial;
+			left:20%;
+			bottom: 16.8rem;
+			@include media($mobile){
+				margin-top: 20%;
+				padding-left: 0;
+				left: 10%;
+			}
+		}
+		a.more {
+			position: absolute;
+			left: 20%;
+			bottom: 12.1rem;
+			font-family: $base-font;
+			text-decoration: none;
+			font-size: 2.5rem;
+			color: rgba(255, 255, 255, 0.5);
+			@include transition(color 0.25s ease);
+			&:hover {
+				color: white;
+				@include transition(color 0.25s ease);
+			}
+			@include media($mobile){
+				left: 10%;
+				text-decoration: underline;
+				line-height:4rem;
+			}
+		}
 	}
 }

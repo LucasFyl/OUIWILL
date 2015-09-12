@@ -2,4 +2,8 @@ Title: News
 
 ----
 
-Text: Lorem ipsum dolor sit amet blablabla.
+Text: 
+
+----
+
+Readmoretext: Read our latest news...

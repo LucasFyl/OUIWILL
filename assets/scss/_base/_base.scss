@@ -239,9 +239,10 @@ ul {
   z-index: 9;
   left: 50%; margin-left: -4.5rem;
   top:50%; margin-top: 7rem;
-  @include transition(all 0.25s ease);
+  @include transition(all 0.35s ease-in);
+
   &:hover {
-    @include transition(all 0.25s ease);
+    @include transition(all 0.35s ease-out);
     @include transform(scale(1.1));
   }
 }

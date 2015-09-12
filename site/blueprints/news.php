@@ -5,6 +5,7 @@ pages:
   template: single-news
 files: false
 deletable: false
+paginate: true
 fields:
   title:
     label: Title
@@ -12,3 +13,7 @@ fields:
   text:
     label: Text
     type:  textarea
+  readmoretext:
+  	label: Read more link content
+  	type:  text
+  	default: Read our lastest news...

@@ -1,0 +1,23 @@
+nav.pagination {
+	@include row;
+	padding-top: 4rem;
+	a {
+		@include span-columns(6);
+		line-height: 4rem;
+		color: black;
+		font-size: 1.6rem;
+		text-decoration:none;
+		padding: 0 4rem;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.next {
+		float: left;
+		text-align: left;
+	}
+	.prev {
+		float: right;
+		text-align: right;
+	}
+}
