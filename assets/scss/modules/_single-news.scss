@@ -81,8 +81,9 @@
 	}
 	.chevron-right {
 		width: 0.9rem; height: 2rem;
-		background: url('../images/asset-chevron-right.png') no-repeat center center;
-		position: absolute; right: 4rem; top: 3.8rem;
+		background: url('../images/asset-chevron-right-grey.png') no-repeat center center;
+    	background-size: contain;
+		position: absolute; right: 4rem; top: 4rem;
 		display: inline-block;
 		vertical-align: middle;
 		opacity: 0;

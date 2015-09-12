@@ -48,7 +48,7 @@
 			$(document).on('click', '.closeMenu', function(){
 				Navigation.closeMenu(menutimeline);
 				// if ($(this).hasClass('.closer')){
-				// 	TweenMax.to('#menu .closer', 0.5, {rotate:'360',ease:Expo.easeInOut});
+				// 	TweenMax.to('#menu .closer', 0.5, {rotate:'360deg',ease:Expo.easeInOut});
 				// }
 			});
 		}
