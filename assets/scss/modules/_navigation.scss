@@ -37,6 +37,9 @@
 				@include transition(all 0.25s ease-out);
 			}
 		}
+		@include media($mobile){
+			display:none;
+		}
 	}
 
 	.brand-wrap {

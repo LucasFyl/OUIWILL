@@ -2,11 +2,13 @@ footer.mobile {
     width: 100%;
     line-height: 4rem;
     background-color: black;
-    padding-left: 3rem;
+    // padding-left: 3rem;
 	p {
 	    margin: 0;
-	    color: white;
+	    color: rgba(255,255,255,0.75);
 	    font-size: 1.2rem;
+	    text-align: center;
+	    text-transform: lowercase;
 	}
 }
 footer.big {

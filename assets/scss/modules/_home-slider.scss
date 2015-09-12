@@ -75,14 +75,17 @@
 
 		img{
 			position: absolute;
-			max-width: 100%;
 			z-index: 2;
 		    top: 0;
 		    left: 0;
 		    opacity: 1;
-		    
+			@include media($desktop){
+				max-width: 100%;
+			}
 		    @include media($mobile){
 		    	left: -60%;
+			    height: 100%;
+			    max-width: initial;
 		    }
 
 		    &.top {
