@@ -15,5 +15,3 @@
       	<div id="trigger"><i class="fa fa-bars"></i></div>
   	</div>
   </header>
-
-  <div id="loader"></div>

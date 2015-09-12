@@ -4,7 +4,7 @@
   		 	<img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
   		</a>
   		<?php snippet('menu') ?>
-    	</div>
+    </div>
   </header>
 
   <header class='black hidden'>

@@ -13,5 +13,6 @@
 
 </head>
 <body>
-<div class="isMobile"></div>
+	<div class="isMobile"></div>
+	<div id="loader"></div>
 
