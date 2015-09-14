@@ -80,7 +80,8 @@
 		    left: 0;
 		    opacity: 1;
 			@include media($desktop){
-				max-width: 100%;
+				max-width: initial;
+    			height: 100%;
 			}
 		    @include media($mobile){
 		    	left: -60%;
