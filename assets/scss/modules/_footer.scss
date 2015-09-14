@@ -21,7 +21,8 @@ footer.big {
 	background-image: url(../images/asset-bg-footer.png);
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 60%;
+	background-size: contain;
+	background-position-y: -10rem;
 	position: relative;
 	z-index: 99;
 
