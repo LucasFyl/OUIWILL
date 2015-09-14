@@ -7,7 +7,7 @@ $(document).ready(function(){
 				var foo = 0;
 				var content = $('#mySlider .slider-content ul li');
 				var kids = content.children('h2, p, a');
-				var nav = $('#mySlider .slider-nav .nav-item');
+				var nav = $('#mySlider .slider-nav .wrap > div');
 				var images = $('#mySlider .slider-bg img');
 
 				// set components classes based on index
@@ -23,6 +23,8 @@ $(document).ready(function(){
 
 				// set components positions 
 				this.reset(content, kids, images, nav, val, foo);
+
+
 			},
 			reset: function(content, kids, images, nav, val, foo){
 				// (re)set slide content style for animation
@@ -36,14 +38,15 @@ $(document).ready(function(){
 				TweenMax.staggerTo(firstContent, 0.5, {opacity:1,y:0,ease:Expo.easeOut,delay:0.5,onComplete:function(){
 					TweenMax.to(firstContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:3.5});
 				}}, 0.15);
-
+				// trigger bind events
+				this.bindEvents(content, kids, images, nav);
 				// trigger navigation
 				this.navigation(val);
 				// trigger slider
 				this.slide(content, kids, images, nav, val, foo);
 			},
 			navigation: function(val, foo){
-				var targetNav = $('#mySlider .slider-nav .nav-item.i_' + val);
+				var targetNav = $('#mySlider .slider-nav .wrap > div.i_' + val);
 				var targetDot = targetNav.find('.nav-link');
 				var targetBar = targetNav.find('.bar');
 
@@ -53,14 +56,13 @@ $(document).ready(function(){
 					TweenMax.set(['.nav-link','.bar'], {className:'-=active',delay:0.01});
 					TweenMax.set('.bar', {className:"-=still",delay:0.02});
 					// Set back first dot and first bar to active
-					TweenMax.set(['.nav-item.i_0 .bar','.nav-item.i_0 .nav-link'], {className:'+=active',delay:0.2});
+					TweenMax.set(['.slider-nav .i_0 .bar','.slider-nav .i_0 .nav-link'], {className:'+=active',delay:0.2});
 				} else {
 					// set target bar and dot to active
 					TweenMax.set([targetBar,targetDot], {className:'+=active'});
 				}
 			},
 			slide: function(content, kids, images, nav, val, foo){
-				console.log('foo:',foo);
 				var slideInt = setInterval(function(){
 					if ( foo <= 16) { 
 						// killer variable
@@ -96,13 +98,16 @@ $(document).ready(function(){
 				}, 5000);
 			},
 			slideTo: function(val, foo){
-				var targetContent = $('#mySlider .slider-content li.i_' + val).children('h2, p, a');
+				var targetContent = $('#mySlider .slider-content li.i_' + val).children('h2, p, a.light-btn');
 				var targetImage = $('#mySlider .slider-bg img.i_' + val);
-				TweenMax.staggerTo(targetContent, 0.5, {opacity:1,y:0,ease:Power2.easeOut,onComplete:function(){
+				TweenMax.staggerTo(targetContent, 0.5, {opacity:1,y:0,zIndex:4,ease:Power2.easeOut,onComplete:function(){
 					TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4});
 				}}, 0.25);
 				TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
 			},
+			// slideToWithTarget: function(target){
+			// 	console.log(target);
+			// },
 			stopBuffering: function(content, kids, images, nav){
 				// stop all buffered events and execute only last animation
 				// MAY fix the inactive-tab bug as seen on : 
@@ -133,14 +138,23 @@ $(document).ready(function(){
 				TweenMax.set(['.nav-link','.bar'], {className:'-=active',delay:0.01});
 				TweenMax.set('.bar', {className:"-=still",delay:0.02});
 			},
-			bindEvent: function(){
-				$('body').on('click', '.nav-link', function(e){
+			bindEvents: function(content, kids, images, nav){
+				$(document).on('click', '#mySlider a.nav-link', function(e){
+					// Get target id from nav link
 					e.preventDefault();
 					var _this = $(this);
 					var target = _this.parent().attr('class');
-					console.log(target);
-				})
-
+					var lastChar = target.substr(target.length - 1);
+					// set val to target
+					val = lastChar;
+					// (re)set slide content style for animation
+					TweenMax.set(kids, {opacity:0,y:20});
+					TweenMax.set(images, {zIndex:2,opacity:0});
+					// trigger slider
+					HomeSlider.slideTo(val);
+					// trigger navigation
+					HomeSlider.navigation(val);
+				});
 			}
 		};
 		HomeSlider.init();
