@@ -37,11 +37,10 @@
 							<h3>Sharing is part of the process</h3>
 							<p>Become part of our social family. <br/>We could like and share each other.</p>
 							<div class="share-btn">
-				    			<a href="#" class="light-btn golden">twitter</a>
-				    			<a href="#" class="light-btn golden">behance</a>
-				    			<a href="#" class="light-btn golden">dribble</a> <br/>
-				    			<a href="#" class="light-btn golden">instagram</a>
-				    			<a href="#" class="light-btn golden">facebook</a>
+								<a href="https://vimeo.com/user20000853" target="_blank" class="light-btn golden">vimeo</a>
+								<a href="https://www.behance.net/ouiwill" target="_blank" class="light-btn golden">behance</a>
+								<a href="https://www.facebook.com/Oui-Will-521221991292035/" target="_blank" class="light-btn golden">facebook</a>
+								<a href="https://instagram.com/ouiwill/" target="_blank" class="light-btn golden">instagram</a>
 							</div>
 						</div>
 					</div>
@@ -67,7 +66,7 @@
 							<h2>Work For Us</h2>
 							<h3>Currently on the look for:</h3>
 							<p>Motion Designer / Front-End Developer / <br/> DP / Intern</p>
-				    		<a href="mailto:jobs@ouiwill.com" class="light-btn golden">jobs@ouiwill.com</a>
+				    		<a href="mailto:careers@ouiwill.com" class="light-btn golden">careers@ouiwill.com</a>
 						</div>
 					</div>
 				</div>
