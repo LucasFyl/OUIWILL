@@ -38,7 +38,7 @@
 							<p>Become part of our social family. <br/>We could like and share each other.</p>
 							<div class="share-btn">
 								<a href="https://vimeo.com/user20000853" target="_blank" class="light-btn golden">vimeo</a>
-								<a href="https://www.behance.net/ouiwill" target="_blank" class="light-btn golden">behance</a>
+								<a href="https://www.behance.net/ouiwill" target="_blank" class="light-btn golden">behance</a> <br/>
 								<a href="https://www.facebook.com/Oui-Will-521221991292035/" target="_blank" class="light-btn golden">facebook</a>
 								<a href="https://instagram.com/ouiwill/" target="_blank" class="light-btn golden">instagram</a>
 							</div>

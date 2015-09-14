@@ -1,4 +1,5 @@
 .main#contact {
+	overflow-x:hidden;
 	@include media($desktop){
 		@include outer-container;
 	}
@@ -46,10 +47,10 @@
 						display: inline-block;
 						position: relative; left: 50%;
 						@include transform(translateX(-50%));
-						@include media($mobile) {
-							left: 10%;
-							transform: none;
-						}
+						// @include media($mobile) {
+						// 	left: 10%;
+						// 	transform: none;
+						// }
 					}
 				}
 				h2, h3 {
