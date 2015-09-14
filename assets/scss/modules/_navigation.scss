@@ -45,7 +45,6 @@
 	.brand-wrap {
 		@include span-columns(7);
 		height: 100%;
-		cursor: url('../images/icon-cursor-black.png'), default;
 
 		.brand {
 			@extend .vertical-center;
