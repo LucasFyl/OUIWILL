@@ -51,16 +51,19 @@ $(document).ready(function(){
 				var targetBar = targetNav.find('.bar');
 
 				if( val === 0 ) {
-					// Reset bars and dots class
-					TweenMax.set('.bar', {className:"+=still"});
-					TweenMax.set(['.nav-link','.bar'], {className:'-=active',delay:0.01});
-					TweenMax.set('.bar', {className:"-=still",delay:0.02});
-					// Set back first dot and first bar to active
-					TweenMax.set(['.slider-nav .i_0 .bar','.slider-nav .i_0 .nav-link'], {className:'+=active',delay:0.2});
+					HomeSlider.resetNav(val);
 				} else {
 					// set target bar and dot to active
 					TweenMax.set([targetBar,targetDot], {className:'+=active'});
 				}
+			},
+			resetNav: function(val){
+				// Reset bars and dots class
+				TweenMax.set('.bar', {className:"+=still"});
+				TweenMax.set(['.nav-link','.bar'], {className:'-=active',delay:0.01});
+				TweenMax.set('.bar', {className:"-=still",delay:0.02});
+				// Set back first dot and first bar to active
+				TweenMax.set(['.slider-nav .i_'+ val +' .bar','.slider-nav .i_'+ val +' .nav-link'], {className:'+=active',delay:0.2});
 			},
 			slide: function(content, kids, images, nav, val, foo){
 				var slideInt = setInterval(function(){
@@ -138,7 +141,7 @@ $(document).ready(function(){
 				TweenMax.set(['.nav-link','.bar'], {className:'-=active',delay:0.01});
 				TweenMax.set('.bar', {className:"-=still",delay:0.02});
 			},
-			bindEvents: function(content, kids, images, nav){
+			bindEvents: function(content, kids, images, nav, foo){
 				$(document).on('click', '#mySlider a.nav-link', function(e){
 					// Get target id from nav link
 					e.preventDefault();
@@ -150,6 +153,8 @@ $(document).ready(function(){
 					// (re)set slide content style for animation
 					TweenMax.set(kids, {opacity:0,y:20});
 					TweenMax.set(images, {zIndex:2,opacity:0});
+					// Reset navigation
+					HomeSlider.resetNav(val);
 					// trigger slider
 					HomeSlider.slideTo(val);
 					// trigger navigation
