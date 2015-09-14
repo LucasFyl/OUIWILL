@@ -12,7 +12,25 @@
       cursor: pointer;
     }
   }
-
+  .closeModal {
+    position: fixed;
+    top: 1rem;
+    width: 100%;
+    z-index: 9999;
+    line-height: 2rem;
+    color:white;
+    font-size: 2.4rem;
+    text-align: center;
+    cursor: pointer;
+    .cross {
+      background: url(../images/icon-cursor-white.png) no-repeat center center;
+      background-size: cover;
+      @include size(2rem);
+      display: inline-block;
+      vertical-align:middle;
+      margin-right: 1rem;
+    }
+  }
   .modal-inner {
     background: white;
     border-radius: .3rem;

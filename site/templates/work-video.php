@@ -23,6 +23,7 @@
 
   <div class="modal">
     <div class="modal-fade-screen">
+      <div class="closeModal"><span class="cross"></span>close video</div>
       <div class="modal-inner">
         <?php if (!$page->vimeo1()->isEmpty()): ?>
         <div class="video-modal <?php echo video1 ?>" >

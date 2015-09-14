@@ -67,9 +67,10 @@ $(document).ready(function(){
 			},
 			slide: function(content, kids, images, nav, val, foo){
 				var slideInt = setInterval(function(){
-					if ( foo <= 16) { 
+					if ( foo <= 18 ) { 
 						// killer variable
 						foo = foo+1;
+						console.log('foo:',foo);
 						
 						// if 0 then target is 1
 						if (val === 0) {val=val+1;foo = foo+1;}
@@ -92,8 +93,9 @@ $(document).ready(function(){
 							HomeSlider.reset(content, kids, images, nav, val);
 							return;
 						}
-					} else { 
+					} else if ( foo >= 18 ) { 
 						clearInterval(slideInt);
+						console.log('foo:',foo);
 						val = 0; foo = 0;
 						HomeSlider.stopBuffering(content, kids, images, nav);
 						HomeSlider.kill(content, kids, images, nav, val, foo); 

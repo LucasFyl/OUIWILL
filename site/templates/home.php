@@ -91,6 +91,7 @@
 
 	<div class="modal">
 		<div class="modal-fade-screen">
+			<div class="closeModal"><span class="cross"></span>close video</div>
 			<div class="modal-inner">
 				<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
