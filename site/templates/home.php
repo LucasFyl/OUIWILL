@@ -113,4 +113,15 @@
 <?php snippet('footer-big') ?>
 <?= js('assets/js/onscroll/HomeScroll.js') ?>
 <?= js('assets/js/components/HomeSlider.js') ?>
+<?= js('assets/js/vendor/ScrollToPlugin.js') ?>
+<script>
+	$(document).ready(function(){
+		$(document).on('click', '.landing .caret-down', function(e){
+			e.preventDefault();
+			var vh100 = $(window).height();
+			console.log(vh100);
+			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
+		})
+	});
+</script>
 <?php snippet('footer') ?>
