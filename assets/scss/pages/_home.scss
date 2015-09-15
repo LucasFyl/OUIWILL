@@ -24,8 +24,12 @@
 		.caret-down {
 			@include size(1.6rem 0.9rem);
 			background: url('../images/asset-caret-down.jpg') no-repeat center center;
-			background-size: cover;
+			background-size: 70%;
+		    box-sizing: content-box;
+		    background-position-x: 0;
 			cursor: pointer;
+			padding: 1rem;
+			padding-left: 0;
 		}
 		p {
 			margin: 0;

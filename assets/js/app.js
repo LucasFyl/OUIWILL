@@ -150,4 +150,12 @@ function initPage(){
 	if ( $('.main.video').length ) { initVideoPage(); }
 	if ( $('.single-work').length ) { initWorkHover(); }
 	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
+	if ( $('body.home').length ) {
+		$(document).on('click', '.landing .caret-down', function(e){
+			e.preventDefault();
+			var vh100 = $(window).height();
+			console.log(vh100);
+			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
+		});
+	}
 }
