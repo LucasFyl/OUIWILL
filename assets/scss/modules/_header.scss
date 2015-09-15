@@ -22,7 +22,17 @@ header.black {
 		}
 	}
 }
-
+header {
+	#trigger {
+		font-size: 1.5rem;
+		height: 1.5rem;
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		cursor: pointer;
+		color: white;
+	}
+}
 header:not(.black) {
 	position: absolute;
 	width: 100%;
@@ -35,15 +45,6 @@ header:not(.black) {
 			width: 5.7rem;
 			max-width: 5.7rem;
 		}
-	}
-	#trigger {
-		font-size: 1.5rem;
-		height: 1.5rem;
-		display: inline-block;
-		vertical-align: top;
-		float: right;
-		cursor: pointer;
-		color: white;
 	}
 	
 	> div{

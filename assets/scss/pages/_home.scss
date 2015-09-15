@@ -33,10 +33,12 @@
 		}
 		p {
 			margin: 0;
-			float: right;
+			// float: right;
+			width: calc(100% - 3rem);
 			text-align: right;
 			font-family: $title-font;
 			font-size: 1rem;
+			line-height: 1rem;
 			color: white;
 			text-transform: uppercase;
 		}
