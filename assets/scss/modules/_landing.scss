@@ -7,10 +7,13 @@
 
 		position: absolute;
 		z-index: 8;
-		left: 52rem;
+		left: 35.5%;
+
+		padding-left: 0;
 		@include media($isMobile) {
-			width: 100% !important;
-			max-width: 100% !important;
+			width: 90% !important;
+			max-width: 90% !important;
+			margin-left: 5%;
 			padding-right: 5rem;
 			padding-left: 5rem;
 			left: 0;
@@ -20,8 +23,9 @@
 
 		@include media($medium) {
 			top:30% !important;left:0;
-			width: 100% !important;
-			max-width: 100% !important;
+			width: 90% !important;
+			max-width: 90% !important;
+			margin-left: 5%;
 			padding-right: 5rem;padding-left: 5rem;
 			text-align: center;
 		}
@@ -34,7 +38,8 @@
 		font-size: 4rem;
 		letter-spacing: 0.2rem;
 		color: white;
-		top: 32.8rem;
+		// top: 32.8rem;
+		bottom: 10rem;
 		@include media($medium){
 			font-size: 3.4rem !important; 
 		}
@@ -49,7 +54,8 @@
 		letter-spacing: 0.1rem;
 		color: white;
 		opacity: 0.6;
-		top: 36.5rem;
+		// top: 36.5rem;
+		bottom: 6rem;
 		@include media($isMobile){
 			top:43% !important;
 		}
