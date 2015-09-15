@@ -67,7 +67,7 @@ $(document).ready(function(){
 			},
 			slide: function(content, kids, images, nav, val, foo){
 				var slideInt = setInterval(function(){
-					if ( foo <= 18 ) { 
+					if ( foo <= 36 ) { 
 						// killer variable
 						foo = foo+1;
 						console.log('foo:',foo);
@@ -93,7 +93,7 @@ $(document).ready(function(){
 							HomeSlider.reset(content, kids, images, nav, val);
 							return;
 						}
-					} else if ( foo >= 18 ) { 
+					} else if ( foo >= 36 ) { 
 						clearInterval(slideInt);
 						console.log('foo:',foo);
 						val = 0; foo = 0;
