@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 
+	<?php snippet('header') ?>
 	<section class="landing about">
-		<?php snippet('header') ?>
 		<div class="modal-trigger play-btn"></div>
 
 	</section>

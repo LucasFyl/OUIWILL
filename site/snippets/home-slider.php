@@ -1,8 +1,4 @@
 <section class="landing home">
-	<div class="abs-wrap">
-		<?php snippet('header') ?>
-		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
-	</div>
 
 	<div id="mySlider">
 		<div class="slider-content project-infos">

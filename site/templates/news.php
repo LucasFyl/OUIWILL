@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 
+  <?php snippet('header') ?>
   <div class="landing news allnews">  
-    <?php snippet('header') ?>
 
     <div class="hide-mobile">
       <?php if( $file = $page->children()->flip()->first()->file('02-landing.jpg') ): ?>

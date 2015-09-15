@@ -3,32 +3,6 @@
 	background-size: cover;
 	height: 100vh;
 	position: relative;
-	.abs-wrap {
-		position: absolute;
-		top: 0; width: 100%;
-		z-index: 999;
-	}
-	header:not(.black) {
-		@include outer-container;
-		padding-top: 7.5rem;
-
-		p {
-			font-size: 1.75rem;
-			margin-top: 0;
-			color: white;
-		}
-	}
-	.baseline {
-		@include outer-container;
-		p {
-			font-family: $alt-font;
-			font-size: 1.3rem;
-			color: rgba(255,255,255,0.6);
-			@include media($mobile) {
-				padding-right: 2rem;
-			}
-		}
-	}
 }
 .main#home {
 	

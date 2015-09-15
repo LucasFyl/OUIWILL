@@ -1,8 +1,8 @@
 <?php snippet('head') ?>
   
+  <?php snippet('header') ?>
+  
   <div class="landing work">  
-    <?php snippet('header') ?>
-
     <div class="hide-mobile">
       <?php if($file = $page->file('02-landing.jpg')): ?>
       <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />

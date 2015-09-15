@@ -1,7 +1,10 @@
 <?php snippet('head') ?>
+	<div class="abs-wrap">
+		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
+		<?php snippet('header') ?>
+	</div>
 
 	<?php snippet('home-slider') ?>
-
 
 	<main class="main" id="home">
 		<section class="intro">

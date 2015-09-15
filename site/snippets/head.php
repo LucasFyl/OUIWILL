@@ -12,7 +12,8 @@
   <?= css('assets/css/vendors.min.css') ?>
 
 </head>
-<body>
+<body class="<?php echo $page->title()->lower()->html() ?>">
+
 	<div class="isMobile"></div>
 	<div id="loader"></div>
 

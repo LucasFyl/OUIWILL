@@ -23,7 +23,12 @@ header.black {
 	}
 }
 
-header {
+header:not(.black) {
+	position: absolute;
+	width: 100%;
+	z-index: 88889;
+	top: 4.3rem;
+
 	a.logo {
 		
 		img {
@@ -40,12 +45,62 @@ header {
 		cursor: pointer;
 		color: white;
 	}
+	
+	> div{
+		@include outer-container;
+		padding-left: 5.5rem;
+		padding-right: 5.5rem;
+		padding-bottom: 2.8rem;
+		border-bottom: 1px solid rgba(255,255,255, 0.2);
+		@include media($mobile) {
+			padding-left: 0;
+			padding-right: 0;
+			border-bottom-width:1px;
+		}
+	}
+}
+body.home {
+	.abs-wrap {
+		position: absolute;
+		top: 0; width: 100%;
+		z-index: 999;
+		.baseline {
+		    position: absolute;
+			width: 77.2%;
+			left: 50%;
+			@include transform(translateX(-50%));
+			top: 5.5rem;
+			p {
+				font-family: $alt-font;
+				font-size: 1.3rem;
+				color: rgba(255,255,255,0.6);
+				@include media($mobile) {
+					padding-right: 2rem;
+				}
+			}
+		}
+
+	}
+	
+		
+	header:not(.black) {
+		.wrapper {
+		    padding-left: 0;
+		    padding-right: 0;
+		    border-bottom: none;
+		}
+		p {
+			font-size: 1.75rem;
+			margin-top: 0;
+			color: white;
+		}
+	}
 }
 
 header.black.hidden {
 	position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 888;
     top: -7.8rem;
 }
