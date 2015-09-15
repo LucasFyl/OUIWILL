@@ -3,6 +3,40 @@
 	background-size: cover;
 	height: 100vh;
 	position: relative;
+
+	.cta-band {
+		height: 6.5rem;
+		background-color: black;
+		position: absolute;
+		z-index: 88899;
+		bottom: 0;
+		width: 100%;
+		line-height: 6.5rem;
+		.row {
+			@include outer-container();
+			line-height: 6.5rem;
+			div, p {
+				display:inline-block;
+				vertical-align:middle;
+			}
+		}
+
+		.caret-down {
+			@include size(1.6rem 0.9rem);
+			background: url('../images/asset-caret-down.jpg') no-repeat center center;
+			background-size: cover;
+			cursor: pointer;
+		}
+		p {
+			margin: 0;
+			float: right;
+			text-align: right;
+			font-family: $title-font;
+			font-size: 0.8rem;
+			color: white;
+			text-transform: uppercase;
+		}
+	}
 }
 .main#home {
 	

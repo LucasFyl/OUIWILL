@@ -1,4 +1,3 @@
-<section class="landing home">
 
 	<div id="mySlider">
 		<div class="slider-content project-infos">
@@ -29,4 +28,3 @@
 			</div>
 		</div>
 	</div>
-</section>

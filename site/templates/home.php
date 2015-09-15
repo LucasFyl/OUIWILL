@@ -3,8 +3,17 @@
 		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
 		<?php snippet('header') ?>
 	</div>
+	
+	<section class="landing home">
+		<?php snippet('home-slider') ?>
 
-	<?php snippet('home-slider') ?>
+		<div class="cta-band">
+			<div class="row">
+				<div class="caret-down"></div>
+				<p>Scroll to discover more</p>
+			</div>
+		</div>
+	</section>
 
 	<main class="main" id="home">
 		<section class="intro">
