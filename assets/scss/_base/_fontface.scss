@@ -16,40 +16,49 @@
          url('../fonts/RalewayRegular.ttf') format('truetype'),
          url('../fonts/RalewayRegular.svg#RalewayRegular') format('svg');
 }
+@font-face {
+    font-family: 'Garamond';
+    src: url('../fonts/Garamond.eot');
+    src: url('../fonts/Garamond.eot') format('embedded-opentype'),
+         url('../fonts/Garamond.woff2') format('woff2'),
+         url('../fonts/Garamond.woff') format('woff'),
+         url('../fonts/Garamond.ttf') format('truetype'),
+         url('../fonts/Garamond.svg#Garamond') format('svg');
+}
 
-@font-face {
-    font-family: 'AkkuratRegular';
-    src: url('../fonts/AkkuratRegular.eot');
-    src: url('../fonts/AkkuratRegular.eot') format('embedded-opentype'),
-         url('../fonts/AkkuratRegular.woff2') format('woff2'),
-         url('../fonts/AkkuratRegular.woff') format('woff'),
-         url('../fonts/AkkuratRegular.ttf') format('truetype'),
-         url('../fonts/AkkuratRegular.svg#AkkuratRegular') format('svg');
-}
-@font-face {
-    font-family: 'AkkuratBold';
-    src: url('../fonts/AkkuratBold.eot');
-    src: url('../fonts/AkkuratBold.eot') format('embedded-opentype'),
-         url('../fonts/AkkuratBold.woff2') format('woff2'),
-         url('../fonts/AkkuratBold.woff') format('woff'),
-         url('../fonts/AkkuratBold.ttf') format('truetype'),
-         url('../fonts/AkkuratBold.svg#AkkuratBold') format('svg');
-}
-@font-face {
-    font-family: 'AkkuratItalic';
-    src: url('../fonts/AkkuratItalic.eot');
-    src: url('../fonts/AkkuratItalic.eot') format('embedded-opentype'),
-         url('../fonts/AkkuratItalic.woff2') format('woff2'),
-         url('../fonts/AkkuratItalic.woff') format('woff'),
-         url('../fonts/AkkuratItalic.ttf') format('truetype'),
-         url('../fonts/AkkuratItalic.svg#AkkuratItalic') format('svg');
-}
-@font-face {
-    font-family: 'AkkuratLight';
-    src: url('../fonts/AkkuratLight.eot');
-    src: url('../fonts/AkkuratLight.eot') format('embedded-opentype'),
-         url('../fonts/AkkuratLight.woff2') format('woff2'),
-         url('../fonts/AkkuratLight.woff') format('woff'),
-         url('../fonts/AkkuratLight.ttf') format('truetype'),
-         url('../fonts/AkkuratLight.svg#AkkuratLight') format('svg');
-}
+// @font-face {
+//     font-family: 'AkkuratRegular';
+//     src: url('../fonts/AkkuratRegular.eot');
+//     src: url('../fonts/AkkuratRegular.eot') format('embedded-opentype'),
+//          url('../fonts/AkkuratRegular.woff2') format('woff2'),
+//          url('../fonts/AkkuratRegular.woff') format('woff'),
+//          url('../fonts/AkkuratRegular.ttf') format('truetype'),
+//          url('../fonts/AkkuratRegular.svg#AkkuratRegular') format('svg');
+// }
+// @font-face {
+//     font-family: 'AkkuratBold';
+//     src: url('../fonts/AkkuratBold.eot');
+//     src: url('../fonts/AkkuratBold.eot') format('embedded-opentype'),
+//          url('../fonts/AkkuratBold.woff2') format('woff2'),
+//          url('../fonts/AkkuratBold.woff') format('woff'),
+//          url('../fonts/AkkuratBold.ttf') format('truetype'),
+//          url('../fonts/AkkuratBold.svg#AkkuratBold') format('svg');
+// }
+// @font-face {
+//     font-family: 'AkkuratItalic';
+//     src: url('../fonts/AkkuratItalic.eot');
+//     src: url('../fonts/AkkuratItalic.eot') format('embedded-opentype'),
+//          url('../fonts/AkkuratItalic.woff2') format('woff2'),
+//          url('../fonts/AkkuratItalic.woff') format('woff'),
+//          url('../fonts/AkkuratItalic.ttf') format('truetype'),
+//          url('../fonts/AkkuratItalic.svg#AkkuratItalic') format('svg');
+// }
+// @font-face {
+//     font-family: 'AkkuratLight';
+//     src: url('../fonts/AkkuratLight.eot');
+//     src: url('../fonts/AkkuratLight.eot') format('embedded-opentype'),
+//          url('../fonts/AkkuratLight.woff2') format('woff2'),
+//          url('../fonts/AkkuratLight.woff') format('woff'),
+//          url('../fonts/AkkuratLight.ttf') format('truetype'),
+//          url('../fonts/AkkuratLight.svg#AkkuratLight') format('svg');
+// }
