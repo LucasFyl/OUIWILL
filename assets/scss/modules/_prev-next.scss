@@ -25,6 +25,7 @@
 			position: relative;
 			display: inline-block;
 			vertical-align:top;
+			overflow:hidden;
 
 			> div:not(.txt-wrap) > a {
 				width: 100%; height: 100%;

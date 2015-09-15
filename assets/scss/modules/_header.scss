@@ -60,11 +60,19 @@ header:not(.black) {
 		}
 	}
 }
+header.black.hidden {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 88899;
+    top: -7.8rem;
+}
+
 body.home {
 	.abs-wrap {
 		position: absolute;
 		top: 0; width: 100%;
-		z-index: 999;
+		z-index: 99888;
 		> .baseline {
 		    position: absolute;
 			width: 77.2%;
@@ -96,12 +104,4 @@ body.home {
 			color: white;
 		}
 	}
-}
-
-header.black.hidden {
-	position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 888;
-    top: -7.8rem;
 }

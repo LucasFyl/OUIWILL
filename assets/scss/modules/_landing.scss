@@ -7,9 +7,9 @@
 
 		position: absolute;
 		z-index: 8;
-		left: 35.5%;
+		left: 37%;
 
-		padding-left: 0;
+		// padding-left: 0;
 		@include media($isMobile) {
 			width: 90% !important;
 			max-width: 90% !important;

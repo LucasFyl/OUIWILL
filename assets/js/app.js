@@ -69,10 +69,14 @@ function initNextPrevHover(){
 		
 		if ( foo.hasClass('next') ) {
 			var thisArrow = $(arrow+'.nextArrow');
-			TweenMax.to(thisArrow, 0.25, {right:"-=20px",opacity:1,ease:Power2.easeInOut});
+			TweenMax.to(thisArrow, 0.25, {right:"-=20px",opacity:1,ease:Power2.easeIn});
+			TweenMax.set('.next img', {css:{position:'absolute',zIndex:'-1'}});
+			TweenMax.to('.next img', 0.75, {scale:1.05,ease:Power2.easeInOut});
 		} else if ( foo.hasClass('prev') ) {
 			var thisArrow = $(arrow+'.prevArrow');
-			TweenMax.to(thisArrow, 0.25, {left:"-=20px",opacity:1,ease:Power2.easeInOut});
+			TweenMax.to(thisArrow, 0.25, {left:"-=20px",opacity:1,ease:Power2.easeIn});
+			TweenMax.set('.prev img', {css:{position:'absolute',zIndex:'-1'}});
+			TweenMax.to('.prev img', 0.75, {scale:1.05,ease:Power2.easeInOut});
 		}
 	};
 	animOut = function($this){
@@ -82,9 +86,13 @@ function initNextPrevHover(){
 		if ( foo.hasClass('next') ) {
 			var thisArrow = $(arrow+'.nextArrow');
 			TweenMax.to(thisArrow, 0.25, {right:"+=20px",opacity:0,ease:Power2.easeInOut});
+			TweenMax.to('.next img', 0.5, {scale:1,ease:Power2.easeOut});
+			// TweenMax.set('.next img', {css:{position:'static'}});
 		} else if ( foo.hasClass('prev') ) {
 			var thisArrow = $(arrow+'.prevArrow');
 			TweenMax.to(thisArrow, 0.25, {left:"+=20px",opacity:0,ease:Power2.easeInOut});
+			TweenMax.to('.prev img', 0.5, {scale:1,ease:Power2.easeOut});
+			// TweenMax.set('.prev img', {css:{position:'static'}});
 		}
 	};
 
