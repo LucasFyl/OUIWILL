@@ -64,7 +64,7 @@ body.home {
 		position: absolute;
 		top: 0; width: 100%;
 		z-index: 999;
-		.baseline {
+		> .baseline {
 		    position: absolute;
 			width: 77.2%;
 			left: 50%;
