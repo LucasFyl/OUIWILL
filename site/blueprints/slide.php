@@ -17,3 +17,9 @@ fields:
   cslink:
     label: Case Study link
     type:  text
+    width: 1/2
+  titleColor:
+    label: Title color
+    type:  text
+    help:  Just the hex of the color, do not write '#'
+    width: 1/2

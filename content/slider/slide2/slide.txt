@@ -7,3 +7,7 @@ Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod
 ----
 
 Cslink: /work/beaming
+
+----
+
+Titlecolor: 68bb2d
