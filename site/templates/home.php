@@ -1,6 +1,8 @@
 <?php snippet('head') ?>
-	<div class="super-loader">
-		
+	<div id="super-loader">
+		<video autoplay="autoplay" poster="<?php echo url('/assets/images/placeholder-loader.jpg') ?>" width="640" height="360">
+		    <source src="<?php echo url('/assets/images/loader.mp4') ?>" type="video/mp4" />
+		</video>
 	</div>
 	<div class="abs-wrap">
 		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>

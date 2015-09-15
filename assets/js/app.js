@@ -151,6 +151,7 @@ function initPage(){
 	if ( $('.single-work').length ) { initWorkHover(); }
 	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('body.home').length ) {
+		TweenMax.to('#super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:6});
 		$(document).on('click', '.landing .caret-down', function(e){
 			e.preventDefault();
 			var vh100 = $(window).height();

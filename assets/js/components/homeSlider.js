@@ -164,6 +164,8 @@ $(document).ready(function(){
 				});
 			}
 		};
-		HomeSlider.init();
+		setTimeout(function(){
+			HomeSlider.init();
+		}, 6000);
 	})();
 });
