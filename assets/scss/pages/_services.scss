@@ -42,10 +42,10 @@
 					font-size: 2.1rem;
 					font-family: $light-font;
 					color: $color;
-					line-height: 4rem;
+					line-height: 1.5;
 
 					&.smaller {
-						font-size: 1.1rem;
+						font-size: 1.2rem;
 						color: #6c6c6c;
 						line-height: 2.1rem;
 						font-family: $base-font;
@@ -93,16 +93,18 @@
 
 	div {
 		position: absolute;
-		left: 50%;
+		// left: 50%;
 		top: 35%;
 		
-		@include media($mobile){
-			left: 10%;
-		    top: 35%;
-		    right: 5%;
-		}
-
-		p {text-align: right;}
+		// @include media($mobile){
+		// 	left: 10%;
+		//     top: 35%;
+		//     right: 5%;
+		// }
+		width: 80%;
+		margin-left: 10%;
+		text-align:center;
+		// p {text-align: right;}
 		.quote {
 			font-family: $base-font;
 			color: white;
@@ -113,7 +115,7 @@
 			}
 		}
 		.author {
-			// font-family: $light-font;
+			font-family: $light-font;
 			color: $golden;
 			font-size: 1.4rem; 
 		}
