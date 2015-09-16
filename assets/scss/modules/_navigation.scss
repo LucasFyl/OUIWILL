@@ -8,15 +8,13 @@
 		// background: white;
 
 	.closer {
-		display:none !important;
 		@include size(6rem);
-		background-color: white;
 		display:block;
 		cursor: pointer;
-		z-index: 88899;
+		z-index: 89999;
 		position: absolute;
-		top:50%; margin-top: -3rem;
-		left: calc(58.1024061301% + 0.5542252878%);
+	    top: 8%;
+	    right: 11rem;
 		span.cross {
 			@include size(100%);
 			@include transform(scale(.7));
@@ -46,8 +44,8 @@
 			margin: 5rem 0;
 			img {
 				max-width: 9rem;
-				display:block;
-				margin: 0 auto;
+				padding: 0 30%;
+    			box-sizing: content-box;
 			}
 				
 		}
@@ -55,6 +53,9 @@
 	}
 		.brand {
 			color: #999999;
+			position: absolute;
+		    bottom: 0;
+		    width: 100%;
 			.social a {color: #999999;}
 			h2 {line-height: 1.5;}
 			h1 {margin-top: 0;padding-top: 5rem;}
@@ -78,7 +79,8 @@
 			background-color: white;
 
 			nav {
-				// @extend .vertical-center;
+				@extend .vertical-center;
+				top: 33% !important;
 				// margin-top: -1rem;
 				ul {
 					list-style: none;
