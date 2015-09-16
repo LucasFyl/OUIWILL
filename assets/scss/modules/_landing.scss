@@ -71,6 +71,10 @@
 			line-height: 5rem;
 			top: 26.5rem;
 			max-width: 55%;
+			
+			font-family: $base-font;
+			font-size: 3rem;
+			text-transform: none;
 		}
 		@include media($mobile){
 			.h1 {
