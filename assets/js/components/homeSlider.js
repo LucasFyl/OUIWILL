@@ -103,10 +103,13 @@ $(document).ready(function(){
 				}, 5000);
 			},
 			slideTo: function(val, foo){
+				var targetLi = $('#mySlider .slider-content li.i_' + val);
 				var targetContent = $('#mySlider .slider-content li.i_' + val).children('h2, p, a.light-btn');
 				var targetImage = $('#mySlider .slider-bg img.i_' + val);
+				targetLi.addClass('topIndex');
 				TweenMax.staggerTo(targetContent, 0.5, {opacity:1,y:0,zIndex:4,ease:Power2.easeOut,onComplete:function(){
 					TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4});
+					targetLi.removeClass('topIndex');
 				}}, 0.25);
 				TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
 			},

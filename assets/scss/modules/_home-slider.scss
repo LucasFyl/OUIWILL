@@ -21,6 +21,10 @@
 				bottom: 16rem;
 				z-index: 4;
 
+				&.topIndex {
+					z-index: 8;
+				}
+
 				@include media($mobile) {
 					padding: 9rem 0 3rem;
 	    			height: 67%;

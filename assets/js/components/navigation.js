@@ -45,7 +45,7 @@
 				}
 			});
 			$(document).on('click', '.closeMenu', function(){
-				TweenMax.to('.closeMenu', 0.3, {opacity:0,ease:Power2.easeIn});
+				TweenMax.to('#menu .closer span', 0.3, {opacity:0,ease:Power2.easeIn});
 				Navigation.closeMenu(menutimeline);
 			});
 		}
