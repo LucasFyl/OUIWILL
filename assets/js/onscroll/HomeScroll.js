@@ -5,8 +5,8 @@ $(document).ready(function(){
 				var controller = new ScrollMagic.Controller();
 
 			    var introTween = new TweenMax.fromTo('#home .intro div', 1, {opacity:0,x:-20}, {opacity:1,x:0,ease:Power2.easeOut});
-			    var showreelTween = new TweenMax.to('#home .showreel .play-btn', 0.5, {opacity:1,marginTop:'3rem',ease:Power2.easeInOut,onComplete:function(){
-			    	$('#home .play-btn').removeClass('transition');
+			    var showreelTween = new TweenMax.to('#home .showreel .modal-trigger', 0.5, {opacity:1,marginTop:'3rem',ease:Power2.easeInOut,onComplete:function(){
+			    	$('#home .modal-trigger').removeClass('transition');
 			    }});
 			    var clientTween = new TweenMax.staggerFromTo('#home .clients > div', 0.25, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeOut}, 0.1);
 			    var workTween = new TweenMax.staggerFromTo('#home .single-work', 2, {opacity:0}, {opacity:1,ease:Power2.easeOut}, 0.25);

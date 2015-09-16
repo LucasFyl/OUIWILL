@@ -33,7 +33,8 @@
 			<img src="<?php echo url('/assets/images/background-showreel-mobile.jpg'); ?>" class="hide-desktop" alt="#" />
 			<div>
 				<h2>showreel 2015</h2>
-				<div class="modal-trigger play-btn"></div>
+				<!-- <div class="modal-trigger play-btn"></div> -->
+				<div class="modal-trigger light-btn white">Play</div>
 			</div>
 		</section>
 

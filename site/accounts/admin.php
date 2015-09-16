@@ -8,8 +8,8 @@ language: en
 role: admin
 token: 7211ba81c4a2c87864c6d3286f2a2bb5d8cfc39f
 history:
+  - news
   - slider/slide2
   - slider/slide4
   - slider/slide3
   - slider/slide1
-  - work/only-watch

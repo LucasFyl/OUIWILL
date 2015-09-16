@@ -7,13 +7,13 @@
       <?php if( $file = $page->children()->flip()->first()->file('02-landing.jpg') ): ?>
       <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
       <?php endif ?>
-      <h1 class="h1"><?php echo $page->children()->first()->title()->excerpt(35); ?></h1>
-      <a href="<?php echo $page->children()->first()->url(); ?>" class="more"><?php echo $page->readmoretext(); ?></a>
+      <h1 class="h1"><?php echo $page->children()->first()->title()->excerpt(55); ?></h1>
+      <a href="<?php echo $page->children()->first()->url(); ?>" class="more light-btn white"><?php echo $page->readmoretext(); ?></a>
     </div>
 
     <div class="hide-desktop">
       <h1 class="h1"><?php echo $page->children()->first()->title()->excerpt(35) ?></h1>
-      <a href="<?php echo $page->children()->first()->url(); ?>" class="more"><?php echo $page->readmoretext(); ?></a>
+      <a href="<?php echo $page->children()->first()->url(); ?>" class="more light-btn white"><?php echo $page->readmoretext(); ?></a>
       <!-- <div class="overlay"></div> -->
       <?php if($file = $page->children()->first()->file('01-thumb.jpg')): ?>
       <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />
