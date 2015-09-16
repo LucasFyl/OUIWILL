@@ -10,7 +10,8 @@
 			TweenMax.set('#menu .closer span', {opacity:0});
 			
 			var menutimeline = new TimelineMax({paused:true});
-			menutimeline.to('#menu', 0.45, {display:'block',opacity:1,ease:Power2.easeIn})
+			menutimeline.to('header.black.hidden', 0.25, {top:'-7.8rem',ease:Power2.easeIn})
+						.to('#menu', 0.45, {display:'block',opacity:1,ease:Power2.easeIn})
 						.to('#menu .menu', 0.45, {opacity:1,x:'0%',ease:Power2.easeOut})
 						.to('#menu .closer', 0.25, {x:0,ease:Power2.easeOut}, "-=0.1")
 						.to('#menu .closer span', 0.5, {opacity:1,ease:Power2.easeInOut}, "-=0.35")
@@ -44,6 +45,7 @@
 				}
 			});
 			$(document).on('click', '.closeMenu', function(){
+				TweenMax.to('.closeMenu', 0.3, {opacity:0,ease:Power2.easeIn});
 				Navigation.closeMenu(menutimeline);
 			});
 		}
