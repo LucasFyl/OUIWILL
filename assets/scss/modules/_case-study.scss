@@ -49,14 +49,14 @@
 			}
 
 			li {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				line-height: 2.4rem;
 				color: #d0d0d0;
 				&:first-child {
 					font-family: $title-font;
 					color: #999999;
 					text-transform: uppercase;
-					font-size: 1.1rem;
+					font-size: 1.2rem;
 				}
 			}
 			&:last-child {
@@ -93,6 +93,7 @@
 			color: $golden;
 			text-transform: uppercase;
 			margin-bottom: 5rem;
+			font-family: $font-book;
 		}
 		p {
 			font-size: 1.4rem;

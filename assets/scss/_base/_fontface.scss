@@ -8,6 +8,15 @@
          url('../fonts/FuturaStdMedium.svg#FuturaStdMedium') format('svg');
 }
 @font-face {
+    font-family: 'FuturaStdLight';
+    src: url('../fonts/FuturaStdLight.eot');
+    src: url('../fonts/FuturaStdLight.eot') format('embedded-opentype'),
+         url('../fonts/FuturaStdLight.woff2') format('woff2'),
+         url('../fonts/FuturaStdLight.woff') format('woff'),
+         url('../fonts/FuturaStdLight.ttf') format('truetype'),
+         url('../fonts/FuturaStdLight.svg#FuturaStdLight') format('svg');
+}
+@font-face {
     font-family: 'FuturaStdBook';
     src: url('../fonts/FuturaStdBook.eot');
     src: url('../fonts/FuturaStdBook.eot') format('embedded-opentype'),
