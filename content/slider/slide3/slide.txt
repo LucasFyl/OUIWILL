@@ -1,4 +1,4 @@
-Title: Open Eyes Global
+Title: Open Eye Global
 
 ----
 
@@ -6,7 +6,7 @@ Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod
 
 ----
 
-Cslink: /work/open-eyes-global
+Cslink: /work/open-eye-global
 
 ----
 
