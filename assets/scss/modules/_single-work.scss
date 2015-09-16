@@ -51,8 +51,9 @@
 				font-family: $base-font;
 				letter-spacing: .1rem;
 				margin: 0;
-				font-size: 1.4rem;
+				font-size: 1.6rem;
 				color: #fff;
+				text-transform: lowercase;
 			}
 			h5, p {
 				@include media($mobile) {

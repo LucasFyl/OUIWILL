@@ -50,7 +50,7 @@ footer.big {
 			margin-bottom: 5rem;
 			> div {
 				@include span-columns(3);
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 			}
 			nav {
 				@include span-columns(9);
@@ -67,7 +67,7 @@ footer.big {
 							margin-left: 0;
 						}
 						a {
-							font-size: 1.2rem;
+							font-size: 1.4rem;
 							text-decoration: none;
 							text-transform: lowercase;
 						}
