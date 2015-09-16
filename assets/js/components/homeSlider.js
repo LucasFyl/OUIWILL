@@ -32,8 +32,10 @@ $(document).ready(function(){
 				TweenMax.set(images, {zIndex:2,opacity:0});
 
 				// init first slide positions
+				var firstLi = $('li.i_0');
 				var firstContent = $('li.i_0').children('h2, p, a');
 				var firstImage = $('img.i_0');
+				firstLi.addClass('topIndex');
 				TweenMax.to(firstImage, 0.25, {zIndex:3,opacity:1,ease:Power2.easeOut});
 				TweenMax.staggerTo(firstContent, 0.5, {opacity:1,y:0,ease:Expo.easeOut,delay:0.5,onComplete:function(){
 					TweenMax.to(firstContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:3.5});
@@ -108,8 +110,10 @@ $(document).ready(function(){
 				var targetImage = $('#mySlider .slider-bg img.i_' + val);
 				targetLi.addClass('topIndex');
 				TweenMax.staggerTo(targetContent, 0.5, {opacity:1,y:0,zIndex:4,ease:Power2.easeOut,onComplete:function(){
-					TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4});
-					targetLi.removeClass('topIndex');
+					TweenMax.to(targetContent, 0.25, {y:20,opacity:0,ease:Power2.easeIn,delay:4,onComplete:function(){
+						targetLi.removeClass('topIndex');
+					}});
+
 				}}, 0.25);
 				TweenMax.to(targetImage, 0.35, {zIndex:3,opacity:1,ease:Power2.easeOut});
 			},
