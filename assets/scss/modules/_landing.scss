@@ -103,22 +103,11 @@
 			position: absolute;
 			left: 20%;
 			bottom: 12.1rem;
-			// font-family: $base-font;
-			// text-decoration: none;
 			font-size: 1.2rem;
 			line-height: 3;
-			// color: rgba(255, 255, 255, 0.5);
-			// @include transition(color 0.25s ease);
-			// &:hover {
-				// color: white;
-				// @include transition(color 0.25s ease);
-			// }
 			@include media($mobile){
 				left: 10%;
-				// text-decoration: underline;
-				// line-height:4rem;
 				bottom:8rem;
-				// color: rgba(255, 255, 255, 0.75);
 			}
 		}
 	}

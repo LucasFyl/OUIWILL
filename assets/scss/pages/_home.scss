@@ -123,6 +123,11 @@
 					@include transition(none);
 					position: relative;
 					margin-top: -7rem; opacity: 0;
+					font-size: 1.8rem;
+					line-height: 4rem;
+					left:50%;
+					@include transform(translateX(-50%));
+					cursor: pointer;
 					@include media($mobile) {
 						margin-top: 0;
 						top: 0;
