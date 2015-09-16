@@ -53,7 +53,8 @@
 					
 				p {
 					color: $color;
-					font-family: $font-book;
+					// font-family: $font-book;
+					font-family: $base-font;
 					font-size: 1.4rem;
 					line-height: 3.3rem;
 					text-align: justify;
@@ -102,13 +103,13 @@
 				}
 				h3 {
 					color: $golden;
-					font-family: $base-font;
+					// font-family: $base-font;
 					margin-bottom: 5.5rem;
 				}
 				p {
-					font-size: 1.8rem;
+					font-size: 2.2rem;
 					line-height: 1.6;
-					font-family: $light-font;
+					// font-family: $light-font;
 					color: #adadad;
 				}
 			}
