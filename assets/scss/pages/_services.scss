@@ -87,7 +87,7 @@
 		    height: 100%;
 		    max-width: none;
 		    width: auto;
-		    transform: translateX(-20%);
+		    @include transform(translateX(-20%));
 		}
 	}
 

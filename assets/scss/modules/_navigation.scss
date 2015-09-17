@@ -127,7 +127,7 @@
 		border-top: 1px solid $link-color;
 		position: relative;
 		left: 50%;
-		transform: translateX(-50%);
+		@include transform(translateX(-50%));
 	}
 }
 		
