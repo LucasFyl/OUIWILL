@@ -5,6 +5,12 @@ console.log('isMobile:',isMobile);
 $(document).ready(function(){
  	initPage();
  	window.onresize = resize;
+
+	setTimeout(function(){
+		if ( $('#loader').is(':visible') ) {
+			$('#loader').remove();
+		}
+	}, 5000);
  });
 
 function hideLoader(){

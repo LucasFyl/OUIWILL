@@ -1,5 +1,6 @@
 .landing:not(.home) {
 	position: relative;
+	z-index: 8;
 	
 	.h1, .h2 {
 		font-family: $title-font;

@@ -43,6 +43,11 @@
 					overflow: hidden;
 				}
 		
+				img {
+					position: absolute;
+					z-index: -1; top: -40%;
+				}
+
 				.txt-wrap {
 					@include media($mobile){
 						width: 72% !important;

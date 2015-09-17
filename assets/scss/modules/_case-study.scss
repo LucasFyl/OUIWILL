@@ -6,6 +6,7 @@
 	}
 
 	aside {
+		z-index: 1;
 		@include media($mobile) {
 			display:none;
 		}
