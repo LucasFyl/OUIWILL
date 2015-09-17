@@ -1,0 +1,77 @@
+Title: DuChâteau LED Videos
+
+----
+
+H1: Video & Photography
+
+----
+
+Categories: video
+
+----
+
+Client: Du Château
+
+----
+
+Services: 
+
+----
+
+Website: http://duchateau.com
+
+----
+
+Subtitle: Du Château LED Videos
+
+----
+
+Text: Lorem Ipsum
+
+----
+
+Vimeo1: https://vimeo.com/89661522
+
+----
+
+Vimeocaption1: 
+
+----
+
+Vimeo2: 
+
+----
+
+Vimeocaption2: 
+
+----
+
+Vimeo3: 
+
+----
+
+Vimeocaption3: 
+
+----
+
+Vimeo4: 
+
+----
+
+Vimeocaption4: 
+
+----
+
+Vimeo5: 
+
+----
+
+Vimeocaption5: 
+
+----
+
+Vimeo6: 
+
+----
+
+Vimeocaption6: 

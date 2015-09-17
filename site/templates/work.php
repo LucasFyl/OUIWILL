@@ -12,11 +12,9 @@
           <a href="#" class="filter" data-filter="photography">photography</a></p>
       </div>
       <div>
-        <div class="hide">
-          <?php echo $nbr = $page->children()->count(); ?>
-          <?php echo $target = rand(0, $nbr) ?>
-          <?php echo $randomWork = $page->children()->nth($target)->url(); ?>
-        </div>
+        <?php $nbr = $page->children()->visible()->count();
+              $target = rand(0, $nbr);
+              $randomWork = $page->children()->nth($target)->url(); ?>
         <a href="<?php echo $randomWork ?>">try random <span></span></a>
       </div>
     </div>
