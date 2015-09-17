@@ -5,12 +5,6 @@ console.log('isMobile:',isMobile);
 $(document).ready(function(){
  	initPage();
  	window.onresize = resize;
-
-	setTimeout(function(){
-		if ( $('#loader').is(':visible') ) {
-			$('#loader').remove();
-		}
-	}, 5000);
  });
 
 function hideLoader(){
@@ -173,5 +167,12 @@ function initPage(){
 			console.log(vh100);
 			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
 		});
+	}
+	if ( $('.case-study.work').length ) {
+		setTimeout(function(){
+			if ( $('#loader').is(':visible') ) {
+				$('#loader').remove();
+			}
+		}, 5000);
 	}
 }

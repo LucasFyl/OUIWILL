@@ -19,7 +19,9 @@ $(document).ready(function(){
 				var workTween4 = new TweenMax.staggerFromTo('.single-work:nth-child(9), .single-work:nth-child(10)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 				var workTween5 = new TweenMax.staggerFromTo('.single-work:nth-child(11), .single-work:nth-child(12)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 				var workTween6 = new TweenMax.staggerFromTo('.single-work:nth-child(13), .single-work:nth-child(14)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
-				var workTween7 = new TweenMax.staggerFromTo('.single-work:nth-child(14), .single-work:nth-child(15)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
+				var workTween7 = new TweenMax.staggerFromTo('.single-work:nth-child(15), .single-work:nth-child(16)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
+				var workTween8 = new TweenMax.staggerFromTo('.single-work:nth-child(17), .single-work:nth-child(18)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
+				var workTween9 = new TweenMax.staggerFromTo('.single-work:nth-child(19), .single-work:nth-child(20)', 1, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeInOut}, 0.1);
 
 				TweenMax.set('#filters .filter, .showcase .single-work', {opacity:0,y:20});
 				TweenMax.staggerTo(foo, 1, {opacity:1,y:0,ease:Power3.easeOut,delay:0}, 0.1);
@@ -46,6 +48,12 @@ $(document).ready(function(){
 				var workScrollScene7 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(14)", triggerHook: 'onLeave'})
 				    .addTo(controller)
 				    .setTween(workTween7);
+				var workScrollScene8 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(16)", triggerHook: 'onLeave'})
+				    .addTo(controller)
+				    .setTween(workTween8);
+				var workScrollScene9 = new ScrollMagic.Scene({triggerElement: ".single-work:nth-child(18)", triggerHook: 'onLeave'})
+				    .addTo(controller)
+				    .setTween(workTween9);
 
 				if (isMobile === false ){
 					this.desktopOnly(controller);
