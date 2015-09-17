@@ -3,7 +3,7 @@
 .main#news {
 	@include outer-container;
 	margin-top: 10rem;
-	h3 {
+	> h3 {
 		font-size: 1.6rem;
 		text-align: center;
 		margin-bottom: 10rem;
@@ -34,7 +34,7 @@
 			margin-bottom: 10rem;
 		}
 		> div {
-			border-top: 2px solid #e5e5e5;
+			border-top: 1px solid #e5e5e5;
 			@include media($medium){
 				border: none;
 			}

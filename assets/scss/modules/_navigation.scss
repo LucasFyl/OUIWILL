@@ -4,13 +4,14 @@
 	position: fixed;
 	z-index: 99988;
 	top: 0; left: 0; right: 0; bottom: 0;
+
 	.closer {
-		@include size(6rem);
+		@include size(3rem);
 		display:block;
 		cursor: pointer;
 		z-index: 89999;
 		position: absolute;
-	    top: 8%;
+	    top:9.8%;
 	    right: 11rem;
 		span.cross {
 			@include size(100%);
@@ -18,6 +19,7 @@
 			@include transition(all 0.25s ease-in);
 			display:block;
 			background: url('../images/icon-cursor-black.png') no-repeat center center;
+			background-size:100%;
 		}
 		&:hover {
 			.cross {
@@ -60,7 +62,7 @@
 			z-index: 88999;
 
 			@include media($desktop){
-				@include span-columns(5);
+				@include span-columns(4);
 			}
 			@include media($mobile){
 				width: 100%;
@@ -116,6 +118,16 @@
 			}
 				
 		}
+	}
+	.brand .social {
+		display:inline-block;
+		width: auto;
+		margin: 0;
+		padding: 4rem 10%;
+		border-top: 1px solid $link-color;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 		

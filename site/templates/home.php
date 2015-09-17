@@ -44,8 +44,8 @@
 			<!-- <div class="row"> -->
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-audi.png'); ?>" alt="Audi"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-beaming.png'); ?>" alt="Beaming"></div>
-				<div><img src="<?php echo url('/assets/images/asset-logoclient-nixon.png'); ?>" alt="Nixon"></div>
-				<div><img src="<?php echo url('/assets/images/asset-logoclient-ralphlauren.png'); ?>" alt="Ralph Lauren"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-ucsd.png'); ?>" alt="UCSD"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-nuvauniversity.png'); ?>" alt="NuVa University"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-duchateau.png'); ?>" alt="DuChâteau"></div>
 			<!-- </div> -->
 			<!-- <div class="row"> -->
