@@ -37,7 +37,7 @@
 	}
 	.h1 {
 		font-size: 3rem;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.3rem;
 		color: white;
 		// top: 32.8rem;
 		bottom: 10rem;
@@ -52,11 +52,11 @@
 		font-family: $base-font;
 		text-transform: lowercase;
 		font-size: 2rem;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.2rem;
 		color: white;
 		opacity: 0.8;
 		// top: 36.5rem;
-		bottom: 6rem;
+		bottom: 7rem;
 		@include media($isMobile){
 			top:43% !important;
 		}
@@ -73,9 +73,10 @@
 			top: 26.5rem;
 			max-width: 55%;
 			
-			font-family: $base-font;
+			
+			font-family: $title-font !important;
+			text-transform: uppercase !important;
 			font-size: 3rem;
-			text-transform: none;
 		}
 		@include media($mobile){
 			.h1 {
@@ -87,9 +88,12 @@
 	}
 	&.allnews {
 		h1 {
-			top: initial;
-			left:20%;
+			top: 22.5rem !important;
+			left:15%;
+			max-width: 55%;
 			bottom: 16.8rem;
+			font-family: $title-font !important;
+			text-transform: uppercase !important;
 			@include media($mobile){
 				margin-top: 20%;
 				padding-left: 0;
@@ -102,7 +106,7 @@
 		}
 		a.more {
 			position: absolute;
-			left: 20%;
+			left:15%;
 			bottom: 12.1rem;
 			font-size: 1.2rem;
 			line-height: 3;

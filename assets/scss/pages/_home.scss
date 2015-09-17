@@ -36,9 +36,11 @@
 			// float: right;
 			width: calc(100% - 3rem);
 			text-align: right;
-			font-family: $base-font;
-			font-size: 1.6rem;
-			letter-spoacing: .2rem;
+			font-family: $font-book;
+			text-transform: uppercase;
+			// font-size: 1.6rem;
+			font-size: 1.2rem;
+			letter-spacing: .2rem;
 			line-height: 1rem;
 			color: white;
 			// text-transform: uppercase;
@@ -74,11 +76,11 @@
 				
 				h2 {
 					font-size: 2.1rem;
-					font-family: $base-font;
+					font-family: $light-font;
 					margin: 0;
 				}
 				p {
-					font-family: $light-font;
+					font-family: $base-font;
 					margin-top: 0;
 					font-size: 2.1rem;
 					line-height: 4rem;
@@ -123,11 +125,13 @@
 					@include transition(none);
 					position: relative;
 					margin-top: -7rem; opacity: 0;
-					font-size: 1.8rem;
+					font-size: 1.4rem;
+					letter-spacing: .6rem;
 					line-height: 4rem;
 					left:50%;
 					@include transform(translateX(-50%));
 					cursor: pointer;
+					padding: 0 2.6rem;
 					@include media($mobile) {
 						margin-top: 0;
 						top: 0;

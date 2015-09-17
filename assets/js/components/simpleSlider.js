@@ -1,8 +1,8 @@
 (function($) {
     $.simpleSlider = function(){
-        setInterval(function () {
-            moveRight();
-        }, 3500);
+        // setInterval(function () {
+        //     moveRight();
+        // }, 3500);
       
         var slideCount = $('#slider ul li').length;
         var slideWidth = $('#slider ul li').width();
@@ -39,10 +39,4 @@
             return false;
         });
     }
-})(jQuery);
-
-jQuery(document).ready(function ($) {
-
-    var slider = $.simpleSlider( );
-
-});    
+})(jQuery);   

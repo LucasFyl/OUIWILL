@@ -64,6 +64,10 @@
 						@include media($mobile){
 							left: 5rem;
 						}
+						> p  a {
+							opacity: 0.8;
+    						letter-spacing: 0.1rem;
+						}
 					}
 				}
 				&.next {

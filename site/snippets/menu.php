@@ -4,7 +4,7 @@
   <div class="closer closeMenu"><span class="cross"></span></div>
   <div class="overlay">
       <div class="menu">
-      <h1 class="logo"><img src="<?php echo url('assets/images/logo-black.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></h1>        
+      <h1 class="logo"><a href="<?php $site->url() ?>"><img src="<?php echo url('assets/images/logo-black.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></a></h1>        
       <nav>
         <ul class="cf no-bullet">
           <!-- <li><a href="<?php echo $site->url() ?>">Home</a></li> -->

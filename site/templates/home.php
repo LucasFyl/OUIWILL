@@ -15,7 +15,7 @@
 		<div class="cta-band">
 			<div class="row">
 				<div class="caret-down"></div>
-				<p>Scroll to discover more</p>
+				<p>scroll down</p>
 			</div>
 		</div>
 	</section>
@@ -109,7 +109,7 @@
 
 	<div class="modal">
 		<div class="modal-fade-screen">
-			<div class="closeModal"><span class="cross"></span>close video</div>
+			<div class="closeModal"><span class="cross"></span></div>
 			<div class="modal-inner">
 				<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>

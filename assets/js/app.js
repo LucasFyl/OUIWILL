@@ -175,4 +175,7 @@ function initPage(){
 			}
 		}, 5000);
 	}
+	if ( $('body.about').length ) {
+		var slider = $.simpleSlider();
+	}
 }

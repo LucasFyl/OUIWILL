@@ -48,6 +48,9 @@
 				TweenMax.to('#menu .closer span', 0.3, {opacity:0,ease:Power2.easeIn});
 				Navigation.closeMenu(menutimeline);
 			});
+			$(document).on('click', '.overlay', function(){
+				Navigation.closeMenu(menutimeline);
+			});
 		}
 	}
 

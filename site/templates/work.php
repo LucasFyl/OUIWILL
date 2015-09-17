@@ -44,7 +44,7 @@
       </div>
       <?php endforeach ?>
       <div class="single-work last">
-        <p>we can show you more work, <br/>Just stop by!</p>
+        <p>we can show you more work, <br/>just stop by!</p>
       </div>
     </section>
     <div class="clearfix"></div>
