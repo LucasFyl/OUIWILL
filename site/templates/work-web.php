@@ -49,10 +49,13 @@
       </figure>
       <?php endforeach ?>
     </div>
+
   </main>
 
 <?php snippet('work-next') ?>
 
 <?php snippet('footer-big') ?>
+
 <?= js('assets/js/onscroll/SingleWorkScroll.js') ?>
+
 <?php snippet('footer') ?>

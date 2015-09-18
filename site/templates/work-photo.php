@@ -48,8 +48,10 @@
       </figure>
       <?php endforeach ?>
     </div>
-    </nav>
+    
+
   </main>
+  
 <?php snippet('work-next') ?>
 
 <?php snippet('footer-big') ?>

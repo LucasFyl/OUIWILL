@@ -99,8 +99,8 @@
           </figure>
         <?php endif ?>
       <?php endforeach ?>
-
     </div>
+    
   </main>
 <?php snippet('work-next') ?>
 
