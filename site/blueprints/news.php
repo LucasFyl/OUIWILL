@@ -10,9 +10,6 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
-    type:  textarea
   readmoretext:
   	label: Read more link content
   	type:  text

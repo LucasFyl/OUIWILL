@@ -15,5 +15,9 @@
 <body class="<?php echo $page->title()->lower()->html() ?>">
 
 	<div class="isMobile"></div>
-	<div id="loader"></div>
+	<div id="loader">
+   <div class="vertical-center">
+     <p>Loading <span>.</span><span>.</span><span>.</span> </p>
+   </div> 
+  </div>
 

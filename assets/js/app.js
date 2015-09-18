@@ -8,7 +8,9 @@ $(document).ready(function(){
  });
 
 function hideLoader(){
-	TweenMax.to('#loader', 1, {opacity:0,display:'none',ease:Power1.easeInOut,delay:0.1});
+	tl_loader = new TimelineMax({paused:true});
+	tl_loader.fromTo('#loader p', 1, {opacity:0},{opacity:1,ease:Power2.easeOut,yoyo:true,repeat:3})
+			.to('#loader', 1, {opacity:0,display:'none',ease:Power1.easeInOut,delay:0.1}).play();
 }
 function resize() {
 	console.log('page has been resized');
@@ -169,11 +171,11 @@ function initPage(){
 		});
 	}
 	if ( $('.case-study.work').length ) {
-		setTimeout(function(){
-			if ( $('#loader').is(':visible') ) {
-				$('#loader').remove();
-			}
-		}, 5000);
+		// setTimeout(function(){
+		// 	if ( $('#loader').is(':visible') ) {
+		// 		$('#loader').remove();
+		// 	}
+		// }, 5000);
 	}
 	if ( $('body.about').length ) {
 		var slider = $.simpleSlider();
