@@ -13,13 +13,13 @@
 		letter-spacing: .2rem;
 		@keyframes blink {
 		    0% {
-		      opacity: .2;
+		      opacity: 0;
 		    }
 		    20% {
 		      opacity: 1;
 		    }
 		    100% {
-		      opacity: .2;
+		      opacity: 0;
 		    }
 		}
 

@@ -16,7 +16,7 @@
 		span.cross {
 			@include size(100%);
 			@include transform(scale(.7));
-			@include transition(all 0.25s ease-in);
+			// @include transition(all 0.25s ease-in);
 			display:block;
 			background: url('../images/icon-cursor-black.png') no-repeat center center;
 			background-size:100%;
@@ -24,7 +24,7 @@
 		&:hover {
 			.cross {
 				@include transform(scale(.8));
-				@include transition(all 0.25s ease-out);
+				// @include transition(all 0.25s ease-out);
 			}
 		}
 		@include media($mobile){
