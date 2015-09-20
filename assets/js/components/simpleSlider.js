@@ -14,14 +14,14 @@
         $('#slider ul li:last-child').prependTo('#slider ul');
 
         moveLeft = function() {
-            TweenMax.to('#slider ul', 1.2, {left:+slideWidth,ease:Expo.easeInOut,onComplete:function(){
+            TweenMax.to('#slider ul', 1, {left:'+='+slideWidth,ease:Power1.easeInOut,onComplete:function(){
                 $('#slider ul li:last-child').prependTo('#slider ul');
                 $('#slider ul').css('left', '');
             }});
         };
 
         moveRight = function() {
-            TweenMax.to('#slider ul', 1.2, {left:-slideWidth,ease:Expo.easeInOut,onComplete:function(){
+            TweenMax.to('#slider ul', 1, {left:'-='+slideWidth,ease:Power1.easeInOut,onComplete:function(){
                 $('#slider ul li:first-child').appendTo('#slider ul');
                 $('#slider ul').css('left', '');
             }});
