@@ -170,13 +170,6 @@ function initPage(){
 			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
 		});
 	}
-	if ( $('.case-study.work').length ) {
-		// setTimeout(function(){
-		// 	if ( $('#loader').is(':visible') ) {
-		// 		$('#loader').remove();
-		// 	}
-		// }, 5000);
-	}
 	if ( $('body.about').length ) {
 		var slider = $.simpleSlider();
 	}

@@ -20,11 +20,13 @@
 			<?php endforeach ?>
 		</div>
 		<div class="slider-nav">
-			<div class="wrap">
-				<div class=""><a href="#" class="nav-link"></a><span class="bar"></span></div>
-				<div class=""><a href="#" class="nav-link"></a><span class="bar"></span></div>
-				<div class=""><a href="#" class="nav-link"></a><span class="bar"></span></div>
-				<div class=""><a href="#" class="nav-link"></a><span class="bar"></span></div>
+			<div class="wrap dotstyle dotstyle-fall">
+				<ul>
+					<li class="current"><a class="nav-link" href="#">slide1</a></li>
+					<li><a class="nav-link" href="#">slide2</a></li>
+					<li><a class="nav-link" href="#">slide3</a></li>
+					<li><a class="nav-link" href="#">slide4</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
