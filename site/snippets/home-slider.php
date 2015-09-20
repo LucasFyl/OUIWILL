@@ -22,10 +22,10 @@
 		<div class="slider-nav">
 			<div class="wrap dotstyle dotstyle-fall">
 				<ul>
-					<li class="current"><a class="nav-link" href="#">slide1</a></li>
-					<li><a class="nav-link" href="#">slide2</a></li>
-					<li><a class="nav-link" href="#">slide3</a></li>
-					<li><a class="nav-link" href="#">slide4</a></li>
+					<li class="current"><a class="nav-link jsLink" href="#">slide1</a></li>
+					<li><a class="nav-link jsLink" href="#">slide2</a></li>
+					<li><a class="nav-link jsLink" href="#">slide3</a></li>
+					<li><a class="nav-link jsLink" href="#">slide4</a></li>
 				</ul>
 			</div>
 		</div>

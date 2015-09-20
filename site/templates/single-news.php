@@ -2,9 +2,7 @@
   
   <div class="landing news">  
     <?php snippet('header') ?>
-
-  
-
+    
     <div class="hide-mobile">
       <?php if($file = $page->file('02-landing.jpg')): ?>
       <img src="<?php echo $file->url() ?>" alt="#" draggable="false" />

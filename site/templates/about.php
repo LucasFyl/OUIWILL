@@ -3,7 +3,6 @@
 	<?php snippet('header') ?>
 	<section class="landing about">
 		<div class="modal-trigger play-btn"></div>
-
 	</section>
 
 
@@ -76,8 +75,8 @@
 		<section class="slider">
 			<div class="outer-wrap">
 				<div id="slider">
-					<a href="#" class="control_next"></a>
-					<a href="#" class="control_prev"></a>
+					<a href="#" class="control_next jsLink"></a>
+					<a href="#" class="control_prev jsLink"></a>
 					<ul>
 						<?php foreach($page->images()->sortBy('sort', 'asc')->slice(3) as $slide): ?>
 						<li>

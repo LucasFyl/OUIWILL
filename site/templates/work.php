@@ -6,10 +6,10 @@
     <div class="filterpart">
       <div id="filters">
         <p>Filter by: 
-          <a href="#" class="active filter" data-filter="all">all project</a>
-          <a href="#" class="filter" data-filter="digital">digital</a>
-          <a href="#" class="filter" data-filter="video">video</a>
-          <a href="#" class="filter" data-filter="photography">photography</a></p>
+          <a href="#" class="jsLink active filter" data-filter="all">all project</a>
+          <a href="#" class="jsLink filter" data-filter="digital">digital</a>
+          <a href="#" class="jsLink filter" data-filter="video">video</a>
+          <a href="#" class="jsLink filter" data-filter="photography">photography</a></p>
       </div>
       <div>
         <?php $nbr = $page->children()->visible()->count();

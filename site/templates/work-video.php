@@ -72,7 +72,7 @@
       </ul>
       <ul>
         <li>Website:</li>  
-        <li><a href="<?php echo $page->website() ?>" target='blank'><?php echo $page->website() ?></a></li>
+        <li><a href="<?php echo $page->website() ?>" class="jsLink" target='blank'><?php echo $page->website() ?></a></li>
       </ul>
     </aside>
 
