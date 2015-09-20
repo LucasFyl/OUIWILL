@@ -3,6 +3,7 @@
 <?= js('assets/js/vendor/jquery.hoverIntent.min.js') ?>
 <?= js('assets/js/components/Navigation.js') ?>
 <?= js('assets/js/components/Modal.js') ?>
+<?= js('assets/js/components/AjaxyNav.js') ?>
 
 <!-- build:remove -->
 <script src="http://localhost:35729/livereload.js"></script>

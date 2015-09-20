@@ -3,19 +3,18 @@
 <div class="navigation" id="menu">
   <div class="closer closeMenu"><span class="cross"></span></div>
   <div class="overlay">
-      <div class="menu">
+    <div class="menu">
       <h1 class="logo"><a href="<?php $site->url() ?>"><img src="<?php echo url('assets/images/logo-black.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></a></h1>        
       <nav>
         <ul class="cf no-bullet">
-          <!-- <li><a href="<?php echo $site->url() ?>">Home</a></li> -->
-          <li class="hide-desktop"><a href="#" class="closeMenu"></a></li>
+          <li class="hide-desktop"><a href="#" class="jsLink closeMenu"></a></li>
           <?php foreach($pages->visible() as $p): ?>
           <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><span><?php echo $p->title()->html() ?></span></a></li>
           <?php endforeach ?>
         </ul>
       </nav>
       <div class="brand">
-      <div class="social">
+        <div class="social">
           <ul>
             <li><a href="https://vimeo.com/user20000853" target="_blank" class="jsLink fa fa-vimeo"></a></li>
             <li><a href="https://www.behance.net/ouiwill" target="_blank" class="jsLink fa fa-behance"></a></li>

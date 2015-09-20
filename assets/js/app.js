@@ -9,8 +9,11 @@ $(document).ready(function(){
 
 function hideLoader(){
 	tl_loader = new TimelineMax({paused:true});
-	tl_loader.fromTo('#loader p', 1, {opacity:0},{opacity:1,ease:Power2.easeOut,yoyo:true,repeat:3})
-			.to('#loader', 1, {opacity:0,display:'none',ease:Power1.easeInOut,delay:0.1}).play();
+	tl_loader
+			.to('#loader p', 0.25, {opacity:0,ease:Power2.easeOut,delay:0.75})
+			.to('#loader .animHalf', 1, {height:0,ease:Power1.easeInOut,delay:0.1,onComplete:function(){
+				TweenMax.set('#loader', {display:'none'});
+			}}).play();
 }
 function resize() {
 	console.log('page has been resized');
@@ -148,41 +151,12 @@ function detectMobile(){
 	}
 
 }
-function loadContent(_href) {
-	TweenMax.staggerTo('body > *', 1, {opacity:0,y:20,ease:Power2.easeOut,onComplete:function(){
-		window.location.href = _href;	
-	}});
-}
 // Page load event 
 function initPage(){
 
 	detectMobile();
 	hideLoader();
 	scrollNav();
-	
-    if (Modernizr.history) {
-    	// hijack the nav click event
-	    $('body').delegate("a:not(.jsLink)", "click", function(e) {
-	      e.preventDefault();
-	      
-	      var _this = $(this),
-	      	  _href = _this.attr("href");
-
-	      // change the url without a page refresh and add a history entry.
-	      history.pushState(null, null, _href);
-
-	      // load the content
-	      loadContent(_href); 
-	    });
-
-    } else {
-    	// history is not supported; nothing fancy here
-    }
-
-    $(window).bind("popstate", function() {
-	    link = location.pathname.replace(/^.*[\\/]/, ""); // get filename only
-	    loadContent(link);
-	});
 
 	// Page specific load events
 	if ( $('.main.video').length ) { initVideoPage(); }

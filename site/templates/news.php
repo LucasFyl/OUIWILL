@@ -45,11 +45,11 @@
       <nav class="pagination">
 
         <?php if( $articles->pagination()->hasNextPage() ): ?>
-        <a class="prev jsLink" href="<?php echo $articles->pagination()->nextPageURL() ?>">older news&nbsp;&nbsp;&rsaquo;</a>
+        <a class="prev" href="<?php echo $articles->pagination()->nextPageURL() ?>">older news&nbsp;&nbsp;&rsaquo;</a>
         <?php endif ?>
 
         <?php if( $articles->pagination()->hasPrevPage() ): ?>
-        <a class="next jsLink" href="<?php echo $articles->pagination()->prevPageURL() ?>">&lsaquo;&nbsp;&nbsp;newer news</a>
+        <a class="next" href="<?php echo $articles->pagination()->prevPageURL() ?>">&lsaquo;&nbsp;&nbsp;newer news</a>
         <?php endif ?>
 
       </nav>

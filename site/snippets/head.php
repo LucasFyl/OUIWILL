@@ -16,8 +16,10 @@
 
 	<div class="isMobile"></div>
 	<div id="loader">
-   <div class="vertical-center">
+    <div class="animHalf topHalf"></div>
+    <div class="vertical-center">
      <p>Loading <span>.</span><span>.</span><span>.</span> </p>
-   </div> 
+    </div> 
+    <div class="animHalf bottomHalf"></div>
   </div>
 
