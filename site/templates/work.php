@@ -20,6 +20,7 @@
     </div>
 
     <section class="showcase">
+    
     <!-- Add limit 11 when time -->
       <?php foreach(page('work')->children()->visible() as $project): ?>
       <div class="single-work <?php echo $project->categories() ?>">

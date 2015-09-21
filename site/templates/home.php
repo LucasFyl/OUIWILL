@@ -1,9 +1,11 @@
 <?php snippet('head') ?>
+
 	<div id="super-loader">
 		<video autoplay="autoplay" poster="<?php echo url('/assets/images/placeholder-loader.jpg') ?>" width="640" height="360">
 		    <source src="<?php echo url('/assets/images/loader.mp4') ?>" type="video/mp4" />
 		</video>
 	</div>
+	
 	<div class="abs-wrap">
 		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
 		<?php snippet('header') ?>
@@ -40,21 +42,16 @@
 
 		<section class="clients">
 			<h3>clients.</h3>
-
-			<!-- <div class="row"> -->
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-audi.png'); ?>" alt="Audi"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-beaming.png'); ?>" alt="Beaming"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-ucsd.png'); ?>" alt="UCSD"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-nuvauniversity.png'); ?>" alt="NuVa University"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-duchateau.png'); ?>" alt="DuChâteau"></div>
-			<!-- </div> -->
-			<!-- <div class="row"> -->
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-fendly.png'); ?>" alt="fendly"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-360zebra.png'); ?>" alt="360 Zebra"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-lincoln.png'); ?>" alt="Lincoln"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-diptyque.png'); ?>" alt="diptyque Paris"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-onlywatch.png'); ?>" alt="Only Watch"></div>
-			<!-- </div> -->
 		</section>
 
 		<section class="work">
@@ -85,7 +82,7 @@
 			</div>
 		</section>
 
-		<section class="news">
+<!-- 		<section class="news">
 			<h3>news.</h3>
 
 			<div>
@@ -102,7 +99,7 @@
 		    	</div>
 		    	<?php endforeach ?>
 			</div>
-		</section>
+		</section> -->
 
 		<?php snippet('careers'); ?>
 	</main>
