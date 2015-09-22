@@ -24,7 +24,7 @@
 
   <div class="modal">
     <div class="modal-fade-screen">
-      <div class="closeModal"><span class="cross"></span>close video</div>
+      <div class="closeModal"><span class="cross"></span></div>
       <div class="modal-inner">
         <?php if (!$page->vimeo1()->isEmpty()): ?>
         <div class="video-modal <?php echo video1 ?>" >
@@ -82,11 +82,11 @@
     <div class="content">
       <h3><?php echo $page->subtitle()->html() ?></h3>
       <?php echo $page->text()->kirbytext() ?>
+      <?php $i = 1; ?>
 
       <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
 
       <?php if ( $image->fileName() !== 'cover.jpg' ): ?>
-      <?php $i = 1; ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
         <div class="modal-trigger play-btn" data-video="video<?php echo $i ?>"></div>

@@ -7,9 +7,9 @@ password: >
 language: en
 role: admin
 history:
+  - about
   - contact
   - slider/slide3
   - slider/slide4
   - news
-  - slider/slide2
-token: 9d3b83d3cc459ffe485b0f4692f6c183b62466be
+token: 7594a8f1b9c2a8a90a6bcc466fa49485d7dd0026

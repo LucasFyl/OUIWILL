@@ -30,7 +30,7 @@ Website: http://duchateau.com/
 
 ----
 
-Vimeo1: https://vimeo.com/119603329
+Vimeo1: https://player.vimeo.com/video/119603329
 
 ----
 
@@ -38,7 +38,7 @@ Vimeocaption1:
 
 ----
 
-Vimeo2: https://vimeo.com/119717167
+Vimeo2: https://player.vimeo.com/video/119717167
 
 ----
 
@@ -46,7 +46,7 @@ Vimeocaption2:
 
 ----
 
-Vimeo3: https://vimeo.com/118533299
+Vimeo3: https://player.vimeo.com/video/118533299
 
 ----
 
@@ -54,7 +54,7 @@ Vimeocaption3:
 
 ----
 
-Vimeo4: https://vimeo.com/126174973
+Vimeo4: https://player.vimeo.com/video/126174973
 
 ----
 
