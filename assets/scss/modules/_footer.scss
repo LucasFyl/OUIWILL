@@ -25,6 +25,8 @@ footer.big {
 	background-position-y: -10rem;
 	position: relative;
 	z-index: 99;
+	max-width: 100%;
+	overflow: auto;
 
 	.brand {
 		@include span-columns(6);

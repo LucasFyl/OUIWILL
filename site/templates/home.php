@@ -5,7 +5,7 @@
 		    <source src="<?php echo url('/assets/images/loader.mp4') ?>" type="video/mp4" />
 		</video>
 	</div>
-	
+
 	<div class="abs-wrap">
 		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
 		<?php snippet('header') ?>
@@ -81,25 +81,6 @@
       			<?php endforeach ?>
 			</div>
 		</section>
-
-<!-- 		<section class="news">
-			<h3>news.</h3>
-
-			<div>
-				<?php foreach(page('news')->children()->visible()->limit(4) as $news): ?>
-		    	<div class="single-news">
-		    		<a href="<?php echo $news->url() ?>">
-		    			<div class="date">
-		    				<time datetime="<?php echo $news->date('c') ?>">
-							  <?php echo $news->date('d/m/Y') ?>
-							</time>
-		    			</div>
-		    			<div class="title"><?php echo $news->title()->html() ?><span class="chevron-right"></span></div>
-		    		</a>
-		    	</div>
-		    	<?php endforeach ?>
-			</div>
-		</section> -->
 
 		<?php snippet('careers'); ?>
 	</main>

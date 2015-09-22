@@ -10,6 +10,7 @@
 			TweenMax.staggerTo(notneeded, 1, {y:200,opacity:0,ease:Power4.easeInOut,onComplete:WorkFilter.updateGrid(needed, notneeded)}, 0.1);
 		},
 		reset: function(clickTarget){
+			// manage filtering or not
 			$('.filter').removeClass('active');
 			$(this).addClass('active');
 			var _this = $(this).attr('data-filter');
@@ -25,7 +26,8 @@
 		},
 		bindEvents: function(){
 			// bind click events
-			$('body').on("click", "#filters a.filter", WorkFilter.reset );
+			$('body').on("click", "#filters a.filter", WorkFilter.reset);
+
 		}
 	}
 	WorkFilter.init();

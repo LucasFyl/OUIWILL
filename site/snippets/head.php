@@ -8,6 +8,8 @@
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+
   <?= css('assets/css/app.min.css') ?>
   <?= css('assets/css/vendors.min.css') ?>
 

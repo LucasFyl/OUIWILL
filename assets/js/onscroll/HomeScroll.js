@@ -10,7 +10,7 @@ $(document).ready(function(){
 			    }});
 			    var clientTween = new TweenMax.staggerFromTo('#home .clients > div', 0.35, {opacity:0,y:20}, {opacity:1,y:0,ease:Power4.easeOut}, 0.1);
 			    var workTween = new TweenMax.staggerFromTo('#home .single-work', 2, {opacity:0}, {opacity:1,ease:Power2.easeOut}, 0.25);
-			    var newsTween = new TweenMax.staggerFromTo('#home .single-news', 0.75, {opacity:0}, {opacity:1,ease:Power4.easeInOut}, 0.1);
+			    // var newsTween = new TweenMax.staggerFromTo('#home .single-news', 0.75, {opacity:0}, {opacity:1,ease:Power4.easeInOut}, 0.1);
 			    var carreersTween = new TweenMax.fromTo('#home .carreers .light-btn', 0.25, {opacity:0,scale:0.6}, {opacity:1,scale:1,ease:Elastic.easeInOut});
 
 			    var introScene = new ScrollMagic.Scene({triggerElement: "#home .intro"})
@@ -29,9 +29,9 @@ $(document).ready(function(){
 			        .addTo(controller)
 			        .setTween(workTween);
 			        
-			    var newsScene = new ScrollMagic.Scene({triggerElement: "#home .news", triggerHook: 'onEnter', offset: 100})
-			        .addTo(controller)
-			        .setTween(newsTween);
+			    // var newsScene = new ScrollMagic.Scene({triggerElement: "#home .news", triggerHook: 'onEnter', offset: 100})
+			    //     .addTo(controller)
+			    //     .setTween(newsTween);
 			        
 			    var carreersScene = new ScrollMagic.Scene({triggerElement: "#home .carreers"})
 			        .addTo(controller)

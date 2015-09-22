@@ -7,27 +7,27 @@
 
 		  $nbr = $page->parent()->children()->visible()->count();
 
-	      $target1 = mt_rand(0, $nbr);
-	      $target2 = mt_rand(0, $nbr);
+	   //    $target1 = mt_rand(0, $nbr);
+	   //    $target2 = mt_rand(0, $nbr);
 	      
-	      // echo 'target1:' . $target1 . '  /n';
+	   //    // echo 'target1:' . $target1 . '  /n';
 
-	      // echo 'target2:' . $target2 . '  /n';
+	   //    // echo 'target2:' . $target2 . '  /n';
 
-	      // echo 'pagenum:' . $page->num() . '  /n';
+	   //    // echo 'pagenum:' . $page->num() . '  /n';
 
 
-	      if ( $target1 === $page->num() ) {
-		      $target1 = mt_rand(0, $nbr);
-	      } elseif ( $target2 === $page->num() ) {
-		      $target2 = mt_rand(0, $nbr);
-	      } elseif ( $target1 === $target2 ) {
-	          $target1 = mt_rand(0, $nbr);
-	      	  $target2 = mt_rand(0, $nbr);
-	      }
+	   //    if ( $target1 === $page->num() ) {
+		  //     $target1 = mt_rand(0, $nbr);
+	   //    } elseif ( $target2 === $page->num() ) {
+		  //     $target2 = mt_rand(0, $nbr);
+	   //    } elseif ( $target1 === $target2 ) {
+	   //        $target1 = mt_rand(0, $nbr);
+	   //    	  $target2 = mt_rand(0, $nbr);
+	   //    }
 
-	      $randomWork1 = $pages->find('work')->children()->visible()->nth($target1); 
-	      $randomWork2 = $pages->find('work')->children()->visible()->nth($target2); 
+	      $randomWork1 = $pages->find('work')->children()->visible()->nth(mt_rand(0, $nbr)); 
+	      $randomWork2 = $pages->find('work')->children()->visible()->nth(mt_rand(0, $nbr)); 
 	?>
 
 	<div class="blockprevnext">

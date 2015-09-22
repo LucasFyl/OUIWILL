@@ -6,10 +6,10 @@
     <div class="filterpart">
       <div id="filters">
         <p>Filter by: 
-          <a href="#" class="jsLink active filter" data-filter="all">all project</a>
-          <a href="#" class="jsLink filter" data-filter="digital">digital</a>
-          <a href="#" class="jsLink filter" data-filter="video">video</a>
-          <a href="#" class="jsLink filter" data-filter="photography">photography</a></p>
+          <a class="jsLink active filter" data-filter="all">all project</a>
+          <a class="jsLink filter" data-filter="digital">digital</a>
+          <a class="jsLink filter" data-filter="video">video</a>
+          <a class="jsLink filter" data-filter="photography">photography</a></p>
       </div>
       <div>
         <?php $nbr = $page->children()->visible()->count();
@@ -20,7 +20,7 @@
     </div>
 
     <section class="showcase">
-    
+
     <!-- Add limit 11 when time -->
       <?php foreach(page('work')->children()->visible() as $project): ?>
       <div class="single-work <?php echo $project->categories() ?>">

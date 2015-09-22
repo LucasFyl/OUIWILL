@@ -9,20 +9,16 @@ $(document).ready(function(){
 
 function hideLoader(){
 	tl_loader = new TimelineMax({paused:true});
-	tl_loader
-			.to('#loader p', 0.25, {opacity:0,ease:Power2.easeOut,delay:0.75})
+	tl_loader.to('#loader p', 0.25, {opacity:0,ease:Power2.easeOut,delay:0.75})
 			.to('#loader .animHalf', 1, {height:0,ease:Power1.easeInOut,delay:0.1,onComplete:function(){
 				TweenMax.set('#loader', {display:'none'});
 			}}).play();
 }
 function resize() {
-	console.log('page has been resized');
 	detectMobile();
 
 }
 function initVideoPage(){
-	console.log('video page');
-
 	$('body').on('click', '.play-btn', function(){
 		var video = $(this).attr('data-video');
 		var target = $('body').find('.'+video);
@@ -160,9 +156,15 @@ function initPage(){
 
 	// Page specific load events
 	if ( $('.main.video').length ) { initVideoPage(); }
-	if ( $('.single-work').length ) { initWorkHover(); }
+	if ( $('.single-work').length ) { 
+		initWorkHover();
+		// Kill scroll magic controller to prevent scroll animation
+		controller.destroy();
+		controller = null;
+	}
 	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('body.home').length ) {
+		$('#loader').remove();
 		TweenMax.fromTo('#super-loader video', 1, {opacity:1},{opacity:0,ease:Power2.easeInOut,repeat:3,yoyo:true,delay:2.75});
 		TweenMax.staggerTo('#super-loader video, #super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:6.3}, 0.15);
 		$(document).on('click', '.landing .caret-down', function(e){

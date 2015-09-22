@@ -6,7 +6,11 @@ Tag1: Web Design
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+Text: 
+
+Under the high patronage of Prince Albert II of Monaco, Only Watch is the third biggest luxury watch event and charity auction in the world in which the finest watch makers create one unique model to raise money for research on Duchenne Muscular Dystrophy. 
+The renown collection travels the world, starting in Monaco, and ending in Geneva the epicenter of high horology where hundreds of connoisseurs, donators and collectors undoubtedly raise their highest interest for bidding on the exquisite timepieces. 
+Only Watch partnered with Oui Will to create a new brand identity system, supported by a new website, video content, and photography.
 
 ----
 
@@ -22,11 +26,11 @@ Subtitle: Only watch case study
 
 ----
 
-Client: only watch
+Client: Only watch
 
 ----
 
-Services: 
+Services: Web design,Art Direction,Video Production
 
 ----
 

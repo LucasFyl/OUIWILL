@@ -12,4 +12,4 @@ history:
   - slider/slide4
   - news
   - slider/slide2
-token: 984eda85b551b487aea49ec419365c021ab9efd6
+token: 9d3b83d3cc459ffe485b0f4692f6c183b62466be

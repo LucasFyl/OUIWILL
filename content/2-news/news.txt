@@ -1,9 +1,0 @@
-Title: News
-
-----
-
-Text: 
-
-----
-
-Readmoretext: see our last post

@@ -6,7 +6,12 @@ Tag1: Branding
 
 ----
 
-Text: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+Text: 
+
+St. Petersburg is a top-shelf Russian vodka brand whose artisanal recipe is the pride of its historic, namesake city. 
+First crafted over 300 years ago, St. Petersburg is still known today as the drink of friendship and remains the first choice of many Russians for celebrating occasions big and small. 
+Outscoring Belvedere and Grey Goose premium vodkas in taste has elevated St. Petersburg to new heights. 
+Oui Will worked with St. Petersburg Vodka to develop a new digital experience that illustrates this deep tradition of craftsmanship, romance, and friendship.
 
 ----
 
@@ -22,7 +27,7 @@ Client: St Petersburg Vodka
 
 ----
 
-Services: Conception & Strategy,Creative Direction,Art Direction,Copywritting,Web design,Web develoment,Branding
+Services: Art Direction,Web design
 
 ----
 

@@ -6,23 +6,27 @@ Tag1: Branding
 
 ----
 
-Text: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+Text: 
+
+Union is a San Diego co-work space that was conceived to give small businesses and entrepreneurs the environment, community, and support services they need to grow and thrive. 
+With the co-working office space market becoming increasingly saturated, it was imperative that Oui Will differentiated Union within their niche. To do this we focused not only on the space itself, but also on the people in oer to story-line the collaboration process among members. 
+Oui Will developed the brand strategy and identity system for Union, rolling out the signage of each location, collateral, and the website, which integrates custom digital membership cards for community perks and rewards.
 
 ----
 
-Tag2: ecommerce
+Tag2: webdesign
 
 ----
 
-Subtitle: Context of open eye global
+Subtitle: Context of union cowork
 
 ----
 
-Client: Nice Guy Brand
+Client: Union Cowork
 
 ----
 
-Services: Conception & Strategy,Creative Direction,Art Direction,Copywritting,Web design,Web develoment,Branding
+Services: Brand Identity,Art Direction,Web Design
 
 ----
 
