@@ -19,8 +19,8 @@
 					<div class="vertical-center">
 						<div>
 							<h3>brand.</h3>
-			    			<p>oui will helps emerging and established brands understand who they are, why they exist, and how to communicate by creating systems of expression that work across all touch points.</p>
-			    			<p class='smaller'>Brand identity / Brand Strategy / Advertising Campaigns / Video Production / Photography / Brand Collateral / Packaging Design / Product Design / Exhibition & Events.</p>	
+			    			<p>Oui Will helps brands understand what makes them unique and how to connect with their story through systems of expression.</p>
+			    			<p class='smaller'>Brand Identity, Brand Guidelines, Messaging Platforms, Branded content, Print Collateral, Social Strategy.</p>	
 						</div>
 					</div>
 				</div>
@@ -63,8 +63,8 @@
 					<div class="vertical-center">
 						<div>
 							<h3>digital.</h3>
-			    			<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is a our religion.</p>
-				    		<p class='smaller'>Website Design / Digital Strategy / User Interface Design / User Experience Design / Social Campaings / eCommerce / Digital Installations / Web Apps / Responsive Design.</p>	
+			    			<p>We create award-winning interactive digital solutions by maintaining a constant focus on innovation and the users overall experience. </p>
+				    		<p class='smaller'>Website Design / User Interface Design / User Experience Design / Social Campaigns <br/> eCommerce / Content Development / Web Apps / Responsive Design</p>	
 						</div>
 					</div>
 						
@@ -103,8 +103,8 @@
 					<div class="vertical-center">
 						<div>
 							<h3>Video & Photography.</h3>
-			    			<p>Let’s not forget that Digital Visual Merchandising is just as important as the functionality and accessibility of your web site. It represents the only language that can be understood anywhere in the world.</p>
-			    			<p class='smaller'>We have an internal team of talented photographers and video makers who have eyes like a shutter and mind like a lens. They will literally paint your distinguished photo/video canvas that will be perfectly framed into your web site.</p>
+			    			<p>A picture is worth a thousand words. Making a genuine impression on today's consumer means telling a compelling story, which is driven by captivating visuals and consistent branded content.</p>
+			    			<p class='smaller'>Short Films  / Cinematography / Product photography  / Lifestyle / Portraiture <br/>Motion Design / LED Video / Product Demos / Interview / Case Study</p>
 						</div>
 					</div>
 				</div>
@@ -147,8 +147,8 @@
 					<div class="vertical-center">
 						<div>
 							<h3>Sectors.</h3>
-			    			<p>we combine the european esthetic and the american yes we can, creating experiences in a digital world, helping people in their decisions for a brand, products, services in different sectors.</p>
-			    			<p class='smaller'>Fashion / Arts / Automotive / Technology / Education / Health Care / Media & Technology / Profesional Services / Non-profit / Public Sctors / Restaurants / Hospitality / Sports. </p>
+			    			<p>Quality over quantity. Less is more. Focus and simplicity...These are just a few of our mantras at Oui Will. We have the privilege of working in a variety of sectors with clients who share the same vision.</p>
+			    			<p class='smaller'>Fashion / Arts / Automotive / Technology / Education / Health Care / Media & Technology <br/>Professional Services / Non-profit / Public Sectors / Restaurants / Hospitality / Sports.</p>
 						</div>
 					</div>
 				</div>
