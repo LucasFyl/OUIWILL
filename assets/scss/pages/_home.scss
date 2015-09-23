@@ -30,20 +30,25 @@
 			cursor: pointer;
 			padding: 1rem;
 			padding-left: 0;
+			@include media($mobile) {
+				@include size(4rem);
+				background-size: 49%;
+    			padding: 0;
+			}
 		}
 		p {
 			margin: 0;
-			// float: right;
 			width: calc(100% - 3rem);
 			text-align: right;
 			font-family: $font-book;
 			text-transform: uppercase;
-			// font-size: 1.6rem;
 			font-size: 1.2rem;
 			letter-spacing: .2rem;
 			line-height: 1rem;
 			color: white;
-			// text-transform: uppercase;
+			@include media($mobile) {
+				width: calc(100% - 5rem);
+			}
 		}
 	}
 }

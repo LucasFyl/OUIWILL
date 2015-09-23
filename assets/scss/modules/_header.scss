@@ -31,6 +31,10 @@ header {
 		float: right;
 		cursor: pointer;
 		color: white;
+		@include media($mobile) {
+			@include size(4rem);
+			float: right;
+		}
 	}
 }
 header:not(.black) {

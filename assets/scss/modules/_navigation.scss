@@ -19,6 +19,9 @@
 			display:block;
 			background: url('../images/icon-cursor-black.png') no-repeat center center;
 			background-size:100%;
+			@include media($mobile) {
+				@include transform(scale(.6));
+			}
 		}
 		&:hover {
 			.cross {
@@ -27,6 +30,11 @@
 		}
 		@include media(min-width 480px max-width 769px) {
 			right: 8rem;
+		}
+		@include media($mobile) {
+			@include size(4rem);
+		    top: 7rem;
+    		right: 9rem;
 		}
 	}
 
