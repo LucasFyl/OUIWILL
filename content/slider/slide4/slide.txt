@@ -2,7 +2,7 @@ Title: Pitch Nixon
 
 ----
 
-Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Quote: a branded campaign and social strategy that activates users and fans to share<br/> the adventures that define a life well-lived.
 
 ----
 
@@ -10,4 +10,4 @@ Cslink: /work/nixon
 
 ----
 
-Titlecolor: dd4b4e
+Titlecolor: 

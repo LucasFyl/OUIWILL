@@ -2,7 +2,7 @@ Title: Only Watch
 
 ----
 
-Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Quote: a new web platform and identity for the world-renowned luxury <br/> watch event that raises money for duchenne muscular dystophy
 
 ----
 
@@ -10,4 +10,4 @@ Cslink: /work/only-watch
 
 ----
 
-Titlecolor: 72c5cd
+Titlecolor: 

@@ -29,7 +29,7 @@ Website: http://www.nixon.com
 
 ----
 
-Vimeo1: https://player.vimeo.com/video/106642566?autoplay=0
+Vimeo1: https://player.vimeo.com/video/140103620
 
 ----
 
@@ -37,7 +37,7 @@ Vimeocaption1: This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh v
 
 ----
 
-Vimeo2: https://player.vimeo.com/video/106642566?autoplay=0
+Vimeo2: 
 
 ----
 

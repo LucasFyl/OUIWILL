@@ -5,7 +5,7 @@
 				<?php foreach(page('slider')->children() as $slide): ?>
 				<li>
 					<h2><?php echo $slide->title() ?></h2>
-					<p><?php echo $slide->quote() ?></p>
+					<p><?php echo $slide->quote()->html() ?></p>
 					<span class="clearfix"></span>
 					<a href="<?php echo $slide->cslink() ?>" class="light-btn white">see case study</a>
 				</li>

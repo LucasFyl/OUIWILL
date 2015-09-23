@@ -58,6 +58,12 @@ $(document).ready(function(){
 				if (isMobile === false ){
 					this.desktopOnly(controller);
 				}
+
+				$('body').on('click', 'a.filter', function(){
+					// Kill scroll magic controller to prevent scroll animation
+					controller.destroy();
+					controller = null;
+				});
 			},
 			desktopOnly: function(controller){
 

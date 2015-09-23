@@ -5,10 +5,6 @@
 <?= js('assets/js/components/Modal.js') ?>
 <?= js('assets/js/components/AjaxyNav.js') ?>
 
-<!-- build:remove -->
-<script src="http://localhost:35729/livereload.js"></script>
-<!-- /build -->
-
 <!-- Include Google Analytics -->
 <script type="text/javascript">
   var _gaq = _gaq || [];

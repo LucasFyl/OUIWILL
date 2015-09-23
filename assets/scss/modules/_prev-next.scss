@@ -45,7 +45,8 @@
 		
 				img {
 					position: absolute;
-					z-index: -1; top: -40%;
+					z-index: -1; 
+					@include media(min-width 800px) {top: -40%;}
 				}
 
 				.txt-wrap {

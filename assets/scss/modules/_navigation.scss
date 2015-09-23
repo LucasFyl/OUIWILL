@@ -16,7 +16,6 @@
 		span.cross {
 			@include size(100%);
 			@include transform(scale(.7));
-			// @include transition(all 0.25s ease-in);
 			display:block;
 			background: url('../images/icon-cursor-black.png') no-repeat center center;
 			background-size:100%;
@@ -24,11 +23,10 @@
 		&:hover {
 			.cross {
 				@include transform(scale(.8));
-				// @include transition(all 0.25s ease-out);
 			}
 		}
-		@include media($mobile){
-			display:none;
+		@include media(min-width 480px max-width 769px) {
+			right: 8rem;
 		}
 	}
 
@@ -107,9 +105,10 @@
 							height: 100%;
 							width: 100%;
 							padding: 0 30%;
-							@include transition(all .35s ease-out);	
+							@include transition(all .25s ease-out);	
 							&:hover {
-								text-decoration: line-through;
+								opacity: 0.6;
+								@include transition(all .35s ease-out);	
 							}
 						}
 							

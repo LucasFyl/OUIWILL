@@ -18,8 +18,9 @@
 			TweenMax.to('.modal-fade-screen', 0.75, {opacity:0,visibility:'hidden',delay:0.35,ease:Power2.easeIn});
 			TweenMax.fromTo('.modal-inner', 0.5, {y:0,opacity:1}, {opacity:0,y:50,ease:Power2.easeIn});
 			TweenMax.set('body', {overflow:'auto'});
+			$('#vimeoplayer').api_pause();
 			// if ( $('main').is('.case-study.video') ) {
-				
+
 			// }
 		},
 		bindEvents: function(menutimeline){

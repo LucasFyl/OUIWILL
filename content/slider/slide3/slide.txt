@@ -2,7 +2,7 @@ Title: Open Eye Global
 
 ----
 
-Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Quote: a new messaging platform and visual identity succinctly<br/> captures the brand’s personality.
 
 ----
 
@@ -10,4 +10,4 @@ Cslink: /work/open-eye-global
 
 ----
 
-Titlecolor: fc7d38
+Titlecolor: 

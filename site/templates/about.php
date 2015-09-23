@@ -34,12 +34,12 @@
 				<div>
 					<h2>Guillaume Hamon</h2>
 					<h3>Founder / Creative Director</h3>
-					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is our religion.</p>
+					<p>"It's not just about defining client goals and creating a strategy to fulfill, it's also about innovating technology so that we can help our clients set higher goals."</p>
 				</div>
 				<div>
 					<h2>Chelsea Flaming</h2>
 					<h3>Founder / Creative Director</h3>
-					<p>we create interactive and connected digital products that achieve simplicity through a constant focus on the user’s overall experience. pixel perfect is our religion.</p>
+					<p>"It all starts and ends with desire -  but in order to win the hearts of todays consumer, brands must be transparent,  authentic, and consistent. It’s how you build a relationship on a solid foundation."</p>
 				</div>
 			</div> 
 		</section>
@@ -79,6 +79,7 @@
 
 	<div class="modal">
 		<div class="modal-fade-screen">
+			<div class="closeModal"><span class="cross"></span></div>
 			<div class="modal-inner">
 				<iframe src="<?php echo $page->aboutVideo() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
@@ -86,6 +87,6 @@
 	</div>
 
 <?php snippet('footer-big') ?>
-<?= js('assets/js/components/SimpleSlider.js') ?>
 <?= js('assets/js/onscroll/AboutScroll.js') ?>
+<?= js('assets/js/components/SimpleSlider.js') ?>
 <?php snippet('footer') ?>

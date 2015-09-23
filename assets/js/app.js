@@ -23,7 +23,6 @@ function initVideoPage(){
 	$('body').on('click', '.play-btn', function(){
 		video = $(this).attr('data-video');
 		target = $('body').find('.'+video);
-		console.log(video, target);
 		openVideo(video, target);
 	});
 	
@@ -172,13 +171,7 @@ function initPage(){
 			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
 		});
 	}
-	if ( $('body.work').length ) {
-		$('body').on('click', 'a.filter', function(){
-			// Kill scroll magic controller to prevent scroll animation
-			controller.destroy();
-			controller = null;
-		});
-	}
+	// if ( $('body.work').length ) { }
 	if ( $('body.about').length ) {
 		var slider = $.simpleSlider();
 	}

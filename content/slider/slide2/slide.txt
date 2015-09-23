@@ -2,7 +2,7 @@ Title: Beaming
 
 ----
 
-Quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Quote: an updated identity and packaging strategy for a beaming<br/> southern california wellness brand.
 
 ----
 
@@ -10,4 +10,4 @@ Cslink: /work/beaming
 
 ----
 
-Titlecolor: 68bb2d
+Titlecolor: 

@@ -30,7 +30,7 @@ Text: DuChateau is a luxury brand specializing in architectural finishes ranging
 
 ----
 
-Vimeo1: https://vimeo.com/89661522
+Vimeo1: https://player.vimeo.com/video/89661522
 
 ----
 

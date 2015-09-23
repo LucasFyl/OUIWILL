@@ -6,4 +6,4 @@ Text:
 
 ----
 
-Readmoretext: see our last post
+Readmoretext: Read our latest news...

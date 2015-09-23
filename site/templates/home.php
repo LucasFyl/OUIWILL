@@ -25,8 +25,8 @@
 	<main class="main" id="home">
 		<section class="intro">
 			<div>
-				<h2>oui will is a full-service, integrated creative agency.</h2>
-				<p>we combine the european esthetic and the american yes we can. we create experiences in a digital world, helping people in their decisions for a brand, products and services.</p>
+				<h2>how will a user experience your brand for the first time? <br/> will they connect, be inspired, and share? </h2>
+				<p>we design rich and relevant brand experiences that tell a story and inspire true connections at every touch point.</p>
 			</div>
 		</section>
 
@@ -89,7 +89,7 @@
 		<div class="modal-fade-screen">
 			<div class="closeModal"><span class="cross"></span></div>
 			<div class="modal-inner">
-				<iframe src="https://player.vimeo.com/video/106642566?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe src="https://player.vimeo.com/video/140043413?autoplay=0?api=1&player_id=vimeoplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
