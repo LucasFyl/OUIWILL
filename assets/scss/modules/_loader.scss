@@ -69,5 +69,8 @@
 		bottom: 0;
 		top: 0;
 		margin: auto;
+		@include media($mobile) {
+			left:-50%;
+		}
 	}
 }
