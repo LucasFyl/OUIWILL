@@ -34,6 +34,9 @@ header {
 		@include media($mobile) {
 			@include size(4rem);
 			float: right;
+			i {
+				float: right;
+			}
 		}
 	}
 }

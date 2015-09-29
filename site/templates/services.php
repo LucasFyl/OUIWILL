@@ -19,7 +19,7 @@
 					<div class="vertical-center">
 						<div>
 							<h3>brand.</h3>
-			    			<p>Oui Will helps brands understand what makes them unique and how to connect with their story through systems of expression.</p>
+			    			<p>Oui will helps brands understand what makes them unique and how to communicate their story through systems of expression.</p>
 			    			<p class='smaller'>Brand Identity, Brand Guidelines, Messaging Platforms, Branded content, Print Collateral, Social Strategy.</p>	
 						</div>
 					</div>
