@@ -4,6 +4,12 @@
 		<video autoplay="autoplay" poster="<?php echo url('/assets/images/placeholder-loader.jpg') ?>" width="640" height="360">
 		    <source src="<?php echo url('/assets/images/loader.mp4') ?>" type="video/mp4" />
 		</video>
+
+    	<div class="animHalf topHalf"></div>
+    	<div class="vertical-center">
+			<div class="spinnerDad"><div class="spinner"></div></div>
+    	</div>
+    	<div class="animHalf bottomHalf"></div>
 	</div>
 
 	<div class="abs-wrap">
