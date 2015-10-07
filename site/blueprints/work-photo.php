@@ -68,6 +68,12 @@ fields:
     label: Video
     type: info
     text: >
-      To add a video you must create a video page.
+      To add multiples video you must create a video page.
 
       Go back one step and create a new **work page** using a **work video** template.
+
+
+      To add ONE video your can paste the video link here, and add a 'video.jpg' image on the page.
+  vimeo1: 
+    label: Vimeo video url
+    type: text

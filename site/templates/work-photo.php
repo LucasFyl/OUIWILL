@@ -20,6 +20,19 @@
       <?php endif ?>
     </div>
   </div>
+
+  <div class="modal">
+    <div class="modal-fade-screen">
+      <div class="closeModal"><span class="cross"></span></div>
+      <div class="modal-inner">
+        <?php if (!$page->vimeo1()->isEmpty()): ?>
+        <div class="video-modal <?php echo video1 ?>" >
+          <iframe src="<?php echo $page->vimeo1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <?php endif ?>
+      </div>
+    </div>
+  </div>
   
   <main class="main case-study photography" id="work-detail">
 
@@ -45,6 +58,15 @@
       <?php echo $page->text()->kirbytext() ?>
 
       <?php foreach($page->images()->sortBy('sort', 'asc')->slice(2) as $image): ?>
+        <?php if ( $image->fileName() == 'video.jpg' ): ?>
+          <figure>
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+            <div class="modal-trigger play-btn" data-video="video1" style="margin-top: 0;top:44%;"></div>
+          </figure>
+        <?php endif ?>
+      <?php endforeach ?>
+
+      <?php foreach($page->images()->sortBy('sort', 'asc')->slice(3) as $image): ?>
       <figure>
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
       </figure>
