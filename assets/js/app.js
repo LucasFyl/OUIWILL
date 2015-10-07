@@ -9,14 +9,13 @@ $(document).ready(function(){
 
 function hideLoader(){
 	tl_loader = new TimelineMax({paused:true});
-	tl_loader.to('#loader p', 0.25, {opacity:0,ease:Power2.easeOut,delay:0.75})
-			.to('#loader .animHalf', 1, {height:0,ease:Power1.easeInOut,delay:0.1,onComplete:function(){
-				TweenMax.set('#loader', {display:'none'});
-			}}).play();
+	tl_loader.to('#loader .spinnerDad', 0.25, {opacity:0,ease:Power2.easeOut,delay:0.75})
+			 .to('#loader .animHalf', 1, {height:0,ease:Power1.easeInOut,delay:0.1,onComplete:function(){
+			 	TweenMax.set('#loader', {display:'none'});
+			 }}).play();
 }
 function resize() {
 	detectMobile();
-
 }
 function initVideoPage(){
 	

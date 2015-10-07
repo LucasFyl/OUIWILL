@@ -17,11 +17,14 @@
 <body class="<?php echo $page->title()->lower()->html() ?>">
 
 	<div class="isMobile"></div>
-	<div id="loader">
+	
+  <div id="loader">
     <div class="animHalf topHalf"></div>
     <div class="vertical-center">
-     <p>Loading <span>.</span><span>.</span><span>.</span> </p>
+     <!-- <p>Loading <span>.</span><span>.</span><span>.</span> </p> -->
+     <div class="spinnerDad"><div class="spinner"></div></div>
     </div> 
     <div class="animHalf bottomHalf"></div>
+
   </div>
 
