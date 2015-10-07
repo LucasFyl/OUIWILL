@@ -5,7 +5,7 @@
 
     <div class="filterpart">
       <div id="filters">
-        <p>Filter by: 
+        <p><span>Filter by: </span>
           <a class="jsLink active filter" data-filter="all">all project</a>
           <a class="jsLink filter" data-filter="digital">digital</a>
           <a class="jsLink filter" data-filter="video">video</a>

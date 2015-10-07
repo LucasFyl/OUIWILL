@@ -33,6 +33,9 @@
 		@include media($mobile){
 			text-align: left;
 			top: 45% !important;
+			max-width: 77.2%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 	.h1 {
@@ -46,6 +49,7 @@
 		}
 		@include media($mobile){
 			font-size: 2.2rem !important; 
+			letter-spacing: 1px;
 		}
 	}
 	.h2 {
@@ -62,6 +66,7 @@
 		}
 		@include media($mobile){
 			top:65% !important;
+			letter-spacing: 1px;
 		}
 	}
 	img {

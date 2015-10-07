@@ -12,6 +12,13 @@
 	.filterpart {
 		height: 12.3rem;
 		padding-top: 3.5rem;
+
+		@include media($mobile){
+			max-width: 77.2%;
+		    margin-left: auto !important;
+		    margin-right: auto !important;
+		    display: block !important;
+		}
 		
 		> div {
 			font-family: $base-font;
@@ -23,6 +30,11 @@
 			p, a {
 				cursor: pointer;
 				margin: 0;
+			}
+			p > span {
+				@include media($mobile) {
+					display: none;
+				}
 			}
 			
 			a {
@@ -40,7 +52,12 @@
 					@include transition(color 0.25s ease);
 				}
 				@include media($mobile) {
-					padding: 0 1rem;
+				    width: 24%;
+				    box-sizing: border-box;
+				    padding: 0;
+				    &:nth-child(2) {
+				    	text-align: left !important;
+				    }
 				}
 			}
 			&:first-child {

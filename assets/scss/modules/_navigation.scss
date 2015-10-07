@@ -82,24 +82,27 @@
 			nav {
 				@extend .vertical-center;
 				top: 33% !important;
+				@include media($mobile){
+					top: 26.5% !important;
+				}
 				ul {
 					list-style: none;
 					padding: 0;
 					width: 100%;	
 					height: 100%;
 					li {
-						@include media($mobile){
-							&:first-child {
-								position: absolute;
-								top: -10rem;
-								width: 100%;
-								a {
-									background: url(../images/icon-cursor-white.png) no-repeat center center;
-									@include size(40px);
-									background-size: 13%;
-								}
-							}	
-						}
+						// @include media($mobile){
+						// 	&:first-child {
+						// 		position: absolute;
+						// 		top: -10rem;
+						// 		width: 100%;
+						// 		a {
+						// 			background: url(../images/icon-cursor-white.png) no-repeat center center;
+						// 			@include size(40px);
+						// 			background-size: 13%;
+						// 		}
+						// 	}	
+						// }
 						a {
 							color: black;
 							text-transform: lowercase; 
@@ -118,6 +121,10 @@
 								opacity: 0.6;
 								@include transition(all .35s ease-out);	
 							}
+							@include media($mobile){
+								font-size: 3rem;
+								line-height: 8rem;
+							}
 						}
 							
 					}
@@ -130,11 +137,19 @@
 		display:inline-block;
 		width: auto;
 		margin: 0;
-		padding: 4rem 10%;
-		border-top: 1px solid $link-color;
+		padding: 4rem 0 7rem;
+		//border-top: 1px solid $link-color;
 		position: relative;
-		left: 50%;
-		@include transform(translateX(-50%));
+		left: 30%;
+		//@include transform(translateX(-50%));
+		li {
+			margin-right: 2.8rem;
+			a {
+				@include media($mobile){
+					font-size:2.4rem;
+				}
+			}
+		}
 	}
 }
 		

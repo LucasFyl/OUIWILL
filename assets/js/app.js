@@ -158,7 +158,11 @@ function initPage(){
 
 	// Page specific load events
 	if ( $('.main.video').length ) { initVideoPage(); }
-	if ( $('.single-work').length ) { initWorkHover(); }
+	if ( $('.single-work').length ) { 
+		if ( isMobile === false ) {
+			initWorkHover();
+		}
+	}
 	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('body.home').length ) {
 		$('#loader').remove();

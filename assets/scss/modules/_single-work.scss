@@ -19,12 +19,12 @@
 
 	.hover {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		@include size(100%);
 		left: 0; right: 0;
 		top: 0; bottom: 0;
 		background: rgba(0,0,0,0.8);
 		z-index: 8;
+
 		@include media($mobile) {
 			background: rgba(0,0,0,0.5);
 			display: block !important;
@@ -45,6 +45,7 @@
 				@include media($mobile){
 					font-size: 2.6rem;
 					letter-spacing: .5rem;
+					line-height: 1.3;
 				}
 			}
 			p {

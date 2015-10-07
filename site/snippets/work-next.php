@@ -1,62 +1,57 @@
 <nav class="nextprev cf" role="navigation">
-	
-	<?php 
-
-		  ini_set('display_errors', 'On');
-		  error_reporting(E_ALL);
-
-		  $nbr = $page->parent()->children()->visible()->count();
-
-	   //    $target1 = mt_rand(0, $nbr);
-	   //    $target2 = mt_rand(0, $nbr);
-	      
-	   //    // echo 'target1:' . $target1 . '  /n';
-
-	   //    // echo 'target2:' . $target2 . '  /n';
-
-	   //    // echo 'pagenum:' . $page->num() . '  /n';
-
-
-	   //    if ( $target1 === $page->num() ) {
-		  //     $target1 = mt_rand(0, $nbr);
-	   //    } elseif ( $target2 === $page->num() ) {
-		  //     $target2 = mt_rand(0, $nbr);
-	   //    } elseif ( $target1 === $target2 ) {
-	   //        $target1 = mt_rand(0, $nbr);
-	   //    	  $target2 = mt_rand(0, $nbr);
-	   //    }
-
-	      $randomWork1 = $pages->find('work')->children()->visible()->nth(mt_rand(0, $nbr)); 
-	      $randomWork2 = $pages->find('work')->children()->visible()->nth(mt_rand(0, $nbr)); 
-	?>
-
 	<div class="blockprevnext">
+
+		<?php if( $prev = $page->prevVisible() && $next = $page->nextVisible() ): ?>
 	  	<div class="half prev">
 	  		<div class="txt-wrap">
-				<p><a href="<?php echo $randomWork1->url(); ?>">Previous project</a></p>
-				<h4><span class="arrow prevArrow"></span> <a href="<?php echo $randomWork1->url(); ?>"><?php echo $randomWork1->title(); ?></a></h4>
+				<p><a href="<?php echo $page->prev()->url() ?>">Previous project</a></p>
+				<h4><span class="arrow prevArrow"></span> <a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
 	  		</div>
 	  		<div>
-				<a href="<?php echo $randomWork1->url(); ?>" class="hoverTrigger prev"></a>
+				<a href="<?php echo $page->prev()->url() ?>" class="hoverTrigger prev"></a>
 				<div class="overlay"></div>
-				<?php if($image1 = $randomWork1->image('01-thumb.jpg')): ?>
-	  			<img src="<?php echo $image1->url(); ?>" alt="<?php echo $randomWork1->title(); ?>">
-	  			<?php endif ?>
+	  			<img src="<?php echo $page->prev()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>">
+	  		</div>
+	  	</div>
+	  	<div class="half next">
+	  		<div class="txt-wrap">
+				<p><a href="<?php echo $page->next()->url() ?>">Next project</a></p>
+				<h4><span class="arrow nextArrow"></span> <a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
+	  		</div>
+	  		<div>
+				<a href="<?php echo $page->next()->url() ?>" class="hoverTrigger next"></a>
+				<div class="overlay"></div>
+	  			<img src="<?php echo $page->next()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>">
 	  		</div>
 	  	</div>
 
-	  	<div class="half next">
-	  		<div class="txt-wrap">
-				<p><a href="<?php echo $randomWork2->url(); ?>">Next project</a></p>
-				<h4><span class="arrow nextArrow"></span> <a href="<?php echo $randomWork2->url(); ?>"><?php echo $randomWork2->title(); ?></a></h4>
+	 	<?php elseif( $prev = !$page->prevVisible() ):  ?>
+		<div class="full next">
+			<div class="txt-wrap">
+				<p><a href="<?php echo $page->next()->url() ?>">Next project</a></p>
+				<h4><span class="arrow nextArrow"></span> <a href="<?php echo $page->next()->url() ?>"><?php echo $page->next()->title() ?></a></h4>
 	  		</div>
 	  		<div>
-				<a href="<?php echo $randomWork2->url(); ?>" class="hoverTrigger next"></a>
+				<a href="<?php echo $page->next()->url() ?>" class="hoverTrigger next"></a>
 				<div class="overlay"></div>
-	  			<?php if($image2 = $randomWork2->image('01-thumb.jpg')): ?>
-	  			<img src="<?php echo $image2->url(); ?>" alt="<?php echo $randomWork2->title(); ?>">
-	  			<?php endif ?>
+	  			<img src="<?php echo $page->next()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>" class="hide-mobile" />
+	  			<img src="<?php echo $page->next()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->next()->title() ?>" class="hide-desktop" />
 	  		</div>
-	  	</div>
+		</div>
+
+		<?php elseif( $next = !$page->nextVisible() ): ?>
+		<div class="full prev">
+			<div class="txt-wrap">
+				<p><a href="<?php echo $page->prev()->url() ?>">Previous project</a></p>
+				<h4><span class="arrow prevArrow"></span> <a href="<?php echo $page->prev()->url() ?>"><?php echo $page->prev()->title() ?></a></h4>
+	  		</div>
+	  		<div>
+				<a href="<?php echo $page->prev()->url() ?>" class="hoverTrigger prev"></a>
+				<div class="overlay"></div>
+	  			<img src="<?php echo $page->prev()->image('02-landing.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>" class="hide-mobile" />
+	  			<img src="<?php echo $page->prev()->image('01-thumb.jpg')->url() ?>" alt="<?php echo $page->prev()->title() ?>" class="hide-desktop" />
+	  		</div>
+		</div>
+		<?php endif ?>
 	</div>
 </nav>
