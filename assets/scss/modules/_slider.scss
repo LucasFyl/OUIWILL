@@ -25,6 +25,10 @@
         display: inline-block;
         vertical-align: bottom;
         height: 100%;
+        @include media($mobile){
+          height: auto;
+          width: 100%;
+        }
       }
     }
   }
