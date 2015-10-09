@@ -9,7 +9,7 @@
 	<main class="main" id="about">
 
 		<section class="text-block">
-			<h3>The best of nothing</h3>
+			<h3>Our Story</h3>
 
 			<div class="row">
 				<div>

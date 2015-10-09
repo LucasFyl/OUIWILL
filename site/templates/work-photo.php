@@ -51,6 +51,12 @@
         <li><a href="<?php echo $page->website() ?>" class="jsLink" target='blank'><?php echo $page->website() ?></a></li>
       </ul>
       <?php endif ?>
+      <?php if (!$page->location()->isEmpty()): ?>
+      <ul>
+        <li>Location:</li>  
+        <li><?php echo $page->location() ?></li>
+      </ul>
+      <?php endif ?>
     </aside>
 
     <div class="content">

@@ -12,7 +12,7 @@
 			var menutimeline = new TimelineMax({paused:true});
 			menutimeline.to('header.black.hidden', 0.25, {top:'-7.8rem',ease:Power2.easeIn})
 						.to('#menu', 0.45, {display:'block',opacity:1,ease:Power2.easeIn})
-						.to('#menu .menu', 0.45, {opacity:1,x:'0%',ease:Power2.easeOut})
+						.to('#menu .menu', 0.45, {opacity:1,x:'0%',ease:Power2.easeOut}, "-=0.3")
 						.to('#menu .closer span, #menu h1.logo img', 0.5, {opacity:1,ease:Power2.easeOut}, '-=0.1')
 						.staggerTo('#menu .brand .social ul > *', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.5")
 						.staggerTo('#menu .menu li', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.4");
@@ -23,11 +23,11 @@
 
 		openMenu: function(menutimeline){
 			TweenMax.set('body', {overflow:'hidden'});
-			menutimeline.timeScale += 3;
+			menutimeline.timeScale += 7;
 			menutimeline.play();
 		},
 		closeMenu: function(menutimeline){
-			menutimeline.timeScale += 2;
+			menutimeline.timeScale += 5;
 			menutimeline.reverse();
 		  	setTimeout(function(){
 				TweenMax.set('body', {overflow:'auto'});

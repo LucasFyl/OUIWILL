@@ -12,14 +12,13 @@ header.black {
 	a {text-decoration: none;}
 
 	a.logo {
-		display: inline-block;
-		vertical-align: top;
-		width: auto;
-		float: left;
-		img {
-			width: 5.7rem;
-			max-width: 5.7rem;
-		}
+		
+
+
+		// img {
+		// 	width: 5.7rem;
+		// 	max-width: 5.7rem;
+		// }
 	}
 }
 header {
@@ -38,6 +37,18 @@ header {
 				float: right;
 			}
 		}
+	}
+	a.logo {
+		display: block;
+    	vertical-align: top;
+    	width: 7.7rem;
+    	max-width: 6.7rem;
+    	height: 1.4rem;
+    	float: left;
+    	text-indent: -9999px;
+    	background: url(../images/logo.svg) 0 0/18.7rem no-repeat;
+	    background-position-x: 0;
+		background-position-y: 0;
 	}
 }
 header:not(.black) {

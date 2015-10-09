@@ -37,6 +37,9 @@ fields:
   website:
     label: Website url
     type:  url
+  location:
+    label: Location
+    type: text
   casestudycontent:
     label: Case Study Content
     type: headline
