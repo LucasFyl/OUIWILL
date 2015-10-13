@@ -24,12 +24,19 @@ function initVideoPage(){
 		target = $('body').find('.'+video);
 		openVideo(video, target);
 	});
+	// $('body').on('click', '.closeModal', function(){
+
+	// 	var modalVideo = $(this).parent().find('.video-modal');
+	// 	// theFrame = modalVideo.find('iframe');
+	// 	modalVideo.html(modalVideo.html());
+	// });
 	
 	openVideo = function(video, target) {
 		TweenMax.set('.modal .modal-inner > *', {opacity:0,display:'none'});
 		TweenMax.set(target, {opacity:1,display:'block',delay:0.1});
 		video = null; target = null;
 	};
+
 }
 function initWorkHover() {
 	var workEl = $('.single-work');

@@ -12,13 +12,6 @@ header.black {
 	a {text-decoration: none;}
 
 	a.logo {
-		
-
-
-		// img {
-		// 	width: 5.7rem;
-		// 	max-width: 5.7rem;
-		// }
 	}
 }
 header {
@@ -46,7 +39,8 @@ header {
     	height: 1.4rem;
     	float: left;
     	text-indent: -9999px;
-    	background: url(../images/logo.svg) 0 0/18.7rem no-repeat;
+    	background: url(../images/logo.svg) no-repeat;
+    	background-size: 5rem;
 	    background-position-x: 0;
 		background-position-y: 0;
 	}

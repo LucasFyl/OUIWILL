@@ -27,7 +27,7 @@
       <div class="modal-inner">
         <?php if (!$page->vimeo1()->isEmpty()): ?>
         <div class="video-modal <?php echo video1 ?>" >
-          <iframe src="<?php echo $page->vimeo1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo1() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
       </div>
@@ -49,12 +49,6 @@
       <ul>
         <li>Website:</li>  
         <li><a href="<?php echo $page->website() ?>" class="jsLink" target='blank'><?php echo $page->website() ?></a></li>
-      </ul>
-      <?php endif ?>
-      <?php if (!$page->location()->isEmpty()): ?>
-      <ul>
-        <li>Location:</li>  
-        <li><?php echo $page->location() ?></li>
       </ul>
       <?php endif ?>
     </aside>

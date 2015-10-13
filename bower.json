@@ -20,7 +20,8 @@
     "gsap": "~1.17.0",
     "jquery": "~2.1.4",
     "neat": "~1.7.2",
-    "scrollmagic": "~2.0.5"
+    "scrollmagic": "~2.0.5",
+    "froogaloop": "~1.0.0"
   },
   "dependencies": {
     "gsap": "~1.17.0",

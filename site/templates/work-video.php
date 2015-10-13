@@ -28,32 +28,32 @@
       <div class="modal-inner">
         <?php if (!$page->vimeo1()->isEmpty()): ?>
         <div class="video-modal <?php echo video1 ?>" >
-          <iframe src="<?php echo $page->vimeo1() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo1() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
         <?php if (!$page->vimeo2()->isEmpty()): ?>
         <div class="video-modal <?php echo video2 ?>" >
-          <iframe src="<?php echo $page->vimeo2() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo2() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
         <?php if (!$page->vimeo3()->isEmpty()): ?>
         <div class="video-modal <?php echo video3 ?>" >
-          <iframe src="<?php echo $page->vimeo3() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo3() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
         <?php if (!$page->vimeo4()->isEmpty()): ?>
         <div class="video-modal <?php echo video4 ?>" >
-          <iframe src="<?php echo $page->vimeo4() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo4() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
         <?php if (!$page->vimeo5()->isEmpty()): ?>
         <div class="video-modal <?php echo video5 ?>" >
-          <iframe src="<?php echo $page->vimeo5() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo5() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
         <?php if (!$page->vimeo6()->isEmpty()): ?>
         <div class="video-modal <?php echo video6 ?>" >
-          <iframe src="<?php echo $page->vimeo6() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $page->vimeo6() ?>?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <?php endif ?>
       </div>
@@ -74,12 +74,6 @@
       <ul>
         <li>Website:</li>  
         <li><a href="<?php echo $page->website() ?>" class="jsLink" target='blank'><?php echo $page->website() ?></a></li>
-      </ul>
-      <?php endif ?>
-      <?php if (!$page->location()->isEmpty()): ?>
-      <ul>
-        <li>Location:</li>  
-        <li><?php echo $page->location() ?></li>
       </ul>
       <?php endif ?>
 
@@ -115,4 +109,6 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/onscroll/SingleWorkScroll.js') ?>
+<?= js('assets/js/vendor/froogaloop.min.js') ?>
+<?= js('assets/js/vendor/vimeo.js') ?>
 <?php snippet('footer') ?>
