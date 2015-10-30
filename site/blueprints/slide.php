@@ -23,3 +23,8 @@ fields:
     type:  text
     help:  Just the hex of the color, do not write '#'
     width: 1/2
+  fontColor:
+    label: Font color?
+    type:  text
+    help:  write 'black' or nothing. This is used for the first slide color
+    width: 1/2

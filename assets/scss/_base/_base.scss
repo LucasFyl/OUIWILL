@@ -72,6 +72,24 @@ ul {
   @include transform(translateY(-50%));
 }
 
+.clearfix,
+%clearfix {
+  @include clearfix;
+}
+
+.hide-mobile,
+%hide-mobile {
+  @include media($mobile) {
+    display: none;
+  }
+}
+.hide-desktop,
+%hide-desktop {
+  @include media($desktop) {
+    display: none;
+  }
+}
+
 .light-btn,
 %light-btn {
   position: relative;
@@ -186,11 +204,6 @@ ul {
   }
 }
 
-.clearfix,
-%clearfix {
-  @include clearfix;
-}
-
 .squarePadded {
   overflow: hidden;
   position: relative;
@@ -247,18 +260,7 @@ ul {
     @include transform(scale(1.1));
   }
 }
-.hide-mobile,
-%hide-mobile {
-  @include media($mobile) {
-    display: none;
-  }
-}
-.hide-desktop,
-%hide-desktop {
-  @include media($desktop) {
-    display: none;
-  }
-}
+
 .overlay {
   width: 100%;
   height: 100%;
