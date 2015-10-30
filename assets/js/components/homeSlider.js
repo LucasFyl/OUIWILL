@@ -82,6 +82,6 @@ $(document).ready(function(){
 		};
 		setTimeout(function(){
 			HomeSlider.init();
-		}, 6000);
+		}, 2500);
 	})();
 });

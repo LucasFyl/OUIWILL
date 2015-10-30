@@ -172,12 +172,14 @@ function initPage(){
 	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('body.home').length ) {
 		$('#loader').remove();
-		TweenMax.fromTo('#super-loader video', 1, {opacity:1},{opacity:0,ease:Power2.easeInOut,repeat:3,yoyo:true,delay:2.75});
-		TweenMax.staggerTo('#super-loader video, #super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:6.3}, 0.15);
+		// TweenMax.fromTo('#super-loader video', 1, {opacity:1},{opacity:0,ease:Power2.easeInOut,repeat:3,yoyo:true,delay:1.5});
+		TweenMax.to('#super-loader video', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:1.5});
+		TweenMax.to('#super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:2.5});
+		// TweenMax.staggerTo('#super-loader video, #super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:6.3}, 0.15);
+		
 		$(document).on('click', '.landing .caret-down', function(e){
 			e.preventDefault();
 			var vh100 = $(window).height();
-			console.log(vh100);
 			TweenMax.to(window, 1, {scrollTo:{y:vh100},ease:Power2.easeInOut});
 		});
 	}
