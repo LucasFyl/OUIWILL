@@ -4,6 +4,59 @@
 	height: 100vh;
 	position: relative;
 
+	> div {
+		@include outer-container;
+		> div {
+			position: absolute;
+			bottom: 7.5rem;
+		}
+
+		h2 {
+			font-family: $alt-font;
+			font-size:4.1rem;
+			color:white;
+			margin: 0;
+		}
+		h3 {
+			font-family:$title-font;
+			font-size:1.3rem;
+			color: $golden;
+			margin: 3rem 0;
+		}
+		.light-btn {
+			font-size: 1rem;
+			height: 3.5rem;
+			line-height: 3.5rem;
+		}
+		.caret-down {
+			@include size(1.6rem 0.9rem);
+			background: url('../images/asset-caret-down.jpg') no-repeat center center;
+			background-size: 70%;
+		    box-sizing: content-box;
+		    background-position-x: 0;
+			cursor: pointer;
+			padding: 1rem;
+			padding-left: 0;
+			margin-top: 4.5rem;
+			@include media($mobile) {
+				@include size(4rem);
+				background-size: 49%;
+    			padding: 0;
+			}
+		}
+	}
+
+	video#bgvid {
+		position: absolute; right: 0; bottom: 0;
+		min-width: 100vw; min-height: 100vh;
+		width: auto; height: auto; z-index: -100;
+		max-width: 100%;
+
+		background: url("../images/background-video-placeholder.jpg") no-repeat center center;
+		background-size: cover;
+	}
+
+
 	.cta-band {
 		height: 6.5rem;
 		background-color: black;
@@ -21,21 +74,7 @@
 			}
 		}
 
-		.caret-down {
-			@include size(1.6rem 0.9rem);
-			background: url('../images/asset-caret-down.jpg') no-repeat center center;
-			background-size: 70%;
-		    box-sizing: content-box;
-		    background-position-x: 0;
-			cursor: pointer;
-			padding: 1rem;
-			padding-left: 0;
-			@include media($mobile) {
-				@include size(4rem);
-				background-size: 49%;
-    			padding: 0;
-			}
-		}
+
 		p {
 			margin: 0;
 			width: calc(100% - 3rem);

@@ -14,19 +14,25 @@
 	</div>
 
 	<div class="abs-wrap">
-		<div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div>
+		<!-- <div class="baseline"><p>precisely what you imagined your brand could be, only more so. ™</p></div> -->
 		<?php snippet('header') ?>
 	</div>
 	
 	<section class="landing home">
-		<?php snippet('home-slider') ?>
-
-		<div class="cta-band">
-			<div class="row">
+		<div>
+			<div>
+				<h2>Precisely what you imagined your brand could be,</h2>
+				<h2>only more so.</h2>
+				<h3>brand strategy / web design / video / photography</h3>
+				<div class="modal-trigger light-btn white">Play reel</div>
 				<div class="caret-down"></div>
-				<p>scroll down</p>
 			</div>
 		</div>
+			
+		<video autoplay loop poster="assets/images/background-video-placeholder.jpg" id="bgvid">
+			<source src="landing-video.webm" type="video/webm">
+			<source src="landing-video.mp4" type="video/mp4">
+		</video>
 	</section>
 
 	<main class="main" id="home">
