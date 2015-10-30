@@ -17,9 +17,9 @@ $(document).ready(function(){
 			        .addTo(controller)
 			        .setTween(introTween);
 			        
-			    var showreelScene = new ScrollMagic.Scene({triggerElement: "#home .showreel"})
-			        .addTo(controller)
-			        .setTween(showreelTween);
+			    // var showreelScene = new ScrollMagic.Scene({triggerElement: "#home .showreel"})
+			    //     .addTo(controller)
+			    //     .setTween(showreelTween);
 			        
 			    var clientsScene = new ScrollMagic.Scene({triggerElement: "#home .clients", triggerHook: 'onEnter', offset: 200})
 			        .addTo(controller)

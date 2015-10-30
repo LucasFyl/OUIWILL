@@ -29,25 +29,39 @@
 			</div>
 		</div>
 			
-		<video autoplay loop poster="assets/images/background-video-placeholder.jpg" id="bgvid">
-			<source src="landing-video.webm" type="video/webm">
-			<source src="landing-video.mp4" type="video/mp4">
+		<video autoplay loop poster="assets/images/transparent-video-cover.png" id="bgvid">
+			<source src="assets/images/landing-video.webm" type="video/webm">
+			<source src="assets/images/landing-video.mp4" type="video/mp4">
 		</video>
 	</section>
 
 	<main class="main" id="home">
 		<section class="intro">
 			<div>
+				<div>
+					<p class="big">we are</p>
+				</div>
+				<div>
+					<p>
+						a full service design agency we design rich and 
+						relevant brand experiences that tell story and 
+						inspire true connections at every touch point.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="intro">
+			<div>
 				<h2>how will a user experience your brand for the first time? <br/> will they connect, be inspired, and share? </h2>
 				<p>we design rich and relevant brand experiences that tell a story and inspire true connections at every touch point.</p>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="work">
-			<h3>work.</h3>
+			<h3>some of our projects.</h3>
 
 			<div class="row">
-				<?php foreach(page('work')->find('beaming', 'only-watch', 'open-eye-global', 'tulip') as $project): ?>
+				<?php foreach(page('work')->find('only-watch', 'histoires-de-parfums', 'open-eye-global', 'logo') as $project): ?>
 				<div class="single-work">
 					<a href="<?php echo $project->url() ?>"></a>
 					<?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
@@ -72,7 +86,7 @@
 		</section>
 
 		<section class="clients">
-			<h3>clients.</h3>
+			<h3>our clients.</h3>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-audi.png'); ?>" alt="Audi"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-beaming.png'); ?>" alt="Beaming"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-ucsd.png'); ?>" alt="UCSD"></div>
@@ -85,12 +99,30 @@
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-onlywatch.png'); ?>" alt="Only Watch"></div>
 		</section>
 
-		<section class="showreel">
+		<!-- <section class="showreel">
 			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" class="hide-mobile" alt="#" />
 			<img src="<?php echo url('/assets/images/background-showreel-mobile.jpg'); ?>" class="hide-desktop" alt="#" />
 			<div>
 				<h2>showreel 2015</h2>
 				<div class="modal-trigger light-btn white">Play</div>
+			</div>
+		</section> -->
+
+		<section class="slider">
+			<div id="slider">
+				<a href="#" class="control_next jsLink"></a>
+				<a href="#" class="control_prev jsLink"></a>
+				<ul>
+					<?php 
+						ini_set('display_errors', 'On');
+						error_reporting(E_ALL); 
+						$subpage = $pages->find('about');
+						foreach($subpage->images()->sortBy('sort', 'asc')->slice(3) as $slide): ?>
+					<li>
+						<img src="<?php echo $slide->url() ?>" alt="<?php echo $slide->title()->html() ?>">
+					</li>
+					<?php endforeach ?>
+				</ul>  
 			</div>
 		</section>
 
@@ -108,6 +140,6 @@
 
 <?php snippet('footer-big') ?>
 <?= js('assets/js/onscroll/HomeScroll.js') ?>
-<?= js('assets/js/components/HomeSlider.js') ?>
+<?= js('assets/js/components/SimpleSlider.js') ?>
 <?= js('assets/js/vendor/ScrollToPlugin.js') ?>
 <?php snippet('footer') ?>

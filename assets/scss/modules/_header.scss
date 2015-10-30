@@ -36,13 +36,14 @@ header {
     	vertical-align: top;
     	width: 7.7rem;
     	max-width: 6.7rem;
-    	height: 1.4rem;
+    	height: 1.5rem;
     	float: left;
     	text-indent: -9999px;
+    	
     	background: url(../images/logo.svg) no-repeat;
-    	background-size: 5rem;
 	    background-position-x: 0;
 		background-position-y: 0;
+		background-size: 6.5rem;
 	}
 }
 header:not(.black) {
@@ -83,33 +84,16 @@ header.black.hidden {
 body.home {
 	.abs-wrap {
 		position: absolute;
-		top: 0; width: 100%;
+		width: 100%;
 		z-index: 99888;
-		// > .baseline {
-		//     position: absolute;
-		// 	width: 77.2%;
-		// 	left: 50%;
-		// 	@include transform(translateX(-50%));
-		// 	top: 5.5rem;
-		// 	p {
-		// 		font-family: $alt-font;
-		// 		font-size: 1.3rem;
-		// 		color: rgba(255,255,255,0.6);
-		// 		@include media($mobile) {
-		// 			padding-right: 2rem;
-		// 			font-size:1.6rem;
-		// 		}
-		// 	}
-		// }
+		top: 3rem;
 
 		.logo {
 			height: 1.6rem;
 			background-size: 6.5rem;
 		}
-
 	}
 	
-		
 	header:not(.black) {
 		.wrapper {
 		    padding-left: 0;

@@ -3,12 +3,21 @@
 	background-size: cover;
 	height: 100vh;
 	position: relative;
-
+	&:before {
+	    content: " ";
+	    width: calc(100vw - 6rem);
+	    height: calc(100vh - 6rem);
+	    background-color: rgba(0,0,0,0.75);
+	    position: absolute;
+	    z-index: 999;
+	    margin: 3rem;
+	}
 	> div {
 		@include outer-container;
 		> div {
 			position: absolute;
 			bottom: 7.5rem;
+			z-index: 9999;
 		}
 
 		h2 {
@@ -16,6 +25,11 @@
 			font-size:4.1rem;
 			color:white;
 			margin: 0;
+
+			@include media($mobile) {
+				font-size: 3.1rem;
+    			max-width: 92%;
+			}
 		}
 		h3 {
 			font-family:$title-font;
@@ -27,10 +41,11 @@
 			font-size: 1rem;
 			height: 3.5rem;
 			line-height: 3.5rem;
+			cursor:pointer;
 		}
 		.caret-down {
-			@include size(1.6rem 0.9rem);
-			background: url('../images/asset-caret-down.jpg') no-repeat center center;
+			@include size(1.5rem 0.9rem);
+			background: url('../images/asset-caret-down.svg') no-repeat center center;
 			background-size: 70%;
 		    box-sizing: content-box;
 		    background-position-x: 0;
@@ -49,8 +64,9 @@
 	video#bgvid {
 		position: absolute; right: 0; bottom: 0;
 		min-width: 100vw; min-height: 100vh;
-		width: auto; height: auto; z-index: -100;
-		max-width: 100%;
+		@include size(100%);
+		z-index: -100; max-width: 100%;
+		
 
 		background: url("../images/background-video-placeholder.jpg") no-repeat center center;
 		background-size: cover;
@@ -92,43 +108,60 @@
 	}
 }
 .main#home {
-	
+    margin-top: -5rem;
+    z-index: 99;
+    position: relative;
+    background-color: white;
+
 	section {
 
 		h3 {
 			text-align: center;
 			margin-top: 20rem;
-			// margin-bottom: 10.5em;
 			font-size: 1.6rem;
 			letter-spacing: .15rem;
 		}
 		
 		&.intro {
 			@include outer-container;
-			padding: 15rem 0 16rem;
-			@include row;
-			div {
-				@include media($mobile) {
-					@include span-columns(12);
-				}
-				@include media($desktop) {
-					@include span-columns(7);
-					padding-right: 3rem;
-				}
-				
+		    padding-top: 18.5rem;
+			padding-bottom: 10rem;
+			border-bottom: 1px solid #b4b4b4;
+			
+			> div {
 				@include omega;
-				
-				h2 {
-					font-size: 2.1rem;
-					font-family: $light-font;
-					margin: 0;
+				@include span-columns(12);
+
+				> div {
+					&:first-child {
+						@include span-columns(5);
+						@include media($mobile) {
+							@include span-columns(12);
+						}
+					}
+					&:nth-child(2) {
+						@include span-columns(7);
+						@include media($mobile) {
+							@include span-columns(12);
+						}
+					}
 				}
+				
 				p {
 					font-family: $base-font;
-					margin-top: 0;
-					font-size: 2.1rem;
-					line-height: 4rem;
-					word-wrap: nowrap;	
+					color: #777;
+					font-size: 3.25rem;
+					line-height: 1;
+				}
+
+				div:first-child {
+					p {
+						color: $golden; 
+						font-size: 6.2rem;
+						font-family: $title-font;
+						text-transform: uppercase;
+						margin-top: 4rem;
+					}
 				}
 			}
 		}
@@ -218,7 +251,28 @@
 				@include outer-container;
 			}
 			h3 {
-				margin-bottom: 10rem;
+				margin-bottom: 6.5rem;
+			}
+		}
+		&.slider {
+			#slider {
+				overflow: hidden;
+				width: 102.5rem !important;
+				height: 60rem !important;
+				a.control_next {
+					right: 3rem;
+				}
+				a.control_prev {
+					left: 3rem;
+				}
+				ul {
+					height: 60rem !important;
+    				margin-left: -1025px !important;
+					li {
+						width: 102.5rem !important;
+						height: 60rem !important;
+					}
+				}
 			}
 		}
 		&.news {
