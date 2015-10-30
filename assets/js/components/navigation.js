@@ -16,7 +16,7 @@
 						.to('#menu .menu', 0.45, {x:'0%',ease:Power1.easeOut})
 			 			.to('#menu .overlay', 0.25, {opacity:1,display:'block'}, "-=0.2")
 						.to('header.black.hidden', 0.25, {top:'-7.8rem',ease:Power2.easeIn}, "-=0.4")
-						.to('#menu .closer span, #menu h1.logo img', 0.3, {opacity:1,ease:Power2.easeOut}, '-=0.5')
+						.to('#menu h1.logo img', 0.3, {opacity:1,ease:Power2.easeOut}, '-=0.5')
 						.staggerTo('#menu .brand .social ul > *', 0.3, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.5")
 						.staggerTo('#menu .menu li', 0.25, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.1");
 
