@@ -5,11 +5,9 @@
 		    <source src="<?php echo url('/assets/images/loader.mp4') ?>" type="video/mp4" />
 		</video>
 		<div class="hide-desktop">
-			<div class="animHalf topHalf"></div>
 	    	<div class="vertical-center">
 				<div class="spinnerDad"><div class="spinner"></div></div>
 	    	</div>
-	    	<div class="animHalf bottomHalf"></div>
 		</div>
 	</div>
 
@@ -58,7 +56,7 @@
 		</section> -->
 
 		<section class="work">
-			<h3>some of our projects.</h3>
+			<h3>our work.</h3>
 
 			<div class="row">
 				<?php foreach(page('work')->find('only-watch', 'histoires-de-parfums', 'open-eye-global', 'logo') as $project): ?>
@@ -109,9 +107,10 @@
 		</section> -->
 
 		<section class="slider">
+			<h3>our team.</h3>
+			<a href="#" class="control_next jsLink"></a>
+			<a href="#" class="control_prev jsLink"></a>
 			<div id="slider">
-				<a href="#" class="control_next jsLink"></a>
-				<a href="#" class="control_prev jsLink"></a>
 				<ul>
 					<?php 
 						ini_set('display_errors', 'On');
@@ -133,7 +132,7 @@
 		<div class="modal-fade-screen">
 			<div class="closeModal"><span class="cross"></span></div>
 			<div class="modal-inner">
-				<iframe src="https://player.vimeo.com/video/140043413?autoplay=0?api=1&player_id=vimeoplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe src="https://player.vimeo.com/video/140043413?autoplay=0?api=1&player_id=vimeoplayer&controls=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

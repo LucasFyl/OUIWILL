@@ -21,6 +21,7 @@
 	}
 	.vertical-center {
 		z-index: 9999;
+
 	}
 	p {
 		margin: 0;padding: 0;
@@ -73,6 +74,17 @@
 			display: none;
 		}
 	}
+	.hide-desktop {
+		.vertical-center {
+			@include media($mobile) {
+				height: 2rem;
+				position: absolute;
+				top: 45%;
+				left: 45%;
+			}
+		}
+	}
+		
 }
 .spinnerDad {
 	@include size(2rem);
