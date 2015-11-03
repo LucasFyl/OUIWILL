@@ -26,8 +26,7 @@ body.home {
 	background-size: cover;
 	height: 100vh;
 	position: relative;
-	&:before {
-	    content: " ";
+	.overlay {
 	    width: calc(100vw - 6rem);
 	    height: calc(100vh - 6rem);
 	    background-color: rgba(0,0,0,0.75);
@@ -41,7 +40,7 @@ body.home {
     		height: calc(100% - 5rem);
 	    }
 	}
-	> div {
+	.container {
 		@include outer-container;
 		> div {
 			position: absolute;
@@ -95,7 +94,7 @@ body.home {
 		min-width: 100vw; min-height: 100vh;
 		@include size(100%);
 		z-index: -100; max-width: 100%;
-		
+		object-fit: cover;
 
 		background: url("../images/background-video-placeholder.jpg") no-repeat center center;
 		background-size: cover;
@@ -137,7 +136,7 @@ body.home {
 	}
 }
 .main#home {
-    margin-top: -5rem;
+    // margin-top: -5rem;
     z-index: 99;
     position: relative;
     background-color: white;

@@ -17,7 +17,8 @@
 	</div>
 	
 	<section class="landing home">
-		<div>
+		<div class="overlay"></div>
+		<div class="container">
 			<div>
 				<h2>Precisely what you imagined your brand could be,</h2>
 				<h2>only more so.</h2>
@@ -27,9 +28,10 @@
 			</div>
 		</div>
 			
-		<video autoplay loop poster="assets/images/transparent-video-cover.png" id="bgvid">
+		<video loop poster="assets/images/transparent-video-cover.png" id="bgvid">
 			<source src="assets/images/landing-video.webm" type="video/webm">
 			<source src="assets/images/landing-video.mp4" type="video/mp4">
+			<source src="assets/images/landing-video.ogv" type="video/ogv">
 		</video>
 	</section>
 
@@ -37,13 +39,11 @@
 		<section class="intro">
 			<div>
 				<div>
-					<p class="big">we are</p>
+					<p class="big">we create</p>
 				</div>
 				<div>
 					<p>
-						a full service design agency we design rich and 
-						relevant brand experiences that tell story and 
-						inspire true connections at every touch point.
+						brand experiences that tell a story and inpire true connections at every customer touch point
 					</p>
 				</div>
 			</div>

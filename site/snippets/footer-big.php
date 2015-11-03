@@ -36,4 +36,5 @@
 <?= js('assets/js/vendor/TweenMax.min.js') ?>
 <?= js('assets/js/vendor/scrollMagic.js') ?>
 <?= js('assets/js/vendor/animation.gsap.js') ?>
+<?= js('assets/js/vendor/CSSSRulePlugin.js') ?>
 <?= js('assets/js/app.js') ?>
