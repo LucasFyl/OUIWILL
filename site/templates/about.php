@@ -13,7 +13,7 @@
 
 			<div class="row">
 				<div>
-					<p>The name Oui Will was inspired by the American “get it done” spirit and a European aesthetic. With an offices in San Diego and Paris, we are the international agency that never sleeps, meeting tighter deadlines without compromising on quality.</p>
+					<p>The name Oui Will was inspired by the American “get it done” spirit and a European aesthetic. With offices in San Diego and Paris, we are the international agency that never sleeps, meeting tighter deadlines without compromising on quality.</p>
 					<p>We have carefully curated our dream-team of passionate strategists, designers, and developers whose ideas are all influenced by a diverse cultural landscape. This offers broader insight when solving some of the most challenging communication problems, and a focused approach to creating brand experiences that inspire true connections.</p></div>
 				<div>
 					<p>We understand that the exchange and interaction between brand and consumer is ever changing.</p>

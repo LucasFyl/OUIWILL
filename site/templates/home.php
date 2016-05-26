@@ -43,7 +43,7 @@
 				</div>
 				<div>
 					<p>
-						brand experiences that tell a story and inpire true connections at every customer touch point
+						brand experiences that tell a story and inspire true connections at every customer touch point
 					</p>
 				</div>
 			</div>
@@ -88,10 +88,10 @@
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-audi.png'); ?>" alt="Audi"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-beaming.png'); ?>" alt="Beaming"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-ucsd.png'); ?>" alt="UCSD"></div>
-				<div><img src="<?php echo url('/assets/images/asset-logoclient-nuvauniversity.png'); ?>" alt="NuVa University"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-ralphlauren.png'); ?>" alt="Ralph Lauren"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-duchateau.png'); ?>" alt="DuChâteau"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-fendly.png'); ?>" alt="fendly"></div>
-				<div><img src="<?php echo url('/assets/images/asset-logoclient-360zebra.png'); ?>" alt="360 Zebra"></div>
+				<div><img src="<?php echo url('/assets/images/asset-logoclient-blancpain.png'); ?>" alt="Blancpain"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-lincoln.png'); ?>" alt="Lincoln"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-diptyque.png'); ?>" alt="diptyque Paris"></div>
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-onlywatch.png'); ?>" alt="Only Watch"></div>

@@ -6,12 +6,12 @@ password: >
   $2a$10$QGZ.OY2ZGMKjgt3700WZIeqORArp1lP59TZQgBZq6DB92R0coHK7.
 language: en
 role: admin
-token: fc05e49c251fa239b17aa0085472dba9ba284841
+token: b491ac2b9ea0c041031dfba369a935faa45d708c
 history:
+  - work/only-watach
+  - work/only-watch
+  - null
   - slider/slide4
   - slider/slide3
-  - slider/slide2
-  - slider/slide1
-  - about
 firstname: Lucas
 lastname: Fayolle

@@ -1,4 +1,4 @@
-Title: OUI WILL
+Title: ouiwill
 
 ----
 
@@ -6,7 +6,10 @@ Author: Lucas Fayolle
 
 ----
 
-Description: Oui Will's website
+Description: 
+
+Precisely what you imagined your brand could be, only more so.
+We create brand experiences that tell a story and inspire true connections at every customer touch point
 
 ----
 
@@ -14,4 +17,4 @@ Keywords:
 
 ----
 
-Copyright: © 2015-(date: Year) (link: http://ouiwill.com text: OuiWill)
+Copyright: © 2015-(date: Year) (link: http://ouiwill.com text: ouiwill)
