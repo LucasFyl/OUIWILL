@@ -68,7 +68,7 @@
 			z-index: 88999;
 
 			@include media($desktop){
-				@include span-columns(4);
+				width: 61.25rem;
 			}
 			@include media($mobile){
 				width: 100%;
