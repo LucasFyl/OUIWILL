@@ -26,18 +26,20 @@ body.home {
 	background-size: cover;
 	height: 100vh;
 	position: relative;
+
 	.overlay {
 	    width: calc(100vw - 6rem);
 	    height: calc(100vh - 6rem);
-	    background-color: rgba(0,0,0,0.75);
+	    background-color: rgba(0,0,0,0.6);
 	    position: absolute;
 	    z-index: 999;
 	    margin: 3rem;
 
 	    @include media($mobile) {
-	    	margin: 0;
+	    	margin: 0 !important;
     	    width: 100%;
-    		height: calc(100% - 5rem);
+    		height: 100%;
+    		top: 0;bottom: 0;
 	    }
 	}
 	.container {
@@ -55,8 +57,11 @@ body.home {
 			margin: 0;
 
 			@include media($mobile) {
-				font-size: 3.1rem;
+				font-size: 4.1rem;
     			max-width: 92%;
+			}
+			@include media(max-width 320px) {
+				font-size: 3.1rem;
 			}
 		}
 		h3 {
@@ -109,6 +114,7 @@ body.home {
 		bottom: 0;
 		width: 100%;
 		line-height: 6.5rem;
+		
 		.row {
 			@include outer-container();
 			line-height: 6.5rem;
@@ -136,7 +142,6 @@ body.home {
 	}
 }
 .main#home {
-    // margin-top: -5rem;
     z-index: 99;
     position: relative;
     background-color: white;

@@ -24,12 +24,6 @@ function initVideoPage(){
 		target = $('body').find('.'+video);
 		openVideo(video, target);
 	});
-	// $('body').on('click', '.closeModal', function(){
-
-	// 	var modalVideo = $(this).parent().find('.video-modal');
-	// 	// theFrame = modalVideo.find('iframe');
-	// 	modalVideo.html(modalVideo.html());
-	// });
 	
 	openVideo = function(video, target) {
 		TweenMax.set('.modal .modal-inner > *', {opacity:0,display:'none'});
@@ -164,20 +158,20 @@ function initPage(){
 
 	// Page specific load events
 	if ( $('.main.video').length ) { initVideoPage(); }
+	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('.single-work').length ) { 
 		if ( isMobile === false ) {
 			initWorkHover();
 		}
 	}
-	if ( $('.blockprevnext').length ) { initNextPrevHover(); }
 	if ( $('body.home').length ) {
 		TweenMax.to('#super-loader video', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:1.5});
 		TweenMax.to('#super-loader', 1, {opacity:0,display:'none',ease:Power2.easeIntOut,delay:2.5});
 
 		landingHomeTL = new TimelineMax({paused:true});
-		landingHomeTL.to('.main', 0.5, {marginTop:'-5rem',ease:Power2.easeOut,delay:1})
-					 .fromTo('.landing .overlay', 0.5, {marginTop:'-5rem',opacity:0},{marginTop:"3rem",opacity:1,ease:Power2.easeOut}, "-=0.8")
-					 .staggerFromTo('.landing .container div > *', 0.5, {y:-20,opacity:0},{y:0,opacity:1,ease:Power2.easeOut});
+		landingHomeTL
+			.fromTo('.landing .overlay', 0.5, {marginTop:'-5rem',opacity:0},{marginTop:"3rem",opacity:1,ease:Power2.easeOut}, "-=0.8")
+			.staggerFromTo('.landing .container div > *', 0.5, {y:-20,opacity:0},{y:0,opacity:1,ease:Power2.easeOut});
 		
 		setTimeout(function() {
 			landingHomeTL.play();

@@ -11,14 +11,10 @@ fields:
   title:
     label: Project Title
     type:  text
-  tag1:
-    label: Tag 1
+  tags:
+    label: Tags
     type:  text
-    help: it will appear on hover and on landing on the case study page
-  tag2:
-    label: Tag 2
-    type:  text
-    help: it will appear on hover and on landing on the case study page
+    help: it will appear only on hover (home page & work page)
   categories:
     label: Categories
     type: checkboxes

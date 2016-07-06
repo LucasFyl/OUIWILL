@@ -12,6 +12,10 @@ fields:
     label: Project Title
     type:  text
     help:  (homepage, work page, and landing subtitle)
+  tags:
+    label: Tags
+    type:  text
+    help: it will appear only on hover (home page & work page)
   h1:
     label: Landing title
     type:  text

@@ -42,18 +42,10 @@
 					<p class="big">we create</p>
 				</div>
 				<div>
-					<p>
-						brand experiences that tell a story and inspire true connections at every customer touch point
-					</p>
+					<p>brand experiences that tell a story and inspire true connections at every customer touch point</p>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="intro">
-			<div>
-				<h2>how will a user experience your brand for the first time? <br/> will they connect, be inspired, and share? </h2>
-				<p>we design rich and relevant brand experiences that tell a story and inspire true connections at every touch point.</p>
-			</div>
-		</section> -->
 
 		<section class="work">
 			<h3>our work.</h3>
@@ -70,11 +62,8 @@
 						<div class="vert-cent">
 							<h5><?php echo $project->title()->html() ?></h5>
 							
-				            <?php if (!$project->tag1()->isEmpty()): ?>
-				            <p><?php echo $project->tag1()->html() ?> / <?php echo $project->tag2()->html() ?></p>
-				            <?php endif ?>
-				            <?php if (!$project->h1()->isEmpty()): ?>
-				            <p><?php echo $project->h1()->html() ?></p>
+				            <?php if (!$project->tags()->isEmpty()): ?>
+				            <p><?php echo $project->tags()->html() ?></p>
 				            <?php endif ?>
 						</div>
 					</div>
