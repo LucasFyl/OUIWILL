@@ -13,6 +13,12 @@ header.black {
 
 	a.logo {
 	}
+
+	&.hidden {
+		@include media($mobile) {
+			top: 0 !important;
+		}
+	}
 }
 header {
 	#trigger {

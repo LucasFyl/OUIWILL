@@ -1,5 +1,5 @@
   <header>
-  	<div class="wrapper">
+  	<div class="wrapper hide-mobile">
   		<a class="logo" href="<?php echo url() ?>">ouiwill</a>
 		<?php snippet('menu') ?>
   	</div>
