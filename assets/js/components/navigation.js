@@ -35,6 +35,7 @@
 			if ( !isMobile ) {
 				TweenMax.set('body', {width:'100%',height:'100%',overflow:'auto'});
 			} else {
+				$('.menu-trigger').removeClass('menu-open');
 				$('.menu-trigger').find('.fa').removeClass('fa-times').addClass('fa-bars');
 			}
 		},
@@ -51,7 +52,7 @@
 				  	Navigation.closeMenu(menutimeline);
 				}
 			});
-			$(document).on('click', '.closeMenu, .menu-trigger.menu-open', function(){
+			$(document).on('click', '.closeMenu, .menu-open', function(){
 				Navigation.closeMenu(menutimeline);
 			});
 		}

@@ -30,7 +30,7 @@ header {
 		float: right;
 		cursor: pointer;
 		color: white;
-		
+
 		@include media($mobile) {
 			@include size(4rem);
 			float: right;
@@ -86,7 +86,7 @@ header.black.hidden {
 	position: fixed;
     top: 0;
     width: 100%;
-    z-index: 88889;
+    z-index: 99998;
     top: -7.8rem;
 }
 
