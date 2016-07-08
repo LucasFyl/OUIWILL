@@ -6,31 +6,26 @@
 	top: 0; left: 0; right: 0; bottom: 0;
 
 	.closer {
-		@include size(3rem);
+		@include size(6rem);
 		display:block;
 		cursor: pointer;
-		z-index: 89999;
+		z-index: 99999;
 		position: absolute;
-	    top:7.5rem;
-	    right: 11rem;
+	    top:50%; @include transform(translateY(-50%));
+	    right: calc(61.25rem - 3rem);
+
+	    background: white;
+	    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+	    -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+	    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+
 		span.cross {
 			@include size(100%);
-			@include transform(scale(.7));
 			display:block;
-			background: url('../images/icon-cursor-black.png') no-repeat center center;
-			background-size:100%;
-			@include media($mobile) {
-				@include transform(scale(.6));
-			}
+			background: url('../images/icon-cross-gold.png') no-repeat center center;
+			background-size: 1.45rem;
 		}
-		&:hover {
-			.cross {
-				@include transform(scale(.8));
-			}
-		}
-		@include media(min-width 480px max-width 769px) {
-			right: 8rem;
-		}
+		
 		@include media($mobile) {
 			@include size(4rem);
 		    top: 7rem;
@@ -41,7 +36,7 @@
 	.overlay{
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,0.75);
+		background-color: white;
 
 		h1.logo {
 			margin: 5rem 0;
@@ -54,26 +49,30 @@
 
 		.brand {
 			color: #999999;
-			position: absolute;
-		    bottom: 0;
-		    width: 100%;
-			.social a {color: #999999;}
-			h2 {line-height: 1.5;}
-			h1 {margin-top: 0;padding-top: 5rem;}
 			background-color: white;
+			position: absolute;
+		    width: calc(100% - 61.25rem);
+		    top: 50%;
+		    @include transform(translateY(-50%));
+
+			.social a {}
+			h2 {line-height: 1.5;}
+			h1 {margin-top: 0;}
 
 			.social {
 				display:inline-block;
 				width: auto;
 				margin: 0;
-				padding: 4rem 0 7rem;
+				padding: 2rem 0 0;
 				position: relative;
 				left: 50%;
 				@include transform(translateX(-50%));
 
 				li {
 					margin-right: 2.8rem;
+					&:last-child {margin-right: 0;}
 					a {
+						color: #999999;
 						@include media($mobile){
 							font-size:2.4rem;
 						}
@@ -84,7 +83,13 @@
 
 		.menu {
 			position: relative;
-			z-index: 88999;
+			z-index: 99997;
+
+			
+			float:right !important;
+			height: 100%;
+			overflow: hidden;
+			background-color: black;
 
 			@include media($desktop){
 				width: 61.25rem;
@@ -92,11 +97,6 @@
 			@include media($mobile){
 				width: 100%;
 			}
-			
-			float:right !important;
-			height: 100%;
-			overflow: hidden;
-			background-color: white;
 
 			nav {
 				@extend .vertical-center;
@@ -111,12 +111,13 @@
 					height: 100%;
 					li {
 						a {
-							color: black;
+							color: white;
 							text-transform: lowercase; 
 							text-decoration: none;
-							font-family: $light-font;
+							font-family: $title-font;
 							font-size: 1.7rem;
 							line-height: 6rem;
+							letter-spacing: .1rem;
 
 							display: inline-block;
 							position: relative;

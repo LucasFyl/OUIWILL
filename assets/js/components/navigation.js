@@ -6,32 +6,32 @@
 			TweenMax.set('#menu .overlay', {opacity:0});
 			TweenMax.set('#menu .brand .social ul > *', {opacity:0,y:20});
 			TweenMax.set('#menu .menu', {x:'100%'});
-			// TweenMax.set('#menu .menu li', {opacity:0,y:10});
-			// TweenMax.set('.closeMenu', {opacity:0});
 
 			var menutimeline = new TimelineMax({paused:true});
 			menutimeline.set('#menu', {display:'block'})
+						.set('#menu .closer', {x:10,opacity:0})
 						.to('#menu .menu', 0.45, {x:'0%',ease:Power1.easeOut})
 			 			.to('#menu .overlay', 0.25, {opacity:1}, "-=0.2")
+						.to('#menu .closer', 0.25, {x:0,opacity:1})
 						.staggerTo('#menu .brand .social ul > *', 0.3, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
-						// .to('.closeMenu', 0.25, {opacity:1,ease:Power2.easeOut}, "-=0.25")
-						// .staggerTo('#menu .menu li', 0.25, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.1");
 
 			this.bindEvents(menutimeline);
 			return menutimeline;
 		},
 
 		openMenu: function(menutimeline){
-			TweenMax.set('body', {width:'100vw',height:'100vh',overflow:'hidden'});
+			if (isMobile === false) {
+				TweenMax.set('body', {width:'100vw',height:'100vh',overflow:'hidden'});
+			}
 			menutimeline.timeScale += 20;
 			menutimeline.play();
 		},
 		closeMenu: function(menutimeline){
 			menutimeline.timeScale += 50;
 			menutimeline.reverse();
-		  	// setTimeout(function(){
-			TweenMax.set('body', {width:'100%',height:'100%',overflow:'auto'});
-		  	// }, 2100);
+			if (isMobile === false) {
+				TweenMax.set('body', {width:'100%',height:'100%',overflow:'auto'});
+			}
 		},
 
 		bindEvents: function(menutimeline){
