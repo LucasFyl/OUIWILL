@@ -188,6 +188,16 @@ function initPage(){
 	}
 	// if ( $('body.work').length ) { }
 	if ( $('body.about').length ) {
-		var slider = $.simpleSlider();
+		// var slider = $.simpleSlider();
+		var slider = $('#slider ul');
+		slider.slick({
+			slideToShow: 1,
+			slideToScroll: 1,
+			fade:true,
+			arrows: true,
+			dots: false,
+			nextArrow: '<a href="#" class="control_next jsLink"></a>',
+			prevArrow: '<a href="#" class="control_prev jsLink"></a>'
+		});
 	}
 }

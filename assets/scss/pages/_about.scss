@@ -137,11 +137,40 @@
 				max-width: 100vw;
 				overflow: hidden;
 			}
-			#slider {
+			#slider {				
+
+				// height: 65rem;				
+
+				.control_prev {
+					top: 50%;
+					left: -3rem;
+					z-index: 9999;
+				}
+				.control_next {
+					top: 50%;
+					right: -3rem;
+					z-index: 9999;
+				}		
 				ul {
-					height: 40rem;
+					width: 70%;
+					margin: 0 auto;
+					height: 50rem;
+					.slick-list, .slick-track {
+						height: 60rem;
+					}
+					// height: 65rem;
+
 					li {
-						@include size(auto 100%);
+						width: 100%;
+						height: 100%;
+						&:not(.slick-current) {
+							opacity: 0;
+						}
+
+						img {
+							width: 100%;
+						}
+						// @include size(auto 100%);
 					}
 				}
 			}
