@@ -25,7 +25,7 @@
 			background: url('../images/icon-cross-gold.png') no-repeat center center;
 			background-size: 1.45rem;
 		}
-		
+
 		@include media($mobile) {
 			@include size(4rem);
 		    top: 7rem;
@@ -100,7 +100,7 @@
 
 			nav {
 				@extend .vertical-center;
-				top: 33% !important;
+
 				@include media($mobile){
 					top: 26.5% !important;
 				}
@@ -109,10 +109,10 @@
 					padding: 0;
 					width: 100%;	
 					height: 100%;
+
 					li {
 						a {
 							color: white;
-							text-transform: lowercase; 
 							text-decoration: none;
 							font-family: $title-font;
 							font-size: 1.7rem;

@@ -8,10 +8,10 @@ language: en
 role: admin
 token: fca457a8b5210c658467656abf66cd56d128e2fd
 history:
+  - work
+  - about
+  - services
   - work/histoires-de-parfums
   - work/blancpain-swatch-group
-  - work/korakia-pensione
-  - work/open-eye-global
-  - work/logo
 firstname: Lucas
 lastname: Fayolle

@@ -17,7 +17,6 @@
       </div>
     </div>
     <div class="menu">
-      <!-- <h1 class="logo"><a href="<?php $site->url() ?>"><img src="<?php echo url('assets/images/logo-black.png') ?>" alt="<?php echo $site->title()->html() ?>" draggable="false"/></a></h1>         -->
       <nav>
         <ul class="no-bullet">
           <?php foreach($pages->visible() as $p): ?>

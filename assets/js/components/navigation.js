@@ -12,7 +12,7 @@
 						.set('#menu .closer', {x:10,opacity:0})
 						.to('#menu .menu', 0.45, {x:'0%',ease:Power1.easeOut})
 			 			.to('#menu .overlay', 0.25, {opacity:1}, "-=0.2")
-						.to('#menu .closer', 0.25, {x:0,opacity:1})
+						.to('#menu .closer', 0.25, {x:0, opacity:1})
 						.staggerTo('#menu .brand .social ul > *', 0.3, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
 
 			this.bindEvents(menutimeline);
@@ -27,7 +27,7 @@
 			menutimeline.play();
 		},
 		closeMenu: function(menutimeline){
-			menutimeline.timeScale += 50;
+			menutimeline.timeScale += 60;
 			menutimeline.reverse();
 			if (isMobile === false) {
 				TweenMax.set('body', {width:'100%',height:'100%',overflow:'auto'});
