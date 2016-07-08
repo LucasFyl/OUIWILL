@@ -49,9 +49,7 @@
 		}
 
 		@include media($mobile) {
-			@include size(4rem);
-		    top: 7rem;
-    		right: 9rem;
+			display: none;
 		}
 	}
 

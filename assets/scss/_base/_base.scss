@@ -86,7 +86,7 @@ ul {
 .hide-desktop,
 %hide-desktop {
   @include media($desktop) {
-    display: none;
+    display: none !important;
   }
 }
 

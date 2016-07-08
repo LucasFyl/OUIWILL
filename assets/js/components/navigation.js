@@ -20,8 +20,11 @@
 		},
 
 		openMenu: function(menutimeline){
-			if (isMobile === false) {
+			if (!isMobile) {
 				TweenMax.set('body', {width:'100vw',height:'100vh',overflow:'hidden'});
+			} else {
+				$('.menu-trigger').addClass('menu-open');
+				$('.menu-trigger').find('.fa').removeClass('fa-bars').addClass('fa-times');
 			}
 			menutimeline.timeScale += 20;
 			menutimeline.play();
@@ -29,13 +32,15 @@
 		closeMenu: function(menutimeline){
 			menutimeline.timeScale += 60;
 			menutimeline.reverse();
-			if (isMobile === false) {
+			if ( !isMobile ) {
 				TweenMax.set('body', {width:'100%',height:'100%',overflow:'auto'});
+			} else {
+				$('.menu-trigger').find('.fa').removeClass('fa-times').addClass('fa-bars');
 			}
 		},
 
 		bindEvents: function(menutimeline){
-			$(document).on('click', '.menu-trigger', function(){
+			$(document).on('click', '.menu-trigger:not(.menu-open)', function(){
 				if ( $(this).parents('.scroll-header').length > 0 ) {
 					TweenMax.to('.scroll-header', 0.25, {top:'-7.8rem',ease:Power2.easeIn});
 				}
@@ -46,15 +51,8 @@
 				  	Navigation.closeMenu(menutimeline);
 				}
 			});
-			$(document).on('click', '.closeMenu', function(){
+			$(document).on('click', '.closeMenu, .menu-trigger.menu-open', function(){
 				Navigation.closeMenu(menutimeline);
-			});
-			$(document).on('click', '.overlay', function(e){
-				if( e.target != this ) {
-       				return;
-				} else {
-					Navigation.closeMenu(menutimeline);
-				}
 			});
 		}
 	}
