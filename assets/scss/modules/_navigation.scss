@@ -50,8 +50,8 @@
 				padding: 0 30%;
     			box-sizing: content-box;
 			}
-				
 		}
+
 		.brand {
 			color: #999999;
 			position: absolute;
@@ -61,6 +61,25 @@
 			h2 {line-height: 1.5;}
 			h1 {margin-top: 0;padding-top: 5rem;}
 			background-color: white;
+
+			.social {
+				display:inline-block;
+				width: auto;
+				margin: 0;
+				padding: 4rem 0 7rem;
+				position: relative;
+				left: 50%;
+				@include transform(translateX(-50%));
+
+				li {
+					margin-right: 2.8rem;
+					a {
+						@include media($mobile){
+							font-size:2.4rem;
+						}
+					}
+				}
+			}
 		}
 
 		.menu {
@@ -121,23 +140,6 @@
 				
 		}
 	}
-	.brand .social {
-		display:inline-block;
-		width: auto;
-		margin: 0;
-		padding: 4rem 0 7rem;
-		position: relative;
-		left: 50%;
-		@include transform(translateX(-50%));
 
-		li {
-			margin-right: 2.8rem;
-			a {
-				@include media($mobile){
-					font-size:2.4rem;
-				}
-			}
-		}
-	}
 }
 		

@@ -80,7 +80,7 @@ ul {
 .hide-mobile,
 %hide-mobile {
   @include media($mobile) {
-    display: none;
+    display: none !important;
   }
 }
 .hide-desktop,

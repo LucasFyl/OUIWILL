@@ -1,13 +1,13 @@
   <header>
-  	<div class="wrapper hide-mobile">
-  		<a class="logo" href="<?php echo url() ?>">ouiwill</a>
-		<?php snippet('menu') ?>
+  	<div class="wrapper">
+  		<a class="logo hide-mobile" href="<?php echo url() ?>">ouiwill</a>
+		  <?php snippet('menu') ?>
   	</div>
   </header>
 
-  <header class='black hidden'>
+  <header class='black hidden scroll-header'>
   	<div class="wrapper">
   		<a class="logo" href="<?php echo url() ?>">ouiwill</a>
-      	<div id="trigger"><i class="fa fa-bars"></i></div>
+      	<div class="menu-trigger"><i class="fa fa-bars"></i></div>
   	</div>
   </header>

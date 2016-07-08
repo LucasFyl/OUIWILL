@@ -1,4 +1,4 @@
-<div id="trigger"><i class="fa fa-bars"></i></div>
+<div class="menu-trigger hide-mobile"><i class="fa fa-bars"></i></div>
 
 <div class="navigation" id="menu">
   <div class="closer closeMenu"><span class="cross"></span></div>
