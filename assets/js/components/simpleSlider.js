@@ -1,8 +1,5 @@
 (function($) {
     $.simpleSlider = function(){
-        // setInterval(function () {
-        //     moveRight();
-        // }, 3500);
       
         var slideCount = $('#slider ul li').length;
         var slideWidth = $('#slider ul li').width();
