@@ -173,13 +173,25 @@ function initPage(){
 			.fromTo('.landing .overlay', 0.5, {marginTop:'-5rem',opacity:0},{marginTop:"3rem",opacity:1,ease:Power2.easeOut}, "-=0.8")
 			.staggerFromTo('.landing .container div > *', 0.5, {y:-20,opacity:0},{y:0,opacity:1,ease:Power2.easeOut});
 		
+		// init page animation:
 		setTimeout(function() {
 			landingHomeTL.play();
 			$("#bgvid").get(0).play();
 		}, 2000);
 
-		var slider = $.simpleSlider();
+		// init team slider:
+		var slider = $('#slider ul');
+		slider.slick({
+			slideToShow: 1,
+			slideToScroll: 1,
+			fade:true,
+			arrows: true,
+			dots: false,
+			nextArrow: '<a href="#" class="control_next jsLink"></a>',
+			prevArrow: '<a href="#" class="control_prev jsLink"></a>'
+		});
 
+		// init auto-scroll behavior
 		$(document).on('click', '.landing .caret-down', function(e){
 			e.preventDefault();
 			var vh100 = $(window).height();
@@ -199,5 +211,5 @@ function initPage(){
 			nextArrow: '<a href="#" class="control_next jsLink"></a>',
 			prevArrow: '<a href="#" class="control_prev jsLink"></a>'
 		});
-	}
+	} 
 }

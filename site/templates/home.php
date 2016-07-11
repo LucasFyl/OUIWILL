@@ -86,19 +86,10 @@
 				<div><img src="<?php echo url('/assets/images/asset-logoclient-onlywatch.png'); ?>" alt="Only Watch"></div>
 		</section>
 
-		<!-- <section class="showreel">
-			<img src="<?php echo url('/assets/images/background-showreel@2x.jpg'); ?>" class="hide-mobile" alt="#" />
-			<img src="<?php echo url('/assets/images/background-showreel-mobile.jpg'); ?>" class="hide-desktop" alt="#" />
-			<div>
-				<h2>showreel 2015</h2>
-				<div class="modal-trigger light-btn white">Play</div>
-			</div>
-		</section> -->
-
 		<section class="slider">
 			<h3>our team.</h3>
-			<a href="#" class="control_next jsLink"></a>
-			<a href="#" class="control_prev jsLink"></a>
+			<!-- <a href="#" class="control_next jsLink"></a>
+			<a href="#" class="control_prev jsLink"></a> -->
 			<div id="slider">
 				<ul>
 					<?php 

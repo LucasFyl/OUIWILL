@@ -295,23 +295,25 @@ body.home {
 				margin-bottom: 6.5rem;
 			}
 			a.control_next {
-				top: 50% !important;
-				right: 12% !important;
+				top: 50% ;
+				margin-top: -3rem;
+				right: -3rem;
+				z-index: 9999;
 			}
 			a.control_prev {
-				top: 50% !important;
-				left: 12% !important;
+				top: 50% ;
+				margin-top: -3rem;
+				left: -3rem;
+				z-index: 9999;
 			}
 			#slider {
-				overflow: hidden;
 				width: 102.5rem !important;
 				height: 60rem !important;
 				ul {
-					height: 60rem !important;
-    				margin-left: -1025px !important;
+					height: 60rem;
 					li {
-						width: 102.5rem !important;
-						height: 60rem !important;
+						width: 102.5rem;
+						height: 60rem;
 						img {
 							object-fit:cover;
 							min-width:100%;

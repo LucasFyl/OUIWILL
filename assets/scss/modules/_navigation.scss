@@ -147,9 +147,12 @@
 				}
 			}
 			nav + .social {
+				width: 55%;
 				position: absolute;
 				bottom: 5rem;
-				width: 55%;
+			    left: initial;
+			    right: 10%;
+			    @include transform(none);
 
 				ul { list-style: none; width: 100%; padding-left: 0;
 					li { float: left;
