@@ -114,6 +114,11 @@
 		}
 			
 		.half {
+
+			margin-right: 0;
+			margin-bottom: 0;
+			clear: none !important;
+
 			@include media($desktop){
 				@extend .squarePadded;
 				width: 50%;
@@ -128,9 +133,6 @@
 					max-width: none;
 				}
 			}
-			margin-right: 0;
-			margin-bottom: 0;
-			clear: none !important;
 
 			div {
 				> div.vertical-center {
@@ -138,10 +140,6 @@
 						display: inline-block;
 						position: relative; left: 50%;
 						@include transform(translateX(-50%));
-						// @include media($mobile) {
-						// 	left: 10%;
-						// 	transform: none;
-						// }
 					}
 				}
 				.share-btn {
@@ -201,6 +199,72 @@
 			text-align: center;
 			padding: 0; 
 			margin-bottom: 1rem;
+		}
+	}
+	.social-icons {
+		margin-top: 10rem;
+		margin-bottom: 0 !important;
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			@include center(horizontal);
+
+		    height: 10rem;
+		    padding-top: 2rem;
+
+			li {
+				@include size(6rem);
+				position: relative;
+				display: block;
+				float: left;
+				border-radius: 100%;
+				margin-right: 4.5rem;
+				cursor: pointer;
+
+				a {
+					display: block;
+					@include size(100%);
+					// text-indent: -9999px;
+					position: relative;
+					z-index: 99;
+
+					font-size: 3rem;
+					color: #b2b2b2;
+					text-decoration: none;
+					text-align: center;
+					line-height: 6rem;
+					@include transition(all 0.25s $ease-in-sine);
+					cursor: pointer;
+				}
+
+				&:after {
+					content: " ";
+					@include size(7rem);
+					border-radius: 100%;
+					border: 2px solid $golden;
+					position: absolute;
+					z-index: 88;
+					left: -0.5rem; top: 0; right: 0; bottom: 0;
+					margin: auto;
+					@include transform(scale(0.5));
+					opacity: 0;
+					@include transition(all 0.15s $ease-in-sine);
+				}
+				&:hover {
+					a {
+						@include transition(all 0.25s $ease-out-sine);
+						color: $golden;
+						font-size: 5rem;
+					}
+					&:after {
+						@include transform(scale(1.3));
+						opacity: 1;
+						@include transition(all 0.15s $ease-out-sine);
+					}
+				}
+			}
 		}
 	}
 }
