@@ -1,7 +1,29 @@
 <?php snippet('head') ?>
-<?php snippet('header-black') ?>
+<?php snippet('header') ?>
+
+	<div class="landing contact">
+	
+		<div class="vertical-center">
+			<h4>Hello.</h4>
+			<h3>What can we help you with?</h3>
+		</div>
+	</div>
+
 
 	<main class="main" id="contact">
+
+		<div class="contact-box">
+			<div class="vertical-center">
+				<h3>New Business</h3>
+				<p class="h3">Prepare for a quick response</p>
+
+				<p>You would like to discuss a project with us?</p>
+				<p>Well, we would love to talk! Call us or send an email.</p>
+
+				<a href="mailto:biz@ouiwill.com" class="light-btn golden jsLink">biz@ouiwill.com</a>
+				<a href="phone:+16199885722" class="jsLink">+1 619 988 5722</a>
+			</div>
+		</div>
 
 		<section class="office">
 			<div class="half">

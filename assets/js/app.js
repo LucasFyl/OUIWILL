@@ -212,4 +212,13 @@ function initPage(){
 			prevArrow: '<a href="#" class="control_prev jsLink"></a>'
 		});
 	} 
+	if ( $('body.contact').length ) {
+
+		landingContactTL = new TimelineMax({paused:true});
+		landingContactTL
+			.staggerFromTo('.landing h4, .landing h3', 0.5, {opacity:0}, {opacity:1,ease:Power2.easeOut, delay:2}, 0.15)
+			.fromTo('.contact-box', 0.5, {y:100, opacity:0}, {opacity:1, y:0, ease:Power2.easeOut})
+			.play();
+			
+	}
 }

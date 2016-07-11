@@ -1,23 +1,114 @@
+.landing.contact {
+	width: 100%;
+	height: 90vh;
+	background: url(../images/asset-landing-contact.jpg) no-repeat center center;
+	background-size: cover;
+
+	&:before {
+		content: "";
+		@include size(100%);
+		background:rgba(0,0,0,0.75);
+		position: absolute;
+	}
+	.vertical-center {
+		@include outer-container;
+		padding-left: 1%;
+		top: 42%;
+	}
+	h4 {
+		font-size: 1.25rem;
+		color: $golden;
+		text-transform: uppercase;
+		letter-spacing: .2rem;
+		margin-top: 0;
+	}
+	h3 {
+		font-size: 2.8rem;
+		color: white;
+		text-transform: none;
+		letter-spacing: .1rem;
+	}
+}
+
 .main#contact {
 	overflow-x:hidden;
+	position: relative;
+	top: -21rem;
+	z-index: 99;
+
+
 	@include media($desktop){
 		@include outer-container;
 	}
 
+	.contact-box {
+		@include size(98% 42rem);
+		border-radius: 2px;
+		margin: 0 auto;
+		background: white;
+        @include levitable(2, 3);
+		top: 0;
+
+		h3, .h3 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.7rem;
+			letter-spacing: .1rem;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		.h3 {
+			color: $golden;
+		}
+
+		p {
+			color: #b0b0b0;
+			font-size: 1.7rem;
+			font-family: $font-book;
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 0;
+			line-height: 1.5;
+
+			&:nth-child(3) {
+				margin-top: 5rem;
+			}
+		}
+
+		.light-btn {
+			@include center(horizontal);
+			font-size: 1.3rem;
+			text-transform: none;
+			padding: 1rem 2rem;
+			margin-top: 3rem;
+			line-height: 1.5;
+		}
+		a:last-child {
+			text-decoration: none;
+			color: #4f4f4f;
+			font-family: $title-font;
+			font-size: 1.4rem;
+			@include center(horizontal);
+			text-align: center;
+			display: block;
+			margin-top: 2rem;
+		}
+	}
+
 	section {
-		width: 100%;
+		width: 98%;
+		margin: 0 auto;
 		overflow: auto;
-		@include media($mobile){
-			// margin-bottom: 10rem;
+		@include media($mobile) {
 			&:last-child{
 				margin-bottom: 0;
 			}
 		}
-		@include media($desktop){
-			&:first-child {
-				margin-top: 10rem;
+		@include media($desktop) {
+			&:first-of-type {
+				margin-top: 15rem;
 			}
-			&:last-child {
+			&:last-of-type {
 				margin-bottom: 20rem;
 			}
 		}
@@ -54,7 +145,12 @@
 					}
 				}
 				.share-btn {
-				    a {width: 46% !important;}
+					width: 22rem;
+				    a {
+				    	width: 10rem;
+					    margin: 0 0 1rem 0;
+					    float: left;
+				    }
 				}
 				h2, h3 {
 					font-family: $title-font;
