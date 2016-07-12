@@ -7,7 +7,7 @@
 	&:before {
 		content: "";
 		@include size(100%);
-		background:rgba(0,0,0,0.75);
+		background:rgba(0,0,0,0.7);
 		position: absolute;
 	}
 	.vertical-center {
@@ -147,11 +147,14 @@
 					}
 				}
 				.share-btn {
-					width: 22rem;
+					max-width: 25rem;
 				    a {
 				    	width: 10rem;
-					    margin: 0 0 1rem 0;
+					    margin: 0 2.5rem 1.5rem 0;
 					    float: left;
+					    &:nth-child(even) {
+					    	margin-right: 0;
+					    }
 				    }
 				}
 				h2, h3 {
@@ -188,9 +191,8 @@
 				}
 				a.light-btn {
 					@extend .small;
-					margin-right: 1rem;
-					border-size: 1px;
-					font-family: $light-font;
+					border-width: 1px;
+					font-family: $font-book;
 					@include media($mobile){
 						font-size: 1.6rem;
 						font-family: $title-font;
