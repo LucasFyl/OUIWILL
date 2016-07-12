@@ -218,14 +218,15 @@
 
 		    height: 10rem;
 		    padding-top: 2rem;
+		    $size: 8rem;
 
 			li {
-				@include size(7rem);
+				@include size($size);
 				position: relative;
 				display: block;
 				float: left;
 				border-radius: 100%;
-				margin-right: 4.5rem;
+				margin-right: 2rem;
 				cursor: pointer;
 				&:last-child {margin-right: 0;}
 
@@ -240,7 +241,7 @@
 					color: #b2b2b2;
 					text-decoration: none;
 					text-align: center;
-					line-height: 7rem;
+					line-height: $size;
 					@include transition(all 0.25s $ease-in-expo);
 					cursor: pointer;
 
@@ -253,7 +254,7 @@
 
 				&:after {
 					content: " ";
-					@include size(7rem);
+					@include size($size);
 					border-radius: 100%;
 					border: 2px solid $golden;
 					position: absolute;
