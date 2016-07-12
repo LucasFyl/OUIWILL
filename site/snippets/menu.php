@@ -8,11 +8,11 @@
       <h2 class="baseline">precisely what you imagined your brand could be only more so. ™</h2>
       <div class="social">
         <ul>
+          <li><a href="https://dribbble.com/oui_will" target="_blank" class="jsLink fa fa-dribbble"></a></li>
           <li><a href="https://vimeo.com/user20000853" target="_blank" class="jsLink fa fa-vimeo"></a></li>
           <li><a href="https://www.behance.net/ouiwill" target="_blank" class="jsLink fa fa-behance"></a></li>
           <li><a href="https://www.facebook.com/Oui-Will-521221991292035/" target="_blank" class="jsLink fa fa-facebook"></a></li>
           <li><a href="https://instagram.com/ouiwill/" target="_blank" class="jsLink fa fa-instagram"></a></li>
-          <li><a href="https://dribbble.com/oui_will" target="_blank" class="jsLink fa fa-dribbble"></a></li>
         </ul>
       </div>
     </div>
