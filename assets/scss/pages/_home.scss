@@ -155,6 +155,7 @@ body.home {
 			font-size: 1.6rem;
 			letter-spacing: .15rem;
 		}
+
 		
 		&.intro {
 			@include outer-container;
@@ -299,26 +300,61 @@ body.home {
 				margin-top: -3rem;
 				right: -3rem;
 				z-index: 9999;
+				@include media($mobile) {
+					right: 1rem;
+				}
 			}
 			a.control_prev {
 				top: 50% ;
 				margin-top: -3rem;
 				left: -3rem;
 				z-index: 9999;
+				@include media($mobile) {
+					left: 1rem;
+				}
 			}
 			#slider {
-				width: 102.5rem !important;
-				height: 60rem !important;
+				@include size(100%);
+				@include media($desktop) {
+					min-height: 60rem;
+				}
+
 				ul {
-					height: 60rem;
+					@include size(100% auto);
+					
+					@include media($desktop) {
+						width: 77.2% !important;
+						margin: 0 auto;	
+					}
+
+					&, .slick-list, .slick-track, .slick-slide {
+						@include size(100% auto);
+						min-height: 22rem;
+						@include media($desktop) {
+							min-height: 60rem;
+						}
+					}
+
 					li {
-						width: 102.5rem;
-						height: 60rem;
+						width: 100%;
+
 						img {
-							object-fit:cover;
 							min-width:100%;
 						}
 					}
+				}
+			}
+		}
+		&.carreers {
+			.light-btn {
+				@include media($mobile) {
+					opacity: 1 !important;
+					transform: scale(1) !important;
+					-webkit-transform: scale(1) !important;
+					-moz-transform: scale(1) !important;
+					-o-transform: scale(1) !important;
+
+					margin-left: -35%  !important;
 				}
 			}
 		}

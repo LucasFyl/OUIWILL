@@ -5,7 +5,7 @@
 	
 		<div class="vertical-center">
 			<h4>Hello.</h4>
-			<h3>How can we help you?</h3>
+			<h3>How can we help?</h3>
 		</div>
 	</div>
 
