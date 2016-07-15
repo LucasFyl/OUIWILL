@@ -314,33 +314,17 @@ body.home {
 				}
 			}
 			#slider {
-				@include size(100%);
-				@include media($desktop) {
-					min-height: 60rem;
+				width: 77.2%;
+
+				&, .slick-slider, .slick-list, .slick-track, .slick-slide {
+					min-height: 100%;
+					height: auto;
 				}
+				.slick-slide {
+					overflow-y: hidden;
 
-				ul {
-					@include size(100% auto);
-					
-					@include media($desktop) {
-						width: 77.2% !important;
-						margin: 0 auto;	
-					}
-
-					&, .slick-list, .slick-track, .slick-slide {
-						@include size(100% auto);
-						min-height: 22rem;
-						@include media($desktop) {
-							min-height: 60rem;
-						}
-					}
-
-					li {
-						width: 100%;
-
-						img {
-							min-width:100%;
-						}
+					img {
+						min-width: 100%;
 					}
 				}
 			}

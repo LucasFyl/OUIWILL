@@ -86,12 +86,6 @@
 			padding: 1.25rem 3rem;
 			margin-top: 3rem;
 			line-height: 1.5;
-			&:hover {
-				background:transparent;
-				color: $golden;
-				text-decoration: underline;
-				// @include BoxShadowHelper(2);
-			}
 		}
 		a:last-child {
 			text-decoration: none;
@@ -145,6 +139,7 @@
 			}
 
 			div {
+				min-width: 55%;
 				> div.vertical-center {
 					> div {
 						display: inline-block;
@@ -249,7 +244,7 @@
 					z-index: 99;
 
 					font-size: 3rem;
-					color: #999;
+					color: #c1c0c0;
 					text-decoration: none;
 					text-align: center;
 					line-height: $size;

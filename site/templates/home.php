@@ -88,13 +88,9 @@
 
 		<section class="slider">
 			<h3>our team.</h3>
-			<!-- <a href="#" class="control_next jsLink"></a>
-			<a href="#" class="control_prev jsLink"></a> -->
 			<div id="slider">
 				<ul>
 					<?php 
-						ini_set('display_errors', 'On');
-						error_reporting(E_ALL); 
 						$subpage = $pages->find('about');
 						foreach($subpage->images()->sortBy('sort', 'asc')->slice(3) as $slide): ?>
 					<li>
