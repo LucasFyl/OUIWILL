@@ -154,8 +154,14 @@
 			    right: 10%;
 			    @include transform(none);
 
-				ul { list-style: none; width: 100%; padding-left: 0;
-					li { float: left;
+				ul { 
+					list-style: none; width: 100%; padding-left: 0;
+
+				    display: flex;
+				    flex-flow: row nowrap;
+				    justify-content: flex-end;
+
+					li { 
 						a { text-decoration: none;}
 					}
 				}
