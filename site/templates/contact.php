@@ -5,7 +5,7 @@
 	
 		<div class="vertical-center">
 			<h4>Hello.</h4>
-			<h3>How can we help?</h3>
+			<h3>What can we help you with?</h3>
 		</div>
 	</div>
 
@@ -39,6 +39,7 @@
 							<h3>headquarter</h3>
 				    		<p>3077 North Park Way, Suite 107 <br/> San Diego, CA 92104</p>
 				    		<a href="mailto:contact@ouiwill.com" class="light-btn golden jsLink">contact@ouiwill.com</a>
+				    		<a href="https://goo.gl/maps/ifBrwVA5rkM2" target="_blank" class="light-btn golden jsLink">get directions</a>
 						</div>
 					</div>
 				</div>
